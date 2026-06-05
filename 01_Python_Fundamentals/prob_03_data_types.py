@@ -93,4 +93,68 @@ print(type(rating))                        # Output --> <class 'float'>
 print(type(working))                       # Output --> <class 'bool'>
 print(type(hours))                         # Output --> <class 'int'>
 
-# -------------------------------------------------------------- #
+# -------------------------------------------------------------- 
+
+# Type Conversion Concept [Another important Data Type Concept]
+
+# 1. Str to Int
+
+num_str = "100"
+print(type(num_str))
+
+num_int = int(num_str)                     # Output --> <class 'str'>
+print(type(num_int))                       # Output --> <class 'int'>
+
+# -----------------
+
+# 2. Str to Float
+
+height_str = "6.2"
+
+height_float = float(height_str)
+print(height_float)                       # Output --> 6.2
+print(type(height_float))                 # Output --> <class 'float'>
+
+# ------------------
+
+# 3. Integer to String
+
+my_age = 29
+
+age_str = str(my_age)
+print(age_str)                          # Output --> 29
+print(type(age_str))                    # Output --> <class 'str'>
+
+# --------------------
+
+# 4. Boolean to String
+
+software_developer = True
+
+str_software_developer = str(software_developer)
+print(str_software_developer)          # Output --> True
+print(type(str_software_developer))    # Output --> <class 'str'>
+
+# ---------------------------------------------
+
+# 2. Type Checking Using isinstance()
+
+my_name = "Alia"
+print(isinstance(my_name, str))       # Output --> True
+
+# --------------
+
+alia_age = 20
+print(isinstance(alia_age, float))    # Output --> False
+
+# --------------
+
+price = 99.99
+print(isinstance(price, int))         # Output --> False
+
+# --------------
+
+is_active = True
+print(isinstance(is_active, bool))    # Output --> True
+
+# ----------------------------------------------------------- #
