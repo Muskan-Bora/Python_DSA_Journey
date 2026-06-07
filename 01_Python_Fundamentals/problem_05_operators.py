@@ -70,3 +70,48 @@ Operators are used everywhere in Python:
 - Data Analysis
 - AI & Machine Learning
 """
+
+#  -------------------------------------------------------------------- #
+
+"""
+Problem 1: Arithmetic Operators
+
+Task
+Create two variables:
+
+num1 = 20
+num2 = 5
+
+Perform and print:
+Addition
+Subtraction
+Multiplication
+Division
+Modulus
+Exponent
+Floor Division
+"""
+
+num1 = 20
+num2 = 5
+
+print("Addition: ", num1, "+", num2, "=", num1 + num2)   
+print("Subtraction: ", num1, "-", num2, "=", num1 - num2)
+print("Multiplication: ", num1, "*", num2, "=", num1 * num2)
+print("Division: ", num1, "/", num2, "=", num1 / num2)
+print("Modulus: ", num1, "%", num2, "=", num1 % num2)
+print("Exponent: ", num1, "**", num2, "=", num1 ** num2)
+print("Floor Division: ", num1, "//", num2, "=", num1 // num2)
+
+"""
+Output:
+Addition:  20 + 5 = 25
+Subtraction:  20 - 5 = 15
+Multiplication:  20 * 5 = 100
+Division:  20 / 5 = 4.0
+Modulus:  20 % 5 = 0
+Exponent:  20 ** 5 = 3200000
+Floor Division:  20 // 5 = 4
+"""
+
+# ---------------------------------- #
