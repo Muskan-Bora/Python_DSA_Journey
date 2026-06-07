@@ -115,3 +115,36 @@ Floor Division:  20 // 5 = 4
 """
 
 # ---------------------------------- #
+
+"""
+Problem 2: User Calculator
+
+Task
+Take two numbers from the user.
+
+Print:
+Sum
+Difference
+Product
+Division
+"""
+
+num_1 = int(input("Enter first number: "))
+num_2 = int(input("Enter second number: "))
+
+print(f"Sum: {num_1 + num_2}")
+print(f"Difference: {num_1 - num_2}")
+print(f"Product: {num_1 * num_2}")
+print(f"Division: {num_1 / num_2}")
+
+"""
+Output:
+Enter first number: 60
+Enter second number: 5
+Sum: 65
+Difference: 55
+Product: 300
+Division: 12.0
+"""
+
+# ----------------------------------- #
