@@ -92,16 +92,16 @@ Exponent
 Floor Division
 """
 
-num1 = 20
-num2 = 5
+# num1 = 20
+# num2 = 5
 
-print("Addition: ", num1, "+", num2, "=", num1 + num2)   
-print("Subtraction: ", num1, "-", num2, "=", num1 - num2)
-print("Multiplication: ", num1, "*", num2, "=", num1 * num2)
-print("Division: ", num1, "/", num2, "=", num1 / num2)
-print("Modulus: ", num1, "%", num2, "=", num1 % num2)
-print("Exponent: ", num1, "**", num2, "=", num1 ** num2)
-print("Floor Division: ", num1, "//", num2, "=", num1 // num2)
+# print("Addition: ", num1, "+", num2, "=", num1 + num2)   
+# print("Subtraction: ", num1, "-", num2, "=", num1 - num2)
+# print("Multiplication: ", num1, "*", num2, "=", num1 * num2)
+# print("Division: ", num1, "/", num2, "=", num1 / num2)
+# print("Modulus: ", num1, "%", num2, "=", num1 % num2)
+# print("Exponent: ", num1, "**", num2, "=", num1 ** num2)
+# print("Floor Division: ", num1, "//", num2, "=", num1 // num2)
 
 """
 Output:
@@ -129,13 +129,13 @@ Product
 Division
 """
 
-num_1 = int(input("Enter first number: "))
-num_2 = int(input("Enter second number: "))
+# num_1 = int(input("Enter first number: "))
+# num_2 = int(input("Enter second number: "))
 
-print(f"Sum: {num_1 + num_2}")
-print(f"Difference: {num_1 - num_2}")
-print(f"Product: {num_1 * num_2}")
-print(f"Division: {num_1 / num_2}")
+# print(f"Sum: {num_1 + num_2}")
+# print(f"Difference: {num_1 - num_2}")
+# print(f"Product: {num_1 * num_2}")
+# print(f"Division: {num_1 / num_2}")
 
 """
 Output:
@@ -148,3 +148,77 @@ Division: 12.0
 """
 
 # ----------------------------------- #
+
+"""
+Problem 3: Comparison Operators
+
+Task
+Create:
+
+age = 24
+required_age = 18
+"""
+
+age = 24
+required_age = 18
+
+equal_to = age == required_age
+print(f"{age} == {required_age} = {equal_to}")
+
+not_equal = age != required_age
+print(f"{age} != {required_age} = {not_equal}")
+
+greater_than = age > required_age
+print(f"{age} > {required_age} = {greater_than}")
+
+lesser_than = age < required_age
+print(f"{age} < {required_age} = {lesser_than}")
+
+greater_equalto = age >= required_age
+print(f"{age} >= {required_age} = {greater_equalto}")
+
+lesser_equalto = age <= required_age
+print(f"{age} <= {required_age} = {lesser_equalto}")
+
+"""
+Output: 
+24 == 18 = False
+24 != 18 = True
+24 > 18 = True
+24 < 18 = False
+24 >= 18 = True
+24 <= 18 = False
+"""
+
+# ----------------------------------- #
+
+"""
+Problem 4: Student Eligibility Check
+
+Task
+Ask user for marks.
+
+Check:
+Marks >= 35
+
+Print the result.
+"""
+
+print("Student Eligibility Check: ")
+eligible = input("Please Enter your Marks: ")
+
+is_eligible = int(eligible) >= 35
+print("Eligible:", is_eligible)
+
+"""
+Output:
+Student Eligibility Check: 
+Please Enter your Marks: 26
+Eligible: False
+
+Student Eligibility Check: 
+Please Enter your Marks: 69
+Eligible: True
+"""
+
+# ----------------------------------------- #
