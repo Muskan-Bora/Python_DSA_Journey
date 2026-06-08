@@ -222,3 +222,90 @@ Eligible: True
 """
 
 # ----------------------------------------- #
+
+"""
+Problem 5: Assignment Operators
+
+Task
+Create:
+salary = 25000
+
+Print value after every operation.
+"""
+
+salary = 25000
+
+salary += 25000
+print(salary)                # Output = 50000
+
+salary -= 25000
+print(salary)                # Output = 25000
+
+salary *= 25000
+print(salary)                # Output = 625000000
+
+salary /= 25000
+print(salary)                # Output = 25000.0
+
+salary %= 25000
+print(salary)                # Output = 0.0
+
+# -------------------------------------------- #
+
+"""
+Problem 6: Logical Operators
+
+Task
+Create:
+age = 24
+has_id = True
+"""
+
+age = 24
+has_id = True
+
+print(age >= 18 and has_id)  # Output: True
+
+print(age >= 18 or has_id)   # Output: True
+
+print(not has_id)            # Output: False
+
+# ---------------------------------------------- #
+
+"""
+Problem 7: Movie Ticket Eligibility
+
+Task
+Ask user:
+Age
+Has Ticket (True/False)
+
+Check whether the person can enter. [Using Logical Opertor]
+"""
+
+print("Movie Ticket Eligibility: ")
+
+age = int(input("Enter your age: "))
+has_ticket = input("Do you have a ticket (True/False): ")
+
+has_ticket = has_ticket.lower() == "true"
+
+can_enter =  age >= 18 and has_ticket
+print("Can Enter:", can_enter)
+
+"""
+Output:
+Movie Ticket Eligibility: 
+Enter your age: 19
+Do you have the ticket (True/Flase): True
+Can Enter: True
+
+Enter your age: 26
+Do you have the ticket (True/Flase): False
+Can Enter: False
+
+Movie Ticket Eligibility: 
+Enter your age: 16
+Do you have the ticket (True/Flase): True
+Can Enter: False
+"""
