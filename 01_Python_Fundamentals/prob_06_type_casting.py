@@ -71,3 +71,49 @@ input() always returns a string.
 
 Therefore type casting is often required when taking numeric input from users.
 """
+
+# -----------------------------------------------------------
+
+"""
+Problem 1: String to Integer
+
+Task
+Create:
+age = "24"
+
+Convert it into an integer.
+"""
+
+age = "24"
+
+# Data Type Before Conversion
+print(type(age), age)                      # Output: <class 'str'> 24
+
+int_age = int(age)
+
+# Data Type After Conversion
+print(type(int_age), int_age)              # <class 'int'> 24
+
+# -----------------------------------
+
+"""
+Problem 2: String to Float
+
+Task
+Create:
+rating = "4.8"
+
+Convert it into a float.
+"""
+
+rating = "4.8"
+
+# Data Type Before Conversion
+print(type(rating), rating)                            # Output: <class 'str'> 4.8
+
+float_rating = float(rating)
+
+# Data Type After Conversion
+print(type(float_rating), float_rating)               # Output: <class 'float'> 4.8
+
+# -----------------------------------
