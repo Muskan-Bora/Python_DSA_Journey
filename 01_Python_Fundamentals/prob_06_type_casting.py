@@ -139,3 +139,25 @@ str_salary = str(salary)
 print(type(str_salary), str_salary)               # Output: <class 'str'> 50000
 
 # -----------------------------------------
+
+"""
+Problem 4: Float to Integer
+
+Task
+Create:
+height = 5.9
+
+Convert it into an integer.
+"""
+
+height = 5.9
+
+# Data Type Before Conversion
+print(type(height), height)                            # Output: <class 'float'> 5.9
+
+int_height = int(height)
+
+# Data Type After Conversion
+print(type(int_height), int_height)               # Output: <class 'int'> 5
+
+# -------------------------------------
