@@ -190,5 +190,32 @@ print(type(testbool_4), testbool_4)                      # Output: <class 'bool'
 # --------------------------------------
 
 """
+Problem 6: User Age Calculator
+Task
+Take age from user.
+
+Remember:
+input()
+
+returns string.
+
+Convert it properly and print:
+
+After 5 years your age will be X
+"""
+
+print("Age Calculator")
+
+age = int(input("Enter your age: "))
+
+future_age = age + 5
+print(f"After 5 years your age will be {future_age} years")
 
 """
+Output:
+Age Calculator
+Enter your age: 15
+After 5 years your age will be 20 years
+"""
+
+# -------------------------------------------
