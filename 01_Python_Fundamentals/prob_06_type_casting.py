@@ -117,3 +117,25 @@ float_rating = float(rating)
 print(type(float_rating), float_rating)               # Output: <class 'float'> 4.8
 
 # -----------------------------------
+
+"""
+Problem 3: Integer to String
+
+Task
+Create:
+salary = 50000
+
+Convert it into a string.
+"""
+
+salary = 50000
+
+# Data Type Before Conversion
+print(type(salary), salary)                            # Output: <class 'int'> 50000
+
+str_salary = str(salary)
+
+# Data Type After Conversion
+print(type(str_salary), str_salary)               # Output: <class 'str'> 50000
+
+# -----------------------------------------
