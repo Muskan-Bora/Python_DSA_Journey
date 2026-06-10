@@ -161,3 +161,34 @@ int_height = int(height)
 print(type(int_height), int_height)               # Output: <class 'int'> 5
 
 # -------------------------------------
+
+"""
+Problem 5: Boolean Conversion
+
+Task
+Create and test:
+bool(1)
+bool(0)
+bool("")
+bool("Python")
+
+Print all outputs.
+"""
+
+testbool_1 = bool(1)
+print(type(testbool_1), testbool_1)                      # Output: <class 'bool'> True
+
+testbool_2 = bool(0)
+print(type(testbool_2), testbool_2)                      # Output: <class 'bool'> False
+
+testbool_3 = bool("")
+print(type(testbool_3), testbool_3)                      # Output: <class 'bool'> False
+
+testbool_4 = bool("Python")
+print(type(testbool_4), testbool_4)                      # Output: <class 'bool'> True
+
+# --------------------------------------
+
+"""
+
+"""
