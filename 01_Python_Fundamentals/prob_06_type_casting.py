@@ -313,3 +313,124 @@ Converted Integer Value: 100, Data Type: <class 'int'>
 Converted Float Value: 100.0, Data Type: <class 'float'>
 Converted Boolean Value: True, Data Type: <class 'bool'>
 """
+
+# ----------------------------------------------
+
+"""
+Problem 9: User Profile Generator
+
+Task
+Take:
+Name
+Age
+Salary
+
+Convert appropriate values into correct data types.
+Print a professional profile using f-strings.
+"""
+
+print("Profile Generator")
+
+user_name = input("Enter your name: ")
+user_age = input("Enter your age: ")
+user_salary = input("Enter your salary: ")
+
+print(user_name, type(user_name))
+print(user_age, type(user_age))
+print(user_salary, type(user_salary))
+
+int_user_age = int(user_age)
+float_user_salary = float(user_salary)
+
+print(int_user_age, type(int_user_age))
+print(float_user_salary, type(float_user_salary))
+
+print(f"Your Profile has generated successfully:\n",
+      f"Name: {user_name}\n",
+      f"Age: {int_user_age}\n",
+      f"Salary: {float_user_salary:.2f}\n")
+
+"""
+Output:
+Profile Generator
+Enter your name: Rohny
+Enter your age: 26
+Enter your salary: 50000
+Rohny <class 'str'>
+26 <class 'str'>
+50000 <class 'str'>
+26 <class 'int'>
+50000.0 <class 'float'>
+Your Profile has generated successfully:
+Name: Rohny
+Age: 26
+Salary: 50000.00
+"""
+
+# -------------------------------------------------------------
+
+"""
+Problem 10: Mixed Type Casting Challenge
+Task
+
+Create:
+
+marks = "85"
+attendance = "92.5"
+
+Convert:
+
+marks → int
+attendance → float
+
+Print:
+
+Student Marks: 85
+Student Attendance: 92.5%
+"""
+
+# --------------------------------------------------------------
+
+"""
+Bonus Challenge 1
+
+Predict before running:
+
+print(bool("False"))
+print(bool("True"))
+print(bool(""))
+
+Then execute and verify.
+"""
+
+"""
+Bonus Challenge 2
+
+Create:
+
+num1 = "10"
+num2 = "20"
+
+First print:
+
+num1 + num2
+
+Then convert them into integers and print:
+
+num1 + num2
+
+Observe the difference.
+"""
+
+"""
+Bonus Challenge 3 (Important)
+
+Predict before running:
+
+print(int(True))
+print(int(False))
+
+What will be the output?
+
+This is a very common Python interview question.
+"""
