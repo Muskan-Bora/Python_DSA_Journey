@@ -204,12 +204,12 @@ Convert it properly and print:
 After 5 years your age will be X
 """
 
-print("Age Calculator")
+# print("Age Calculator")
 
-age = int(input("Enter your age: "))
+# age = int(input("Enter your age: "))
 
-future_age = age + 5
-print(f"After 5 years your age will be {future_age} years")
+# future_age = age + 5
+# print(f"After 5 years your age will be {future_age} years")
 
 """
 Output:
@@ -219,3 +219,57 @@ After 5 years your age will be 20 years
 """
 
 # -------------------------------------------
+
+"""
+Problem 7: Product Price Calculator
+
+Task
+Take:
+Product Price
+GST Percentage
+
+Calculate:
+
+Final Price
+
+Use type casting wherever needed.
+"""
+
+print("Product Price Calculator")
+
+product_price = (input("Enter Product Price: "))
+gst_percent = (input("Enter Gst Percentage: "))
+
+float_product_price = float(product_price)
+float_gst_percent = float(gst_percent)
+
+gst_amount = (float_gst_percent / 100) * float_product_price
+
+final_price = float_product_price + float(gst_amount)
+
+print(type(product_price))
+print(type(gst_percent))
+print(type(float_product_price))
+print(type(float_gst_percent))
+print(type(final_price))
+
+print(
+   f"The Product Price is {float_product_price} "
+   f"and GST Percentage is {float_gst_percent}% "
+   f"so Final price is {final_price:.2f}"
+)
+
+"""
+Output:
+Product Price Calculator
+Enter Product Price: 500
+Enter Gst Percentage: 18
+<class 'str'>
+<class 'str'>
+<class 'float'>
+<class 'float'>
+<class 'float'>
+The Product Price is 500.0 and GST Percentage is 18.0% so Final price is 590.00
+"""
+
+# ---------------------------------------------------
