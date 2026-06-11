@@ -273,3 +273,43 @@ The Product Price is 500.0 and GST Percentage is 18.0% so Final price is 590.00
 """
 
 # ---------------------------------------------------
+
+"""
+Problem 8: Type Investigation
+
+Task
+Create:
+num = "100"
+
+Convert it into:
+int
+float
+bool
+
+Print:
+Converted Value
+Data Type
+
+for each.
+"""
+
+num = "100"
+
+print(f"Original Value: {num}, Data Type: {type(num)}")
+
+int_num = int(num)
+print(f"Converted Integer Value: {int_num}, Data Type: {type(int_num)}")
+
+float_num = float(num)
+print(f"Converted Float Value: {float_num}, Data Type: {type(float_num)}")
+
+bool_num = bool(num)
+print(f"Converted Boolean Value: {bool_num}, Data Type: {type(bool_num)}")
+
+"""
+Output:
+Original Value: 100, Data Type: <class 'str'>
+Converted Integer Value: 100, Data Type: <class 'int'>
+Converted Float Value: 100.0, Data Type: <class 'float'>
+Converted Boolean Value: True, Data Type: <class 'bool'>
+"""
