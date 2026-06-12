@@ -416,6 +416,11 @@ print(bool(""))
 
 Then execute and verify.
 """
+print(bool("False"))          # Ouput: True
+print(bool("True"))           # Ouput: True
+print(bool(""))               # Output: False
+
+# ------------------------------------
 
 """
 Bonus Challenge 2
@@ -435,6 +440,23 @@ num1 + num2
 
 Observe the difference.
 """
+num1 = "10"
+num2 = "20"
+
+sum_1 = num1 + num2
+
+print(sum_1, type(sum_1))                     # Output: 1020 <class 'str'>
+
+# -----------
+
+int_num1 = int(num1)
+int_num2 = int(num2)
+
+new_sum = int_num1 + int_num2
+
+print(new_sum, type(new_sum))           # Output: 30 <class 'int'>
+
+# --------------------------------------
 
 """
 Bonus Challenge 3 (Important)
@@ -446,3 +468,8 @@ print(int(False))
 
 What will be the output?
 """
+
+print(int(True))                   # Output: 1
+print(int(False))                  # Output: 0
+
+# ------------------------------------------------------------- #
