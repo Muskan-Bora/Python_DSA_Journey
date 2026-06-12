@@ -389,6 +389,20 @@ Student Marks: 85
 Student Attendance: 92.5%
 """
 
+marks = "85"
+attendance = "92.5"
+
+print(type(marks))                                   # Output: <class 'str'>
+print(type(attendance))                              # Output: <class 'str'>
+
+student_marks = int(marks)
+print(f"Student Marks: {student_marks} {type(student_marks)}")
+# Output: Student Marks: 85 <class 'int'>
+
+student_attendance = float(attendance)
+print(f"Student Attendance: {student_attendance}% {type(student_attendance)}")
+# Output: Student Attendance: 92.5% <class 'float'>
+
 # --------------------------------------------------------------
 
 """
@@ -431,6 +445,4 @@ print(int(True))
 print(int(False))
 
 What will be the output?
-
-This is a very common Python interview question.
 """
