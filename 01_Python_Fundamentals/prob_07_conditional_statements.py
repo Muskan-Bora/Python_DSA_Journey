@@ -70,3 +70,51 @@ else:
 """
 
 # --------------------------------------------------------------- #
+
+"""
+Problem 1 — Basic if
+
+Create:
+age = 24
+
+Check:
+If age is 18 or above, print:
+
+Adult
+"""
+
+age = 24
+
+if age == 18 or age > 18:
+    print("Adult")           # Output: Adult
+
+# ----------------------------
+
+"""
+Problem 2 — if-else
+
+Take age from user.
+If age >= 18:
+Eligible to Vote
+
+Else:
+Not Eligible to Vote
+"""
+
+user_age = int(input("Enter your age: "))
+
+if user_age >= 18:
+    print("Eligible to Vote")
+else:
+    print("Not Eligible to Vote")
+
+"""
+Output:
+Enter your age: 19
+Eligible to Vote
+
+Enter your age: 16
+Not Eligible to Vote
+"""
+
+# ----------------------------------------
