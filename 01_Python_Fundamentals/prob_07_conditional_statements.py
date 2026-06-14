@@ -151,3 +151,34 @@ Enter the number: 0
 """
 
 # ---------------------------------
+
+"""
+Problem 4 — Even or Odd
+
+Take number from user.
+Check whether number is:
+Even
+or
+Odd
+"""
+
+num_1 = int(input("Enter the number: "))
+
+if num_1 % 2 == 0:
+    print(num_1, "even")
+else:
+    print(num_1, "odd")
+
+"""
+Output:
+Enter the number: 5
+5 odd
+
+Enter the number: 10
+10 even
+
+Enter the number: -6
+-6 even
+"""
+
+# -----------------------------------
