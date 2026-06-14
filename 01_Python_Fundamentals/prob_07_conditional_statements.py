@@ -101,12 +101,12 @@ Else:
 Not Eligible to Vote
 """
 
-user_age = int(input("Enter your age: "))
+# user_age = int(input("Enter your age: "))
 
-if user_age >= 18:
-    print("Eligible to Vote")
-else:
-    print("Not Eligible to Vote")
+# if user_age >= 18:
+#     print("Eligible to Vote")
+# else:
+#     print("Not Eligible to Vote")
 
 """
 Output:
@@ -118,3 +118,36 @@ Not Eligible to Vote
 """
 
 # ----------------------------------------
+
+"""
+Problem 3 — Positive or Negative [using if-elif-else]
+
+Take a number from user.
+Check:
+Positive
+Negative
+Zero
+"""
+
+num = int(input("Enter the number: "))
+
+if num > 0:
+    print(num, "Positive")
+elif num < 0:
+    print(num, "Negative")
+else:
+    print(num, "Zero")
+
+"""
+Output:
+Enter the number: 2
+2 Positive
+
+Enter the number: -5
+-5 Negative
+
+Enter the number: 0
+0 Zero
+"""
+
+# ---------------------------------
