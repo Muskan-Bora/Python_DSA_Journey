@@ -182,3 +182,114 @@ Enter the number: -6
 """
 
 # -----------------------------------
+
+"""
+Problem 5 — Pass or Fail
+
+Take marks from user.
+If marks >= 35:
+Pass
+
+Else:
+Fail
+"""
+
+user_marks = int(input("Enter your marks: "))
+
+if user_marks >= 35:
+    print(f"Congratulations, your result is pass and got {user_marks} marks.")
+else:
+    print(f"Sorry, Better luck next time you got {user_marks} marks so your result is fail.")
+
+"""
+Output:
+Enter your marks: 90
+Congratulations, your result is pass and got 90 marks.
+
+Enter your marks: 32
+Sorry, Better luck next time you got 32 marks so your result is fail.
+"""
+
+# -------------------------------------
+
+"""
+Problem 6 — Grade Calculator
+
+Take marks.
+
+Rules:
+90+ → Grade A
+75 - 89 → Grade B
+50 - 74 → Grade C
+Below 50 → Grade D
+"""
+
+marks = int(input("Enter your marks: "))
+
+if marks < 0 or marks > 100:
+    print("Sorry, your marks is invalid")
+elif marks >= 90:
+    print(f"Outstanding you scored {marks} marks, so your Grade is A.")
+elif marks >= 75 and marks <= 89:
+    print(f"Good you scored {marks} marks, so your Grade is B.")
+elif marks >= 50 and marks <= 74:
+    print(f"Satisfactory, you scored {marks} marks, so your Grade is C.")
+else:
+    print(f"You need to work hard more you scored {marks} marks, so your Grade is D.")
+
+"""
+Output:
+
+Enter your marks: 152
+Sorry, your marks is invalid
+
+Enter your marks: 90
+Outstanding you scored 90 marks, so your Grade is A.
+
+Enter your marks: 75
+Good you scored 75 marks, so your Grade is B.
+
+Enter your marks: 52
+Satisfactory, you scored 52 marks, so your Grade is C.
+
+Enter your marks: 49
+You need to work hard more you scored 49 marks, so your Grade is D.
+"""
+
+# ----------------------------------
+
+"""
+Problem 7 — Salary Bonus
+
+Take salary.
+
+Rules:
+salary >= 50000 → Bonus = 10000
+salary >= 30000 → Bonus = 5000
+Otherwise → Bonus = 2000
+
+Print final bonus.
+"""
+
+salary = int(input("Enter your salary: "))
+
+if salary >= 50000:
+    print(f"Congratulations, your salary is {salary} so, you will receive 10000 in Bonus so after Bonus your total salary will be {salary + 10000}.")
+elif salary >= 30000:
+    print(f"Congratulations, your salary is {salary} so, you will receive 5000 in Bonus so after Bonus your total salary will be {salary + 5000}.")
+else:
+    print(f"OK, your salary is {salary} so, you will receive only 2000 in Bonus so after Bonus your total salary will be {salary + 2000}.")
+
+"""
+Output:
+Enter your salary: 50000
+Congratulations, your salary is 50000 so, you will receive 10000 in Bonus so after Bonus your total salary will be 60000.
+
+Enter your salary: 49000 
+Congratulations, your salary is 49000 so, you will receive 5000 in Bonus so after Bonus your total salary will be 54000.
+
+Enter your salary: 25000
+OK, your salary is 25000 so, you will receive only 2000 in Bonus so after Bonus your total salary will be 27000.
+"""
+
+# --------------------------------------------------
