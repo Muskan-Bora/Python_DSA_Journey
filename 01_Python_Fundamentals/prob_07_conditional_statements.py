@@ -339,3 +339,48 @@ Login Successful
 """
 
 # ----------------------------------------------
+
+"""
+Problem 9 — Movie Entry (Nested If)
+
+Take:
+age
+has_ticket (True/False)
+
+Rules:
+If age >= 18:
+Check ticket
+Else:
+Not allowed
+
+Use nested if.
+"""
+
+age = int(input("Enter your age: "))
+ticket_input = input("Do yo have ticket? yes/no: ")
+has_ticket = ticket_input.lower()
+
+if age >= 18:
+    if has_ticket == "yes":
+        print("OK, you are allowed. Please enter and enjoy your show.")
+    else:
+        print("Sorry you don't have ticket so you are not allowed.")
+else:
+    print("Sorry you are underage so you are not allowed.")
+
+"""
+Output:
+Enter your age: 19
+Do yo have ticket? yes/no: no
+Sorry you don't have ticket so you are not allowed.
+
+Enter your age: 19
+Do yo have ticket? yes/no: Yes
+OK, you are allowed. Please enter and enjoy your show.
+
+Enter your age: 17
+Do yo have ticket? yes/no: yes
+Sorry you are underage so you are not allowed.
+"""
+
+# -------------------------------------------
