@@ -1,0 +1,179 @@
+# -------------------------------------------------------- #
+
+# Python Loops
+
+"""
+What is a Loop?
+
+A loop is used to execute a block of code repeatedlyuntil a condition becomes False or until all items
+in a sequence are processed.
+
+Why do we need loops?
+
+Imagine printing:
+Hello
+Hello
+Hello
+Hello
+Hello
+
+Without loop:
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+print("Hello")
+
+This becomes repetitive.
+
+With loop:
+Python can repeat the task automatically.
+
+So loops help us:
+1. Reduce repetitive code
+2. Save time
+3. Process large data
+4. Build logic for DSA
+
+Examples of real-world loop usage:
+- Reading database records
+- Processing API responses
+- Iterating through lists
+- Training AI models
+- Running repeated calculations
+"""
+
+# -------------------------------------------------------- #
+
+"""
+Types of Loops in Python
+
+1. while loop
+2. for loop
+"""
+
+# -------------------------------------------------------- #
+
+"""
+1. while loop
+
+Syntax:
+
+while condition:
+    code block
+
+Meaning:
+As long as condition is True,
+the loop keeps running.
+
+Example:
+"""
+
+count = 1
+
+while count <= 3:
+    print(count)
+    count += 1
+
+"""
+Output:
+1
+2
+3
+"""
+
+# Execution:
+# count = 1 -> print -> count becomes 2
+# count = 2 -> print -> count becomes 3
+# count = 3 -> print -> count becomes 4
+# count = 4 -> condition False -> loop stops
+
+# -------------------------------------------------------- #
+
+"""
+Important Concept: Infinite Loop
+
+If condition never becomes False,
+loop runs forever.
+
+Example:
+"""
+
+# while True:
+#     print("Infinite Loop")
+
+"""
+Be careful.
+
+This is called an infinite loop.
+"""
+
+# -------------------------------------------------------- #
+
+"""
+2. for loop
+
+Used when we know:
+- how many times to repeat
+OR
+- which sequence to iterate over
+
+Syntax:
+
+for variable in sequence:
+    code block
+"""
+
+for i in range(3):
+    print(i)
+
+"""
+Output:
+0
+1
+2
+"""
+
+# -------------------------------------------------------- #
+
+"""
+What is range()?
+
+range() generates numbers.
+
+Examples:
+
+range(5)      -> 0,1,2,3,4
+range(1,5)    -> 1,2,3,4
+range(1,10,2) -> 1,3,5,7,9
+"""
+
+# -------------------------------------------------------- #
+
+"""
+Loop Control Statements (will practice later)
+
+break    -> Exit loop immediately
+continue -> Skip current iteration
+pass     -> Do nothing
+"""
+
+# -------------------------------------------------------- #
+
+"""
+Important for DSA:
+
+Loops are the backbone of:
+- Arrays
+- Strings
+- Lists
+- Searching
+- Sorting
+- Binary Search
+- Graph Traversal
+
+Without loops:
+DSA is impossible.
+"""
+
+# -------------------------------------------------------- #
