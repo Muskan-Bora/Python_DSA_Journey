@@ -83,10 +83,10 @@ If age is 18 or above, print:
 Adult
 """
 
-# age = 24
+age = 24
 
-# if age == 18 or age > 18:
-#     print("Adult")           # Output: Adult
+if age == 18 or age > 18:
+    print("Adult")           # Output: Adult
 
 # ----------------------------
 
@@ -101,12 +101,12 @@ Else:
 Not Eligible to Vote
 """
 
-# user_age = int(input("Enter your age: "))
+user_age = int(input("Enter your age: "))
 
-# if user_age >= 18:
-#     print("Eligible to Vote")
-# else:
-#     print("Not Eligible to Vote")
+if user_age >= 18:
+    print("Eligible to Vote")
+else:
+    print("Not Eligible to Vote")
 
 """
 Output:
@@ -129,14 +129,14 @@ Negative
 Zero
 """
 
-# num = int(input("Enter the number: "))
+num = int(input("Enter the number: "))
 
-# if num > 0:
-#     print(num, "Positive")
-# elif num < 0:
-#     print(num, "Negative")
-# else:
-#     print(num, "Zero")
+if num > 0:
+    print(num, "Positive")
+elif num < 0:
+    print(num, "Negative")
+else:
+    print(num, "Zero")
 
 """
 Output:
@@ -162,12 +162,12 @@ or
 Odd
 """
 
-# num_1 = int(input("Enter the number: "))
+num_1 = int(input("Enter the number: "))
 
-# if num_1 % 2 == 0:
-#     print(num_1, "even")
-# else:
-#     print(num_1, "odd")
+if num_1 % 2 == 0:
+    print(num_1, "even")
+else:
+    print(num_1, "odd")
 
 """
 Output:
@@ -194,12 +194,12 @@ Else:
 Fail
 """
 
-# user_marks = int(input("Enter your marks: "))
+user_marks = int(input("Enter your marks: "))
 
-# if user_marks >= 35:
-#     print(f"Congratulations, your result is pass and got {user_marks} marks.")
-# else:
-#     print(f"Sorry, Better luck next time you got {user_marks} marks so your result is fail.")
+if user_marks >= 35:
+    print(f"Congratulations, your result is pass and got {user_marks} marks.")
+else:
+    print(f"Sorry, Better luck next time you got {user_marks} marks so your result is fail.")
 
 """
 Output:
@@ -224,18 +224,18 @@ Rules:
 Below 50 → Grade D
 """
 
-# marks = int(input("Enter your marks: "))
+marks = int(input("Enter your marks: "))
 
-# if marks < 0 or marks > 100:
-#     print("Sorry, your marks is invalid")
-# elif marks >= 90:
-#     print(f"Outstanding you scored {marks} marks, so your Grade is A.")
-# elif marks >= 75 and marks <= 89:
-#     print(f"Good you scored {marks} marks, so your Grade is B.")
-# elif marks >= 50 and marks <= 74:
-#     print(f"Satisfactory, you scored {marks} marks, so your Grade is C.")
-# else:
-#     print(f"You need to work hard more you scored {marks} marks, so your Grade is D.")
+if marks < 0 or marks > 100:
+    print("Sorry, your marks is invalid")
+elif marks >= 90:
+    print(f"Outstanding you scored {marks} marks, so your Grade is A.")
+elif marks >= 75 and marks <= 89:
+    print(f"Good you scored {marks} marks, so your Grade is B.")
+elif marks >= 50 and marks <= 74:
+    print(f"Satisfactory, you scored {marks} marks, so your Grade is C.")
+else:
+    print(f"You need to work hard more you scored {marks} marks, so your Grade is D.")
 
 """
 Output:
@@ -271,14 +271,14 @@ Otherwise → Bonus = 2000
 Print final bonus.
 """
 
-# salary = int(input("Enter your salary: "))
+salary = int(input("Enter your salary: "))
 
-# if salary >= 50000:
-#     print(f"Congratulations, your salary is {salary} so, you will receive 10000 in Bonus so after Bonus your total salary will be {salary + 10000}.")
-# elif salary >= 30000:
-#     print(f"Congratulations, your salary is {salary} so, you will receive 5000 in Bonus so after Bonus your total salary will be {salary + 5000}.")
-# else:
-#     print(f"OK, your salary is {salary} so, you will receive only 2000 in Bonus so after Bonus your total salary will be {salary + 2000}.")
+if salary >= 50000:
+    print(f"Congratulations, your salary is {salary} so, you will receive 10000 in Bonus so after Bonus your total salary will be {salary + 10000}.")
+elif salary >= 30000:
+    print(f"Congratulations, your salary is {salary} so, you will receive 5000 in Bonus so after Bonus your total salary will be {salary + 5000}.")
+else:
+    print(f"OK, your salary is {salary} so, you will receive only 2000 in Bonus so after Bonus your total salary will be {salary + 2000}.")
 
 """
 Output:
@@ -384,3 +384,46 @@ Sorry you are underage so you are not allowed.
 """
 
 # -------------------------------------------
+
+"""
+Problem 10 — Biggest of Today 
+
+Mini ATM Withdrawal System
+Take:
+account_balance
+withdrawal_amount
+
+Rules:
+If withdrawal <= balance → Success
+Else → Insufficient Balance
+
+Print remaining balance if success.
+"""
+
+print("Mini ATM Withdrawal System.")
+
+account_balance = int(input("Enter your Balance Amount: "))
+withdrawal_amount = int(input("Enter the Amount you want to Withdraw: "))
+
+if withdrawal_amount <= 0 or account_balance <= 0:
+    print("Invalid withdrawal amount")
+elif withdrawal_amount <= account_balance:
+    bal_after_withdraw = account_balance - withdrawal_amount
+    print(f"Your withdrawal is Success, and your remaining balance after withdrwal is {bal_after_withdraw}")
+else: 
+    print(f"Sorry, currently insufficient balance, you can withdraw the amount upto {account_balance}")
+
+"""
+Output:
+Mini ATM Withdrawal System.
+Enter your Balance Amount: 50000
+Enter the Amount you want to Withdraw: 20000
+Your withdrawal is Success, and your remaining balance after withdrwal is 30000
+
+Mini ATM Withdrawal System.
+Enter your Balance Amount: 24000
+Enter the Amount you want to Withdraw: 25000
+Sorry, currently insufficient balance, you can withdraw the amount upto 24000
+"""
+
+# ---------------------------------------------------------------- #
