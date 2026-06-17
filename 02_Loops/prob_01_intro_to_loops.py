@@ -208,3 +208,30 @@ Output:
 """
 
 # -------------------------------
+
+"""
+Problem 2 — Print 5 to 1 using while
+
+Print:
+5
+4
+3
+2
+1
+"""
+
+no_count1 = 5
+
+while no_count1 >= 1:
+    print(no_count1)
+    no_count1 -= 1
+
+"""
+Output:
+5
+4
+3
+2
+1
+"""
+# ----------------------------------
