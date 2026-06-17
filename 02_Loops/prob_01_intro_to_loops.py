@@ -69,11 +69,11 @@ the loop keeps running.
 Example:
 """
 
-count = 1
+# count = 1
 
-while count <= 3:
-    print(count)
-    count += 1
+# while count <= 3:
+#     print(count)
+#     count += 1
 
 """
 Output:
@@ -124,8 +124,8 @@ for variable in sequence:
     code block
 """
 
-for i in range(3):
-    print(i)
+# for i in range(3):
+#     print(i)
 
 """
 Output:
@@ -177,3 +177,34 @@ DSA is impossible.
 """
 
 # -------------------------------------------------------- #
+
+"""
+Problem 1 — Print 1 to 5 using while
+
+Task:
+Print:
+1
+2
+3
+4
+5
+
+Using while loop only.
+"""
+
+no_count = 1
+
+while no_count <= 5:
+    print(no_count)
+    no_count += 1
+
+"""
+Output:
+1
+2
+3
+4
+5
+"""
+
+# -------------------------------
