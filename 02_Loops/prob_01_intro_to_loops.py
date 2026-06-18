@@ -287,3 +287,46 @@ while count < 6:
 print(total)   # Output 15
 
 # ---------------------------------------
+
+"""
+Problem 5 — User Countdown
+
+Take number from user.
+
+Example input:
+
+10
+
+Output:
+10
+..
+3
+2
+1
+Blast Off!
+"""
+
+countdown = int(input("Enter the number: "))
+
+while countdown >= 1:
+    print(countdown)
+    countdown -= 1
+
+print("Blast Off!")
+
+"""
+Enter the number: 10
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+Blast Off!
+"""
+
+# ----------------------------------
