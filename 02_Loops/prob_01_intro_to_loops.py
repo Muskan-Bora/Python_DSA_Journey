@@ -192,11 +192,11 @@ Print:
 Using while loop only.
 """
 
-no_count = 1
+# no_count = 1
 
-while no_count <= 5:
-    print(no_count)
-    no_count += 1
+# while no_count <= 5:
+#     print(no_count)
+#     no_count += 1
 
 """
 Output:
@@ -220,11 +220,11 @@ Print:
 1
 """
 
-no_count1 = 5
+# no_count1 = 5
 
-while no_count1 >= 1:
-    print(no_count1)
-    no_count1 -= 1
+# while no_count1 >= 1:
+#     print(no_count1)
+#     no_count1 -= 1
 
 """
 Output:
@@ -235,3 +235,55 @@ Output:
 1
 """
 # ----------------------------------
+
+"""
+Problem 3 — Print Even Numbers
+
+Using while loop, print:
+
+2
+4
+6
+8
+10
+"""
+
+num = 1
+
+while num < 11:
+    if num % 2 == 0:
+        print(num)
+    num += 1
+
+"""
+Output:
+2
+4
+6
+8
+10
+"""
+
+# -----------------------------------------
+
+"""
+Problem 4 — Sum from 1 to 5
+
+Calculate:
+1 + 2 + 3 + 4 + 5
+
+Print final sum.
+Expected output:
+15
+"""
+
+count = 1
+total = 0
+
+while count < 6:
+    total = total + count
+    count += 1
+
+print(total)   # Output 15
+
+# ---------------------------------------
