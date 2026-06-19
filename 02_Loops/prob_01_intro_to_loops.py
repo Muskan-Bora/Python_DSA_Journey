@@ -363,3 +363,37 @@ Output:
 3 x 9 = 27
 3 x 10 = 30
 """
+
+# ---------------------------------------------
+
+"""
+Problem 7 — Count Digits in a Number
+
+Take a number from user.
+
+Example input:
+
+45892
+Count how many digits are present.
+"""
+
+num = 45892
+count = 0
+
+while num > 0:
+    num = num // 10
+    print(num)
+    count += 1
+
+print("Total Count =", count)
+
+"""
+4589
+458
+45
+4
+0
+Total Count = 5
+"""
+
+# ----------------------------------------
