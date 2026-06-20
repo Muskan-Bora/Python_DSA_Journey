@@ -443,3 +443,34 @@ Output:
 """
 
 # ------------------------------------  
+
+"""
+Problem 9 — Sum of Digits
+
+Take a number from user.
+Example:
+45892
+
+Calculate sum of digits:
+4 + 5 + 8 + 9 + 2 = 28
+
+Output:
+Sum of digits = 28
+"""
+
+num = int(input("Enter the numbers: "))
+total = 0
+
+while num > 0:
+    digit = num % 10
+    total = digit + total
+    num = num // 10
+    
+print(total)
+
+"""
+Enter the numbers: 45892
+28
+"""
+
+# -------------------------------------------------  
