@@ -248,12 +248,12 @@ Using while loop, print:
 10
 """
 
-num = 1
+# num = 1
 
-while num < 11:
-    if num % 2 == 0:
-        print(num)
-    num += 1
+# while num < 11:
+#     if num % 2 == 0:
+#         print(num)
+#     num += 1
 
 """
 Output:
@@ -277,14 +277,14 @@ Expected output:
 15
 """
 
-count = 1
-total = 0
+# count = 1
+# total = 0
 
-while count < 6:
-    total = total + count
-    count += 1
+# while count < 6:
+#     total = total + count
+#     count += 1
 
-print(total)   # Output 15
+# print(total)   # Output 15
 
 # ---------------------------------------
 
@@ -306,13 +306,13 @@ Output:
 Blast Off!
 """
 
-countdown = int(input("Enter the number: "))
+# countdown = int(input("Enter the number: "))
 
-while countdown >= 1:
-    print(countdown)
-    countdown -= 1
+# while countdown >= 1:
+#     print(countdown)
+#     countdown -= 1
 
-print("Blast Off!")
+# print("Blast Off!")
 
 """
 Enter the number: 10
@@ -343,12 +343,12 @@ Using while loop, print:
 3 x 10 = 30
 """
 
-number = 1
-mul = 3
+# number = 1
+# mul = 3
 
-while number < 11:
-    print(mul, "x", number, "=", mul * number)
-    number += 1
+# while number < 11:
+#     print(mul, "x", number, "=", mul * number)
+#     number += 1
 
 """
 Output:
@@ -377,15 +377,15 @@ Example input:
 Count how many digits are present.
 """
 
-num = 45892
-count = 0
+# num = 45892
+# count = 0
 
-while num > 0:
-    num = num // 10
-    print(num)
-    count += 1
+# while num > 0:
+#     num = num // 10
+#     print(num)
+#     count += 1
 
-print("Total Count =", count)
+# print("Total Count =", count)
 
 """
 4589
@@ -397,3 +397,49 @@ Total Count = 5
 """
 
 # ----------------------------------------
+
+"""
+Problem 8 — Reverse Countdown (Even Numbers Only)
+
+Using while, print only even numbers from 20 to 2.
+Expected output:
+
+20
+18
+16
+14
+12
+10
+8
+6
+4
+2
+
+Rules
+Use while
+Print only even numbers
+Reverse order (decreasing)
+"""
+
+count_down = 20
+
+while count_down >= 1:
+    if count_down % 2 == 0:
+        print(count_down)
+    count_down -= 1
+
+"""
+Output:
+20
+18
+16
+14
+12
+10
+8
+6
+4
+2
+"""
+
+# ------------------------------------  
