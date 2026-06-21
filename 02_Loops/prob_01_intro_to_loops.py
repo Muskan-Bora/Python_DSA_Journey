@@ -192,11 +192,11 @@ Print:
 Using while loop only.
 """
 
-# no_count = 1
+no_count = 1
 
-# while no_count <= 5:
-#     print(no_count)
-#     no_count += 1
+while no_count <= 5:
+    print(no_count)
+    no_count += 1
 
 """
 Output:
@@ -220,11 +220,11 @@ Print:
 1
 """
 
-# no_count1 = 5
+no_count1 = 5
 
-# while no_count1 >= 1:
-#     print(no_count1)
-#     no_count1 -= 1
+while no_count1 >= 1:
+    print(no_count1)
+    no_count1 -= 1
 
 """
 Output:
@@ -248,12 +248,12 @@ Using while loop, print:
 10
 """
 
-# num = 1
+num = 1
 
-# while num < 11:
-#     if num % 2 == 0:
-#         print(num)
-#     num += 1
+while num < 11:
+    if num % 2 == 0:
+        print(num)
+    num += 1
 
 """
 Output:
@@ -277,14 +277,14 @@ Expected output:
 15
 """
 
-# count = 1
-# total = 0
+count = 1
+total = 0
 
-# while count < 6:
-#     total = total + count
-#     count += 1
+while count < 6:
+    total = total + count
+    count += 1
 
-# print(total)   # Output 15
+print(total)   # Output 15
 
 # ---------------------------------------
 
@@ -306,13 +306,13 @@ Output:
 Blast Off!
 """
 
-# countdown = int(input("Enter the number: "))
+countdown = int(input("Enter the number: "))
 
-# while countdown >= 1:
-#     print(countdown)
-#     countdown -= 1
+while countdown >= 1:
+    print(countdown)
+    countdown -= 1
 
-# print("Blast Off!")
+print("Blast Off!")
 
 """
 Enter the number: 10
@@ -343,12 +343,12 @@ Using while loop, print:
 3 x 10 = 30
 """
 
-# number = 1
-# mul = 3
+number = 1
+mul = 3
 
-# while number < 11:
-#     print(mul, "x", number, "=", mul * number)
-#     number += 1
+while number < 11:
+    print(mul, "x", number, "=", mul * number)
+    number += 1
 
 """
 Output:
@@ -377,15 +377,15 @@ Example input:
 Count how many digits are present.
 """
 
-# num = 45892
-# count = 0
+num = 45892
+count = 0
 
-# while num > 0:
-#     num = num // 10
-#     print(num)
-#     count += 1
+while num > 0:
+    num = num // 10
+    print(num)
+    count += 1
 
-# print("Total Count =", count)
+print("Total Count =", count)
 
 """
 4589
@@ -474,3 +474,80 @@ Enter the numbers: 45892
 """
 
 # -------------------------------------------------  
+
+"""
+Problem 10 — Multiplication Table from User Input
+
+Take a number from user.
+Example:
+Input:
+7
+
+Output:
+7 x 1 = 7
+7 x 2 = 14
+...
+7 x 10 = 70
+
+Rules
+Use while
+Number should come from user input
+"""
+
+user_num = int(input("Enter a Number: "))
+num = 1
+
+print(f"The table of {user_num}")
+
+while num < 11:
+    print(f"{user_num} x {num} = {user_num * num}")
+    num += 1
+
+"""
+Enter a Number: 7
+The table of 7
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
+7 x 10 = 70
+"""
+
+# ---------------------------------------------------
+
+"""
+Problem 11 — Reverse a Number
+
+Take a number from user.
+
+Example:
+Input:
+45892
+
+Output:
+29854
+"""
+
+num = int(input("Enter a Number: "))
+reverse = 0
+print("Reverse Number:")
+
+while num > 1:
+    digit = num % 10
+    reverse = reverse * 10 + digit
+    num = num // 10
+
+print(reverse)
+
+"""
+Enter a Number: 45892
+Reverse Number:
+29854
+"""
+
+# ------------------------------------------
