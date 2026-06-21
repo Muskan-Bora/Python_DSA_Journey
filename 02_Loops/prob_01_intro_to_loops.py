@@ -551,3 +551,101 @@ Reverse Number:
 """
 
 # ------------------------------------------
+
+"""
+Problem 12 — Password Retry System (Very Practical)
+
+Create:
+stored_password = "python123"
+
+Ask user to enter password.
+
+Rules:
+If password correct → print Access Granted
+Else → ask again
+User gets 3 attempts only
+After 3 wrong attempts → print Account Locked
+
+Example:
+
+Enter password: hello
+Wrong password
+
+Enter password: admin
+Wrong password
+
+Enter password: python123
+Access Granted
+
+OR
+
+Enter password: aaa
+Wrong password
+
+Enter password: bbb
+Wrong password
+
+Enter password: ccc
+Wrong password
+Account Locked
+"""
+
+stored_password = "python123"
+
+attempt = 1
+
+while attempt <= 3:
+    user_password = input("Enter a password: ") 
+    print("Attempt:", attempt) 
+    if user_password.lower() == stored_password:
+        print("Access Granted")
+        break
+    else:
+        print("Wrong Password")
+        
+    attempt += 1
+    if attempt > 3:
+        print("Sorry Your Account has locked you have done with 3 attempt please try later..")
+
+
+"""
+Output:
+Enter a password: Python1234
+Attempt: 1
+Wrong Password
+Attempt: 2
+Enter a password: python  
+Wrong Password
+Attempt: 3
+Enter a password: python123
+Access Granted
+
+# ---------
+
+Enter a password: 123
+Attempt: 1
+Wrong Password
+Attempt: 2
+Enter a password: Py1234
+Wrong Password
+Attempt: 3
+Enter a password: Python145
+Sorry Your Account has locked you have done with 3 attempt please try later..
+
+# ---------
+
+Enter a password: Python123
+Attempt: 1
+Access Granted
+
+# ---------
+
+Enter a password: Python
+Attempt: 1
+Wrong Password
+Attempt: 2
+Enter a password: Python123
+Access Granted
+"""
+
+# ------------------------------------------------------
