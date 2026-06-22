@@ -691,3 +691,54 @@ Enter a word: Muskan
 """
 
 # ---------------------------------------------
+
+"""
+Problem 14 — Keep Asking Until Correct PIN
+
+Create:
+
+correct_pin = 4321
+
+Ask user for PIN repeatedly.
+
+Rules:
+
+If PIN correct → print:
+Access Granted
+Else keep asking again
+
+Example:
+
+Enter PIN: 1111
+Wrong PIN
+
+Enter PIN: 1234
+Wrong PIN
+
+Enter PIN: 4321
+Access Granted
+Rules
+Use while
+Loop should stop only when correct PIN entered
+"""
+
+correct_pin = 4321
+
+while True:
+    pin = int(input("Enter your pin: "))
+
+    if pin == correct_pin:
+        print("Access Granted")
+        break
+    else:
+        print("Wrong PIN, please try again")
+
+"""
+Output:
+Enter your pin: 54656
+Wrong PIN please try again
+Enter your pin: 565465
+Wrong PIN please try again
+Enter your pin: 4321
+Access granted
+"""
