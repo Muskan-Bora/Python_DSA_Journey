@@ -192,11 +192,11 @@ Print:
 Using while loop only.
 """
 
-no_count = 1
+# no_count = 1
 
-while no_count <= 5:
-    print(no_count)
-    no_count += 1
+# while no_count <= 5:
+#     print(no_count)
+#     no_count += 1
 
 """
 Output:
@@ -220,11 +220,11 @@ Print:
 1
 """
 
-no_count1 = 5
+# no_count1 = 5
 
-while no_count1 >= 1:
-    print(no_count1)
-    no_count1 -= 1
+# while no_count1 >= 1:
+#     print(no_count1)
+#     no_count1 -= 1
 
 """
 Output:
@@ -248,12 +248,12 @@ Using while loop, print:
 10
 """
 
-num = 1
+# num = 1
 
-while num < 11:
-    if num % 2 == 0:
-        print(num)
-    num += 1
+# while num < 11:
+#     if num % 2 == 0:
+#         print(num)
+#     num += 1
 
 """
 Output:
@@ -277,14 +277,14 @@ Expected output:
 15
 """
 
-count = 1
-total = 0
+# count = 1
+# total = 0
 
-while count < 6:
-    total = total + count
-    count += 1
+# while count < 6:
+#     total = total + count
+#     count += 1
 
-print(total)   # Output 15
+# print(total)   # Output 15
 
 # ---------------------------------------
 
@@ -306,13 +306,13 @@ Output:
 Blast Off!
 """
 
-countdown = int(input("Enter the number: "))
+# countdown = int(input("Enter the number: "))
 
-while countdown >= 1:
-    print(countdown)
-    countdown -= 1
+# while countdown >= 1:
+#     print(countdown)
+#     countdown -= 1
 
-print("Blast Off!")
+# print("Blast Off!")
 
 """
 Enter the number: 10
@@ -343,12 +343,12 @@ Using while loop, print:
 3 x 10 = 30
 """
 
-number = 1
-mul = 3
+# number = 1
+# mul = 3
 
-while number < 11:
-    print(mul, "x", number, "=", mul * number)
-    number += 1
+# while number < 11:
+#     print(mul, "x", number, "=", mul * number)
+#     number += 1
 
 """
 Output:
@@ -377,15 +377,15 @@ Example input:
 Count how many digits are present.
 """
 
-num = 45892
-count = 0
+# num = 45892
+# count = 0
 
-while num > 0:
-    num = num // 10
-    print(num)
-    count += 1
+# while num > 0:
+#     num = num // 10
+#     print(num)
+#     count += 1
 
-print("Total Count =", count)
+# print("Total Count =", count)
 
 """
 4589
@@ -421,12 +421,12 @@ Print only even numbers
 Reverse order (decreasing)
 """
 
-count_down = 20
+# count_down = 20
 
-while count_down >= 1:
-    if count_down % 2 == 0:
-        print(count_down)
-    count_down -= 1
+# while count_down >= 1:
+#     if count_down % 2 == 0:
+#         print(count_down)
+#     count_down -= 1
 
 """
 Output:
@@ -458,15 +458,15 @@ Output:
 Sum of digits = 28
 """
 
-num = int(input("Enter the numbers: "))
-total = 0
+# num = int(input("Enter the numbers: "))
+# total = 0
 
-while num > 0:
-    digit = num % 10
-    total = digit + total
-    num = num // 10
+# while num > 0:
+#     digit = num % 10
+#     total = digit + total
+#     num = num // 10
     
-print(total)
+# print(total)
 
 """
 Enter the numbers: 45892
@@ -494,14 +494,14 @@ Use while
 Number should come from user input
 """
 
-user_num = int(input("Enter a Number: "))
-num = 1
+# user_num = int(input("Enter a Number: "))
+# num = 1
 
-print(f"The table of {user_num}")
+# print(f"The table of {user_num}")
 
-while num < 11:
-    print(f"{user_num} x {num} = {user_num * num}")
-    num += 1
+# while num < 11:
+#     print(f"{user_num} x {num} = {user_num * num}")
+#     num += 1
 
 """
 Enter a Number: 7
@@ -533,16 +533,16 @@ Output:
 29854
 """
 
-num = int(input("Enter a Number: "))
-reverse = 0
-print("Reverse Number:")
+# num = int(input("Enter a Number: "))
+# reverse = 0
+# print("Reverse Number:")
 
-while num > 1:
-    digit = num % 10
-    reverse = reverse * 10 + digit
-    num = num // 10
+# while num > 1:
+#     digit = num % 10
+#     reverse = reverse * 10 + digit
+#     num = num // 10
 
-print(reverse)
+# print(reverse)
 
 """
 Enter a Number: 45892
@@ -590,22 +590,22 @@ Wrong password
 Account Locked
 """
 
-stored_password = "python123"
+# stored_password = "python123"
 
-attempt = 1
+# attempt = 1
 
-while attempt <= 3:
-    user_password = input("Enter a password: ") 
-    print("Attempt:", attempt) 
-    if user_password.lower() == stored_password:
-        print("Access Granted")
-        break
-    else:
-        print("Wrong Password")
+# while attempt <= 3:
+#     user_password = input("Enter a password: ") 
+#     print("Attempt:", attempt) 
+#     if user_password.lower() == stored_password:
+#         print("Access Granted")
+#         break
+#     else:
+#         print("Wrong Password")
         
-    attempt += 1
-    if attempt > 3:
-        print("Sorry Your Account has locked you have done with 3 attempt please try later..")
+#     attempt += 1
+#     if attempt > 3:
+#         print("Sorry Your Account has locked you have done with 3 attempt please try later..")
 
 
 """
@@ -649,3 +649,45 @@ Access Granted
 """
 
 # ------------------------------------------------------
+
+"""
+Problem 13 — Count Vowels in a Word
+
+Take a word from user.
+
+Example:
+Input: Muskan
+
+Check each character and count vowels:
+
+Vowels are:
+a, e, i, o, u
+
+Output:
+Total vowels = 2
+Rules
+Use while
+Traverse string using index
+Count vowels only
+"""
+
+word = input("Enter a word: ")
+index = 0
+count = 0
+
+while index < len(word):
+    letter = word[index]
+    if letter in "aeiou":
+        count += 1
+
+    index += 1
+
+print(count)
+
+"""
+Output:
+Enter a word: Muskan
+2
+"""
+
+# ---------------------------------------------
