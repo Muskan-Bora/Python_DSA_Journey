@@ -25,3 +25,35 @@ Meaning:
 
 “Take each value from sequence one by one and run the code.”
 """
+
+"""
+
+2) Why Use For Loop?
+
+Use for when you already know:
+
+how many times to loop
+OR
+you want to traverse items one by one
+
+Examples:
+
+Print 1 to 10
+Print characters of a word
+Traverse list items
+3) Basic Syntax
+for variable in sequence:
+    print(variable)
+
+Example:
+
+for num in [1, 2, 3]:
+    print(num)
+
+Output:
+
+1
+2
+3
+
+"""
