@@ -41,6 +41,7 @@ Examples:
 Print 1 to 10
 Print characters of a word
 Traverse list items
+
 3) Basic Syntax
 for variable in sequence:
     print(variable)
@@ -57,3 +58,71 @@ Output:
 3
 
 """
+
+"""
+Using range()
+
+Most common with for.
+
+range(stop)
+"""
+
+for i in range(5):
+    print(i)
+
+"""
+Output:
+0
+1
+2
+3
+4
+
+Important:
+range(5)
+
+means:
+Start = 0 (default)
+Stop = 5 (excluded)
+Step = 1 (default)
+"""
+
+# ----------------------
+
+"""
+range(start, stop)
+"""
+
+for i in range(1, 6):
+    print(i)
+
+"""
+Output:
+1
+2
+3
+4
+5
+"""
+
+# --------------------------------
+
+"""
+range(start, stop, step)
+"""
+
+for i in range(2, 11, 2):
+    print(i)
+
+"""
+Output:
+2
+4
+6
+8
+10
+
+Step = increment/decrement amount
+"""
+
+# -------------------------------
