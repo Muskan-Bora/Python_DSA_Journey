@@ -783,3 +783,37 @@ Output:
 """
 
 # ---------------------------------------
+
+"""
+Problem 16 — Sum of First 5 Even Numbers
+
+Calculate:
+
+2 + 4 + 6 + 8 + 10
+
+Print final sum.
+
+Expected output:
+
+30
+Rules:
+
+Use while
+Store sum in variable
+Print only final result
+"""
+
+num = 1
+total = 0
+
+
+while num < 11:
+    if num % 2 == 0:
+        total = total + num
+    num += 1
+print(total)
+
+"""
+Output:
+30
+"""
