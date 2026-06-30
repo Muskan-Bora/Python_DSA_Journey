@@ -760,18 +760,18 @@ Use while
 Print only odd numbers
 """
 
-num = 1
+# num = 1
 
-while num < 10:
-    print(num)
-    num += 2
+# while num < 10:
+#     print(num)
+#     num += 2
 
 # OR
 
-while num < 10:
-    if num % 2:
-        print(num)
-    num += 1
+# while num < 10:
+#     if num % 2:
+#         print(num)
+#     num += 1
 
 """
 Output:
@@ -803,17 +803,61 @@ Store sum in variable
 Print only final result
 """
 
-num = 1
-total = 0
+# num = 1
+# total = 0
 
 
-while num < 11:
-    if num % 2 == 0:
-        total = total + num
-    num += 1
-print(total)
+# while num < 11:
+#     if num % 2 == 0:
+#         total = total + num
+#     num += 1
+# print(total)
 
 """
 Output:
 30
+"""
+
+# ----------------------------------------------------
+
+"""
+Problem 17 — Count Odd Digits in a Number
+
+Take a number from user.
+Example:
+458927
+
+Digits are:
+
+4, 5, 8, 9, 2, 7
+
+Odd digits are:
+
+5, 9, 7
+
+Output:
+Total odd digits = 3
+Rules
+
+Use while
+"""
+
+num = int(input("Enter a Number: "))
+total = 0
+
+while num > 0:
+    digit = num % 10
+    if digit % 2:
+        print(digit)
+        total = total + 1
+    num = num // 10
+print("Total odd digits =", total)
+
+"""
+Output:
+Enter a Number: 458927
+7
+9
+5
+Total odd digits = 3
 """
