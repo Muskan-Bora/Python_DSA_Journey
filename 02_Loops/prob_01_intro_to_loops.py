@@ -803,15 +803,15 @@ Store sum in variable
 Print only final result
 """
 
-# num = 1
-# total = 0
+num = 1
+total = 0
 
 
-# while num < 11:
-#     if num % 2 == 0:
-#         total = total + num
-#     num += 1
-# print(total)
+while num < 11:
+    if num % 2 == 0:
+        total = total + num
+    num += 1
+print(total)
 
 """
 Output:
@@ -861,3 +861,53 @@ Enter a Number: 458927
 5
 Total odd digits = 3
 """
+
+# ----------------------------------------
+
+"""
+Problem 18 — Number Guess Counter
+
+Create:
+
+secret_number = 7
+
+Ask user repeatedly to guess number.
+
+Rules:
+
+If guess is correct → print:
+Correct Guess
+If wrong → print:
+Try Again
+Also count how many attempts user took.
+
+Example:
+
+Enter number: 3
+Try Again
+
+Enter number: 5
+Try Again
+
+Enter number: 7
+Correct Guess
+Attempts = 3
+Rules
+
+Use while
+Loop until correct guess
+Count attempts
+"""
+
+secret_number = 7
+count = 0
+
+while True:
+    num = int(input("Enter the number: "))
+    count = count + 1
+    if num == secret_number:
+        print("Correct Guess")
+        break
+    else:
+        print("Try Again")
+print("Attempts: ", count)
