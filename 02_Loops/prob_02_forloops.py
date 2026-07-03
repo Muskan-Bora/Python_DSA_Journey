@@ -216,3 +216,73 @@ Output:
 
 Same output, less code
 """
+
+# ------------------------ Problems Start ------------------------- #
+
+"""
+Problem 1 — Print 1 to 5 using for
+
+Print:
+
+1
+2
+3
+4
+5
+Rules
+Use for loop only
+No while
+"""
+
+print("Problem 1:")
+for i in range(1, 6):
+    print(i)
+
+"""
+Output:
+Problem 1:
+1
+2
+3
+4
+5
+"""
+
+# --------------------------------------
+
+"""
+Problem 2 — Print Even Numbers from 2 to 10
+
+Print:
+
+2
+4
+6
+8
+10
+
+Rules
+Use for loop
+Try using range() smartly
+"""
+
+print("Problem 2:")
+
+for a in range(2, 11, 2):
+    print(a)
+
+# Another way in for loop we can use if else also:
+
+for b in range(2, 11):
+    if b % 2 == 0:
+        print(b)
+
+"""
+Output:
+Problem 2:
+2
+4
+6
+8
+10
+"""
