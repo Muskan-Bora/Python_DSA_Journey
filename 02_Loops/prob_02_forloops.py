@@ -286,3 +286,76 @@ Problem 2:
 8
 10
 """
+
+# ----------------------------------------------
+
+"""
+Problem 3 — Print 10 to 1 using for
+
+Print:
+
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+Rules
+Use for loop
+Use range()
+No while
+"""
+
+print("Problem 3:")
+for i in range (10, 0, -1):
+    print(i)
+
+"""
+Output:
+Problem 3:
+10
+9
+8
+7
+6
+5
+4
+3
+2
+1
+"""
+
+# ---------------------------------------
+
+"""
+Problem 4 — Sum from 1 to 5 using for
+
+Calculate:
+1 + 2 + 3 + 4 + 5
+
+Print final sum.
+
+Expected output:
+15
+Rules
+Use for
+Store sum in variable
+Print only final sum
+"""
+
+print("Problem 4:")
+total = 0
+
+for i in range(1, 6):
+    total = total + i
+
+print("Final Sum for 1 + 2 + 3 + 4 + 5 =", total)
+
+"""
+Problem 4:
+Final Sum for 1 + 2 + 3 + 4 + 5 = 15
+"""
