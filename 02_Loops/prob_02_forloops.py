@@ -359,3 +359,72 @@ print("Final Sum for 1 + 2 + 3 + 4 + 5 =", total)
 Problem 4:
 Final Sum for 1 + 2 + 3 + 4 + 5 = 15
 """
+
+# -------------------------------------
+
+"""
+Problem 5 — Print Multiples of 5
+
+Print:
+5
+10
+15
+20
+25
+Rules
+Use for loop
+Use range()
+"""
+
+num = 5
+
+print("Problem 5")
+print("Mutiples of 5")
+for i in range(1, 6):
+    multiple = num * i
+    print(multiple)
+
+"""
+Output:
+Problem 5
+Mutiples of 5
+5
+10
+15
+20
+25
+"""
+
+# ------------------------------------------
+
+"""
+Problem 6 — Print Squares from 1 to 5
+
+Print:
+
+1
+4
+9
+16
+25
+
+Rules
+Use for loop
+Don't hardcode the answers
+"""
+
+print("Problem 6:")
+
+for i in range(1, 6):
+    print(i * i)
+
+"""
+Output:
+Problem 6:
+1
+4
+9
+16
+25
+"""
+# ------------------------------------------
