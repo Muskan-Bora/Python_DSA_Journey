@@ -428,3 +428,39 @@ Problem 6:
 25
 """
 # ------------------------------------------
+
+"""
+Problem 7 — Count from 1 to 5 and Print "Done"
+
+Output:
+
+1
+2
+3
+4
+5
+Done!
+Rules
+Use for loop
+Print "Done!" only after the loop finishes
+"""
+
+print("Problem 7")
+
+for i in range(1, 6):
+    print(i)
+    
+print("Done!")
+
+"""
+Output:
+Problem 7
+1
+2
+3
+4
+5
+Done!
+"""
+
+# --------------------------------------
