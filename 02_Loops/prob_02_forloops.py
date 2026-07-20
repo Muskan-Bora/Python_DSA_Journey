@@ -540,3 +540,36 @@ Output:
 Problem 9:
 The final sum of all even numbers from 1 to 20 is 110
 """
+
+# ---------------------------------------------------
+
+"""
+Problem 10 — Count Characters in a Word
+
+Take a word from the user.
+Example:
+Input:
+Developer
+
+Output:
+Total characters = 9
+Rules
+Use a for loop
+Do not use len()
+Count characters manually
+"""
+
+print("Problem 10: ")
+word = input("Enter a word: ")
+count = 0
+
+for letter in word:
+    count += 1
+    
+print(f"Total Characters = {count}")
+
+"""
+Problem 10: 
+Enter a word: Developer
+Total Characters = 9
+"""
