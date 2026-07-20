@@ -464,3 +464,79 @@ Done!
 """
 
 # --------------------------------------
+
+"""
+Problem 8 — Multiplication Table of User Input
+
+Take a number from the user.
+Example:
+Input:
+7
+
+Output:
+
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+...
+7 x 10 = 70
+Rules
+Use for loop only
+Number should come from user input
+"""
+
+print("Problem 8:")
+
+num = int(input("Enter a Number: "))
+print(f"Multiplication Table of {num}:") 
+
+for i in range (1, 11):
+    print(f"{num} x {i} = {num * i}")
+
+"""
+Output:
+Problem 8:
+Enter a Number: 7
+Multiplication Table of 7:
+7 x 1 = 7
+7 x 2 = 14
+7 x 3 = 21
+7 x 4 = 28
+7 x 5 = 35
+7 x 6 = 42
+7 x 7 = 49
+7 x 8 = 56
+7 x 9 = 63
+7 x 10 = 70
+"""
+
+# --------------------------------------------------
+
+"""
+Problem 9 — Sum of Even Numbers from 1 to 20
+
+Calculate:
+2 + 4 + 6 + ... + 20
+Print only the final sum.
+
+Rules
+Use for loop
+Use an if condition
+Print only the final answer
+"""
+
+print("Problem 9:")
+
+total = 0
+
+for i in range(1, 21):
+    if i % 2 == 0:
+        total = total + i
+
+print(f"The final sum of all even numbers from 1 to 20 is {total}")
+
+"""
+Output:
+Problem 9:
+The final sum of all even numbers from 1 to 20 is 110
+"""
