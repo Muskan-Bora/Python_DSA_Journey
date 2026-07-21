@@ -646,3 +646,42 @@ Output:
 problem 12:
 The final sum is 165
 """
+
+# --------------------------------------------------
+
+"""
+Problem 13 — Count Vowels in a Word (Using for)
+
+Take a word from the user.
+Example:
+Input:
+Developer
+
+Output:
+Total vowels = 4
+(e, e, o, e)
+
+Rules
+Use for
+Use if
+Don't use count()
+"""
+
+print("Problem 13:")
+
+count = 0
+
+new_word = input("Enter the word: ").lower()
+
+for letter in new_word:
+    if letter in "aeiou":
+        count += 1
+
+print(f"Total vowles = {count}")
+
+"""
+Output:
+Enter the word: Developer
+Total vowles = 4
+"""
+# ---------------------------------------------
