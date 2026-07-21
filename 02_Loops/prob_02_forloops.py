@@ -573,3 +573,76 @@ Problem 10:
 Enter a word: Developer
 Total Characters = 9
 """
+
+# ---------------------------------------------
+
+"""
+Problem 11 — Print Odd Numbers from 1 to 15
+
+Print:
+
+1
+3
+5
+7
+9
+11
+13
+15
+
+Rules
+Use for
+Use an if condition
+"""
+
+print("Probelm 11:")
+
+for i in range(1, 16):
+    if i % 2 != 0:
+        print(i)
+
+"""
+Output:
+Probelm 11:
+1
+3
+5
+7
+9
+11
+13
+15
+"""
+
+# ---------------------------------------------------
+
+"""
+Problem 12 — Sum of Numbers Divisible by 3
+Calculate the sum of all numbers from 1 to 30 that are divisible by 3.
+
+Example numbers:
+3
+6
+9
+12
+...
+30
+
+Print only the final sum.
+"""
+
+print("problem 12:")
+
+total = 0
+
+for i in range (1, 11):
+    num = i * 3
+    total = total + num
+
+print(f"The final sum is {total}")
+
+"""
+Output:
+problem 12:
+The final sum is 165
+"""
