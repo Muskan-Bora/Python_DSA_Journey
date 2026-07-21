@@ -725,3 +725,41 @@ Output:
 Enter the word: Developer
 Total consonants = 5
 """
+
+# -----------------------------------
+
+"""
+Problem 15 — Print Numbers Divisible by Both 3 and 5
+
+Print all numbers from 1 to 50 that are divisible by both 3 and 5.
+
+Expected Output:
+15
+30
+45
+
+Rules
+Use for
+Use if
+Don't hardcode the answers
+
+Hint: A number must satisfy both conditions at the same time.
+"""
+
+print("Problem 15:")
+
+print("The numbers which are divisble by both 3 and 5 are:")
+
+for i in range(1, 51):
+    if i % 3 == 0 and i % 5 == 0:
+        print(i)
+
+"""
+Output:
+The numbers which are divisble by both 3 and 5 are:
+15
+30
+45
+"""
+
+# ----------------------------------------
