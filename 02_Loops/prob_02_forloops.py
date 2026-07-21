@@ -685,3 +685,43 @@ Enter the word: Developer
 Total vowles = 4
 """
 # ---------------------------------------------
+
+"""
+Problem 14 — Count Consonants in a Word
+
+Take a word from the user.
+Example:
+
+Input:
+Developer
+
+Output:
+Total consonants = 5
+
+Explanation:
+D, v, l, p, r
+
+Rules
+Use for
+Use if
+Don't use .count()
+Don't use len()
+"""
+
+print("Problem 14:")
+
+count = 0
+
+new_words = input("Enter the word: ").lower()
+
+for new_letter in new_words:
+    if new_letter.isalpha() and new_letter not in "aeiou":
+        count += 1
+
+print(f"Total consonants = {count}")
+
+"""
+Output:
+Enter the word: Developer
+Total consonants = 5
+"""
