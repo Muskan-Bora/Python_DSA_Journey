@@ -795,3 +795,36 @@ Problem 16
 """
 
 # ----------------------------
+
+"""
+Problem 17 — Medium (Logic Builder)
+Count Even Digits in a Number
+
+Take a number from the user.
+Rules
+Use a for loop
+Use an if condition
+Don't convert the number into a list
+Don't use .count()
+"""
+
+print("Problem 17:")
+
+number = input("Enter a number: ")
+count = 0
+new_digit = 0
+
+for digit in number:
+    if int(digit) % 2 == 0:
+        count += 1
+
+print(count)
+
+"""
+Output:
+Problem 17:
+Enter a number: 458926
+4
+""" 
+
+# --------------------------------
