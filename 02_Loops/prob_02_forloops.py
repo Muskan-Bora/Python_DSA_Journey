@@ -763,3 +763,35 @@ The numbers which are divisble by both 3 and 5 are:
 """
 
 # ----------------------------------------
+
+"""
+Problem 16 — Easy (Confidence Builder)
+Print the Cube of Numbers from 1 to 5
+
+Print:
+1
+8
+27
+64
+125
+Rules
+Use for
+Don't hardcode the answers
+"""
+
+print("Problem 16")
+
+for i in range(1, 6):
+    print(i * i * i)
+
+"""
+Output:
+Problem 16
+1
+8
+27
+64
+125
+"""
+
+# ----------------------------
