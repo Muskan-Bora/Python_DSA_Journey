@@ -167,3 +167,27 @@ Output:
 """
 
 # =========================
+
+"""
+Pattern 6 — Continuous Numbers
+"""
+print()
+
+num = 1
+
+for i in range(1, 6):
+    for j in range(i):
+        print(num, end="")
+        num += 1
+    print()
+
+"""
+Output:
+1
+23
+456
+78910
+1112131415
+"""
+
+# =======================================
