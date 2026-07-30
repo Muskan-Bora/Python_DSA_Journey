@@ -278,3 +278,25 @@ Method 2:
 """
 
 # =================================
+
+"""
+Pattern 10 — Inverted Full Pyramid
+"""
+print()
+for i in range(1, 6):
+    for k in range(1, i):
+        print(" ", end="")
+    for j in range(10, i * 2 - 1, -1):
+        print("*", end="")
+    print("")
+
+"""
+Output:
+
+*********
+ *******
+  *****
+   ***
+    *
+"""
+# ==========================================
