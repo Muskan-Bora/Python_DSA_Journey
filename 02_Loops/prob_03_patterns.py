@@ -191,3 +191,48 @@ Output:
 """
 
 # =======================================
+
+"""
+Pattern 7 — Right-Aligned Half Pyramid
+"""
+
+print()
+
+for i in range(1, 6):  # Outer Loop
+    for k in range(5-i):   # For Space.. How many space needed
+        print(" ", end="")
+    for j in range(i):   # For star loop
+        print("*", end="")
+    print()
+
+"""
+Output:
+    *
+   **
+  ***
+ ****
+*****
+"""
+
+# =====================================
+
+"""
+Pattern 8 — Right-Aligned Inverted Half Pyramid
+"""
+print()
+for i in range(1, 6):    # Outer Loop
+    for k in range(1, i):   # For space Loop
+        print(" ", end="")
+    for j in range(6, i, -1):  # For star Loop
+        print("*", end="")
+    print()
+
+"""
+*****
+ ****
+  ***
+   **
+    *
+"""
+
+# ===================================
