@@ -381,3 +381,68 @@ Output:
 """
 
 # =====================================================
+
+"""
+Pattern 13 [Challenge]
+Without changing the logic much, how would you print this in Numbers instead?
+"""
+print()
+
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(i, end="")
+    print()
+
+for i in range(4, 0, -1):
+    for j in range(i):
+        print(i, end="")
+    print()
+
+"""
+Output:
+1
+22
+333
+4444
+55555
+4444
+333
+22
+1
+"""
+
+# =============================================
+
+"""
+Pattern 14 — Hollow Half Pyramid
+"""
+print()
+
+for i in range(1, 6):
+
+    # Row 1, Row 2 and Last Row
+    if i == 1 or i == 2 or i == 5:
+        for j in range(i):
+            print("*", end="")
+
+    # Hollow Rows (Row 3 and Row 4)
+    else:
+        print("*", end="")          # First star
+
+        for k in range(i - 2):      # Middle spaces
+            print(" ", end="")
+
+        print("*", end="")          # Last star
+
+    print()
+
+"""
+Output:
+*
+**
+* *
+*  *
+*****
+"""
+
+# ============================================
