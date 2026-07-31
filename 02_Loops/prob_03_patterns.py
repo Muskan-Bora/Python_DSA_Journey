@@ -300,3 +300,84 @@ Output:
     *
 """
 # ==========================================
+
+"""
+Pattern 11 — Diamond (Upper + Lower Pyramid)
+
+This pattern combines two patterns you've already mastered.
+
+Write a Python program using nested for loops to print:
+"""
+print()
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    for j in range(2*i-1):
+        print("*", end="")
+    print()
+
+for i in range(2, 6):
+    for l in range(1, i):
+        print(" ", end="")
+    for m in range(10, i*2-1, -1):
+        print("*", end="")
+    print()
+
+"""
+Output:
+    *
+   ***
+  *****
+ *******
+*********
+ *******
+  *****
+   ***
+    *
+"""
+
+# =================================================
+
+"""
+Pattern 12 — Half Diamond Star Pattern
+Problem Statement
+
+Write a Python program using nested for loops to print the following pattern:
+
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+"""
+
+print()
+
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print("*", end="")
+    print()
+
+for i in range(4, 0, -1):
+    for j in range(i):
+        print("*", end="")
+    print()
+
+"""
+Output:
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+"""
+
+# =====================================================
