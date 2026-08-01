@@ -446,3 +446,48 @@ Output:
 """
 
 # ============================================
+
+# Revision of the previous concepts:
+
+"""
+Pattern 1 — Half Pyramid (Warm-up)
+"""
+
+print()
+for i in range(1, 6):
+    for j in range(i):
+        print("*", end="")
+    print()
+
+"""
+Output:
+*
+**
+***
+****
+*****
+"""
+
+# =============================================
+
+"""
+Pattern 2 — Right-Aligned Half Pyramid
+"""
+
+print()
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    for j in range(i):
+        print("*", end="")
+    print()
+
+"""
+    *
+   **
+  ***
+ ****
+*****
+"""
+
+# ============================================
