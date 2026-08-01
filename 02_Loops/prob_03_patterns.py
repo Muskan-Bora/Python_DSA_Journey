@@ -491,3 +491,53 @@ for i in range(1, 6):
 """
 
 # ============================================
+
+"""
+Pattern 3 — Hollow Half Pyramid (Today's Main Revision)
+"""
+print()
+
+for i in range(1, 6):
+    if i == 1 or i == 2 or i == 5:
+        for j in range(i):
+            print("*", end="")
+    else:
+        print("*", end="")
+        for k in range(i - 2): # 3 - 2 = 1 space and 4 - 2 = 2 space
+            print(" ", end="")
+        print("*", end="")
+    print()
+
+"""
+Output:
+*
+**
+* *
+*  *
+*****
+"""
+    
+# ========================================================
+
+"""
+Pattern 4 — Right-Aligned Number Pyramid
+"""
+
+print()
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    for j in range(i):
+        print(i, end="")
+    print()
+
+"""
+Output:
+    1
+   22
+  333
+ 4444
+55555
+"""
+
+# ===================================================
