@@ -563,3 +563,33 @@ Output:
 """
 
 # ==================================
+
+"""
+(Logic Builder)
+Pattern 6 — Hollow Right-Angled Triangle with 6 rows now
+"""
+print()
+
+for i in range(1, 7):
+    if i == 1 or i == 2 or i == 6:
+        for j in range(i):
+            print("*", end="")
+        print()
+    else:
+        print("*", end="")
+        for k in range(i - 2):
+            print(" ", end="")
+        print("*", end="")
+        print()
+
+"""
+Output:
+*
+**
+* *
+*  *
+*   *
+******
+"""
+
+# ============================================
