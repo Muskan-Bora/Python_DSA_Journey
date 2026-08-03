@@ -593,3 +593,67 @@ Output:
 """
 
 # ============================================
+
+"""
+Revision Pattern 
+Pattern R1 — Right-Aligned Number Pyramid
+
+Write a Python program using nested for loops to print:
+
+    1
+   22
+  333
+ 4444
+55555
+"""
+print()
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    for j in range(i):
+        print(i, end="")
+    print()
+
+"""
+Output:
+    1
+   22
+  333
+ 4444
+55555
+"""
+
+# ==================================================
+
+"""
+New Pattern 1 
+Pattern 1 — Floyd's Triangle
+Problem Statement
+
+Write a Python program using nested for loops to print:
+
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+"""
+num = 1
+
+print()
+for i in range(num, 6):
+    for j in range(i):
+        print(num, end=" ")
+        num += 1
+    print()
+
+"""
+Output:
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15
+"""
+
+# ===============================================
