@@ -718,3 +718,82 @@ Output:
 """
 
 # ========================================
+
+"""
+Pattern R1 — Hollow Rectangle
+
+Write a Python program to print:
+
+*****
+*   *
+*   *
+*****
+"""
+
+print()
+
+for i in range(1, 5):
+    if i == 1 or i == 4:
+        for j in range(i, i + 5):
+            print("*", end="")
+        print()
+    else:
+        print("*", end="")
+        for k in range(3):
+            print(" ", end="")
+        print("*", end="")
+        print()
+
+"""
+Output:
+*****
+*   *
+*   *
+*****
+"""     
+
+# ===========================================
+
+"""
+
+New Pattern 
+Pattern N1 — Pascal-Style Number Triangle (Simple Version)
+
+Write a Python program to print:
+
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+4 4 4 4
+3 3 3
+2 2
+1
+"""
+
+print()
+
+for i in range(1, 6):
+    for j in range(i):
+        print(i, end=" ")
+    print()
+for i in range(4, 0, -1):
+    for j in range(i):
+        print(i, end=" ")
+    print()
+
+"""
+Output:
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5 
+4 4 4 4 
+3 3 3 
+2 2 
+1 
+"""
+
+# =================================================
