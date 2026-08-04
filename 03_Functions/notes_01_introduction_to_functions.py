@@ -266,3 +266,31 @@ easier to maintain."
 """
 
 # ================================================
+
+"""
+Problem 1 — Create Your First Function
+Question
+Write a function named:
+greet()
+
+The function should print:
+Hello, Future Founder!
+
+After creating it, call the function 3 times.
+"""
+
+def greet():
+    print("Hello, Future Founder!")
+
+greet()
+greet()
+greet()
+
+"""
+Output:
+Hello, Future Founder!
+Hello, Future Founder!
+Hello, Future Founder!
+"""
+
+# ===============================================
