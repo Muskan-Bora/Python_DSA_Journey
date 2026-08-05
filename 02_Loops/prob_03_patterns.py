@@ -797,3 +797,73 @@ Output:
 """
 
 # =================================================
+
+"""
+Revision Pattern
+Pattern R2 — Hollow Inverted Half Pyramid
+Problem Statement
+
+Write a Python program using nested for loops to print:
+
+*****
+*  *
+* *
+**
+*
+
+"""
+
+print()
+for i in range(1, 6):
+    if i == 1 or i == 4 or i == 5:
+        for j in range(6, i, -1):
+            print("*", end="")
+        print()
+    else:
+        print("*", end="")
+        for k in range(4, i, -1):
+            print(" ", end="")
+        print("*", end="")
+        print()
+
+"""
+Output:
+*****
+*  *
+* *
+**
+*
+"""
+
+# ===================================
+
+"""
+New Pattern 
+Pattern N2 — Continuous Number Square
+Problem Statement
+
+Print the following pattern:
+
+1  2  3  4
+5  6  7  8
+9 10 11 12
+13 14 15 16
+"""
+
+print()
+num = 1
+for i in range(1, 5):
+    for j in range(4):
+        print(num, end=" ")
+        num += 1
+    print()
+
+"""
+Output:
+1 2 3 4 
+5 6 7 8 
+9 10 11 12 
+13 14 15 16
+"""
+
+# ========================================== 
