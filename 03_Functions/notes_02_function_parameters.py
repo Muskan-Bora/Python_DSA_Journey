@@ -245,3 +245,37 @@ Multiple Outputs
 """
 
 # ===============================================================
+
+"""
+Problem 1
+
+Create a function:
+
+def country(name):
+
+It should print:
+
+Welcome to <name>
+
+Call the function with:
+
+India
+Japan
+Canada
+"""
+
+def country(name):                            # Here name is a parameter
+    print(f"Welcome to {name}")
+
+country("India")   # Here, name receives the value "India".
+country("Japan")
+country("Canada")
+
+"""
+Output:
+Welcome to India
+Welcome to Japan
+Welcome to Canada
+"""
+
+# ===================================
