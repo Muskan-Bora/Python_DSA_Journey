@@ -867,3 +867,68 @@ Output:
 """
 
 # ==========================================
+
+"""
+Revision Pattern
+Pattern R3 — Hollow Rectangle (Revision)
+
+******
+*    *
+*    *
+******
+"""
+print()
+for i in range(1, 5):
+    if i == 1 or i == 4:
+        for j in range(i, i + 6):
+            print("*", end="")
+    else:
+        print("*", end="")
+        for k in range(4):
+            print(" ", end="")
+        print("*", end="")
+    print()
+
+"""
+Output:
+******
+*    *
+*    *
+******
+"""
+
+# ========================================
+
+"""
+New Pattern 
+Pattern N3 — Reverse Floyd's Triangle
+Problem Statement
+
+Print:
+
+15
+14 13
+12 11 10
+9 8 7 6
+5 4 3 2 1
+"""
+
+print()
+
+num = 15
+
+for i in range(5, 0, -1):
+    for j in range(i, 6):
+        print(num, end=" ")
+        num -= 1
+    print()
+
+"""
+15 
+14 13 
+12 11 10 
+9 8 7 6 
+5 4 3 2 1
+"""
+
+# ==========================================
