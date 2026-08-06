@@ -475,6 +475,51 @@ Second Argument -> Second Parameter
 Third Argument  -> Third Parameter
 
 and so on...
+
+NOTE:
+Python matches arguments to parameters from left to right according to their position.
 """
 
 # =======================================================
+
+"""
+Problem Statement
+
+Create a function named:
+
+employee(name, company)
+
+The function should print:
+
+Employee: <name>
+Company: <company>
+Call the function three times using:
+Muskan      SWT Club
+Rahul       Google
+Doraemon    Future Tech
+"""
+
+def employee(name, company):
+    print(f"Employee: {name}")
+    print(f"Company: {company}")
+
+print()
+employee("Muskan", "SWT Club")
+print()
+employee("Rahul", "Google")
+print()
+employee("Doraemon", "Future Tech")
+
+"""
+Output:
+Employee: Muskan
+Company: SWT Club
+
+Employee: Rahul
+Company: Google
+
+Employee: Doraemon
+Company: Future Tech
+"""
+
+# =====================================
