@@ -278,4 +278,203 @@ Welcome to Japan
 Welcome to Canada
 """
 
-# ===================================
+# =========================================================================================== #
+
+"""
+# ==================================================
+
+======== MULTIPLE PARAMETERS CONCEPT ================
+
+# ==================================================
+
+# RECAP
+
+We learned functions with one parameter.
+
+Example:
+
+def greet(name):
+print("Hello", name)
+
+greet("Muskan")
+
+Output:
+Hello Muskan
+
+Here,
+name
+is a Parameter.
+
+==================================================
+THE PROBLEM:
+===========
+
+Suppose we want to store more than one piece of information.
+
+Example:
+
+Student Name
+Course
+
+One parameter is not enough.
+We need two parameters.
+
+==================================================
+THE SOLUTION
+============
+
+A function can have multiple parameters.
+Parameters are separated using commas (,).
+
+Syntax:
+
+def function_name(parameter1, parameter2):
+# code
+
+==================================================
+EXAMPLE
+=======
+
+def student(name, course):
+print(f"Student: {name}")
+print(f"Course: {course}")
+
+Here,
+name and course are Parameters.
+
+==================================================
+FUNCTION CALL
+=============
+
+student("Muskan", "Python")
+
+Python internally thinks:
+
+name = "Muskan"
+
+course = "Python"
+
+So the function becomes:
+
+print(f"Student: {name}")
+print(f"Course: {course}")
+
+Output:
+
+Student: Muskan
+Course: Python
+
+---
+
+student("Rahul", "Java")
+
+Python internally thinks:
+
+name = "Rahul"
+
+course = "Java"
+
+Output:
+
+Student: Rahul
+Course: Java
+
+==================================================
+IMPORTANT RULE
+==============
+
+Python matches arguments with parameters according to their position.
+
+Example:
+
+student("Muskan", "Python")
+
+Matching:
+
+Parameter      Argument
+
+name       ->  "Muskan"
+
+course     ->  "Python"
+
+==================================================
+ORDER MATTERS
+=============
+
+Correct:
+
+student("Muskan", "Python")
+
+Output:
+
+Student: Muskan
+Course: Python
+
+Incorrect Order:
+
+student("Python", "Muskan")
+
+Python thinks:
+
+name = "Python"
+
+course = "Muskan"
+
+Output:
+
+Student: Python
+Course: Muskan
+
+==================================================
+ADVANTAGES
+==========
+
+1. One function can accept multiple values.
+
+2. Reduces duplicate code.
+
+3. Makes functions more flexible.
+
+4. Keeps related information together.
+
+==================================================
+DEFINITION
+====================
+
+A function can have multiple parameters.
+Each parameter receives one value (argument) when the function is called.
+
+Python matches arguments to parameters from left to right according to their position.
+
+==================================================
+SUMMARY
+=======
+
+One Parameter
+
+def greet(name)
+
+Multiple Parameters
+
+def student(name, course)
+
+Parameter
+
+Variable inside the function definition.
+
+Arguments
+
+Actual values passed during the function call.
+
+Python Matching Rule
+
+First Argument  -> First Parameter
+
+Second Argument -> Second Parameter
+
+Third Argument  -> Third Parameter
+
+and so on...
+"""
+
+# =======================================================
