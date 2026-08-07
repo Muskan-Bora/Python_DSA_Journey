@@ -963,7 +963,7 @@ Output:
 # ===========================================
 
 """
-🔄 Revision Pattern R5 — Palindrome Number Triangle
+Revision Pattern R5 — Palindrome Number Triangle
 
 You've solved this before, so this is purely a memory + logic test.
 
@@ -975,11 +975,6 @@ Print:
 1234321
 123454321
 Rules
-✅ Use nested for loops.
-✅ Use two inner loops.
-❌ Don't look at your previous Pattern 9 solution.
-❌ Don't copy the old code.
-🧠 Rebuild the logic yourself.
 """
 
 print()
