@@ -961,3 +961,42 @@ Output:
 """
 
 # ===========================================
+
+"""
+🔄 Revision Pattern R5 — Palindrome Number Triangle
+
+You've solved this before, so this is purely a memory + logic test.
+
+Print:
+
+1
+121
+12321
+1234321
+123454321
+Rules
+✅ Use nested for loops.
+✅ Use two inner loops.
+❌ Don't look at your previous Pattern 9 solution.
+❌ Don't copy the old code.
+🧠 Rebuild the logic yourself.
+"""
+
+print()
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end="")
+    for l in range(i-1, 0, -1):
+        print(l, end="")
+    print()
+
+"""
+Output:
+1
+121
+12321
+1234321
+123454321
+"""
+
+# ====================================
