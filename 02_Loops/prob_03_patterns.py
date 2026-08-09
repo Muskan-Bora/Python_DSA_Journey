@@ -1099,3 +1099,43 @@ Output:
 """
 
 # =====================================
+
+"""
+New Pattern — N4
+Number Pyramid with Increasing Numbers
+
+Print:
+
+    1
+   123
+  12345
+ 1234567
+123456789
+"""
+
+print()
+
+for i in range(1, 6):
+    # Left spaces
+    for k in range(5 - i):
+        print(" ", end="")
+
+    # Increasing numbers
+    for j in range(1, i + 1):
+        print(j, end="")
+
+    # Continue numbers
+    for m in range(i + 1, 2 * i):
+        print(m, end="")
+
+    print()
+
+"""
+    1
+   123
+  12345
+ 1234567
+123456789
+"""
+
+# ==============================================
