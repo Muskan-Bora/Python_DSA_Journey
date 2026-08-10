@@ -1139,3 +1139,60 @@ for i in range(1, 6):
 """
 
 # ==============================================
+
+"""
+Revision Pattern — R7
+Right-Aligned Number Pyramid
+
+Print:
+
+    1
+   22
+  333
+ 4444
+55555
+
+"""
+
+print()
+
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    for j in range(i):
+        print(i, end="")
+    print()
+
+"""
+    1
+   22
+  333
+ 4444
+55555
+"""
+
+# ================================================
+
+"""
+New Pattern — N5
+Increasing Number Pyramid
+
+Print:
+
+    1
+   12
+  123
+ 1234
+12345
+"""
+
+print()
+
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    for j in range(i):
+        print(j + 1, end="")
+    print()
+
+# ========================================
