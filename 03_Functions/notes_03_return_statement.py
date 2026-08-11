@@ -473,3 +473,39 @@ Output:
 """
 
 # =================================
+
+"""
+Problem 2 — return + Parameter
+
+Problem Statement
+
+Create a function:
+def double(number):
+
+The function should:
+Take one parameter called number 
+Return double the number
+
+Then:
+
+Call the function with 5
+Store the returned value in result
+Print result
+Expected output
+10
+"""
+
+def double(number):
+    return(number * 2)
+
+number = 5
+
+result = double(number)
+print(result)
+
+"""
+Output:
+10
+"""
+
+# ==================================================
