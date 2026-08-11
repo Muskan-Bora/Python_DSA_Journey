@@ -440,3 +440,36 @@ End of Notes
 ============
 
 """
+
+# ============================================================
+
+"""
+Problem 1 — Basic return
+
+Write a function named:
+
+get_number()
+Requirements
+
+The function should:
+
+Return the number 100.
+Store the returned value in a variable called result.
+Print result.
+Expected output
+100
+"""
+
+def get_number():
+    return 100
+
+result = get_number()
+
+print(result)
+
+"""
+Output:
+100
+"""
+
+# =================================
