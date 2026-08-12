@@ -509,3 +509,26 @@ Output:
 """
 
 # ==================================================
+
+"""
+Small Coding Revision
+Problem — calculate_total()
+
+Create a function:
+
+def calculate_total(price, quantity):
+"""
+
+def calculate_total(price, quantity):
+    return price * quantity
+
+price = 500
+quantity = 3
+
+total = calculate_total(price, quantity)
+print(total)
+
+"""
+Output:
+1500
+"""
