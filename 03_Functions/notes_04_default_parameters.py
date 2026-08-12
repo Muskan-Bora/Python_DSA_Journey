@@ -427,3 +427,38 @@ End of Notes
 ============
 
 """
+
+# ===================================================
+
+"""
+Problem 1 — Default Parameter
+Problem Statement
+
+Create a function named:
+
+def welcome(name="Guest"):
+The function should print:
+
+Welcome, <name>!
+Requirements
+Call the function three times:
+Without an argument
+With "Muskan"
+With "Doraemon"
+"""
+
+def welcome(name="Guest"):
+    print(f"Welcome, {name}!")
+
+welcome()
+welcome("Muskan")
+welcome("Doraemon")
+
+"""
+Output:
+Welcome, Guest!
+Welcome, Muskan!
+Welcome, Doraemon!
+"""
+
+# ===========================================
