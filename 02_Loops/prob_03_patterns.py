@@ -1235,3 +1235,69 @@ Output:
  1     4    
 123456789
 """
+
+"""
+Revision Pattern — R8
+Hollow Right-Aligned Number Triangle
+
+Print:
+
+    1
+   12
+  1 3
+ 1  4
+12345
+
+"""
+
+print()
+
+for i in range(1, 6):
+    for s in range(5 - i):
+        print(" ", end="")
+    if i == 1 or i == 2 or i == 5:
+        for j in range(i):
+            print(j + 1, end="")
+    else:
+        print(j, end="")
+        for k in range(i - 2):
+            print(" ", end="")
+        print(i, end="")
+    print()
+
+"""
+    1
+   12
+  1 3
+ 1  4
+12345
+"""
+
+# ===========================================
+
+"""
+Pattern — N6
+Increasing Number Pyramid
+
+Print:
+
+    1
+   123
+  12345
+ 1234567
+123456789
+
+"""
+
+print()
+
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    for j in range(1, i + 1):
+        print(j, end="")
+    for s in range(i + 1, 2 * i):
+        print(s, end="")
+    print()
+
+# ================================================
