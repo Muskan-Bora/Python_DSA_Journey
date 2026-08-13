@@ -1301,3 +1301,33 @@ for i in range(1, 6):
     print()
 
 # ================================================
+
+"""
+Revision Pattern — N7
+Number Pyramid with Repeated Row Numbers
+
+Print:
+
+    1
+   22
+  333
+ 4444
+55555
+"""
+print()
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    for j in range(i):
+        print(i, end="")
+    print()
+
+"""
+    1
+   22
+  333
+ 4444
+55555
+"""
+
+# =====================================
