@@ -1331,3 +1331,42 @@ for i in range(1, 6):
 """
 
 # =====================================
+
+"""
+Revision Pattern — R9
+Hollow Number Triangle
+
+Print:
+
+    1
+   12
+  1 3
+ 1  4
+12345
+"""
+
+print()
+
+for i in range(1, 6):
+    for k in range(5 -i):
+        print(" ", end="")
+    if i == 1 or i == 2 or i == 5:
+        for j in range(i):
+            print(j + 1, end="")
+    else:
+        print(j, end="")
+        for m in range(i - 2):
+            print(" ", end="")
+        print(i, end="")
+    print()
+
+"""
+Output:
+    1
+   12
+  1 3
+ 1  4
+12345
+"""
+
+# ======================================
