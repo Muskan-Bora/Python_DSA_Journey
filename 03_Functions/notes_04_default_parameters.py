@@ -462,3 +462,87 @@ Welcome, Doraemon!
 """
 
 # ===========================================
+
+"""
+🔄 Functions Revision — Problem 1
+🧩 Problem: calculate_discount()
+
+Create a function named:
+
+def calculate_discount(price, discount):
+Requirements
+
+The function should:
+
+Accept price as a parameter.
+Accept discount as a parameter.
+Calculate the discount amount:
+price × discount / 100
+Return the discount amount.
+
+Then:
+
+Call the function with:
+price = 1000
+discount = 20
+Store the returned value in a variable named discount_amount
+Print discount_amount
+Expected output
+200.0
+"""
+
+def calculate_discount(price, discount):
+    return price * discount / 100
+
+price = 1000
+discount = 20
+
+discount_amount = calculate_discount(price, discount)
+
+print(discount_amount)
+
+"""
+Output:
+200.0
+"""
+
+# ==================================
+
+"""
+Functions Revision — Problem 2
+
+Create:
+
+def welcome(name="Guest"):
+
+The function should return:
+
+Welcome, <name>!
+
+Then:
+
+Call 1
+message1 = welcome()
+Call 2
+message2 = welcome("Muskan")
+
+Print both messages.
+"""
+
+def welcome(name="Guest"):
+    return f"Welcome, {name}!"
+
+
+message1 = welcome()
+message2 = welcome("Muskan")
+
+print(message1)
+print(message2)
+
+"""
+Output:
+Welcome Guest!
+Welcome Muskan!
+"""
+
+# ================================================
