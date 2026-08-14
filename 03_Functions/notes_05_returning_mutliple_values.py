@@ -70,3 +70,41 @@ returns multiple values
 variable1, variable2
 
 """
+
+# =======================================
+
+"""
+Problem — get_student_info()
+
+Create:
+
+def get_student_info():
+
+The function should return:
+
+"Muskan"
+"Python Developer"
+
+Then:
+
+Store the two returned values in:
+name
+role
+Print both.
+"""
+
+def get_student_info():
+    return "Muskan", "Python Developer"
+
+name, role = get_student_info()
+
+print(name)
+print(role)
+
+"""
+Output:
+Muskan
+Python Developer
+"""
+
+# ===================================
