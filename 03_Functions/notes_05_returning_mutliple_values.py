@@ -108,3 +108,45 @@ Python Developer
 """
 
 # ===================================
+
+"""
+Problem 2 — Multiple Return Values
+Problem Statement
+
+Create a function:
+
+def calculate(a, b):
+
+The function should:
+
+Calculate the sum of a and b.
+Calculate the difference of a and b.
+Return both values.
+
+Then:
+
+Call the function with a = 50 and b = 20.
+Store the returned values in:
+total
+difference
+Print both values.
+"""
+
+def calculate(a, b):
+    total = a + b
+    difference = a - b
+
+    return total, difference
+
+total, difference = calculate(50, 20)
+
+print(total)
+print(difference)
+
+"""
+Output:
+70
+30
+"""
+
+# =====================================================
