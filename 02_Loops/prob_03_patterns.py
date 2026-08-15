@@ -1370,3 +1370,63 @@ Output:
 """
 
 # ======================================
+
+"""
+Revision Pattern — R10
+Hollow Diamond
+
+Print:
+
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+"""
+
+print()
+
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    if i == 1 or i == 2:
+        for j in range(i):
+            print("*", end=" ")
+    else: 
+        print("*", end=" ")
+        for s in range(i - 2):
+            print(" ", end=" ")
+        print("*", end=" ")
+    print()
+
+for i in range(4, 0, -1):
+    for k in range(i, 5):
+        print(" ", end="")
+    if i == 1 or i == 2:
+        for j in range(i):
+            print("*", end=" ")
+    else:
+        print("*", end=" ")
+        for n in range(i - 2):
+            print(" ", end=" ")
+        print("*",end=" ")
+    print()
+
+"""
+Output:
+    * 
+   * * 
+  *   * 
+ *     * 
+*       * 
+ *     * 
+  *   * 
+   * * 
+    * 
+"""
+
+# ================================
