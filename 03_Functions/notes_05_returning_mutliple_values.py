@@ -93,13 +93,13 @@ role
 Print both.
 """
 
-def get_student_info():
-    return "Muskan", "Python Developer"
+# def get_student_info():
+#     return "Muskan", "Python Developer"
 
-name, role = get_student_info()
+# name, role = get_student_info()
 
-print(name)
-print(role)
+# print(name)
+# print(role)
 
 """
 Output:
@@ -150,3 +150,78 @@ Output:
 """
 
 # =====================================================
+
+"""
+🔄 Functions Master Revision — One Combined Problem
+🧩 Problem — student_result()
+
+Create a function:
+
+def student_result(name, marks, bonus=0):
+
+The function should:
+
+Accept name as a parameter.
+Accept marks as a parameter.
+Have a default parameter bonus=0.
+Calculate the final marks:
+final_marks = marks + bonus
+Return both:
+name
+final_marks
+Then call the function twice
+Call 1 — Without bonus
+name = Muskan
+marks = 85
+
+Don't provide the bonus argument.
+
+Store the returned values in:
+
+student_name
+final_marks
+
+Call 2 — With bonus
+name = Rahul
+marks = 78
+bonus = 5
+
+Store the returned values in:
+
+student_name
+final_marks
+
+Then print the result after each call.
+
+Expected output
+Student: Muskan
+Final Marks: 85
+
+
+Student: Rahul
+Final Marks: 83
+"""
+
+def student_result(name, marks, bonus=0):
+    return name, marks + bonus
+
+student_name, final_marks = student_result("Muskan", 85, bonus=0)
+
+print(f"Student: {student_name}")
+print(f"Final Marks: {final_marks}")
+
+"""
+Output:
+Student: Muskan
+Final Marks: 85
+"""
+
+student_name, final_marks = student_result("Rahul", 78, bonus=5)
+
+print(f"Student: {student_name}")
+print(f"Final Marks: {final_marks}")
+
+"""
+Student: Rahul
+Final Marks: 83
+"""
