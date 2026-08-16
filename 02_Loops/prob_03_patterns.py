@@ -1484,3 +1484,62 @@ Output:
 """
 
 # ============================================
+
+"""
+Revision Pattern — R11
+Star Butterfly
+
+Print:
+
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+
+"""
+
+print()
+
+for i in range(1, 6):
+    if i == 5:
+        for j in range(1, i + 6):
+            print("*", end="")
+    else:
+        for s in range(1, i):
+            print("*", end="")
+        print("*", end="")
+        for k in range(i * 2, 10):
+            print(" ", end="")
+        for s in range(1, i):
+            print("*", end="")
+        print("*", end="")
+    print()
+
+for a in range(4, 0, -1):
+    for b in range(a):
+        print("*", end="")
+    for u in range(a * 2, 10):
+        print(" ", end="")
+    for v in range(a):
+        print("*", end="")
+    print()
+
+"""
+Output:
+*        *
+**      **
+***    ***
+****  ****
+**********
+****  ****
+***    ***
+**      **
+*        *
+"""
+
+# =====================================================================
