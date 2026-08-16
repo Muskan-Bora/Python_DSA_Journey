@@ -229,3 +229,47 @@ End of Notes
 ============
 
 """
+
+# ===================================================================
+
+"""
+1. Practice Problem
+
+Problem — employee_info()
+
+Create:
+
+def employee_info(name, company, role):
+
+The function should print:
+
+Name: <name>
+Company: <company>
+Role: <role>
+
+Then call the function using only keyword arguments, but deliberately put them in this order:
+
+role
+name
+company
+"""
+
+def employee_info(name, company, role):
+    print(f"Name: {name}")
+    print(f"Company: {company}")
+    print(f"Role: {role}")
+
+employee_info(
+    role = "Full Stack Developer",
+    name = "Muskan",
+    company = "SWT Club"
+)
+
+"""
+Output:
+Name: Muskan
+Company: SWT Club
+Role: Full Stack Developer
+"""
+
+# =================================
