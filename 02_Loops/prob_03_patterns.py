@@ -1543,3 +1543,69 @@ Output:
 """
 
 # =====================================================================
+
+"""
+New Pattern — N9
+X Pattern
+
+This one is genuinely different from the patterns you've been doing.
+
+Print:
+
+*   *
+ * *
+  *
+ * *
+*   *
+"""
+
+print()
+
+for i in range(1, 4):
+    if i == 1:
+        for j in range(i):
+            print("*  ", end="")
+    else:
+        print(" ", end="")
+        for k in range(i - 2):
+            print(" ", end="")
+        print("*", end="")
+    if i == 3:
+        for k in range(3 - i):
+            print(" ", end="")
+    else:
+        print(" ", end="")
+        for k in range(i - 2):
+            print(" ", end="")
+        print("*", end="")
+    print()
+
+for i in range(2, 0, -1):
+    if i == 1:
+        for j in range(i):
+            print("*  ", end="")
+    else:
+        print(" ", end="")
+        for k in range(i - 2):
+            print(" ", end="")
+        print("*", end="")
+    if i == 3:
+        for k in range(3 - i):
+            print(" ", end="")
+    else:
+        print(" ", end="")
+        for k in range(i - 2):
+            print(" ", end="")
+        print("*", end="")
+    print()
+
+"""
+Output:
+*   *
+ * *
+  *
+ * *
+*   *
+"""
+
+# ============================================
