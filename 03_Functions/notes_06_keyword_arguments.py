@@ -273,3 +273,42 @@ Role: Full Stack Developer
 """
 
 # =================================
+
+"""
+Problem 2 — Mixed Arguments
+
+Create:
+
+def product(name, price, quantity):
+
+The function should calculate:
+
+total = price x quantity
+
+and print:
+
+Product: <name>
+Total: <total>
+Call the function like this:
+
+Use one positional argument and two keyword arguments.
+
+Data:
+
+name = "Laptop"
+price = 50000
+quantity = 2
+"""
+print()
+
+def product(name, price, quantity):
+    print(f"Product: {name}")
+    print(f"Total: {price * quantity}")
+
+product(
+    "Laptop",
+    price = 50000,
+    quantity = 2
+)
+
+# =================================================
