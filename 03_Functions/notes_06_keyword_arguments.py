@@ -311,4 +311,59 @@ product(
     quantity = 2
 )
 
+"""
+Output:
+Product: Laptop
+Total: 100000
+"""
+
 # =================================================
+
+"""
+Practice Problem — Mixed Arguments #2
+
+Create:
+
+def calculate_bill(item, price, quantity):
+
+The function should calculate:
+
+total = price x quantity
+
+and print:
+
+Item: <item>
+Total Bill: <total>
+Call the function with:
+item = "Keyboard"
+price = 1500
+quantity = 3
+Argument requirement
+
+Use:
+
+1 positional argument
+2 keyword arguments
+
+But this time, don't make item the positional argument. 
+"""
+
+print()
+
+def calculate_bill(price, quantity, item):
+    print(f"Item: {item}")
+    print(f"Total Bill: {price * quantity}")
+
+calculate_bill(
+    1500, 
+    quantity = 3, 
+    item = "Keyboard"
+)
+
+"""
+Output:
+Item: Keyboard
+Total Bill: 4500
+"""
+
+# ==========================================
