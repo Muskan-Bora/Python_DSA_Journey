@@ -387,3 +387,42 @@ collected and stored as a tuple.
 """
 
 # ==========================================================
+
+"""
+Prob 1 - *args Practice — Calculate Total
+
+Create:
+
+def calculate_total(*numbers):
+Requirements
+
+The function should:
+
+Accept any number of numbers using *args.
+Add all the numbers.
+Return the total.
+Store the returned value in result.
+Print result.
+Call it with:
+calculate_total(10, 20, 30, 40)
+Expected output:
+100
+"""
+
+def calculate_total(*numbers):
+    total = 0
+    for number in numbers:
+        total += number
+
+    return total
+
+result = calculate_total(10, 20, 30, 40)
+
+print(result)
+
+"""
+Output:
+100
+"""
+
+# ================================
