@@ -211,3 +211,179 @@ However, Python developers conventionally use:
 
 So you should also follow that convention unless there is a good reason not to.
 """
+
+"""
+8. *args vs Normal Parameters
+Normal parameters
+def add(a, b):
+    return a + b
+
+Expected:
+
+2 arguments
+*args
+def add(*args):
+
+Can accept:
+
+0 arguments
+1 argument
+2 arguments
+3 arguments
+4 arguments
+...
+
+So:
+
+Fixed parameters
+       ↓
+Known number of arguments
+
+
+*args
+       ↓
+Unknown / variable number of positional arguments
+
+9. *args With a Normal Parameter
+
+You can also combine normal parameters with *args.
+
+For example:
+
+def student(name, *marks):
+    print(f"Student: {name}")
+    print(f"Marks: {marks}")
+
+Calling:
+
+student("Muskan", 80, 85, 90)
+
+gives:
+
+Student: Muskan
+Marks: (80, 85, 90)
+
+Here:
+
+name  → "Muskan"
+marks → (80, 85, 90)
+
+This is powerful because the first argument has a specific meaning, while the remaining positional
+arguments are collected into marks.
+
+10. Important Rule
+
+*args collects positional arguments.
+
+For example:
+
+def show(*args):
+    print(args)
+
+
+show(10, 20, 30)
+
+works.
+
+But *args is not for keyword arguments.
+
+Keyword arguments are handled separately using:
+
+**kwargs
+
+For now:
+
+*args
+   ↓
+Positional arguments
+
+
+**kwargs
+   ↓
+Keyword arguments
+
+
+11. Common Mistake
+
+Don't confuse:
+
+args
+
+with:
+
+*args
+Inside the function:
+def show(*args):
+    print(args)
+
+We use:
+
+args
+
+to access the collected tuple.
+
+When defining the function:
+def show(*args):
+
+The * tells Python to collect the arguments.
+
+12. Real Mental Model 
+
+Whenever you see:
+
+def function(*args):
+
+immediately think:
+
+"This function can receive multiple positional arguments, and Python will collect them into a tuple called args."
+
+For example:
+
+function(10, 20, 30, 40)
+
+Think:
+
+10 ─┐
+20 ─┤
+30 ─┼──→ args = (10, 20, 30, 40)
+40 ─┘
+
+That's the core concept. 🔥
+
+📌 Quick Reference
+Concept	Meaning
+*args	Variable number of positional arguments
+args	Tuple containing those arguments
+*	Tells Python to collect positional arguments
+for item in args	Iterate through collected arguments
+return args	Return the tuple
+Example:
+
+def calculate_total(*numbers):
+    total = 0
+
+
+    for number in numbers:
+        total += number
+
+
+    return total
+
+
+
+
+result = calculate_total(100, 200, 300)
+
+
+print(result)
+
+Output:
+
+600
+🧠 One-line definition for your notes
+
+*args allows a Python function to accept a variable number of positional arguments, which are automatically
+collected and stored as a tuple.
+"""
+
+# ==========================================================
