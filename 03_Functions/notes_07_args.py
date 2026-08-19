@@ -426,3 +426,47 @@ Output:
 """
 
 # ================================
+
+"""
+*args Revision — Problem 1
+Calculate Average
+
+Create:
+
+def calculate_average(*numbers):
+Requirements
+
+The function should:
+
+Accept any number of numbers using *args.
+Calculate their total.
+Calculate their average.
+Return the average.
+Store the returned value in result.
+Print result.
+Call it with:
+calculate_average(10, 20, 30, 40, 50)
+Expected output:
+30.0
+"""
+
+def calculate_average(*numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    average = total / len(numbers)
+
+    return average
+
+result = calculate_average(10, 20, 30, 40, 50)
+
+print(result)
+
+"""
+Output:
+30.0
+"""
+
+# ===================================================================
