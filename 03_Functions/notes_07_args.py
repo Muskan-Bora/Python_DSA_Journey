@@ -428,7 +428,7 @@ Output:
 # ================================
 
 """
-*args Revision — Problem 1
+*args Revision — Problem 2
 Calculate Average
 
 Create:
