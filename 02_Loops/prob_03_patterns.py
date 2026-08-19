@@ -1609,3 +1609,44 @@ Output:
 """
 
 # ============================================
+
+"""
+🔄 Pattern Revision — R12
+🧩 Hollow Number Pyramid
+
+Print exactly:
+
+    1
+   1 2
+  1   3
+ 1     4
+123456789
+"""
+
+print()
+
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    if i == 1 or i == 5:
+        for j in range(1, i + 1):
+            print(j, end="")
+        for m in range(i + 1, 2 * i):
+            print(m, end="")
+        print()
+    else:
+        print(j, end=" ")
+        for n in range(i - 2):
+            print(" ", end=" ")
+        print(i, "  ", end=" ")
+        print()
+
+"""
+    1
+   1 2    
+  1   3    
+ 1     4    
+123456789
+"""
+
+# ===============================================
