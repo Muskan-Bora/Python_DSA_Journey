@@ -470,3 +470,54 @@ Output:
 """
 
 # ===================================================================
+
+"""
+
+🔄 *args Revision — Problem 3
+🧩 Find the Largest Number
+
+Create:
+
+def find_largest(*numbers):
+Requirements
+
+The function should:
+
+Accept any number of numbers using *args.
+Find the largest number using a loop.
+Return the largest number.
+Store the returned value in result.
+Print result.
+Call it with:
+find_largest(12, 45, 7, 89, 23, 56)
+Expected output:
+89
+⚠️ Challenge rule
+
+For this revision, don't use Python's built-in max().
+
+practice the logic manually:
+
+numbers → loop → compare → update largest → return
+
+"""
+
+def find_largest(*numbers):
+    largest = numbers[0]
+
+    for number in numbers:
+        if number > largest:
+            largest = number
+
+    return largest
+
+result = find_largest(12, 45, 7, 89, 23, 56)
+
+print(result)
+
+"""
+Output:
+89
+"""
+
+# ====================================
