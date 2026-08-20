@@ -523,7 +523,7 @@ Output:
 # ====================================
 
 """
-*args Revision — Problem 1
+*args Revision — Problem 4
 Count Positive Numbers
 
 Create:
@@ -563,3 +563,51 @@ Output:
 """
 
 # ========================================
+
+"""
+*args Revision — Problem 5
+Calculate Product
+
+Create:
+
+def calculate_product(*numbers):
+Requirements
+
+The function should:
+
+Accept any number of numbers using *args.
+Use a for loop.
+Multiply all the numbers together.
+Return the final product.
+Store the returned value in result.
+Print result.
+Call it with:
+calculate_product(2, 3, 4, 5)
+Expected output:
+120
+⚠️ Important
+
+Don't use:
+
+math.prod()
+
+or any other shortcut.
+"""
+
+def calculate_product(*numbers):
+    final_product = 1
+    
+    for number in numbers:
+        final_product = final_product * number
+    
+    return final_product
+
+result = calculate_product(2, 3, 4, 5)
+
+print(result)
+
+"""
+Output:
+120
+"""
+# =========================================
