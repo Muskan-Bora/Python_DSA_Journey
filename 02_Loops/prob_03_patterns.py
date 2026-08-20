@@ -1650,3 +1650,43 @@ for i in range(1, 6):
 """
 
 # ===============================================
+
+"""
+Quick Pattern Revision — R13
+Hollow Star Pyramid
+
+Print exactly:
+
+    *
+   * *
+  *   *
+ *     *
+*********
+"""
+
+print()
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    if i == 1 or i == 5:
+        for j in range(1, i + 1):
+            print("*", end="")
+        for n in range(i + 1, 2 * i):
+            print("*", end="")
+    else:
+        print("*", end=" ")
+        for s in range(i - 2):
+            print(" ", end=" ")
+        print("*",end="")
+    print()
+
+"""
+Output:
+    *
+   * *
+  *   *
+ *     *
+*********
+"""
+
+# ===================================================
