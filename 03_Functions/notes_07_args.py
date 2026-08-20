@@ -473,8 +473,8 @@ Output:
 
 """
 
-🔄 *args Revision — Problem 3
-🧩 Find the Largest Number
+*args Revision — Problem 3
+Find the Largest Number
 
 Create:
 
@@ -492,7 +492,7 @@ Call it with:
 find_largest(12, 45, 7, 89, 23, 56)
 Expected output:
 89
-⚠️ Challenge rule
+Challenge rule
 
 For this revision, don't use Python's built-in max().
 
@@ -521,3 +521,45 @@ Output:
 """
 
 # ====================================
+
+"""
+*args Revision — Problem 1
+Count Positive Numbers
+
+Create:
+
+def count_positive(*numbers):
+Requirements
+
+The function should:
+
+Accept any number of numbers using *args.
+Use a for loop.
+Count how many numbers are greater than 0.
+Return the count.
+Store the returned value in result.
+Print result.
+Call it with:
+count_positive(-5, 10, -2, 8, 0, 15, -7)
+Expected output:
+3
+"""
+
+def count_positive(*numbers):
+    count = 0
+
+    for number in numbers:
+        if number > 0:
+            count += 1
+
+    return(count)
+
+result = count_positive(-5, 10, -2, 8, 0, 15, -7)
+print(result)
+        
+"""
+Output:
+3
+"""
+
+# ========================================

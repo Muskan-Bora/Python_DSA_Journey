@@ -1,1 +1,2 @@
-for number in numbers:
+final_product = prod * prod
+    # print (final_product)
