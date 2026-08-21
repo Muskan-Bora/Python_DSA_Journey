@@ -403,3 +403,57 @@ Role: Full Stack Developer
 """
 
 # ====================================
+
+"""
+🧩 **kwargs Practice — Problem 2
+
+Create:
+
+def product_info(**kwargs):
+Requirements
+
+The function should print:
+
+Product: Laptop
+Price: 50000
+Brand: Dell
+Call the function using:
+product_info(
+    product="Laptop",
+    price=50000,
+    brand="Dell"
+)
+Rules
+
+Must use **kwargs
+Access values using dictionary keys
+Don't create separate parameters like product, price, brand
+Don't use a loop yet — we'll learn that next
+
+🎯 Expected output
+Product: Laptop
+Price: 50000
+Brand: Dell
+"""
+
+print()
+
+def product_info(**kwargs):
+    print(f"Product: {kwargs["product"]}")
+    print(f"Price: {kwargs["price"]}")
+    print(f"Brand: {kwargs["brand"]}")
+
+product_info(
+    product="Laptop",
+    price=50000,
+    brand="Dell"
+)
+
+"""
+Output:
+Product: Laptop
+Price: 50000
+Brand: Dell
+"""
+
+# ==========================================
