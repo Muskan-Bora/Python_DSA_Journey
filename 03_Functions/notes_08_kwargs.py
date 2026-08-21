@@ -326,3 +326,80 @@ Those are positional arguments, which belong to *args
 """
 
 # ===========================================================
+
+"""
+Quick Summary
+                    FUNCTIONS
+                        │
+             ┌──────────┴──────────┐
+             │                     │
+          *args                 **kwargs
+            │                     │
+     Positional arguments    Keyword arguments
+            │                     │
+           Tuple                Dictionary
+            │                     │
+       (10, 20, 30)       {"name": "Muskan"}
+
+
+⭐ Remember these two statements
+
+*args → collects multiple positional arguments into a tuple.
+
+**kwargs → collects multiple keyword arguments into a dictionary.
+
+And because kwargs is a dictionary, you can access individual values using:
+
+kwargs["key"]
+"""
+
+# ========================================
+
+"""
+🎯 Problem one
+
+Problem — employee_info()
+
+Create:
+
+def employee_info(**kwargs):
+
+The function should print:
+
+Name: Muskan
+Company: SWT Club
+Role: Full Stack Developer
+
+Call it using:
+
+employee_info(
+    name="Muskan",
+    company="SWT Club",
+    role="Full Stack Developer"
+)
+Rules
+
+Must use **kwargs
+Access the values using dictionary keys
+Don't create separate parameters like name, company, role
+"""
+
+def employee_info(**kwargs):
+    print(f"Name: {kwargs['name']}")
+    print(f"Company: {kwargs['company']}")
+    print(f"Role: {kwargs['role']}")
+
+employee_info(
+    name="Muskan",
+    company="SWT Club",
+    role="Full Stack Developer"
+)
+
+"""
+Output:
+Name: Muskan
+Company: SWT Club
+Role: Full Stack Developer
+"""
+
+# ====================================
