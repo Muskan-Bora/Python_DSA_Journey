@@ -680,3 +680,68 @@ Definition:
 """
 
 # ==============================================
+
+"""
+🧩 **kwargs + .items() — Practice Problem 1
+
+Create:
+
+def show_profile(**kwargs):
+Requirements
+
+The function should:
+
+Accept any number of keyword arguments using **kwargs.
+Use a for loop.
+Use .items() to get both the key and value.
+Print each pair in this format:
+name: Muskan
+role: Full Stack Developer
+company: SWT Club
+experience: 2 years
+Call the function with:
+show_profile(
+    name="Muskan",
+    role="Full Stack Developer",
+    company="SWT Club",
+    experience="2 years"
+)
+Rules 🚨
+
+✅ Must use **kwargs
+✅ Must use .items()
+✅ Must use a for loop
+❌ Don't manually write kwargs["name"]
+❌ Don't manually write each field
+❌ Don't hardcode the output
+
+🎯 Expected output
+name: Muskan
+role: Full Stack Developer
+company: SWT Club
+experience: 2 years
+"""
+
+print()
+
+def show_profile(**kwargs):
+
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+show_profile(
+    name="Muskan",
+    role="Full Stack Developer",
+    company="SWT Club",
+    experience="2 years"
+)
+
+"""
+Output:
+name: Muskan
+role: Full Stack Developer
+company: SWT Club
+experience: 2 years
+"""
+
+# ===========================================
