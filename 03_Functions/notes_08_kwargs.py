@@ -439,9 +439,9 @@ Brand: Dell
 print()
 
 def product_info(**kwargs):
-    print(f"Product: {kwargs["product"]}")
-    print(f"Price: {kwargs["price"]}")
-    print(f"Brand: {kwargs["brand"]}")
+    print(f"Product: {kwargs['product']}")
+    print(f"Price: {kwargs['price']}")
+    print(f"Brand: {kwargs['brand']}")
 
 product_info(
     product="Laptop",
@@ -457,3 +457,53 @@ Brand: Dell
 """
 
 # ==========================================
+
+"""
+**kwargs Revision — Problem 3
+🧩 student_info()
+
+Create:
+
+def student_info(**kwargs):
+Requirements
+
+The function should print:
+
+Name: Rahul
+Course: Python
+Experience: Beginner
+Call the function using:
+student_info(
+    name="Rahul",
+    course="Python",
+    experience="Beginner"
+)
+Rules
+
+✅ Must use **kwargs
+✅ Access the values using dictionary keys
+❌ Don't create separate parameters such as name, course, experience
+❌ Don't use a loop yet
+"""
+
+print()
+
+def student_info(**kwargs):
+    print(f"Name: {kwargs['name']}")
+    print(f"Course: {kwargs['course']}")
+    print(f"Experience: {kwargs['experience']}")
+
+student_info(
+    name="Rahul",
+    course="Python",
+    experience="Beginner"
+)
+
+"""
+Output:
+Name: Rahul
+Course: Python
+Experience: Beginner
+"""
+
+# ===========================================
