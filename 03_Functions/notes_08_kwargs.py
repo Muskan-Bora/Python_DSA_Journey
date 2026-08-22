@@ -507,3 +507,176 @@ Experience: Beginner
 """
 
 # ===========================================
+
+# IMP NOTES- .items():
+
+# ==================
+
+"""
+Python Dictionary — .items() with **kwargs
+
+1. What is .items()?
+
+.items() is a dictionary method used to access both the key and its corresponding value.
+
+With **kwargs, this is especially useful because kwargs is a dictionary.
+
+def employee(**kwargs):
+    print(kwargs)
+
+If we call:
+
+employee(
+    name="Muskan",
+    company="SWT Club",
+    role="Developer"
+)
+
+Python stores the arguments as:
+
+{
+    "name": "Muskan",
+    "company": "SWT Club",
+    "role": "Developer"
+}
+
+2. Basic Syntax
+
+The common syntax is:
+
+for key, value in dictionary.items():
+    # use key and value
+
+With **kwargs:
+
+def employee(**kwargs):
+    for key, value in kwargs.items():
+        print(key, value)
+Example
+def employee(**kwargs):
+    for key, value in kwargs.items():
+        print(key, value)
+
+
+employee(
+    name="Muskan",
+    company="SWT Club",
+    role="Developer"
+)
+Output
+name Muskan
+company SWT Club
+role Developer
+
+3. Understanding key and value
+
+For this dictionary:
+
+{
+    "name": "Muskan",
+    "company": "SWT Club"
+}
+
+The pairs are:
+
+key       → value
+----------------------
+"name"    → "Muskan"
+"company" → "SWT Club"
+
+So when we write:
+
+for key, value in kwargs.items():
+
+Python gives us one pair at a time.
+
+First iteration
+key = "name"
+value = "Muskan"
+Second iteration
+key = "company"
+value = "SWT Club"
+4. Why use .items()?
+
+Without .items():
+
+for key in kwargs:
+    print(key)
+
+This gives only the keys:
+
+name
+company
+role
+
+With .items():
+
+for key, value in kwargs.items():
+    print(key, value)
+
+we get both:
+
+name Muskan
+company SWT Club
+role Developer
+
+Therefore:
+
+.items() allows us to iterate through a dictionary's key-value pairs.
+
+5. .keys(), .values(), .items()
+
+Keep this simple table in notes:
+
+Method	                Returns
+.keys()                	Keys
+.values()	            Values
+.items()	            Key-value pairs
+
+Example:
+
+data = {
+    "name": "Muskan",
+    "role": "Developer"
+}
+Keys
+data.keys()
+
+→ name, role
+
+Values
+data.values()
+
+→ Muskan, Developer
+
+Key + Value
+data.items()
+
+→ ("name", "Muskan"), ("role", "Developer")
+
+⭐ Most Important Syntax
+
+Remember this:
+
+for key, value in kwargs.items():
+    print(key, value)
+
+Think:
+
+kwargs
+  ↓
+dictionary
+  ↓
+.items()
+  ↓
+key + value
+  ↓
+for loop
+
+
+Definition:
+
+.items() is a dictionary method that allows us to iterate through both keys and values as key-value pairs.
+"""
+
+# ==============================================
