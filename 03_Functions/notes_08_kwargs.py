@@ -801,3 +801,72 @@ Duration: 3 Months
 """
 
 # =============================================
+
+"""
+Problem 2 — **kwargs + .items() Revision
+
+Now reinforce the .items() concept.
+
+🧩 order_details()
+
+Create:
+
+def order_details(**kwargs):
+
+Requirements:
+
+Accept any number of keyword arguments.
+Use a for loop.
+Use .items().
+Print every key-value pair in this format:
+item: Keyboard
+price: 1500
+quantity: 2
+brand: Logitech
+
+Call:
+
+order_details(
+    item="Keyboard",
+    price=1500,
+    quantity=2,
+    brand="Logitech"
+)
+Rules 🚨
+
+✅ Use **kwargs
+✅ Use .items()
+✅ Use a for loop
+❌ Don't manually access kwargs["item"] etc.
+❌ Don't hardcode the output
+
+Expected output
+item: Keyboard
+price: 1500
+quantity: 2
+brand: Logitech
+"""
+
+print()
+
+def order_details(**kwargs):
+
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+order_details(
+    item="Keyboard",
+    price=1500,
+    quantity=2,
+    brand="Logitech"
+) 
+
+"""
+Output:
+item: Keyboard
+price: 1500
+quantity: 2
+brand: Logitech
+"""
+
+# ======================================
