@@ -745,3 +745,59 @@ experience: 2 years
 """
 
 # ===========================================
+
+"""
+🔄 Problem 4 — **kwargs Revision
+🧩 course_info()
+
+Create:
+
+def course_info(**kwargs):
+
+The function should print:
+
+Course: Python
+Level: Beginner
+Duration: 3 Months
+
+Call it using:
+
+course_info(
+    course="Python",
+    level="Beginner",
+    duration="3 Months"
+)
+Rules
+
+✅ Use **kwargs
+✅ Access values using dictionary keys
+❌ Don't use a loop
+❌ Don't create separate parameters
+
+Expected output
+Course: Python
+Level: Beginner
+Duration: 3 Months
+"""
+
+print()
+
+def course_info(**kwargs):
+    print(f"Course: {kwargs['course']}")
+    print(f"Level: {kwargs['level']}")
+    print(f"Duration: {kwargs['duration']}")
+
+course_info(
+    course="Python",
+    level="Beginner",
+    duration="3 Months"
+)
+
+"""
+Output:
+Course: Python
+Level: Beginner
+Duration: 3 Months
+"""
+
+# =============================================
