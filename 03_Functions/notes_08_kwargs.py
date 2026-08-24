@@ -869,4 +869,218 @@ quantity: 2
 brand: Logitech
 """
 
+# ===============================================================================
+
+"""
+**kwargs + Conditions
+
 # ======================================
+
+1. What is **kwargs?
+
+**kwargs allows a function to accept any number of keyword arguments.
+
+Inside the function, kwargs is stored as a dictionary.
+
+Example
+def student_info(**kwargs):
+    print(kwargs)
+
+
+student_info(
+    name="Muskan",
+    age=23,
+    course="Python"
+)
+
+Output
+{'name': 'Muskan', 'age': 23, 'course': 'Python'}
+
+So internally:
+
+kwargs = {
+    "name": "Muskan",
+    "age": 23,
+    "course": "Python"
+}
+
+2. Accessing Values from kwargs
+
+Because kwargs is a dictionary, we can access values using their keys.
+
+Example
+def student_info(**kwargs):
+    print(kwargs["name"])
+    print(kwargs["age"])
+    print(kwargs["course"])
+
+
+student_info(
+    name="Muskan",
+    age=23,
+    course="Python"
+)
+Output
+Muskan
+23
+Python
+
+3. Using if with **kwargs
+
+Since kwargs is a dictionary, we can use its values inside conditions.
+
+Example
+def student_info(**kwargs):
+
+    if kwargs["age"] >= 18:
+        print("Adult")
+
+
+student_info(
+    name="Muskan",
+    age=23
+)
+Output
+Adult
+How Python understands it
+
+Python gets:
+
+kwargs["age"]
+
+which gives:
+
+23
+
+So the condition becomes:
+
+if 23 >= 18:
+
+Since the condition is True, Python prints:
+
+Adult
+
+4. Using if-else with **kwargs
+
+We can also use else when the condition is false.
+
+Example
+def student_info(**kwargs):
+
+    if kwargs["age"] >= 18:
+        print("Adult")
+    else:
+        print("Minor")
+
+
+student_info(
+    name="Rahul",
+    age=16
+)
+Output
+Minor
+
+Here:
+
+kwargs["age"]
+
+gives:
+
+16
+
+So Python checks:
+
+if 16 >= 18:
+
+This is False, therefore the else block executes.
+
+5. Comparing a String Value
+
+We can also use a value from kwargs to compare strings.
+
+Example
+def course_info(**kwargs):
+
+    if kwargs["level"] == "Beginner":
+        print("Starting level")
+    else:
+        print("Advanced level")
+
+
+course_info(
+    course="Python",
+    level="Beginner"
+)
+Output
+Starting level
+
+Here:
+
+kwargs["level"]
+
+gives:
+
+Beginner
+
+So Python checks:
+
+if "Beginner" == "Beginner":
+
+The condition is True.
+
+🧠 Important Concept
+
+Remember this relationship:
+
+**kwargs
+    ↓
+Dictionary
+    ↓
+kwargs["key"]
+    ↓
+Value
+    ↓
+Use that value in if/else
+
+For example:
+
+def employee_info(**kwargs):
+
+    if kwargs["department"] == "IT":
+        print("Technical Department")
+    else:
+        print("Non-Technical Department")
+
+Here:
+
+kwargs["department"]
+
+gets the value from the dictionary, and that value is used by the if condition.
+
+⚠️ Important Note
+
+For now, we are accessing keys directly:
+
+kwargs["age"]
+
+So the key must exist.
+
+📌 Quick Revision
+def function_name(**kwargs):
+
+    if kwargs["key"] == value:
+        print("Condition is True")
+    else:
+        print("Condition is False")
+Example
+def student_info(**kwargs):
+
+    if kwargs["age"] >= 18:
+        print("Student is an adult")
+    else:
+        print("Student is a minor")
+
+That's the complete concept for **kwargs + Conditions that you need right now. 🐍💪
+"""
+
+# ==============================================
