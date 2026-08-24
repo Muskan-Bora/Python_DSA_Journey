@@ -1084,3 +1084,57 @@ That's the complete concept for **kwargs + Conditions that you need right now. �
 """
 
 # ==============================================
+
+"""
+Problem 6 — **kwargs + if
+
+Create:
+
+def student_info(**kwargs):
+
+Call it with:
+
+student_info(
+    name="Muskan",
+    age=23,
+    course="Python"
+)
+
+Inside the function:
+
+Check whether "course" exists in kwargs.
+If it exists, print:
+Course: Python
+Otherwise print:
+Course information not provided
+Rules
+
+✅ Must use **kwargs
+✅ Must use if
+✅ Access the value using the dictionary key
+❌ Don't create separate parameters
+❌ Don't use a loop
+❌ Don't hardcode "Python" inside the if condition
+"""
+
+print()
+
+def student_info(**kwargs):
+    
+    if "course" in kwargs:
+        print(kwargs['course'])
+    else:
+        print("Course information not provided")
+
+student_info(
+    name="Muskan",
+    age=23,
+    course="Python"
+)
+
+"""
+Output:
+Python
+"""
+
+# =============================================================
