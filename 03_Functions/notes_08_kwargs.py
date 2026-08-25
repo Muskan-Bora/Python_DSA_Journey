@@ -1256,3 +1256,107 @@ available: True
 """
 
 # ===================================================
+
+"""
+🧩 **kwargs + if/else — New Practice Problem
+
+Problem — check_employee()
+
+Create:
+
+def check_employee(**kwargs):
+
+The function should check whether the employee is available for work.
+
+Requirement
+
+If the key "available" exists and its value is True, print:
+
+Muskan is available for work.
+
+Otherwise, print:
+
+Muskan is not available for work.
+Call 1
+check_employee(
+    name="Muskan",
+    role="Developer",
+    available=True
+)
+
+Expected:
+
+Muskan is available for work.
+Call 2
+check_employee(
+    name="Muskan",
+    role="Developer",
+    available=False
+)
+
+Expected:
+
+Muskan is not available for work.
+🚨 Rules
+
+✅ Must use **kwargs
+✅ Must use if/else
+✅ Must check the value of "available"
+✅ Use the "name" value dynamically
+❌ Don't create name or available as separate parameters
+❌ Don't use .items()
+❌ Don't hardcode "Muskan" inside the function
+
+🧠 What you're practicing
+
+This time you're not only checking:
+
+if "available" in kwargs:
+
+You're checking the value stored under a key:
+
+kwargs
+   ↓
+"available" → True / False
+   ↓
+if condition
+   ↓
+different output
+"""
+
+print()
+
+def check_employee(**kwargs):
+
+    if "available" in kwargs and kwargs['available']:
+        print(f"{kwargs['name']} is available for work.")
+    else:
+        print(f"{kwargs['name']} is not available for work.")
+
+        
+
+# Call 1
+print("Call Back 1")
+check_employee(
+    name="Muskan",
+    role="Developer",
+    available=True
+)
+
+# Call 2
+print("Call Back 2")
+check_employee(
+    name="Muskan",
+    role="Developer",
+    available=False
+)
+
+"""
+Output:
+Call Back 1
+Muskan is available for work.
+Call Back 2
+Muskan is not available for work.
+"""
+
+# =======================================================
