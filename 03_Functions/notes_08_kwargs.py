@@ -1138,3 +1138,121 @@ Python
 """
 
 # =============================================================
+
+"""
+**kwargs Revision — Problem 1
+employee_info()
+
+Create:
+
+def employee_info(**kwargs):
+
+The function should print:
+
+Name: Muskan
+Role: Full Stack Developer
+Company: SWT Club
+Experience: 2 years
+
+Call it with:
+
+employee_info(
+    name="Muskan",
+    role="Full Stack Developer",
+    company="SWT Club",
+    experience="2 years"
+)
+Rules
+
+✅ Use **kwargs
+✅ Access values using dictionary keys
+❌ Don't create separate parameters
+❌ Don't use a loop
+"""
+
+print()
+
+def employee_info(**kwargs):
+    print(f"Name: {kwargs['name']}")
+    print(f"Role: {kwargs['role']}")
+    print(f"Company: {kwargs['company']}")
+    print(f"Experience: {kwargs['experience']}")
+
+employee_info(
+    name="Muskan",
+    role="Full Stack Developer",
+    company="SWT Club",
+    experience="2 years"
+)
+
+"""
+Output:
+Name: Muskan
+Role: Full Stack Developer
+Company: SWT Club
+Experience: 2 years
+"""
+
+# ==================================================
+
+"""
+**kwargs Revision — Problem 2
+show_details()
+
+Create:
+
+def show_details(**kwargs):
+
+Call it with:
+
+show_details(
+    name="Muskan",
+    skill="Python",
+    experience=2,
+    available=True
+)
+
+The function should use:
+
+**kwargs
+for loop
+.items()
+
+and print every key-value pair like:
+
+name: Muskan
+skill: Python
+experience: 2
+available: True
+Rules
+
+✅ Use **kwargs
+✅ Use .items()
+✅ Use a for loop
+❌ Don't manually access individual keys
+❌ Don't hardcode the output
+"""
+
+print()
+
+def show_details(**kwargs):
+
+    for key, value in kwargs.items():
+        print(f"{key}: {value}")
+
+show_details(
+    name="Muskan",
+    skill="Python",
+    experience=2,
+    available=True
+)
+
+"""
+Output:
+name: Muskan
+skill: Python
+experience: 2
+available: True
+"""
+
+# ===================================================
