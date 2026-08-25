@@ -1729,3 +1729,42 @@ Output:
 """
 
 # ==================================================
+
+"""
+🔄 ⭐ Star Pattern Revision
+🧩 Problem — Inverted Right Triangle
+
+Print exactly:
+
+*****
+****
+***
+**
+*
+Rules
+
+✅ Use nested for loops
+✅ Use loops for the stars
+❌ Don't hardcode the output
+❌ Don't use while loop
+❌ Don't look at your previous solution
+"""
+
+print()
+
+for i in range(5, 0, -1):
+    for j in range(i):
+        print("*", end="")
+    print()
+
+"""
+Output:
+
+*****
+****
+***
+**
+*
+"""
+
+# =====================================================
