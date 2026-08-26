@@ -161,3 +161,61 @@ Now the global x becomes 20.
 """
 
 # =====================================================
+
+"""
+
+🧩 Problem — show_score()
+
+Given:
+
+score = 50
+
+Create:
+
+def show_score():
+
+Inside the function:
+
+Create a local variable called score.
+Give it the value 100.
+Print the local score.
+
+Then:
+
+show_score()
+print(score)
+Expected output
+100
+50
+🚨 Rules
+
+✅ Create a global score = 50
+✅ Create a local score = 100 inside the function
+✅ Print both
+❌ Don't use global
+❌ Don't change the global variable directly
+"""
+
+score = 50    # Global 
+
+def show_score():
+    score = 100   # local
+    print(score)  # It prints local
+
+show_score()
+print(score)      # It prints global
+
+"""
+Output:
+100    --> 1st local scope will come becoz its inside the function 
+50     --> than global scope outside the function will execute
+"""
+
+# =================================================
+
+"""
+NOTE: A local variable can have the same name as a global variable, and changing/creating the local
+variable does not change the global variable.
+"""
+
+# ============================================================
