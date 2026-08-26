@@ -1360,3 +1360,98 @@ Muskan is not available for work.
 """
 
 # =======================================================
+
+"""
+🧠 Step 1 — Final **kwargs Confidence Check
+
+This one is intentionally a mixed problem. It combines everything you've learned so far:
+
+**kwargs
+dictionary key access
+if / else
+checking a value
+using a value dynamically
+🧩 Problem — check_order()
+
+Create:
+
+def check_order(**kwargs):
+
+The function receives order information.
+
+It should check whether the order is "confirmed".
+
+If:
+status="confirmed"
+
+Print:
+
+Order for Laptop is confirmed.
+Otherwise:
+
+Print:
+
+Order for Laptop is not confirmed.
+Call 1
+check_order(
+    product="Laptop",
+    quantity=2,
+    status="confirmed"
+)
+
+Expected:
+
+Order for Laptop is confirmed.
+Call 2
+check_order(
+    product="Laptop",
+    quantity=2,
+    status="pending"
+)
+
+Expected:
+
+Order for Laptop is not confirmed.
+🚨 Rules
+
+✅ Must use **kwargs
+✅ Must use if / else
+✅ Check the value of "status"
+✅ Use "product" dynamically
+❌ Don't create separate parameters
+❌ Don't use .items()
+❌ Don't hardcode "Laptop" inside the function
+"""
+
+print()
+
+def check_order(**kwargs):
+
+    if kwargs['status'] == "confirmed":
+        print(f"Order for {kwargs['product']} is confirmed.")
+    else:
+        print(f"Order for {kwargs['product']} is not confirmed.")
+
+print("Call 1")
+check_order(
+    product="Laptop",
+    quantity=2,
+    status="confirmed"
+)
+
+print("Call 2")
+check_order(
+    product="Laptop",
+    quantity=2,
+    status="pending"
+)
+
+"""
+Output:
+Call 1
+Order for Laptop is confirmed.
+Call 2
+Order for Laptop is not confirmed.
+"""
+
+# ================================================
