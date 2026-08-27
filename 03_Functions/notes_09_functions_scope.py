@@ -219,3 +219,53 @@ variable does not change the global variable.
 """
 
 # ============================================================
+
+"""
+🔄 Prob 2 - Local & Global Variable Revision
+🧩 Problem — show_name()
+
+Given:
+name = "Muskan"
+
+Create:
+def show_name():
+
+Inside the function:
+
+Create a local variable called name.
+Set it to "Doraemon".
+Print the local name.
+
+Then:
+
+show_name()
+print(name)
+🎯 Expected Output
+Doraemon
+Muskan
+🚨 Rules
+
+✅ Use a global name = "Muskan"
+✅ Create a local name = "Doraemon" inside the function
+✅ Print both values
+❌ Don't use global
+❌ Don't change the global variable
+"""
+print()
+
+name = "Muskan"   # Global Variable
+
+def show_name():
+    name = "Doraemon"       # Local Variable
+    print(name)
+
+show_name()
+print(name)
+
+"""
+Output:
+Doraemon
+Muskan
+"""
+
+# ============================================================
