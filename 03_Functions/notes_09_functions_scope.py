@@ -269,3 +269,108 @@ Muskan
 """
 
 # ============================================================
+
+"""
+🧩 global Keyword — Practice Problem #1
+
+Given:
+
+score = 50
+
+Create:
+
+def update_score():
+
+Inside the function:
+
+Use the global keyword with score.
+Change score to 100.
+Print score.
+
+Then:
+
+update_score()
+print(score)
+Expected output
+100
+100
+🚨 Rules
+
+✅ Must use global score
+✅ Change the global variable to 100
+✅ Print inside and outside the function
+❌ Don't create another local score
+"""
+
+print()
+
+score = 50
+
+def update_score():
+    global score        
+    score = 100       # This modifies global variable 
+    print(score)
+
+update_score()
+print(score)
+
+"""
+Output:
+100
+100
+"""
+
+# =========================================
+
+"""
+🧩 Problem 2 — increase_balance()
+
+Given:
+
+balance = 1000
+
+Create:
+
+def increase_balance():
+
+Inside the function:
+
+Use global balance.
+Increase the balance by 500.
+Print the updated balance.
+
+Then call:
+
+increase_balance()
+print(balance)
+Expected output
+1500
+1500
+🚨 Rules
+
+✅ Must use global balance
+✅ Use the existing value of balance
+✅ Increase it by 500
+✅ Print inside and outside
+❌ Don't create another local balance
+"""
+
+print()
+
+balance = 1000
+
+def increase_balance():
+    global balance
+    balance = balance + 500    # Here 500 increased from the global variable: 1000 + 500 = 1500
+    print(balance)             # 1500
+
+increase_balance()
+print(balance)      # The global balance was modified inside the function, so its updated value remains available after the function finishes.
+
+"""
+Output:
+1500
+1500
+"""
+
+# ================================
