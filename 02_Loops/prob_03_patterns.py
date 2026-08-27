@@ -1768,3 +1768,42 @@ Output:
 """
 
 # =====================================================
+
+"""
+🔄 ⭐ Star Pattern Revision — R14
+🧩 Problem — Left-Aligned Number Triangle
+
+Print exactly:
+
+1
+12
+123
+1234
+12345
+🚨 Rules
+
+✅ Use nested for loops
+✅ Use a loop to control the rows
+✅ Use a loop to print the numbers
+❌ Don't hardcode the output
+❌ Don't use a while loop
+❌ Don't look at your previous solution
+"""
+
+print()
+
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
+
+"""
+Putput:
+1
+12
+123
+1234
+12345
+"""
+
+# =========================================
