@@ -91,3 +91,45 @@ print() is for displaying a value; return is for sending a value back from a fun
 """
 
 # =======================================================
+
+"""
+🧩 Problem 1 — calculate_square()
+
+Create:
+
+def calculate_square(number):
+
+The function should:
+
+Calculate the square of number.
+Return the result.
+Do not use print() inside the function.
+
+Then:
+
+result = calculate_square(8)
+print(result)
+Expected output
+64
+🚨 Rules
+
+✅ Use a function
+✅ Accept number as a parameter
+✅ Use return
+✅ Store the returned value in result
+✅ Print result outside the function
+❌ Don't use print() inside the function
+❌ Don't hardcode 64
+"""
+def calculate_square(number):
+    return number * number
+
+result = calculate_square(8)
+print(result)
+
+"""
+Final Output:
+64
+"""
+
+# ===========================================
