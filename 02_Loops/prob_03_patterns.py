@@ -1807,3 +1807,72 @@ Putput:
 """
 
 # =========================================
+
+"""
+⭐ Pattern Revision — R15
+🧩 Hollow Diamond
+
+Print exactly:
+
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+🚨 Rules
+
+✅ Use nested for loops
+✅ Use spaces through loops
+✅ Use stars through loops
+✅ Use conditions if required
+❌ Don't hardcode the output
+❌ Don't use a while loop
+❌ Don't look at your previous pattern solution
+"""
+
+print()
+
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    if i == 1 or i == 2:
+        for j in range(1, i + 1):
+            print("*", end=" ")
+    else:
+        print("*", end=" ")
+        for s in range(i - 2):
+            print(" ", end=" ")
+        print("*", end=" ")
+    print()
+
+for i in range(4, 0, -1):
+    for k in range(5 - i):
+        print(" ", end="")
+    if i == 1 or i == 2:
+        for j in range(1, i + 1):
+            print("*", end=" ")
+    else:
+        print("*", end=" ")
+        for s in range(i - 2):
+            print(" ", end=" ")
+        print("*", end=" ")
+    print()
+
+"""
+Output:
+    * 
+   * * 
+  *   * 
+ *     * 
+*       * 
+ *     * 
+  *   * 
+   * * 
+    * 
+"""
+
+# =====================================
