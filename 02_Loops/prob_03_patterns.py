@@ -1876,3 +1876,40 @@ Output:
 """
 
 # =====================================
+
+"""
+⭐ Revision Problem 1 — Simple Inverted Triangle
+
+Print exactly:
+
+*****
+****
+***
+**
+*
+Rules
+
+✅ Nested for loops
+✅ Outer loop → rows
+✅ Inner loop → stars
+❌ No hardcoding
+❌ No while
+"""
+
+print()
+
+for i in range(5, 0, -1):
+    for j in range(i):
+        print("*", end="")
+    print()
+
+"""
+Output:
+*****
+****
+***
+**
+*
+"""
+
+# ======================================
