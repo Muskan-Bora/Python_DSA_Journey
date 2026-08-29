@@ -1948,3 +1948,43 @@ Output:
 """
 
 # =======================================
+
+"""
+⭐ Revision Problem 3 — Right-Aligned Star Triangle
+
+Print exactly:
+
+    *
+   **
+  ***
+ ****
+*****
+Rules
+
+✅ Use nested for loops
+✅ Use one loop for spaces
+✅ Use one loop for stars
+✅ Outer loop → rows
+❌ No hardcoding
+❌ No while loop
+"""
+
+print()
+
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    for j in range(i):
+        print("*", end="")
+    print()
+
+"""
+Output:
+    *
+   **
+  ***
+ ****
+*****
+"""
+
+# ===============================================
