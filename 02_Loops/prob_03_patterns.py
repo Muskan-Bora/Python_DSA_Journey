@@ -1913,3 +1913,38 @@ Output:
 """
 
 # ======================================
+
+"""
+⭐ RevisionProblem 2 — Simple Number Triangle
+
+Print exactly:
+
+1
+12
+123
+1234
+Rules
+
+✅ Nested for loops
+✅ Outer loop → rows
+✅ Inner loop → numbers
+❌ No hardcoding
+❌ No while
+"""
+
+print()
+
+for i in range(1, 5):
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
+
+"""
+Output:
+1
+12
+123
+1234
+"""
+
+# =======================================
