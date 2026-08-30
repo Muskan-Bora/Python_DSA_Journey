@@ -256,3 +256,205 @@ Both are valid.
 """
 
 # ===============================================
+
+"""
+7. Function Composition with Real-World Logic
+
+Suppose we want to calculate the final price after applying a discount.
+
+We could separate the responsibilities:
+
+def calculate_discount(price, discount):
+    discount_amount = price * discount / 100
+    return price - discount_amount
+
+
+def add_tax(price, tax):
+    tax_amount = price * tax / 100
+    return price + tax_amount
+
+
+final_price = add_tax(calculate_discount(1000, 10), 18)
+
+print(final_price)
+Execution
+
+First:
+
+calculate_discount(1000, 10)
+
+10% discount:
+
+1000 - 100 = 900
+
+Then:
+
+add_tax(900, 18)
+
+18% tax:
+
+900 + 162 = 1062
+
+Output:
+
+1062.0
+
+This is much closer to how functions are used in real applications.
+
+Instead of one giant function:
+
+calculate everything
+
+we create:
+
+calculate_discount()
+        ↓
+     result
+        ↓
+add_tax()
+        ↓
+   final result
+ 
+8. Important Rule
+
+For composition to work:
+
+The output of one function must be suitable as the input of the next function.
+
+Example:
+
+def get_number():
+    return 10
+
+
+def double(number):
+    return number * 2
+
+
+result = double(get_number())
+
+print(result)
+
+Execution:
+
+get_number()
+     ↓
+    10
+     ↓
+double(10)
+     ↓
+    20
+
+Output:
+
+20
+"""
+
+# ===============================================
+
+"""
+9. Common Mistake ❌
+
+Don't confuse print() with return.
+
+Wrong for composition:
+
+def get_number():
+    print(10)
+
+
+def double(number):
+    return number * 2
+
+
+result = double(get_number())
+
+get_number() prints 10, but returns None.
+
+So effectively Python tries:
+
+double(None)
+
+which causes an error because you cannot multiply None by 2.
+
+10. Nested Function Calls
+
+When functions are written inside one another like:
+
+result = function_b(function_a(value))
+
+Python evaluates the innermost function first.
+
+For:
+
+result = subtract(multiply(add(10, 20)))
+
+Think:
+
+1. add(10, 20)
+       ↓
+      30
+
+2. multiply(30)
+       ↓
+      60
+
+3. subtract(60)
+       ↓
+      55
+
+This is one of the most important things to remember.
+
+11. Function Composition vs Calling Functions Separately
+Separate calls
+step1 = add(10, 20)
+step2 = multiply(step1)
+result = subtract(step2)
+Composed call
+result = subtract(multiply(add(10, 20)))
+
+The second version is more compact, while the first version can sometimes be easier to debug.
+
+Both are valid.
+
+As your programs become larger, you'll often choose whichever makes the data flow easiest to understand.
+
+# =================================
+
+🧠 Quick Summary
+
+Function Composition
+        ↓
+Use the returned result of one function
+        ↓
+as the argument of another function
+
+Remember:
+return → sends value back
+       ↓
+another function can receive it
+
+Basic pattern:
+def function_a(value):
+    return something
+
+
+def function_b(value):
+    return something_else
+
+
+result = function_b(function_a(value))
+Execution rule:
+Python evaluates
+the innermost function first
+        ↓
+then moves outward
+
+🎯 Imp Point:
+
+Function composition allows us to combine small, reusable functions by passing the returned value of
+one function into another function. It helps break complex operations into smaller, manageable steps and
+is an important concept for writing clean and reusable Python code.
+"""
+
+# ===================================================
