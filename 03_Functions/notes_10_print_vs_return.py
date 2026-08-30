@@ -133,3 +133,50 @@ Final Output:
 """
 
 # ===========================================
+
+"""
+🧩 Practical Revision Problem — calculate_discount()
+
+Create:
+
+def calculate_discount(price, discount):
+Requirements
+
+The function should:
+
+Calculate the discount amount.
+Calculate the final price.
+Return the final price.
+Do not use print() inside the function.
+
+Then:
+
+result = calculate_discount(1000, 10)
+print(result)
+Expected output
+900.0
+🚨 Rules
+
+✅ Use parameters
+✅ Use return
+✅ Store the returned value in result
+✅ Print result outside the function
+❌ Don't use print() inside the function
+❌ Don't hardcode 900
+"""
+
+print()
+
+def calculate_discount(price, discount):
+    discount_amount = price * discount / 100
+    return price - discount_amount
+
+result = calculate_discount(1000, 10)
+print(result)
+
+"""
+Output:
+900.0
+"""
+
+# ==================================================
