@@ -458,3 +458,63 @@ is an important concept for writing clean and reusable Python code.
 """
 
 # ===================================================
+
+"""
+🧩 Function Composition — Problem 1
+Problem: double_number()
+
+Create these two functions:
+
+def add_five(number):
+
+This function should:
+
+Receive a number.
+Add 5.
+Return the result.
+
+Then create:
+
+def double_number(number):
+
+This function should:
+
+Receive a number.
+Multiply it by 2.
+Return the result.
+Then compose them:
+result = double_number(add_five(10))
+
+print(result)
+🎯 Expected output
+30
+🚨 Rules
+
+✅ Create both functions
+✅ Use parameters
+✅ Use return in both
+✅ Call one function inside another
+✅ Store the final returned value in result
+✅ Print only the final result outside
+
+❌ Don't directly write 30
+❌ Don't use print() inside either function
+❌ Don't use a single function for the whole calculation
+"""
+
+def add_five(number):
+    return number + 5
+
+def double_number(number):
+    return number * 2
+
+result = double_number(add_five(10))
+
+print(result)
+
+"""
+Output:
+30
+"""
+
+# ======================================
