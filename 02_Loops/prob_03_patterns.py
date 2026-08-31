@@ -1988,3 +1988,53 @@ Output:
 """
 
 # ===============================================
+
+"""
+⭐ Star Pattern — Problem 1
+🧩 Hollow Square
+
+Print exactly:
+
+*****
+*   *
+*   *
+*   *
+*****
+🚨 Rules
+
+✅ Use nested for loops
+✅ Outer loop → rows
+✅ Inner loop → columns
+✅ Use an if/else condition
+✅ Print * for the boundary
+✅ Print spaces for the inside
+
+❌ Don't hardcode the output
+❌ Don't use a while loop
+❌ Don't use separate print() statements for each row
+"""
+
+print()
+
+for i in range(1, 6):
+    if i == 1 or i == 5:
+        for j in range(i, i + 5):
+            print("*", end="")
+    else:
+        print("*", end="")
+        for k in range(i, i + 3):
+            print(" ", end="")
+        print("*", end="")
+    print()
+
+"""
+Output:
+
+*****
+*   *
+*   *
+*   *
+*****
+"""
+
+# ===================================================
