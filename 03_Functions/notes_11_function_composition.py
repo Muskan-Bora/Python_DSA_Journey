@@ -518,3 +518,64 @@ Output:
 """
 
 # ======================================
+
+"""
+🧩 Function Composition — Problem 2
+
+Create these three functions:
+
+1 add_ten(number)
+Receive a number.
+Add 10.
+Return the result.
+2 multiply_by_three(number)
+Receive a number.
+Multiply it by 3.
+Return the result.
+3 subtract_five(number)
+Receive a number.
+Subtract 5.
+Return the result.
+
+Then compose all three:
+
+result = subtract_five(multiply_by_three(add_ten(5)))
+
+print(result)
+🎯 Expected output
+40
+
+🚨 Rules
+
+✅ Use 3 separate functions
+✅ Each function must have a parameter
+✅ Each function must use return
+✅ Call one function inside another
+✅ Store the final returned value in result
+✅ Print only result
+
+❌ No print() inside the functions
+❌ Don't hardcode 40
+❌ Don't create one giant function
+"""
+
+print()
+
+def add_ten(number):
+    return number + 10
+
+def multiply_by_three(number):
+    return number * 3
+
+def subtract_five(number):
+    return number - 5
+
+result = subtract_five(multiply_by_three(add_ten(5)))
+print(result)
+
+"""
+Output:
+40
+"""
+
+# ===============================================
