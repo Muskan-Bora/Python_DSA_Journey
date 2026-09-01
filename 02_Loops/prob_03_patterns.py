@@ -2038,3 +2038,46 @@ Output:
 """
 
 # ===================================================
+
+"""
+⭐ Pattern — R16
+🧩 Centered Number Pyramid
+
+Print exactly:
+
+    1
+   123
+  12345
+ 1234567
+123456789
+🚨 Rules
+
+✅ Use nested for loops
+✅ Outer loop → rows
+✅ One loop → spaces
+✅ One loop → numbers
+✅ Don't hardcode the output
+✅ Don't use while loop
+"""
+
+print()
+
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    for j in range(1, i + 1):
+        print(j, end="")
+    for s in range(i + 1, 2 * i):
+        print(s, end="")
+    print()
+
+"""
+Output:
+    1
+   123
+  12345
+ 1234567
+123456789
+"""
+
+# =======================================
