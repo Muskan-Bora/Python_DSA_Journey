@@ -579,3 +579,66 @@ Output:
 """
 
 # ===============================================
+
+"""
+🧩 Revision Problem 1 — Function Composition Revision
+Problem — calculate_total()
+
+Create:
+
+def calculate_price(price, quantity):
+
+Requirements:
+
+Receive price and quantity.
+Multiply them.
+Return the total.
+
+Then create:
+
+def add_delivery(total):
+
+Requirements:
+
+Receive the total.
+Add 100 delivery charges.
+Return the final amount.
+
+Then compose them:
+
+result = add_delivery(calculate_price(500, 2))
+
+print(result)
+🎯 Expected output
+1100
+🚨 Rules
+
+✅ Two separate functions
+✅ Parameters
+✅ return from both functions
+✅ One function called inside another
+✅ Store final result in result
+✅ Print only outside
+
+❌ No print() inside functions
+❌ Don't hardcode 1100
+❌ Don't put everything into one function
+"""
+
+print()
+
+def calculate_price(price, quantity):
+    return price * quantity
+
+def add_delivery(total):
+    return total + 100
+
+result = add_delivery(calculate_price(500, 2))
+print(result)
+
+"""
+Output:
+1100
+"""
+
+# ================================================
