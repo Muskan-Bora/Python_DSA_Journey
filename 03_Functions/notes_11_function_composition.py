@@ -642,3 +642,63 @@ Output:
 """
 
 # ================================================
+
+"""
+🧩 Step 2 — Function Composition Challenge
+
+Create three functions:
+
+def get_total(price, quantity):
+
+→ Multiply price x quantity and return it.
+
+def apply_discount(total, discount):
+
+→ Calculate the discount percentage and return the discounted price.
+
+def add_tax(total):
+
+→ Add 18% tax to the amount and return the final price.
+
+Then compose them:
+
+result = add_tax(apply_discount(get_total(1000, 2), 10))
+
+print(result)
+🎯 Expected output
+2124.0
+🧠 Flow
+get_total(1000, 2)
+        ↓
+      2000
+        ↓
+apply_discount(2000, 10)
+        ↓
+      1800
+        ↓
+add_tax(1800)
+        ↓
+      2124
+"""
+
+print()
+
+def get_total(price, quantity):
+    return price * quantity
+
+def apply_discount(total, discount):
+    return total - total * discount / 100
+
+def add_tax(total):
+    return total + total * 18 / 100
+
+result = add_tax(apply_discount(get_total(1000, 2), 10))
+
+print(result)
+
+"""
+Output:
+2124.0
+"""
+
+# =========================================================
