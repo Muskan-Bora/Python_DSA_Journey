@@ -702,3 +702,47 @@ Output:
 """
 
 # =========================================================
+
+"""
+🧩 Revision Problem
+
+Write a Python program using function composition for this calculation:
+
+calculate_total(price, quantity) → returns price x quantity
+apply_discount(total, discount) → returns the price after applying the discount
+add_tax(amount) → adds 18% tax and returns the final amount
+Use function composition to perform all three operations in the correct order.
+
+Use:
+
+Price = ₹2000
+Quantity = 2
+Discount = 10%
+Tax = 18%
+
+Your final output should be:
+
+Final amount: 4248.0
+"""
+
+print()
+
+def calculate_total(price, quantity):
+    return price * quantity
+
+def apply_discount(total, discount):
+    return total - total * discount / 100
+
+def add_tax(amount):
+    return amount + amount * 18 / 100
+
+result = add_tax(apply_discount(calculate_total(2000, 2), 10))
+
+print(f"Final amount: {result}")
+
+"""
+Output:
+Final amount: 4248.0
+"""
+
+# =====================================
