@@ -53,3 +53,54 @@ Important:
 """
 
 # ===============================================
+
+"""
+Problem 1: Print numbers from 5 down to 1
+
+Create a recursive function:
+
+def countdown(number):
+    # your code
+
+When you call:
+
+countdown(5)
+
+Expected output:
+
+5
+4
+3
+2
+1
+Your rules 🧠
+
+You must use recursion.
+
+Your function should have:
+
+A print()
+A base case
+A function call to itself
+
+Don't use a for or while loop.
+"""
+
+def countdown(number):
+    print(number)
+
+    if number > 1:
+        countdown(number - 1)
+
+countdown(5)
+
+"""
+Output:
+5
+4
+3
+2
+1
+"""
+
+# ========================================
