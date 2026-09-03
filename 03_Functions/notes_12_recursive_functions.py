@@ -104,3 +104,49 @@ Output:
 """
 
 # ========================================
+
+"""
+🔁 Recursion — Problem 2
+
+This time, we'll introduce something important: recursion with return.
+
+Write a recursive function:
+
+sum_numbers(5)
+
+It should return the sum:
+
+5 + 4 + 3 + 2 + 1 = 15
+
+Expected output:
+
+15
+Your task 🎯
+
+Complete this:
+
+def sum_numbers(number):
+    # your logic here
+
+
+result = sum_numbers(5)
+print(result)
+
+Don't worry about explaining it yet. Just try solving it yourself.
+"""
+
+print()
+
+def sum_numbers(number):
+    if number == 1:
+        return 1
+
+    return number + sum_numbers(number - 1)
+
+result = sum_numbers(5)
+print(result)
+
+"""
+Output:
+15
+"""
