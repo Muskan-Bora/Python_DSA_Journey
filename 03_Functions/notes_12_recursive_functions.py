@@ -150,3 +150,58 @@ print(result)
 Output:
 15
 """
+
+# ==============================================
+
+"""
+🔁 Simple Recursion Practice
+
+Write a function called count_up(number).
+
+If we call:
+
+count_up(5)
+
+the output should be:
+
+1
+2
+3
+4
+5
+Your skeleton 🐍
+def count_up(number):
+
+    # your logic here
+
+
+count_up(5)
+💡 One small hint
+
+Your recursion should keep reducing the number:
+
+count_up(number - 1)
+
+But think carefully about where you put the print().
+"""
+
+print()
+
+def count_up(number):
+
+    if number > 1:
+        count_up(number - 1)
+    print(number)
+
+count_up(5)
+
+"""
+Output:
+1
+2
+3
+4
+5
+"""
+
+# ============================================

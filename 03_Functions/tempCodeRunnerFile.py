@@ -1,2 +1,1 @@
-final_product = prod * prod
-    # print (final_product)
+print(count_up)
