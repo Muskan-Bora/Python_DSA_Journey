@@ -2116,3 +2116,77 @@ Output:
 """
 
 # ===================================
+
+"""
+⭐ Revision — Number Pyramid
+
+Print:
+
+1
+22
+333
+4444
+55555
+666666
+
+Rules:
+
+Use nested for loops
+No hardcoding each line
+"""
+
+print()
+
+for i in range(1, 7):
+    for j in range(i):
+        print(i, end="")
+    print()
+
+"""
+Output:
+1
+22
+333
+4444
+55555
+666666
+"""
+
+# ===================================================
+
+"""
+⭐ Revision — Reverse Number Pattern
+
+Print:
+
+123456
+12345
+1234
+123
+12
+1
+
+Rules:
+
+Use nested for loops
+No hardcoding
+"""
+
+print()
+
+for i in range(6, 0, -1):
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
+
+"""
+Output:
+123456
+12345
+1234
+123
+12
+1
+"""
+
+# ===================================
