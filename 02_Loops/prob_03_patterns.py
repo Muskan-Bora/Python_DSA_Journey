@@ -2190,3 +2190,42 @@ Output:
 """
 
 # ===================================
+
+"""
+⭐ Pattern 3 — Increasing + Spaces
+
+Print:
+
+     1
+    12
+   123
+  1234
+ 12345
+123456
+Rules 🎯
+Nested for loops
+No hardcoding
+Use i for the row
+You'll need two inner loops: one for spaces and one for numbers.
+"""
+
+print()
+
+for i in range(1, 7):
+    for k in range(6 - i):
+        print(" ", end="")
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
+
+"""
+Output:
+     1
+    12
+   123
+  1234
+ 12345
+123456
+"""
+
+# =========================================
