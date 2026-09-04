@@ -2229,3 +2229,43 @@ Output:
 """
 
 # =========================================
+
+"""
+⭐ Revision — Reverse Number Pyramid
+
+Print:
+
+123456
+ 12345
+  1234
+   123
+    12
+     1
+
+Again, use:
+
+one loop for spaces
+one loop for numbers
+nested for loops only.
+"""
+
+print()
+
+for i in range(6, 0, -1):
+    for k in range(6 - i):
+        print(" ", end="")
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
+
+"""
+Output:
+123456
+ 12345
+  1234
+   123
+    12
+     1
+"""
+
+# ===================================
