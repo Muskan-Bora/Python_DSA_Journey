@@ -2336,3 +2336,48 @@ output:
 """
 
 # =========================================
+
+"""
+⭐ Pattern 3 — Hollow pyramid
+
+Print:
+
+     *
+    * *
+   *   *
+  *     *
+ *       *
+***********
+"""
+
+print()
+
+for i in range(1, 7):
+    for k in range(6 - i):
+        print(" ", end="")
+
+    if i == 1:
+        print("*")
+    elif i == 6:
+        for j in range(11):
+            print("*", end="")
+        print()
+    else:
+        print("*", end="")
+
+        for s in range(2 * i - 3):
+            print(" ", end="")
+
+        print("*")
+
+"""
+Output:
+     *
+    * *
+   *   *
+  *     *
+ *       *
+***********
+"""
+
+# =================================================
