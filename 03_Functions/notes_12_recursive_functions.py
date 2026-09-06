@@ -205,3 +205,25 @@ Output:
 """
 
 # ============================================
+
+"""
+Problem 1 - Factorial Recurssion Problem
+"""
+
+def factorial(number):
+    
+    if number == 1:
+        return number
+        
+    return number * factorial(number - 1)
+
+
+result = factorial(5)
+print(result)
+
+"""
+Output:
+120
+"""
+
+# ============================
