@@ -2381,3 +2381,48 @@ Output:
 """
 
 # =================================================
+
+"""
+⭐ Pattern — Hollow Right Triangle
+
+Your target output:
+
+*
+**
+* *
+*  *
+*****
+Your task 🎯
+
+Write the Python code using:
+
+for loops
+Nested loops
+if/else
+print("*", end="")
+No shortcuts like string multiplication
+"""
+
+print()
+
+for i in range(1, 6):
+    if i == 1 or i == 2 or i == 5:
+        for j in range(1, i + 1):
+            print("*", end="")
+    else:
+        print("*", end="")
+        for k in range(i - 2):
+            print(" ", end="")
+        print("*", end="")
+    print()
+
+"""
+Output:
+*
+**
+* *
+*  *
+*****
+"""
+
+# ==========================================
