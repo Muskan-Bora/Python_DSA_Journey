@@ -227,3 +227,92 @@ Output:
 """
 
 # ============================
+
+"""
+🔁 Recursion Problem 1 — Sum from 1 to N
+
+Create:
+
+def sum_numbers(number):
+    # your logic
+
+result = sum_numbers(5)
+print(result)
+
+Expected output:
+
+15
+
+Because:
+
+1 + 2 + 3 + 4 + 5 = 15
+
+Rules:
+
+No for
+No while
+Must use recursion
+Must return the answer
+"""
+
+def sum_numbers(number):
+    
+    if number == 1:
+        return 1
+
+    return number + sum_numbers(number - 1)
+
+result = sum_numbers(5)
+print(result)
+
+"""
+Output:
+15
+"""
+
+# ============================================
+
+"""
+🔁 Recursion Problem 2 — Power of a Number
+
+Create:
+
+def power(base, exponent):
+    # your logic
+
+result = power(2, 5)
+print(result)
+
+Expected output:
+
+32
+
+Because:
+
+2 x 2 x 2 x 2 x 2 = 32
+
+Rules:
+
+No for
+No while
+Must use recursion
+Must have a base case
+Must return the result
+"""
+
+def power(base, exponent):
+
+    if exponent == 1:
+        return base
+    
+    return  base * power(base, exponent - 1)
+
+result = power(2, 5)
+print(result)
+
+"""
+Output:
+32
+"""
+
+# ===============================================
