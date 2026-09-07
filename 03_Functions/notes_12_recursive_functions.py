@@ -411,3 +411,54 @@ Output:
 """
 
 # ======================================================
+
+"""
+Problem 3 — Factorial 🔢
+
+This is the one new problem for today:
+
+🔢 Recursion Problem — Factorial
+
+Create:
+
+def factorial(number):
+    # your logic
+
+result = factorial(5)
+print(result)
+
+Expected output:
+
+120
+
+Because:
+
+5 x 4 x 3 x 2 x 1 = 120
+
+Rules:
+
+No for
+No while
+Must use recursion
+Must have a base case
+Must return the result
+"""
+
+print()
+
+def factorial(number):
+    
+    if number == 1:
+        return number
+
+    return number * factorial(number - 1)
+
+result = factorial(5)
+print(result)
+
+"""
+Output:
+120
+"""
+
+# =========================================
