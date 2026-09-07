@@ -2426,3 +2426,47 @@ Output:
 """
 
 # ==========================================
+
+"""
+⭐ Star Pattern — Hollow Inverted Triangle
+
+Target:
+
+*****
+*  *
+* *
+**
+*
+
+Rules:
+
+Use for loops
+Use nested loops
+Use if/else
+Use print("*", end="")
+No string multiplication
+"""
+
+print()
+
+for i in range(5, 0, -1):
+    if i == 1 or i == 2 or i == 5:
+        for j in range(1, i + 1):
+            print("*", end="")
+    else:
+        print("*", end="")
+        for k in range(i - 2):
+            print(" ", end="")
+        print("*", end="")
+    print()
+
+"""
+Output:
+*****
+*  *
+* *
+**
+*
+"""
+
+# ===================================
