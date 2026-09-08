@@ -1,1 +1,2 @@
-print(count_up)
+if text == "":
+    #     return 
