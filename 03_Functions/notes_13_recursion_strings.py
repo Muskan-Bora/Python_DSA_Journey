@@ -133,3 +133,43 @@ H
 """
 
 # ===================================
+
+"""
+🔤 Now #2 — Recursion with Strings
+
+Write a recursive function that counts the number of characters in a string.
+
+Example:
+
+count_characters("HELLO") → 5
+count_characters("PYTHON") → 6
+count_characters("") → 0
+Rules
+❌ No len()
+❌ No loops
+✅ Must use recursion
+✅ Must have a base case
+✅ Must use return
+
+Hint: Think about yesterday:
+
+text[0]
+text[1:]
+"""
+print()
+
+def count_characters(text):
+    if text == "":
+        return 0
+    
+    return 1 + count_characters(text[1:])
+
+count = count_characters("HELLO")
+print(count)
+
+"""
+Output:
+5
+"""
+
+# ========================================
