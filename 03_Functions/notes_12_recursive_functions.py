@@ -462,3 +462,45 @@ Output:
 """
 
 # =========================================
+
+"""
+Let's start with #1 🔥
+def sum_numbers(number):
+    # logic
+Problem:
+
+Write a recursive function sum_numbers(number) that returns the sum of all numbers from 1 to number.
+
+For example:
+
+sum_numbers(5) → 15
+sum_numbers(3) → 6
+sum_numbers(1) → 1
+
+Rules:
+
+❌ No for loop
+❌ No while loop
+✅ Must use recursion
+✅ Must have a base case
+✅ Must use return
+"""
+
+print()
+
+def sum_numbers(number):
+
+    if number == 1:
+        return 1
+
+    return number + sum_numbers(number - 1)
+
+result = sum_numbers(6)
+print(result)
+
+"""
+Output:
+21
+"""
+
+# ===============================================
