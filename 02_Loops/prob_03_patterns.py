@@ -2510,3 +2510,38 @@ Output:
 """
 
 # ==========================================
+
+"""
+⭐ Today's Pattern — Right-Angled Star Triangle
+
+For 5 rows, produce exactly:
+
+*
+**
+***
+****
+*****
+Rules
+✅ Use for loops
+✅ Use a nested loop
+❌ No hardcoding each row
+❌ Don't use * string multiplication
+"""
+
+print()
+
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print("*", end="")
+    print()
+
+"""
+Output:
+*
+**
+***
+****
+*****
+""" 
+
+# ==========================
