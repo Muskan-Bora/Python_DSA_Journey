@@ -504,3 +504,55 @@ Output:
 """
 
 # ===============================================
+
+"""
+🔁 Recursion Problem
+Problem 1 — Count Down Sum
+
+Write a recursive function:
+sum_even_numbers(number)
+
+It should return the sum of all even numbers from number down to 2.
+
+Example:
+
+sum_even_numbers(6) → 12
+
+Because:
+6 + 4 + 2 = 12
+
+Another example:
+
+sum_even_numbers(10) → 30
+
+Because:
+
+10 + 8 + 6 + 4 + 2 = 30
+Rules
+❌ No loops
+✅ Must use recursion
+✅ Must have a base case
+✅ Must use return
+
+Test it with:
+
+result = sum_even_numbers(8)
+print(result)
+
+Expected output:
+
+20
+"""
+print()
+def sum_even_numbers(number):
+   
+    if number == 0 :
+        return 0
+
+    if number % 2 == 0:
+        return number + sum_even_numbers(number - 1)
+        
+    return sum_even_numbers(number - 1)
+
+result = sum_even_numbers(8)
+print(result) 
