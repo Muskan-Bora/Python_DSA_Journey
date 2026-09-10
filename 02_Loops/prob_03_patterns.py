@@ -2545,3 +2545,41 @@ Output:
 """ 
 
 # ==========================
+
+"""
+Problem 3 — Right-Aligned Star Triangle
+
+Print exactly:
+
+    *
+   **
+  ***
+ ****
+*****
+Rules
+Use nested loops
+No hardcoded spaces/stars
+Use for loops
+
+Target height: 5
+"""
+
+print()
+
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    for j in range(1, i + 1):
+        print("*", end="")
+    print()
+
+"""
+Output:
+    *
+   **
+  ***
+ ****
+*****
+"""
+
+# =================================
