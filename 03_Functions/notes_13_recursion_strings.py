@@ -173,3 +173,58 @@ Output:
 """
 
 # ========================================
+
+"""
+🔤 String Recursion Problem
+Problem 2 — Count a Specific Character
+
+Write a recursive function:
+
+count_character(text, character)
+
+It should return how many times character appears in text.
+
+Example:
+
+count_character("HELLO", "L") → 2
+
+Another:
+
+count_character("BANANA", "A") → 3
+Rules
+❌ No len()
+❌ No loops
+❌ No .count()
+✅ Must use recursion
+✅ Must have a base case
+✅ Must use return
+
+Test it with:
+
+result = count_character("BANANA", "A")
+print(result)
+
+Expected output:
+
+3
+"""
+
+print()
+
+def count_character(text, character):
+    if text == "":
+        return 0
+
+    if text[0] == character:
+        return 1 + count_character(text[1:], character)
+
+    return count_character(text[1:], character) 
+
+result = count_character("BANANA", "A")
+print(result)
+
+"""
+Oiutput: 3
+"""
+
+# ================================

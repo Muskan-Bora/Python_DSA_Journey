@@ -556,3 +556,7 @@ def sum_even_numbers(number):
 
 result = sum_even_numbers(8)
 print(result) 
+
+"""
+Output: 20
+"""
