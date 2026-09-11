@@ -1,2 +1,2 @@
-for k in range(5 - i):
-    #     print(" ", end="")
+for n in range(n - 3, 10):
+        #     print(n, end="")

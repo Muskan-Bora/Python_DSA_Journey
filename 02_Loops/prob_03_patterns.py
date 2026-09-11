@@ -2583,3 +2583,55 @@ Output:
 """
 
 # =================================
+
+"""
+⭐ Question 3 — Hollow Number Pyramid
+
+Print this pattern for n = 5:
+
+    1
+   1 2
+  1   3
+ 1     4
+123456789
+Rules
+Use nested for loops.
+Don't hardcode the pattern.
+You can use if/else.
+Think carefully about spaces vs numbers.
+"""
+
+print()
+
+for i in range(1, 6):
+
+    # Leading spaces
+    for k in range(5 - i):
+        print(" ", end="")
+
+    # First and last row
+    if i == 1 or i == 5:
+        for j in range(1, 2 * i):
+            print(j, end="")
+
+    # Hollow middle rows
+    else:
+        print(1, end=" ")
+
+        for n in range(i - 2):
+            print(" ", end=" ")
+
+        print(i, end="")
+
+    print()
+
+"""
+Output:
+    1
+   1 2 
+  1   3 
+ 1     4 
+123456789
+"""
+
+# ============================================
