@@ -228,3 +228,55 @@ Oiutput: 3
 """
 
 # ================================
+
+"""
+🔤 Question 2 — String Recursion
+
+Write:
+
+reverse_words(text)
+
+It should print the characters of the string in reverse order, using recursion.
+
+Example:
+
+reverse_words("PYTHON")
+
+Output:
+
+N
+O
+H
+T
+Y
+P
+Rules
+❌ No loops
+❌ No slicing tricks like text[::-1]
+✅ Use recursion
+✅ Use a base case
+✅ Use return where needed
+"""
+
+print()
+
+def reverse_words(text):
+    if text == "":
+        return
+
+    reverse_words(text[1:])
+    print(text[0])
+
+reverse_words("PYTHON")
+
+"""
+Output:
+N
+O
+H
+T
+Y
+P
+"""
+
+# =========================================
