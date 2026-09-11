@@ -560,3 +560,48 @@ print(result)
 """
 Output: 20
 """
+
+# ===================================================
+
+"""
+🔁 Question 1 — Recursion
+
+Write a recursive function:
+
+sum_odd_numbers(number)
+
+It should return the sum of all odd numbers from number down to 1.
+
+Examples:
+
+sum_odd_numbers(7) → 16
+sum_odd_numbers(5) → 9
+sum_odd_numbers(10) → 25
+Rules
+❌ No loops
+✅ Use recursion
+✅ Use a base case
+✅ Use return
+Think carefully about what should happen when the number is odd vs even.
+"""
+
+print()
+def sum_odd_numbers(number):
+   
+    if number == 0 :
+        return 0
+
+    if number % 2 != 0:
+        return number + sum_odd_numbers(number - 1)
+        
+    return sum_odd_numbers(number - 1)
+
+result = sum_odd_numbers(7)
+print(result) 
+
+"""
+Output:
+16
+"""
+
+# =========================================
