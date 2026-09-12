@@ -605,3 +605,40 @@ Output:
 """
 
 # =========================================
+
+"""
+🔁 Question 1 — Basic Recursion
+
+Write a recursive function:
+
+multiply_numbers(number)
+
+It should return the product of all numbers from number down to 1.
+
+Examples:
+
+multiply_numbers(5) → 120
+multiply_numbers(4) → 24
+multiply_numbers(3) → 6
+Rules
+❌ No loops
+✅ Recursion
+✅ Base case
+✅ return
+"""
+print()
+def multiply_numbers(number):
+    if number == 1:
+        return 1
+
+    return number * multiply_numbers(number - 1)
+
+result = multiply_numbers(4)
+print(result)
+
+"""
+OUTPUT:
+24
+"""
+
+# ======================
