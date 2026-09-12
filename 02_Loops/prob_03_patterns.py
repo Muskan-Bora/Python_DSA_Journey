@@ -2667,3 +2667,37 @@ Output:
 """
 
 # =================================
+
+"""
+⭐ Pattern 2
+
+Print:
+
+    *
+   **
+  ***
+ ****
+*****
+
+Again, use nested for loops.
+"""
+
+print()
+
+for i in range(1, 6):
+    for k in range(5 - i):
+        print(" ", end="")
+    for j in range(1, i + 1):
+        print("*", end="")
+    print()
+
+"""
+Output:
+    *
+   **
+  ***
+ ****
+*****
+"""
+
+# ========================
