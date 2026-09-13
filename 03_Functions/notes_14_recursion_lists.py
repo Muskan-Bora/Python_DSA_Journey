@@ -210,3 +210,42 @@ The recursive thinking remains the same.
 """
 
 # ============================================================
+
+"""
+Problem 1 — Your Turn
+⭐ Count the number of elements in a list using recursion
+
+Write a function:
+
+count_elements(items)
+
+Given:
+
+numbers = [10, 20, 30, 40, 50]
+
+Expected output: 5
+
+Rules
+❌ Don't use len(items) to directly get the answer.
+❌ Don't use loops.
+❌ Don't use a global counter.
+✅ Must use recursion.
+✅ Use items[1:].
+✅ Think about what the empty list should return.
+"""
+
+def count_elements(items):
+    
+    if items == []:
+        return 0
+
+    return 1 + count_elements(items[1:])
+
+result = count_elements([10, 20, 30, 40, 50])
+print(result)
+
+"""
+Output: 5
+"""
+
+# =====================================
