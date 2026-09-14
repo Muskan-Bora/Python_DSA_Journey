@@ -2742,3 +2742,61 @@ Output:
 """
 
 # =======================================
+
+"""
+⭐ Problem 1 — Simple Star Triangle
+
+Print:
+
+*
+**
+***
+****
+*****
+"""
+
+print()
+
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print("*", end="")
+    print()
+
+"""
+Output:
+*
+**
+***
+****
+*****
+"""
+
+# ==========================================
+
+"""
+🔢 Problem 2 — Number Triangle
+
+Print:
+
+1
+12
+123
+1234
+12345
+"""
+
+print()
+
+for i in range(1, 6):
+    for j in range(1, i + 1):
+        print(j, end="")
+    print()
+
+"""
+Output:
+1
+12
+123
+1234
+12345
+"""
