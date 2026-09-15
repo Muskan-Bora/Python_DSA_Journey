@@ -280,3 +280,61 @@ P
 """
 
 # =========================================
+
+"""
+Recursion + String — Revision Problem
+
+Write a recursive function that counts how many vowels are present in a string.
+
+Example
+
+Input:
+
+"HELLO"
+
+Expected output:
+
+2
+
+Another example:
+
+"BANANA"
+
+Output:
+
+3
+🎯 Your task
+
+Create:
+
+def count_vowels(text):
+    # your recursion here
+
+Rules:
+
+Use recursion, not a loop.
+Handle the string one character at a time.
+Think about what your base case should be.
+Consider: text[0] and text[1:].
+"""
+
+print()
+
+def count_vowels(text):
+    if text == "":
+        return 0
+
+    if text[0] in "AEIOU":
+        return 1 + count_vowels(text[1:])
+
+    return 0 + count_vowels(text[1:])
+
+result = count_vowels("BANANA")
+print(result)
+
+"""
+Output:
+3
+"""
+
+# ======================================
