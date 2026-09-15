@@ -2898,3 +2898,37 @@ Output:
 """
 
 # ===============================================
+
+"""
+🔢 Pattern 2 — Repeated Numbers
+
+Print:
+
+1
+22
+333
+4444
+55555
+666666
+
+💡 Think about the difference between the row number and how many times you print the number.
+"""
+
+print()
+
+for i in range(1, 7):
+    for j in range(1, i + 1):
+        print(i, end="")
+    print()
+
+"""
+Output:
+1
+22
+333
+4444
+55555
+666666
+"""
+
+# =============================================
