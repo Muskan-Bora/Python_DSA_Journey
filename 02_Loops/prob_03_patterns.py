@@ -2864,3 +2864,37 @@ Output:
 """
 
 # ========================================================
+
+"""
+⭐ Pattern 1 — Increasing Stars
+
+Print:
+
+*
+**
+***
+****
+*****
+******
+
+Small change: This time go up to 6 rows instead of 5.
+"""
+
+print()
+
+for i in range(1, 7):
+    for k in range(1, i + 1):
+        print("*", end="")
+    print()
+
+"""
+Output:
+*
+**
+***
+****
+*****
+******
+"""
+
+# ===============================================
