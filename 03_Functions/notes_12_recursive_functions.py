@@ -642,3 +642,64 @@ OUTPUT:
 """
 
 # ======================
+
+"""
+🧩 Recursion Revision Problem — Sum of Numbers
+
+Write a recursive function that takes a number n and returns the sum of all numbers from 1 to n.
+
+Example
+
+If:
+
+n = 5
+
+The result should be:
+
+15
+
+Because:
+
+1 + 2 + 3 + 4 + 5 = 15
+Your task
+
+Complete this:
+
+def sum_numbers(n):
+    # write your recursive logic here
+
+
+result = sum_numbers(5)
+print(result)
+Rules 🎯
+Must use recursion
+No for loop
+No while loop
+Think about:
+What should the base case be?
+What should the recursive call be?
+What should you return?
+"""
+
+print()
+
+def sum_numbers(n):
+
+    if n == 1:
+        return 1
+
+    return n + sum_numbers(n - 1)
+
+result = sum_numbers(5)
+print(result)
+
+"""
+Output:
+15
+
+What should the base case be?  n == 1 
+What should the recursive call be? sum_numbers(n - 1) 
+What should you return? n + sum_numbers(n - 1) return logic
+"""
+
+# ========================================
