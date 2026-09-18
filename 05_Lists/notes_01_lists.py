@@ -144,3 +144,197 @@ fruits[0] = "orange"
 """
 
 # =========================
+
+"""
+7. Adding Elements
+append()
+
+Adds one item at the end.
+"""
+
+fruits = ["apple", "banana"]
+
+fruits.append("mango")
+
+print(fruits)
+
+"""
+Output:
+
+['apple', 'banana', 'mango']
+"""
+
+"""
+insert()
+
+Adds an item at a specific index.
+"""
+
+fruits = ["apple", "mango"]
+
+fruits.insert(1, "banana")
+
+print(fruits)
+
+"""
+Output:
+
+['apple', 'banana', 'mango']
+"""
+
+"""
+extend()
+
+Adds multiple elements from another collection.
+"""
+
+fruits = ["apple", "banana"]
+
+fruits.extend(["mango", "orange"])
+
+print(fruits)
+
+"""
+Output:
+
+['apple', 'banana', 'mango', 'orange']
+"""
+
+# ================================
+
+"""
+8. Removing Elements
+remove()
+
+Removes a specific value.
+"""
+
+fruits = ["apple", "banana", "mango"]
+
+fruits.remove("banana")
+
+"""
+Result:
+
+['apple', 'mango']
+"""
+
+"""
+pop()
+
+Removes an element using its index and returns the removed value.
+"""
+
+fruits = ["apple", "banana", "mango"]
+
+removed = fruits.pop(1)
+
+print(removed)
+print(fruits)
+
+"""
+Output:
+banana
+['apple', 'mango']
+"""
+
+# Without an index:
+
+# fruits.pop()
+
+# removes the last element.
+
+"""
+clear()
+
+Removes everything.
+"""
+
+numbers = [10, 20, 30]
+
+numbers.clear()
+
+print(numbers)
+
+"""
+Output:
+
+[]
+"""
+
+# ===========================
+
+"""
+9. Useful List Methods
+count()
+
+Counts how many times a value appears.
+"""
+
+numbers = [10, 20, 10, 30, 10]
+
+print(numbers.count(10))
+
+"""
+Output:
+
+3
+"""
+
+"""
+index()
+
+Finds the first position of a value.
+"""
+
+fruits = ["apple", "banana", "mango"]
+
+print(fruits.index("banana"))
+
+"""
+Output:
+
+1
+"""
+
+"""
+sort()
+
+Sorts the original list.
+"""
+
+numbers = [40, 10, 30, 20]
+
+numbers.sort()
+
+print(numbers)
+
+"""
+Output:
+
+[10, 20, 30, 40]
+"""
+
+"""
+Descending:
+"""
+
+# numbers.sort(reverse=True)
+
+"""
+reverse()
+
+Reverses the original list.
+"""
+
+numbers = [10, 20, 30]
+
+numbers.reverse()
+
+print(numbers)
+
+"""
+Output:
+
+[30, 20, 10]
+"""
