@@ -338,3 +338,106 @@ Output:
 
 [30, 20, 10]
 """
+
+# ========================
+
+"""
+10. Traversing a List
+
+You can loop through every element.
+"""
+
+fruits = ["apple", "banana", "mango"]
+
+for fruit in fruits:
+    print(fruit)
+
+"""
+Output:
+
+apple
+banana
+mango
+"""
+
+# You can also use indexes:
+
+for i in range(len(fruits)):
+    print(fruits[i])
+
+# =======================
+
+"""
+11. len() with Lists
+"""
+
+fruits = ["apple", "banana", "mango"]
+
+print(len(fruits))
+
+"""
+Output:
+
+3
+
+len() tells you how many elements are in the list.
+"""
+
+# ========================
+
+
+"""
+12. Checking Membership
+
+Use in and not in.
+"""
+
+fruits = ["apple", "banana", "mango"]
+
+print("apple" in fruits)
+
+"""
+Output:
+
+True
+"""
+
+print("orange" not in fruits)
+"""
+Output:
+
+True
+"""
+
+# ======================================
+
+"""
+🧠 Most Important Mental Model
+
+Remember Lists like this:
+
+LIST
+ │
+ ├── Ordered
+ ├── Indexed
+ ├── Sliceable
+ ├── Mutable ⭐
+ ├── Allows duplicates
+ ├── Iterable
+ │
+ ├── Add
+ │    ├── append()
+ │    ├── insert()
+ │    └── extend()
+ │
+ ├── Remove
+ │    ├── remove()
+ │    ├── pop()
+ │    └── clear()
+ │
+ └── Useful
+      ├── count()
+      ├── index()
+      ├── sort()
+      └── reverse()
+"""
