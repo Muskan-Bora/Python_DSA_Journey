@@ -244,3 +244,96 @@ Output:
 """
 
 # =====================================
+
+"""
+🟢 List Problem 9 — Omitted Start
+
+Using:
+
+numbers = [10, 20, 30, 40, 50]
+
+Print everything from the beginning up to index 3.
+"""
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[:3])
+
+"""
+Output:
+[10, 20, 30]
+"""
+
+# ================================
+
+"""
+🟢 List Problem 10 — Omitted End
+
+Using:
+
+numbers = [10, 20, 30, 40, 50]
+
+Print everything from index 2 to the end of the list.
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[2:])
+
+"""
+Output:
+[30, 40, 50]
+"""
+
+# ====================================
+
+"""
+🟢 List Problem 11 — Slicing with Step
+
+Using:
+
+numbers = [10, 20, 30, 40, 50, 60]
+
+Print every second element, starting from the beginning.
+"""
+print()
+
+numbers = [10, 20, 30, 40, 50, 60]
+
+print(numbers[::2])
+
+"""
+Output:
+[10, 30, 50]
+"""
+
+# =====================================
+
+"""
+🟢 List Problem 12 — Reverse a List Using Slicing
+
+Using:
+
+numbers = [10, 20, 30, 40, 50]
+
+Print the list in reverse order using slicing.
+
+Expected output:
+
+[50, 40, 30, 20, 10]
+"""
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[::-1])
+
+"""
+Output:
+[50, 40, 30, 20, 10]
+"""
+
+# ===================================
