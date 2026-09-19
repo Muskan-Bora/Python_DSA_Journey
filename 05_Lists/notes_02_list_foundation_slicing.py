@@ -109,3 +109,138 @@ numbers = [10, 20, 30, 40, 50]
 print(f"The length is {len(numbers)}")  # Output: The length is 5
 
 # =======================
+
+"""
+🟢 List Problem 5 — Positive Indexing
+
+Now let's access individual elements.
+
+Create:
+
+languages = ["Python", "Java", "C++", "JavaScript"]
+
+Print:
+
+The first element
+The second element
+The last element
+Expected output
+Python
+Java
+JavaScript
+
+Use positive indexing only for this problem.
+"""
+
+print()
+
+languages = ["Python", "Java", "C++", "JavaScript"]
+
+print(f"The first element is {languages[0]}")
+print(f"The second element is {languages[1]}")
+print(f"The last element is {languages[3]}")
+
+"""
+Output:
+The first element is Python
+The second element is Java
+The last element is JavaScript
+"""
+
+# =============================================
+
+"""
+🟢 List Problem 6 — Negative Indexing
+
+Now let's make the connection with the negative indexing you already learned with Strings.
+
+Create:
+
+languages = ["Python", "Java", "C++", "JavaScript"]
+
+Print:
+
+The last element using negative indexing
+The second-last element using negative indexing
+The third-last element using negative indexing
+Expected output
+JavaScript
+C++
+Java
+
+Use negative indexing only for this problem.
+"""
+print()
+
+languages = ["Python", "Java", "C++", "JavaScript"]
+
+print(f"The last element is {languages[-1]}")
+print(f"The second last element is {languages[-2]}")
+print(f"The third last element is {languages[-3]}")
+
+"""
+Output:
+The last element is JavaScript
+The second last element is C++
+The third last element is Java
+"""
+
+# =========================================
+
+"""
+🟢 List Problem 7 — in and not in
+
+Create:
+
+languages = ["Python", "Java", "C++", "JavaScript"]
+
+Then check:
+
+Is "Python" present in the list?
+Is "PHP" present in the list?
+Is "Ruby" not present in the list?
+
+Use:
+
+in
+not in
+
+and print the results.
+"""
+print()
+
+languages = ["Python", "Java", "C++", "JavaScript"]
+
+print("Python" in languages)               # Output: True
+print("PHP" in languages)                  # Output: False 
+print("Ruby" not in languages)             # Output: True
+
+
+# ==========================================
+
+"""
+🟢 List Problem 8 — Basic Slicing
+
+Create:
+
+numbers = [10, 20, 30, 40, 50]
+
+Print the elements from index 1 up to index 4.
+
+Remember:
+
+Start is included, end is excluded.
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers[1:4])
+
+"""
+Output:
+[20, 30, 40]
+"""
+
+# =====================================
