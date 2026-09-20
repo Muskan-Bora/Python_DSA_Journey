@@ -337,3 +337,127 @@ Output:
 """
 
 # ===================================
+
+"""
+🟢 List Problem 13 — Modifying a List
+
+Create:
+
+numbers = [10, 20, 30, 40, 50]
+
+Change the third element from 30 to 99.
+
+Then print the updated list.
+
+Expected output
+[10, 20, 99, 40, 50]
+"""
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+numbers[2] = 99
+print(numbers)
+
+"""
+Output:
+[10, 20, 99, 40, 50]
+"""
+# Note: Lists are mutable, meaning we can directly change their elements after the list has been created.
+
+# ===============================
+
+"""
+🟢 List Problem 14 — Modify Multiple Elements
+
+Create:
+
+numbers = [10, 20, 30, 40, 50]
+
+Now:
+
+Change 20 to 200
+Change 50 to 500
+Print the updated list.
+Expected output
+[10, 200, 30, 40, 500]
+
+💡 Use index-based modification again.
+"""
+print()
+
+numbers = [10, 20, 30, 40, 50]
+numbers[1] = 200
+numbers[4] = 500
+print(numbers)
+
+"""
+Output:
+[10, 200, 30, 40, 500]
+"""
+
+# =====================================
+
+"""
+🟢 List Problem 15 — Modify Using Slicing
+
+Now let's take the next step. 😎
+
+Create:
+
+numbers = [10, 20, 30, 40, 50]
+
+Change the second and third elements to:
+
+200, 300
+
+using slicing, not individual indexes.
+
+Expected output
+[10, 200, 300, 40, 50]
+
+💡 Hint: You need to replace a slice containing two elements.
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+numbers[1:3] = [200, 300]
+print(numbers)
+
+"""
+Output:
+[10, 200, 300, 40, 50]
+"""
+
+# =================================
+
+"""
+🟢 List Problem 16 — Mutability Check
+
+Now let's make sure you understand what mutability actually means, rather than only knowing the syntax.
+
+Create:
+
+numbers = [10, 20, 30]
+
+Then:
+
+Change the first element to 100.
+Print numbers.
+Print len(numbers).
+Expected output
+[100, 20, 30]
+3
+"""
+
+print()
+
+numbers = [10, 20, 30]
+
+numbers[0] = 100
+print(numbers)                  # Output: [100, 20, 30]
+print(len(numbers))             # Output: 3
+
+# =====================================
