@@ -265,3 +265,72 @@ Output:
 """
 
 # =============================================
+
+"""
+🟢 List Problem 23 — append() vs extend()
+
+Now we're going to test whether you can choose the correct method, rather than just reproduce syntax.
+
+Start with:
+
+numbers = [10, 20, 30]
+
+You want the final list to be:
+
+[10, 20, 30, 40, 50]
+Your task
+
+Add 40 and 50 to the end of the list.
+
+You must use one method call.
+
+The important part: decide yourself whether append() or extend() is appropriate.
+
+Then print the final list.
+"""
+
+print()
+
+numbers = [10, 20, 30]
+
+numbers.extend([40, 50])
+
+print(numbers)          
+
+"""
+Output:
+[10, 20, 30, 40, 50]
+"""
+
+# ========================================
+
+"""
+🟢 List Problem 24 — append() vs extend() — Your Decision
+
+Now let's reverse the situation.
+
+Start with:
+
+items = ["Python", "Java"]
+
+You want the final list to be:
+
+["Python", "Java", ["C++", "JavaScript"]]
+Your task
+
+Add ["C++", "JavaScript"] as ONE element at the end of the list.
+"""
+
+print()
+
+items = ["Python", "Java"]
+
+items.append(["C++", "JavaScript"])
+print(items)
+
+"""
+Output:
+['Python', 'Java', ['C++', 'JavaScript']]
+"""
+
+# ====================================
