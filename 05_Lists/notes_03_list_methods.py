@@ -199,3 +199,35 @@ Output:
 """
 
 # ==============================
+
+"""
+🟢 List Problem 21 — extend()
+
+Create:
+
+numbers = [10, 20, 30]
+
+Use extend() to add:
+
+40, 50
+
+Then print the list.
+
+Expected output
+[10, 20, 30, 40, 50]
+"""
+
+print()
+
+numbers = [10, 20, 30]
+
+numbers.extend([40, 50])
+
+print(numbers)
+
+"""
+Output:
+[10, 20, 30, 40, 50]
+"""
+
+# =======================================
