@@ -231,3 +231,37 @@ Output:
 """
 
 # =======================================
+
+"""
+🟢 List Problem 22 — extend() with Different Data Types
+
+Now let's make sure extend() isn't limited to numbers.
+
+Create:
+
+items = ["Python", 24]
+
+Use extend() to add these three elements:
+
+"Java", 5.5, True
+
+Then print the final list.
+
+Expected output
+["Python", 24, "Java", 5.5, True]
+"""
+
+print()
+
+items = ["Python", 24]
+
+items.extend(["Java", 5.5, True])
+
+print(items)
+
+"""
+Output:
+['Python', 24, 'Java', 5.5, True]
+"""
+
+# =============================================
