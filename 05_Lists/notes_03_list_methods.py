@@ -427,3 +427,49 @@ numbers.append(40)    # used append() because the question said You need to add 
 print(numbers)  # Output: [10, 20, 30, 40]
 
 # ==================================
+
+"""
+🟢 List Problem 29 — insert() vs append()
+
+Start with:
+
+items = ["Python", "Java", "C++"]
+
+You need to add "JavaScript" between "Java" and "C++".
+
+Question: Should you use append() or insert()?
+"""
+
+print()
+
+items = ["Python", "Java", "C++"]
+
+items.insert(2, "JavaScript")     # Here insert() used becaus ethe requirement was the elemnet should be add between "Java" and "C++" means its specified its position.
+
+print(items)          # output: ['Python', 'Java', 'JavaScript', 'C++']
+
+# ======================================
+
+"""
+🟢 List Problem 30 — insert() Understanding
+
+Start with:
+
+numbers = [10, 20, 30, 40]
+
+You want the final list to be:
+
+[10, 20, 25, 30, 40]
+
+Your task: Use insert() to add 25 in the correct position.
+"""
+
+print()
+
+numbers = [10, 20, 30, 40]
+
+numbers.insert(2, 25)
+
+print(numbers)      # Output: [10, 20, 25, 30, 40]
+
+# =======================================
