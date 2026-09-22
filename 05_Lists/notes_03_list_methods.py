@@ -381,3 +381,49 @@ numbers.insert(0, 10)
 print(numbers)    # Output: [10, 20, 30, 40, 50]
 
 # ==========================================
+
+"""
+List Problem 27 — insert() in the Middle
+
+Create:
+
+numbers = [10, 20, 40, 50]
+
+Insert 30 between 20 and 40.
+
+Expected output:
+
+[10, 20, 30, 40, 50]
+"""
+
+print()
+
+numbers = [10, 20, 40, 50]
+
+numbers.insert(2, 30)
+
+print(numbers)      # Output: [10, 20, 30, 40, 50]
+
+# ===================================
+
+"""
+🟢 List Problem 28 — append() vs insert()
+
+Start with:
+
+numbers = [10, 20, 30]
+
+You need to add 40 at the end of the list.
+
+Question: Should you use append() or insert()?
+"""
+
+print()
+
+numbers = [10, 20, 30]
+
+numbers.append(40)    # used append() because the question said You need to add 40 at the end of the list. so it means at the end 
+
+print(numbers)  # Output: [10, 20, 30, 40]
+
+# ==================================
