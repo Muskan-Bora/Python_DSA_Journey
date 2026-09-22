@@ -334,3 +334,50 @@ Output:
 """
 
 # ====================================
+
+"""
+🟢 List Problem 25 — Basic insert()
+
+Create:
+
+numbers = [10, 20, 40, 50]
+
+Insert 30 at index 2.
+
+Expected output:
+
+[10, 20, 30, 40, 50]
+"""
+
+print()
+
+numbers = [10, 20, 40, 50]
+
+numbers.insert(2, 30)
+
+print(numbers)   # Output: [10, 20, 30, 40, 50]
+
+# ==========================================
+
+"""
+🟢 Problem 26 — insert() at the Beginning
+
+Create:
+
+numbers = [20, 30, 40, 50]
+
+Insert 10 at the beginning of the list.
+
+Expected output:
+
+[10, 20, 30, 40, 50]
+"""
+
+print()
+
+numbers = [20, 30, 40, 50]
+
+numbers.insert(0, 10)
+print(numbers)    # Output: [10, 20, 30, 40, 50]
+
+# ==========================================
