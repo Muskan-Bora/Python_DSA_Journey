@@ -777,3 +777,123 @@ IndexError: pop from empty list
 """
 
 # ===============================
+
+"""
+🟢 List Problem 42 — clear() Basics
+
+Now let's move to our next list method: clear().
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Remove all elements from the list using the appropriate list method.
+
+Expected output:
+
+[]
+Your task
+
+Use clear() and print the list afterward.
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+numbers.clear()
+print(numbers)       # Output: [] -> The empty list came because we have used clear() since it removes all the elements
+
+# The list still exists:
+
+numbers = []
+
+numbers.append(500)    
+print(numbers)        # Output: [500] 
+
+"""
+So:
+
+remove(value) → removes one matching value ✅
+pop(index) → removes one element and returns it ✅
+clear() → removes all elements ✅
+"""
+
+# ======================================
+
+"""
+🟢 List Problem 43 — clear() and Reuse
+
+Start with:
+
+numbers = [10, 20, 30]
+Remove all elements using clear().
+Then add 100 to the now-empty list using append().
+Print the final list.
+
+Expected output:
+
+[100]
+"""
+
+print()
+
+numbers = [10, 20, 30]
+
+numbers.clear()   
+print(numbers)         # Output: []
+
+numbers.append(100)    # Here that empty list will get reused to add a new element
+
+print(numbers)         # Output: [100]
+
+# ====================================
+
+"""
+🟢 List Problem 44 — remove() + pop() + append()
+
+Now we're going to combine methods, but nothing new.
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Perform these steps in order:
+
+Remove the value 20 using remove().
+Remove the element at index 2 using pop().
+Add 100 at the end using append().
+Print the final list.
+Expected output
+[10, 30, 50, 100]
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+# Remove the value 20 using remove().
+
+numbers.remove(20)
+print(numbers)             # Output: [10, 30, 40, 50]
+
+# So, new list becomes
+numbers = [10, 30, 40, 50]
+
+# Remove the element at index 2 using pop().
+
+numbers.pop(2)
+print(numbers)             # Output: [10, 30, 50]
+
+# So, now new list becomes
+numbers = [10, 30, 50]
+
+# Add 100 at the end using append().
+
+numbers.append(100)
+print(numbers)             # Output: [10, 30, 50, 100]
+
+final_list = numbers
+print(f"Final List: {numbers}")      # Output: Final List: [10, 30, 50, 100]
+
+# ====================================
