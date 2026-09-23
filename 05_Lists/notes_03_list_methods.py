@@ -552,3 +552,83 @@ ValueError: list.remove(x): x not in list
 """
 
 # ===================================================
+
+"""
+🟢 List Problem 34 — remove() by Value
+
+Let's correct the problem so it stays within today's learning scope.
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Remove the value 40 from the list.
+
+Expected output:
+
+[10, 20, 30, 50]
+Your task
+
+Use remove().
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+numbers.remove(40)
+print(numbers)       # OUTPUT: [10, 20, 30, 50]
+
+# ====================================
+
+"""
+🟢 List Problem 35 — remove() with Strings
+
+Start with:
+
+languages = ["Python", "Java", "C++", "JavaScript"]
+
+Remove "Java" from the list.
+
+Expected output:
+
+["Python", "C++", "JavaScript"]
+Your task
+
+Use remove().
+"""
+
+print()
+
+languages = ["Python", "Java", "C++", "JavaScript"]
+
+languages.remove("Java")
+print(languages)                    # Output: ['Python', 'C++', 'JavaScript']
+
+# ====================================
+
+"""
+🟢 List Problem 36 — remove() + Duplicate Strings
+
+Start with:
+
+languages = ["Python", "Java", "C++", "Java", "JavaScript"]
+
+Remove "Java" once.
+
+Expected output:
+
+["Python", "C++", "Java", "JavaScript"]
+Your task
+
+Use remove() and send me your code.
+"""
+
+print()
+
+languages = ["Python", "Java", "C++", "Java", "JavaScript"]
+
+languages.remove("Java")
+print(languages)                  # ['Python', 'C++', 'Java', 'JavaScript']
+
+# =======================================
