@@ -473,3 +473,82 @@ numbers.insert(2, 25)
 print(numbers)      # Output: [10, 20, 25, 30, 40]
 
 # =======================================
+
+"""
+🟢 List Problem 31 — remove() Basics
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Remove the value 30 from the list.
+
+Expected output:
+
+[10, 20, 40, 50]
+Your task:
+
+Use the appropriate list method to remove 30.
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+numbers.remove(30)
+print(numbers)    # Output: [10, 20, 40, 50]
+
+# ===============================================
+
+"""
+🟢 List Problem 32 — remove() with Duplicate Values
+
+Start with:
+
+numbers = [10, 20, 30, 20, 40]
+
+Remove the value 20 once.
+
+Expected output:
+
+[10, 30, 20, 40]
+Your task
+
+Use remove() and think carefully about what happens when a value appears more than once.
+"""
+
+print()
+
+numbers = [10, 20, 30, 20, 40]
+
+numbers.remove(20)
+print(numbers)       # Output: [10, 30, 20, 40] --> It reove the 1st 20 from the list
+
+# ===============================
+
+"""
+🟢 List Problem 33 — remove() and a Missing Value
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Try to remove the value 100.
+
+Your task
+
+Write the code using remove().
+"""
+
+print()
+
+# numbers = [10, 20, 30, 40, 50]
+# numbers.remove(100)
+# print(numbers)
+
+"""
+Error will come: 
+ValueError: list.remove(x): x not in list
+"""
+
+# ===================================================
