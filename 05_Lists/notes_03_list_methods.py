@@ -632,3 +632,148 @@ languages.remove("Java")
 print(languages)                  # ['Python', 'C++', 'Java', 'JavaScript']
 
 # =======================================
+
+"""
+🟢 List Problem 37 — pop() Basics
+
+Now we're learning something new, so don't worry about comparing it with remove() yet.
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Use pop() to remove the last element from the list.
+
+Expected output:
+
+[10, 20, 30, 40]
+Your task
+
+Use pop().
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+numbers.pop()
+print(numbers)        # Output: [10, 20, 30, 40]
+
+# ==================================
+
+"""
+🟢 List Problem 38 — pop() with an Index
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Use pop() to remove the element at index 2.
+
+Expected output:
+
+[10, 20, 40, 50]
+Your task
+
+Use pop() with the appropriate index.
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+numbers.pop(2)
+print(numbers)       # Output: [10, 20, 40, 50]
+
+# =============================================
+
+"""
+🟢 List Problem 39 — Store the Removed Value
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Use pop() to remove the last element, but this time store the removed value in a variable called removed_value.
+
+Then print both:
+
+Removed value: 50
+Remaining list: [10, 20, 30, 40]
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+removed_value = numbers.pop()
+print(f"Removed value: {removed_value}")             # Output: Removed value: 50 [Because last elemnet is 50 so its geot removed]
+print(f"Remaining list: {numbers}")                   # Output: Remaining list: [10, 20, 30, 40]
+
+# ============================================
+
+"""
+🟢 List Problem 40 — pop(index) + Store Removed Value
+
+Now let's combine what you've learned.
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Use pop() to remove the element at index 2, and store the removed value in:
+
+removed_value
+
+Expected result:
+
+Removed value: 30
+Remaining list: [10, 20, 40, 50]
+"""
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+removed_value = numbers.pop(2)
+print(f"Removed value: {removed_value}")          # OUTPUT: Removed value: 30
+print(f"Remaining list: {numbers}")               # OUTPUT: Remaining list: [10, 20, 40, 50]
+
+# ====================================
+
+"""
+🟢 List Problem 41 — pop() + Empty List
+
+One more important behavior before we move forward.
+
+Start with:
+
+numbers = [10]
+
+Use pop() to remove the only element.
+
+Then print:
+
+Removed value: 10
+Remaining list: []
+Your task
+
+Use pop() and store the removed value in removed_value
+"""
+
+print()
+
+numbers = [10]
+removed_value = numbers.pop()
+print(f"Removed value: {removed_value}")    # Output: Removed value: 10
+print(f"Remaining list: {numbers}")         # Output: Remaining list: []
+
+
+"""
+🧠 One important concept 
+
+If you call pop() on an empty list, Python will raise an:
+
+IndexError: pop from empty list
+"""
+
+# ===============================
