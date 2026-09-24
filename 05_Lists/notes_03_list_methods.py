@@ -897,3 +897,79 @@ final_list = numbers
 print(f"Final List: {numbers}")      # Output: Final List: [10, 30, 50, 100]
 
 # ====================================
+
+# Count()
+
+"""
+What does count() do?
+
+It tells us how many times a particular value appears in a list.
+"""
+
+"""
+🟢 Problem 45
+
+Start with:
+
+numbers = [10, 20, 20, 30, 20, 40]
+
+Find how many times 20 appears in the list.
+
+Expected output:
+
+3
+"""
+
+print()
+
+numbers = [10, 20, 20, 30, 20, 40]
+
+print(numbers.count(20))    # Output: 3
+
+# =====================
+
+"""
+🟢 List Problem 46 — count() with a Value That Doesn't Exist
+
+Start with:
+
+numbers = [10, 20, 20, 30, 20, 40]
+
+Find how many times 100 appears in the list.
+
+Expected output:
+
+0
+"""
+
+print()
+
+numbers = [10, 20, 20, 30, 20, 40]
+
+print(numbers.count(100))     # Output: 0
+
+# ==============================
+
+"""
+🟢 List Problem 47 — count() with Strings
+
+Let's make sure the method isn't limited to numbers.
+
+Start with:
+
+languages = ["Python", "Java", "Python", "C++", "Python", "Java"]
+
+Find how many times "Python" appears.
+
+Expected output:
+
+3
+"""
+
+print()
+
+languages = ["Python", "Java", "Python", "C++", "Python", "Java"]
+
+print(languages.count("Python"))       # Output: 3
+
+# ==================================
