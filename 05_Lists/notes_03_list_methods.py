@@ -973,3 +973,134 @@ languages = ["Python", "Java", "Python", "C++", "Python", "Java"]
 print(languages.count("Python"))       # Output: 3
 
 # ==================================
+
+"""
+List Problem 48 — index()
+
+Now we're moving to the next List Method: index().
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Find the index of 30.
+
+Expected output:
+
+2
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+print(numbers.index(30))    # Output: 2
+
+"""
+🧠 Key rule
+
+index(value) → returns the index of the first occurrence of that value.
+"""
+
+# ==================================
+
+"""
+List Problem 49 — index() with Duplicate Values
+
+Start with:
+
+numbers = [10, 20, 30, 20, 40]
+
+Find the index of 20.
+
+Expected output:
+
+1
+"""
+
+print()
+
+numbers = [10, 20, 30, 20, 40]
+
+print(numbers.index(20))         # Output: 1 --> Reason is the 1st 20 is coming in index position of 1 so its considering 1st 20
+
+"""
+index() returns the index of the first occurrence of the value.
+"""
+
+# ==============================
+
+"""
+List Problem 50 — index() with a Missing Value
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Try to find the index of 100.
+
+Your task
+
+Use:
+
+index()
+
+and run the code.
+"""
+
+# print()
+
+# numbers = [10, 20, 30, 40, 50]
+
+# print(numbers.index(100))
+
+"""
+print(numbers.index(100))
+          ^^^^^^^^^^^^^^^^^^
+ValueError: 100 is not in list
+"""
+
+"""
+🧠 This gives us an important comparison
+| Method          | If value exists                  | If value doesn't exist |
+| --------------- | -------------------------------- | ---------------------- |
+| `remove(value)` | Removes first occurrence         | `ValueError`           |
+| `index(value)`  | Returns first occurrence's index | `ValueError`           |
+| `count(value)`  | Returns occurrence count         | Returns `0`            |
+
+"""
+
+# ======================================
+
+"""
+List Problem 51 — index() + Duplicate Values
+
+Let's make this a little more practical.
+
+Start with:
+
+numbers = [10, 20, 30, 20, 40, 20]
+
+You need to find:
+
+How many times 20 appears.
+The index of the first 20.
+Expected output
+Count: 3
+First index: 1
+"""
+
+print()
+
+numbers = [10, 20, 30, 20, 40, 20]
+
+print(f"Count: {numbers.count(20)}")
+print(f"First Index: {numbers.index(20)}")
+
+"""
+Output:
+Count: 3
+First Index: 1
+"""
+
+# ==========================================
