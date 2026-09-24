@@ -1104,3 +1104,52 @@ First Index: 1
 """
 
 # ==========================================
+
+"""
+🟢 List Problem 52 — sort() Basics
+
+Now we move to ordering/sorting.
+
+Start with:
+
+numbers = [40, 10, 50, 20, 30]
+
+Sort the list in ascending order.
+
+Expected output:
+
+[10, 20, 30, 40, 50]
+"""
+
+print()
+
+numbers = [40, 10, 50, 20, 30]
+
+numbers.sort()
+print(numbers)       # Output: [10, 20, 30, 40, 50]
+
+# ================================
+
+"""
+List Problem 53 — sort() with Strings
+
+Start with:
+
+languages = ["Python", "Java", "C", "JavaScript", "Go"]
+
+Sort the list in ascending/alphabetical order.
+
+Expected output:
+
+['C', 'Go', 'Java', 'JavaScript', 'Python']
+"""
+
+print()
+
+languages = ["Python", "Java", "C", "JavaScript", "Go"]
+
+languages.sort()
+
+print(languages)     # Output: ['C', 'Go', 'Java', 'JavaScript', 'Python']
+
+# ===========================================
