@@ -1153,3 +1153,122 @@ languages.sort()
 print(languages)     # Output: ['C', 'Go', 'Java', 'JavaScript', 'Python']
 
 # ===========================================
+
+"""
+List Problem 54 — reverse() Basics
+
+Now let's learn the second ordering method.
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Reverse the original list using the appropriate list method.
+
+Expected output:
+
+[50, 40, 30, 20, 10]
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+numbers.reverse()
+print(numbers)              # Output: [50, 40, 30, 20, 10]
+
+"""
+🧠 Important distinction
+
+two ordering methods:
+
+sort() → reorders elements according to ascending order by default.
+reverse() → reverses the current order of the list.
+"""
+
+# ====================================
+
+"""
+🟢 List Problem 55 — sort() + reverse()
+
+Now let's combine the two methods you've just learned.
+
+Start with:
+
+numbers = [40, 10, 50, 20, 30]
+
+Sort the list in descending order.
+
+Expected output:
+
+[50, 40, 30, 20, 10]
+"""
+
+print()
+
+numbers = [40, 10, 50, 20, 30]
+
+numbers.sort()
+numbers.reverse()
+print(numbers)        # Output: [50, 40, 30, 20, 10]
+
+# ====================================
+
+"""
+List Problem 56 — sort() with Duplicate Values
+
+Start with:
+
+numbers = [30, 10, 20, 30, 50, 20, 40]
+
+Sort the list in ascending order.
+
+Expected output:
+
+[10, 20, 20, 30, 30, 40, 50]
+"""
+
+print()
+
+numbers = [30, 10, 20, 30, 50, 20, 40]
+
+numbers.sort()
+print(numbers)          # Output: [10, 20, 20, 30, 30, 40, 50]
+
+"""
+🧠 Small concept confirmed
+
+sort() does not remove duplicates. It only changes the order.
+"""
+
+# ===========================
+
+"""
+List Problem 57 — reverse() After sort()
+
+Let's do one slightly more practical combination.
+
+Start with:
+
+numbers = [15, 40, 10, 30, 20]
+
+Your task is to make the list:
+
+[40, 30, 20, 15, 10]
+🎯 Requirement
+
+Use the two list methods we've learned:
+
+sort()
+reverse()
+"""
+
+print()
+
+numbers = [15, 40, 10, 30, 20]
+
+numbers.sort()
+numbers.reverse()
+print(numbers)      # output: [40, 30, 20, 15, 10]
+
+# =============================
