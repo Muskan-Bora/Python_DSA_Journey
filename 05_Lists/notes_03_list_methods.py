@@ -1272,3 +1272,177 @@ numbers.reverse()
 print(numbers)      # output: [40, 30, 20, 15, 10]
 
 # =============================
+
+"""
+🟢 List Problem 58 — Traversal + sort()
+
+Start with:
+
+numbers = [50, 20, 40, 10, 30]
+🎯 Task
+Sort the list in ascending order using sort().
+Traverse the sorted list using a for loop.
+Print each number on a separate line.
+Expected output
+10
+20
+30
+40
+50
+Requirements
+✅ Use sort()
+✅ Use a for loop
+❌ Don't use sorted() yet
+❌ Don't manually create the sorted list
+"""
+
+print()
+
+numbers = [50, 20, 40, 10, 30]
+
+numbers.sort()
+
+for number in numbers:
+   print(number)
+
+"""
+Output:
+10
+20
+30
+40
+50
+"""
+
+# ==========================================
+
+"""
+🟢 List Problem 59 — Traversal + reverse()
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+🎯 Task
+Reverse the original list using reverse().
+Traverse the reversed list using a for loop.
+Print each number on a separate line.
+Expected output
+50
+40
+30
+20
+10
+Requirements
+✅ Use reverse()
+✅ Use a for loop
+❌ Don't use slicing [::-1]
+❌ Don't use reversed()
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+numbers.reverse()
+
+for number in numbers:
+   print(number)
+
+"""
+Output:
+50
+40
+30
+20
+10
+"""
+
+# ==================================
+
+"""
+🟢 List Problem 60 — sort() + reverse() + Traversal
+
+Let's combine everything you've learned about ordering and traversal.
+
+Start with:
+
+numbers = [25, 5, 40, 15, 30]
+🎯 Task
+Sort the list in ascending order using sort().
+Reverse the sorted list using reverse().
+Traverse the final list using a for loop.
+Print each number on a separate line.
+Expected output
+40
+30
+25
+15
+5
+Requirements
+✅ Use sort()
+✅ Use reverse()
+✅ Use for loop
+❌ Don't use sorted()
+❌ Don't use slicing
+❌ Don't manually arrange the numbers
+"""
+
+print()
+
+numbers = [25, 5, 40, 15, 30]
+
+numbers.sort()
+numbers.reverse()
+
+for number in numbers:
+   print(number)
+
+"""
+Output:
+40
+30
+25
+15
+5
+"""
+
+# =======================================
+
+"""
+🟢 List Problem 61 — Practical List Processing
+
+Start with:
+
+numbers = [10, 25, 5, 40, 15, 30]
+🎯 Task
+
+Create a program that:
+
+Sorts the list in ascending order using sort().
+Prints the first element of the sorted list.
+Prints the last element of the sorted list.
+Expected output
+First: 5
+Last: 40
+Requirements
+✅ Use sort()
+✅ Use list indexing
+❌ Don't use min()
+❌ Don't use max()
+❌ Don't use sorted()
+"""
+
+print()
+
+numbers = [10, 25, 5, 40, 15, 30]
+
+numbers.sort()
+print(f"First: {numbers[0]}")
+print(f"Last: {numbers[5]}")
+
+"""
+First: 5
+Last: 40
+"""
+
+# =======================================
