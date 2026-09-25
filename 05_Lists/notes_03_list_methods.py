@@ -1446,3 +1446,60 @@ Last: 40
 """
 
 # =======================================
+
+"""
+🟢 Problem 62 — Last Element
+
+Start with:
+
+numbers = [15, 30, 5, 40, 25]
+
+Sort the list in ascending order and print the last element.
+
+Expected:
+
+Last: 40
+
+Requirement: Use sort() and list indexing.
+"""
+
+print()
+
+numbers = [15, 30, 5, 40, 25]
+
+numbers.sort()
+print(numbers[4])
+
+"""
+output:
+40
+"""
+
+# ===============================
+
+"""
+🟢 Problem 63 — Quick One
+numbers = [20, 5, 35, 10, 25]
+
+Sort the list in ascending order and print the first element.
+
+Expected:
+
+First: 5
+
+Use: sort() + list indexing.
+"""
+
+print()
+
+numbers = [20, 5, 35, 10, 25]
+
+numbers.sort()
+print(f"First: {numbers[0]}")
+
+"""
+Output:
+First: 5
+"""
+
+# ================================
