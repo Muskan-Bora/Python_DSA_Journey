@@ -1503,3 +1503,35 @@ First: 5
 """
 
 # ================================
+
+"""
+🟢 Problem 64 — Last Quick One
+
+Start with:
+
+numbers = [45, 10, 30, 5, 20]
+🎯 Task
+Sort the list in ascending order.
+Print the first and last elements using indexing.
+Match this output exactly:
+First: 5
+Last: 45
+
+Use only: sort() + list indexing.
+"""
+
+print()
+
+numbers = [45, 10, 30, 5, 20]
+
+numbers.sort()
+print(f"First: {numbers[0]}")
+print(f"Last: {numbers[4]}")
+
+"""
+Output:
+First: 5
+Last: 45
+"""
+
+# ==========================================
