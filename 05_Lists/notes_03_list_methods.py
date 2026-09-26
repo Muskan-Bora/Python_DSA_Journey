@@ -1535,3 +1535,123 @@ Last: 45
 """
 
 # ==========================================
+
+"""
+Problem 65
+
+Start with:
+
+numbers = [10, 20, 30, 40, 50]
+
+Write a program that:
+
+Traverses the list using a for loop.
+Checks whether each number is greater than 25.
+Prints only the numbers greater than 25.
+
+Expected output:
+
+30
+40
+50
+🎯 Requirements
+Use a for loop
+Use an if condition
+Work directly with the list
+Don't manually print 30, 40, 50
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+for number in numbers:
+   if number > 25:
+      print(number)
+
+"""
+Output:
+30
+40
+50
+"""
+
+# ======================================
+
+"""
+🟢 Problem 66 — List + Condition
+
+Start with:
+
+numbers = [5, 12, 18, 25, 31, 40]
+
+Traverse the list and print only the even numbers.
+
+Expected output:
+
+12
+18
+40
+Requirements
+Use a for loop
+Use an if condition
+Work directly with the list
+Don't manually print the answers
+"""
+
+print()
+
+numbers = [5, 12, 18, 25, 31, 40]
+
+for number in numbers:
+   if number % 2 == 0:
+      print(number)
+
+"""
+Output:
+12
+18
+40
+"""
+
+# =================================
+
+"""
+🟢 Problem 67 — Filter Numbers by a Condition
+
+Start with:
+
+numbers = [12, 7, 25, 40, 18, 5, 30]
+🎯 Task
+
+Traverse the list and print only the numbers greater than 20.
+
+Expected output:
+
+25
+40
+30
+Requirements
+✅ Use a for loop
+✅ Use an if condition
+✅ Work directly with the list
+❌ Don't manually print the answers
+❌ Don't use filter() yet
+"""
+
+print()
+
+numbers = [12, 7, 25, 40, 18, 5, 30]
+
+for number in numbers:
+   if number > 20:
+      print(number)
+
+"""
+Output:
+25
+40
+30
+"""
+
+# ===================================================
