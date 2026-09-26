@@ -1741,3 +1741,45 @@ Output:
 """
 
 # ============================================
+
+"""
+🟢 Problem 70 — Filter + Store Even Numbers
+
+Start with:
+
+numbers = [7, 12, 19, 24, 31, 40, 45, 18]
+🎯 Task
+
+Create a new list containing only the even numbers from numbers.
+
+Expected result:
+
+[12, 24, 40, 18]
+Requirements
+✅ Use a for loop
+✅ Use an if condition
+✅ Create a new empty list
+✅ Use append() to store matching numbers
+❌ Don't modify the original numbers list
+❌ Don't use filter()
+❌ Don't use list comprehension yet
+"""
+
+print()
+
+numbers = [7, 12, 19, 24, 31, 40, 45, 18]
+
+result = []
+
+for number in numbers:
+   if number % 2 == 0:
+      result.append(number)
+
+print(result)
+
+"""
+Output:
+[12, 24, 40, 18]
+"""
+
+# ============================================
