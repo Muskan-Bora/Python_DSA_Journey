@@ -1655,3 +1655,89 @@ Output:
 """
 
 # ===================================================
+
+"""
+🟢 Problem 68 — Filter + Calculation
+
+Now let's make it one step more practical.
+
+Start with:
+
+numbers = [10, 15, 20, 25, 30, 35]
+🎯 Task
+
+Traverse the list and print only the numbers greater than 20, multiplied by 2.
+
+Expected output:
+
+50
+60
+70
+Requirements
+✅ Use a for loop
+✅ Use an if condition
+✅ Use the condition number > 20
+✅ Multiply the matching number by 2
+❌ Don't manually print the answers
+❌ Don't use filter()
+"""
+
+print()
+
+numbers = [10, 15, 20, 25, 30, 35]
+
+for number in numbers:
+   if number > 20:
+      print(number * 2)
+
+"""
+Output:
+50
+60
+70
+"""
+
+# =============================================
+
+"""
+🟢 Problem 69 — Filter + Store Results
+
+Now let's take the next small step.
+
+Start with:
+
+numbers = [5, 12, 25, 8, 30, 17, 40]
+🎯 Task
+
+Traverse the list and create a new list containing only the numbers greater than 20.
+
+Expected result:
+
+[25, 30, 40]
+Requirements
+✅ Use a for loop
+✅ Use an if condition
+✅ Create a new list
+❌ Don't modify the original numbers list
+❌ Don't use filter() yet
+❌ Don't use list comprehension yet
+"""
+
+print()
+
+numbers = [5, 12, 25, 8, 30, 17, 40]
+
+result = []
+
+for number in numbers:
+   if number > 20:
+      result.append(number)
+
+print(result)
+
+"""
+Output:
+[25, 30, 40]
+"""
+
+# ============================================
