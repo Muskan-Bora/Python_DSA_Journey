@@ -1783,3 +1783,87 @@ Output:
 """
 
 # ============================================
+
+"""
+🟢 Problem 71 — sorted() vs sort()
+
+This is an important distinction before we move ahead.
+
+Start with:
+
+numbers = [40, 10, 30, 20, 50]
+🎯 Task
+
+Use sorted() to create a new sorted list.
+
+Then print:
+
+The original numbers list
+The new sorted list
+Expected output
+Original: [40, 10, 30, 20, 50]
+Sorted: [10, 20, 30, 40, 50]
+Requirements
+✅ Use sorted()
+✅ Store the returned result in a new variable
+✅ Print both lists
+❌ Don't use sort()
+❌ Don't manually arrange the values
+"""
+
+print()
+
+numbers = [40, 10, 30, 20, 50]
+
+print(f"Original: {numbers}")              
+
+new_list = sorted(numbers)
+print(f"Sorted: {new_list}")
+
+"""
+Output:
+Original: [40, 10, 30, 20, 50]
+Sorted: [10, 20, 30, 40, 50]
+"""
+
+# ============================================
+
+"""
+🟢 Problem 72 — sorted() in Descending Order
+
+Start with:
+
+numbers = [15, 40, 10, 30, 25]
+🎯 Task
+
+Use sorted() to create a new list in descending order.
+
+Print:
+
+Original: [15, 40, 10, 30, 25]
+Descending: [40, 30, 25, 15, 10]
+Requirements
+✅ Use sorted()
+✅ Store the result in a new variable
+✅ Use the appropriate option to get descending order
+✅ Keep the original list unchanged
+❌ Don't use sort()
+❌ Don't use reverse()
+"""
+
+print()
+
+numbers = [15, 40, 10, 30, 25]
+
+print(f"Original: {numbers}")
+
+new_list_desc = sorted(numbers, reverse = True)
+print(f"Descending: {new_list_desc}")
+
+"""
+Output:
+Original: [15, 40, 10, 30, 25]
+Descending: [40, 30, 25, 15, 10]
+"""
+
+# =================================================
