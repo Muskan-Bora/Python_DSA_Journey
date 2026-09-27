@@ -1867,3 +1867,80 @@ Descending: [40, 30, 25, 15, 10]
 """
 
 # =================================================
+
+"""
+🟢 Problem 73 — sorted() + Original List
+
+Start with:
+
+numbers = [50, 20, 40, 10, 30]
+🎯 Task
+
+Use sorted() to create a new list in ascending order, then:
+
+Print the original list.
+Print the new sorted list.
+Print the original list again to prove it was not changed.
+Expected Output
+Original: [50, 20, 40, 10, 30]
+Sorted: [10, 20, 30, 40, 50]
+Original After: [50, 20, 40, 10, 30]
+"""
+
+print()
+
+numbers = [50, 20, 40, 10, 30]
+
+print(f"Original: {numbers}")
+
+new_list = sorted(numbers)
+print(f"Sorted: {new_list}")
+
+print(f"Original After: {numbers}")
+
+"""
+Output:
+Original: [50, 20, 40, 10, 30]
+Sorted: [10, 20, 30, 40, 50]
+Original After: [50, 20, 40, 10, 30]
+"""
+
+# ================================================
+
+"""
+🟢 Problem 74 — sorted() with Strings
+
+Start with:
+
+languages = ["Python", "Java", "C", "JavaScript", "Go"]
+🎯 Task
+
+Use sorted() to create a new list of languages in alphabetical order.
+
+Print:
+
+Original: ['Python', 'Java', 'C', 'JavaScript', 'Go']
+Sorted: ['C', 'Go', 'Java', 'JavaScript', 'Python']
+Requirements
+✅ Use sorted()
+✅ Store the result in a new variable
+✅ Keep the original list unchanged
+❌ Don't use sort()
+"""
+
+print()
+
+languages = ["Python", "Java", "C", "JavaScript", "Go"]
+
+print(f"Original: {languages}")
+
+new_list = sorted(languages)
+print(f"Sorted: {new_list}")
+
+"""
+Output:
+Original: ['Python', 'Java', 'C', 'JavaScript', 'Go']
+Sorted: ['C', 'Go', 'Java', 'JavaScript', 'Python']
+"""
+
+# ==================================
