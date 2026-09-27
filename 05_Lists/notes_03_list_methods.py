@@ -1944,3 +1944,94 @@ Sorted: ['C', 'Go', 'Java', 'JavaScript', 'Python']
 """
 
 # ==================================
+
+"""
+🟢 Problem 75 — sorted() + Descending Strings
+
+Start with:
+
+languages = ["Python", "Java", "C", "JavaScript", "Go"]
+🎯 Task
+
+Use sorted() to create a new list in reverse alphabetical order.
+
+Expected output:
+
+Original: ['Python', 'Java', 'C', 'JavaScript', 'Go']
+Descending: ['Python', 'JavaScript', 'Java', 'Go', 'C']
+Requirements
+✅ Use sorted()
+✅ Store the result in a new variable
+✅ Use the appropriate sorted() option for descending order
+✅ Keep the original list unchanged
+❌ Don't use sort()
+❌ Don't use slicing/reverse
+"""
+
+print()
+
+languages = ["Python", "Java", "C", "JavaScript", "Go"]
+
+print(f"Original: {languages}")
+
+new_list_desc = sorted(languages, reverse = True)
+print(f"Descending: {new_list_desc}")
+
+"""
+Output:
+Original: ['Python', 'Java', 'C', 'JavaScript', 'Go']
+Descending: ['Python', 'JavaScript', 'Java', 'Go', 'C']
+"""
+
+# =========================================
+
+"""
+🟢 Problem 76 — List + sorted() + Condition
+
+Start with:
+
+numbers = [45, 12, 30, 8, 25, 50, 18]
+🎯 Task
+
+Use sorted() to create a new ascending list, then use a loop to print only the numbers greater than 20.
+
+Expected output:
+
+Sorted: [8, 12, 18, 25, 30, 45, 50]
+Numbers Greater Than 20:
+25
+30
+45
+50
+Requirements
+✅ Use sorted()
+✅ Store the sorted result in a new variable
+✅ Keep the original list unchanged
+✅ Use a for loop
+✅ Use if
+❌ Don't use sort()
+"""
+
+print()
+
+numbers = [45, 12, 30, 8, 25, 50, 18]
+
+new_list = sorted(numbers)
+print(f"Sorted: {new_list}")
+
+print("Numbers Greater Than 20:")
+for num in new_list:
+   if num > 20:
+      print(num)
+
+"""
+Output:
+Sorted: [8, 12, 18, 25, 30, 45, 50]
+Numbers Greater Than 20:
+25
+30
+45
+50
+"""
+
+# =================================================
