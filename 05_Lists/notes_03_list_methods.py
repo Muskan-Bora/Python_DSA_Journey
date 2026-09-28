@@ -2035,3 +2035,55 @@ Numbers Greater Than 20:
 """
 
 # =================================================
+
+"""
+Problem 77 — List Processing Challenge
+
+Start with:
+
+numbers = [35, 10, 50, 20, 45, 15, 30]
+🎯 Task
+
+Write a program that:
+
+Creates a new sorted list in ascending order using sorted().
+Prints the sorted list.
+Uses a for loop to go through the sorted list.
+Prints only the numbers that are greater than 20.
+Expected Output
+Sorted: [10, 15, 20, 30, 35, 45, 50]
+Numbers Greater Than 20:
+30
+35
+45
+50
+Requirements
+✅ sorted()
+✅ New variable
+✅ for loop
+✅ if
+❌ Don't use sort()
+❌ Don't use list comprehension yet
+"""
+print()
+numbers = [35, 10, 50, 20, 45, 15, 30]
+
+new_list = sorted(numbers)
+print(f"Sorted: {new_list}")
+
+print("Numbers Greater Than 20:")
+for num in new_list:
+   if num > 20:
+      print(num)
+
+"""
+Output:
+Sorted: [10, 15, 20, 30, 35, 45, 50]
+Numbers Greater Than 20:
+30
+35
+45
+50
+"""
+
+# ==========================================
