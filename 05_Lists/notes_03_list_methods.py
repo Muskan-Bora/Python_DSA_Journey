@@ -2133,3 +2133,44 @@ Result: [30, 50]
 """
 
 # ================================
+
+"""
+🟢 Problem 79 — Mixed List Challenge
+
+Start with:
+
+numbers = [10, 25, 40, 15, 30, 50, 20]
+🎯 Task
+
+Create a new list containing the numbers that are:
+
+greater than 20 and less than 50
+
+Expected output:
+
+Result: [25, 40, 30]
+Requirements
+✅ Use a for loop
+✅ Use an if condition
+✅ Store matching values in a new list
+❌ Don't modify numbers
+❌ Don't use list comprehension
+"""
+
+print()
+
+numbers = [10, 25, 40, 15, 30, 50, 20]
+
+result = []
+
+for num in numbers:
+   if num > 20 and num < 50:
+      result.append(num)
+
+print(f"Result: {result}")
+
+"""
+Result: [25, 40, 30]
+"""
+
+# ==============================================
