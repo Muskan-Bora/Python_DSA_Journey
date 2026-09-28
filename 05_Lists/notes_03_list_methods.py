@@ -2087,3 +2087,49 @@ Numbers Greater Than 20:
 """
 
 # ==========================================
+
+"""
+🟢 Problem 78 — Mixed List Challenge
+
+Now let's remove one piece of guidance.
+
+Start with:
+
+numbers = [12, 45, 20, 8, 35, 50, 15, 30]
+🎯 Task
+
+Create a new list containing only the numbers that are:
+
+greater than 20 AND even
+
+Then print the resulting list.
+
+Expected Output
+Result: [30, 50]
+Requirements
+✅ Use a for loop
+✅ Use an if condition
+✅ Store matching numbers in a new list
+❌ Don't modify the original numbers list
+❌ Don't use list comprehension yet
+"""
+
+print()
+
+numbers = [12, 45, 20, 8, 35, 50, 15, 30]
+
+result = []
+
+for num in numbers:
+   if num > 20 and num % 2 == 0:
+      result.append(num)
+      
+new_result = sorted(result)
+print(f"Result: {new_result}")
+
+"""
+Output:
+Result: [30, 50]
+"""
+
+# ================================
