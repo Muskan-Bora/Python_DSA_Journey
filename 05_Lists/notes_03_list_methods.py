@@ -2349,3 +2349,96 @@ Result: [60, 80, 100]
 """
 
 # ============================================
+
+"""
+🟢 Problem 84 — Strings + Lists Mixed Challenge
+
+Start with:
+
+names = ["muskan", "doraemon", "python", "swt club", "django"]
+🎯 Task
+
+Create a new list containing only the names whose length is greater than 6 characters.
+
+Then print the result.
+
+Expected Output
+Result: ['doraemon', 'swt club']
+
+⚠️ Important: Treat the space in "swt club" as a character because Python's len() counts spaces too.
+
+Requirements
+✅ Use a for loop
+✅ Use an if condition
+✅ Use len()
+✅ Store matching values in a new list
+❌ Don't modify the original list
+❌ Don't use list comprehension
+❌ Don't manually count the characters
+"""
+
+print()
+
+names = ["muskan", "doraemon", "python", "swt club", "django"]
+
+result = []
+
+for name in names:
+   if len(name) > 6:
+      result.append(name)
+
+print(f"Result: {result}")
+
+"""
+Output:
+Result: ['doraemon', 'swt club']
+"""
+
+# =====================================
+
+"""
+🟢 Problem 85 — Strings + Lists
+
+Let's make it slightly harder.
+
+Start with:
+
+names = ["Muskan", "Doraemon", "python", "SWT CLUB", "django", "AI"]
+🎯 Task
+
+Create a new list containing only the names that:
+
+Have more than 4 characters AND start with an uppercase letter
+
+Expected output:
+
+Result: ['Muskan', 'Doraemon', 'SWT CLUB']
+Requirements
+✅ Use a for loop
+✅ Use an if
+✅ Use len()
+✅ Use a string method you've already learned
+✅ Use and
+✅ Store matches in a new list
+❌ No list comprehension
+❌ Don't manually select the names
+"""
+
+print()
+
+names = ["Muskan", "Doraemon", "python", "SWT CLUB", "django", "AI"]
+
+result = []
+
+for name in names:
+   if len(name) > 4 and name[0].isupper():
+      result.append(name)
+
+print(f"Result: {result}")
+
+"""
+Output:
+Result: ['Muskan', 'Doraemon', 'SWT CLUB']
+"""
+
+# =======================================
