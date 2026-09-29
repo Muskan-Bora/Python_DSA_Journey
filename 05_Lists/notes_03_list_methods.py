@@ -2174,3 +2174,87 @@ Result: [25, 40, 30]
 """
 
 # ==============================================
+
+"""
+Problem 80 — Mixed List Challenge
+
+Start with:
+
+numbers = [25, 10, 40, 15, 30, 5, 50, 20]
+🎯 Task
+
+Create a new list containing only the numbers that satisfy both conditions:
+
+Greater than 15 AND even
+
+Then print the result.
+
+Expected Output
+Result: [40, 30, 50, 20]
+Requirements
+✅ Use a for loop
+✅ Use an if condition
+✅ Use and
+✅ Use % to check whether a number is even
+✅ Store matching numbers in a new list
+❌ Don't modify the original list
+❌ Don't use list comprehension
+❌ Don't sort the result
+"""
+
+print()
+
+numbers = [25, 10, 40, 15, 30, 5, 50, 20]
+
+result = []
+
+for num in numbers:
+   if num > 15 and num % 2 == 0:
+      result.append(num)
+
+print(f"Result: {result}")
+
+"""
+Output:
+Result: [40, 30, 50, 20]
+"""
+
+# ====================================
+
+"""
+🟢 Problem 81 — Mixed List Challenge
+
+Let's increase the difficulty just one small step.
+
+Start with:
+
+numbers = [12, 45, 22, 18, 35, 40, 27, 50, 14]
+🎯 Task
+
+Create a new list containing numbers that satisfy all three conditions:
+
+Greater than 20 AND less than 50 AND even
+
+Expected output:
+
+Result: [22, 40, 50?]
+"""
+
+print()
+
+numbers = [12, 45, 22, 18, 35, 40, 27, 50, 14]
+
+result = []
+
+for num in numbers:
+   if num > 20 and num < 50 and num % 2 == 0:
+      result.append(num)
+
+print(f"Result: {result}")
+
+"""
+Output:
+Result: [22, 40]
+"""
+
+# =====================================
