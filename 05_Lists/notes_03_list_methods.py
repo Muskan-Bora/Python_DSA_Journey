@@ -2442,3 +2442,50 @@ Result: ['Muskan', 'Doraemon', 'SWT CLUB']
 """
 
 # =======================================
+
+"""
+🟢 Problem 86 — Strings + Lists Mixed
+
+Now we'll make the test a little more interesting.
+
+Start with:
+
+names = ["Muskan", "doraemon", "PYTHON", "SWT Club", "django", "AI", "Developer"]
+🎯 Task
+
+Create a new list containing names that satisfy both:
+
+Length greater than 5 AND contains the letter "o"
+
+Expected output:
+
+Result: ['doraemon', 'django', 'Developer']
+Requirements
+✅ for
+✅ if
+✅ len()
+✅ String membership using in
+✅ and
+✅ New list + append()
+❌ No list comprehension
+❌ Don't manually select names
+"""
+
+print()
+
+names = ["Muskan", "doraemon", "PYTHON", "SWT Club", "django", "AI", "Developer"]
+
+result = []
+
+for name in names:
+   if len(name) > 5 and "o" in name:
+      result.append(name)
+
+print(f"Result: {result}")
+
+"""
+Output:
+Result: ['doraemon', 'django', 'Developer']
+"""
+
+# ==================================
