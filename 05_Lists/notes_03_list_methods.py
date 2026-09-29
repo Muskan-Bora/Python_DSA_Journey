@@ -2258,3 +2258,94 @@ Result: [22, 40]
 """
 
 # =====================================
+
+"""
+🟢 Problem 82 — Mixed List Challenge
+
+Let's make this slightly more practical.
+
+Start with:
+
+numbers = [10, 35, 22, 48, 15, 60, 27, 42, 18]
+🎯 Task
+
+Create a new list containing numbers that are:
+
+Even AND greater than 20
+
+But this time, after creating the list, print both the result and its length.
+
+Expected output:
+
+Result: [22, 48, 60, 42]
+Count: 4
+"""
+
+print()
+
+numbers = [10, 35, 22, 48, 15, 60, 27, 42, 18]
+
+result = []
+
+for num in numbers:
+   if num % 2 == 0 and num > 20:
+      result.append(num)
+
+print(f"Result: {result}")
+print(f"Length: {len(result)}")
+
+"""
+Output:
+Result: [22, 48, 60, 42]
+Length: 4
+"""
+
+# =========================================
+
+"""
+🟢 Problem 83 — One step harder
+
+Now let's test whether you can calculate while filtering, which you've already practiced earlier.
+
+Start with:
+
+numbers = [10, 25, 30, 15, 40, 5, 50]
+🎯 Task
+
+Create a new list containing double the value of every number that is:
+
+greater than 20 AND even
+
+Expected output:
+
+Result: [60, 80, 100]
+Requirements
+✅ for
+✅ if
+✅ and
+✅ % 2 == 0
+✅ append()
+✅ New list
+❌ Don't modify original
+❌ No list comprehension
+❌ Don't sort
+"""
+
+print()
+
+numbers = [10, 25, 30, 15, 40, 5, 50]
+
+result = []
+
+for num in numbers:
+   if num > 20 and num % 2 == 0:
+      result.append(num + num)
+
+print(f"Result: {result}")
+
+"""
+Output:
+Result: [60, 80, 100]
+"""
+
+# ============================================
