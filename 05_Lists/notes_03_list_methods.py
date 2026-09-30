@@ -2680,3 +2680,58 @@ Result:['python', 'django', 'developer', 'automation']
 """
 
 # =======================================
+
+"""
+🐍 Problem 91 — Lists + Strings + Multiple Conditions
+Start with:
+
+names = ["Muskan", "doraemon", "Python", "SWT CLUB", "django", "AI", "Developer"]
+
+🎯 Task
+
+Create a new list containing the names that:
+
+1. Have more than 5 characters
+2. Start with an uppercase letter
+3. Contain the letter "o"
+
+Before adding a name to the new list, convert it to lowercase.
+
+Expected output:
+
+Result: ['doraemon', 'developer']
+
+Requirements
+
+✅ for
+✅ if
+✅ len()
+✅ and
+✅ .isupper()
+✅ "o" in name
+✅ .lower()
+✅ append()
+✅ New list
+
+❌ Don't modify the original list
+❌ No list comprehension
+"""
+
+print()
+
+names = ["Muskan", "doraemon", "Python", "SWT CLUB", "django", "AI", "Developer"]
+
+result = []
+
+for name in names:
+   if len(name) > 5 and name[0].isupper() and "o" in name:
+      result.append(name.lower())
+
+print(f"Result: {result}")
+
+"""
+Output:
+Result: ['Python', 'Developer']
+"""
+
+# ==================================
