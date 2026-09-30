@@ -2581,3 +2581,102 @@ Result: ['automation', 'database']
 """
 
 # ===============================
+
+"""
+Problem 89 — Strings + Lists + Transformation
+
+Start with:
+
+names = ["muskan", "DORAEMON", "python", "SWT CLUB", "django"]
+
+🎯 Task
+
+Create a new list containing the names converted to lowercase, but only if the original name has more than 5 characters.
+
+Expected output:
+
+Result: ['muskan', 'doraemon', 'python', 'swt club', 'django']
+
+Requirements
+
+✅ for
+✅ if
+✅ len()
+✅ .lower()
+✅ append()
+✅ New list
+
+❌ Don't modify the original list
+❌ No list comprehension
+"""
+
+print()
+
+names = ["muskan", "DORAEMON", "python", "SWT CLUB", "django"]
+
+result = []
+
+for name in names:
+   if len(name) > 5:
+      result.append(name.lower())
+
+print(f"Result: {result}")
+
+"""
+Output:
+Result: ['muskan', 'doraemon', 'python', 'swt club', 'django']
+"""
+
+# ================================
+
+"""
+🐍 Problem 90 — Strings + Lists + Filtering & Transformation
+
+Start with:
+
+words = ["Python", "Django", "AI", "Developer", "Code", "Automation", "API"]
+🎯 Task
+
+Create a new list containing the words that:
+
+Have more than 4 characters, AND
+Contain the letter "o".
+
+Before adding a word to the new list, convert it to lowercase.
+
+Expected output
+Result: ['python', 'django', 'developer', 'automation']
+Requirements
+
+✅ for
+✅ if
+✅ len()
+✅ and
+✅ "o" in word
+✅ .lower()
+✅ append()
+✅ New list
+
+❌ Don't modify the original list
+❌ No list comprehension
+❌ Don't use methods/functions we haven't learned
+"""
+
+print()
+
+words = ["Python", "Django", "AI", "Developer", "Code", "Automation", "API"]
+
+result = []
+
+for word in words:
+   if len(word) > 4 and "o" in word:
+      result.append(word.lower())
+
+print(f"Result:{result}") 
+
+"""
+Output:
+Result:['python', 'django', 'developer', 'automation']
+"""
+
+# =======================================
