@@ -2489,3 +2489,95 @@ Result: ['doraemon', 'django', 'Developer']
 """
 
 # ==================================
+
+"""
+🟢 Problem 87 — Strings + Lists Mixed
+
+Start with:
+
+words = ["Python", "Django", "AI", "Developer", "Code", "Automation"]
+🎯 Task
+
+Create a new list containing words that satisfy both conditions:
+
+Length greater than 4 AND the word starts with "D"
+
+Expected output:
+
+Result: ['Django', 'Developer']
+Requirements
+✅ Use a for loop
+✅ Use if
+✅ Use len()
+✅ Use a string method you've already learned
+✅ Use and
+✅ Store matches in a new list
+❌ No list comprehension
+❌ Don't manually select the words
+"""
+
+print()
+
+words = ["Python", "Django", "AI", "Developer", "Code", "Automation"]
+
+result = []
+
+for word in words:
+   if len(word) > 4 and word.startswith("D"):
+      result.append(word)
+
+print(f"Result: {result}")
+
+"""
+Output:
+Result: ['Django', 'Developer']
+"""
+
+# =====================================
+
+"""
+🟢 Problem 88 — Strings + Lists Mixed
+
+Let's remove some of the guidance now.
+
+Start with:
+
+words = ["python", "Django", "developer", "AI", "automation", "Code", "database"]
+🎯 Task
+
+Create a new list containing words that:
+
+Have more than 6 characters AND contain the letter "a"
+
+Expected output:
+
+Result: ['automation', 'database']
+Requirements
+✅ for
+✅ if
+✅ len()
+✅ in
+✅ and
+✅ append()
+❌ No list comprehension
+❌ Don't manually select words
+"""
+
+print()
+
+words = ["python", "Django", "developer", "AI", "automation", "Code", "database"]
+
+result = []
+
+for word in words:
+   if len(word) > 6 and "a" in word:
+      result.append(word)
+
+print(f"Result: {result}")
+
+"""
+Output:
+Result: ['automation', 'database']
+"""
+
+# ===============================
