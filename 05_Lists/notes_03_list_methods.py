@@ -2735,3 +2735,124 @@ Result: ['Python', 'Developer']
 """
 
 # ==================================
+
+"""
+# Notes:
+
+🐍 List Comprehension
+
+List comprehension is a short and clean way to create a new list from an existing iterable such as a list or string.
+
+1. Basic Syntax
+[expression for item in iterable]
+
+Example:
+
+numbers = [1, 2, 3, 4, 5]
+
+result = [num * 2 for num in numbers]
+
+print(result)
+
+Output:
+
+[2, 4, 6, 8, 10]
+
+2. List Comprehension with if
+
+Used when we want to filter values.
+
+Syntax
+[expression for item in iterable if condition]
+
+Example:
+
+numbers = [10, 15, 20, 25, 30]
+
+result = [num for num in numbers if num > 20]
+
+print(result)
+
+Output:
+
+[25, 30]
+
+3. List Comprehension with Transformation
+
+We can filter and transform values at the same time.
+
+numbers = [10, 15, 20, 25, 30]
+
+result = [num * 2 for num in numbers if num > 20]
+
+print(result)
+
+Output:
+
+[50, 60]
+
+4. Strings with List Comprehension
+
+List comprehension can also be used with strings.
+
+names = ["Muskan", "Doraemon", "Python"]
+
+result = [name.lower() for name in names]
+
+print(result)
+
+Output:
+
+['muskan', 'doraemon', 'python']
+
+5. Important Things to Remember
+List comprehension creates a new list.
+It is an alternative to a normal for loop when creating a list.
+expression → tells Python what to store.
+for → goes through each item.
+if → optionally filters items.
+The if condition comes after the for part.
+The expression can perform transformations such as:
+num * 2
+num + 10
+name.lower()
+name.upper()
+Multiple conditions can be combined using and / or.
+The original list is not modified unless we deliberately modify its elements/objects.
+No append() is required because list comprehension automatically builds the new list.
+
+6. Normal for Loop vs List Comprehension
+Normal approach
+result = []
+
+for num in numbers:
+    if num > 20:
+        result.append(num)
+List comprehension
+result = [num for num in numbers if num > 20]
+
+Both produce the same type of result.
+
+🧠 Easy Way to Read It
+
+For:
+
+result = [num * 2 for num in numbers if num > 20]
+
+Read it as:
+
+"For every num in numbers, if num is greater than 20, store num * 2 in the new list."
+
+Remember:
+WHAT TO STORE
+      ↓
+[ expression for item in iterable if condition ]
+              ↑                    ↑
+             LOOP                FILTER
+⭐ Two Main Patterns to Remember
+Without condition
+[expression for item in iterable]
+With condition
+[expression for item in iterable if condition]
+
+"""
