@@ -2896,3 +2896,44 @@ Result: [10, 20, 30, 40, 50]
 """
 
 # =================================
+
+"""
+🐍 Problem 93 — List Comprehension + Condition
+
+Start with:
+
+numbers = [10, 15, 20, 25, 30, 35, 40]
+Task
+
+Create a new list containing only the even numbers greater than 20 using list comprehension.
+
+Expected output:
+
+Result: [30, 40]
+Requirements
+
+✅ List comprehension
+✅ for
+✅ if
+✅ and
+✅ % operator
+✅ New list
+
+❌ No normal for loop
+❌ No append()
+"""
+
+print()
+
+numbers = [10, 15, 20, 25, 30, 35, 40]
+
+result = [num for num in numbers if num % 2 == 0 and num > 20]
+
+print(f"Result: {result}")
+
+"""
+Output:
+Result: [30, 40]
+"""
+
+# =================================================
