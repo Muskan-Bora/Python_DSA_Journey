@@ -2856,3 +2856,43 @@ With condition
 [expression for item in iterable if condition]
 
 """
+
+# ===============================
+
+"""
+🐍 Problem 92 — Basic List Comprehension
+
+Start with:
+
+numbers = [5, 10, 15, 20, 25]
+Task
+
+Create a new list containing each number multiplied by 2 using list comprehension.
+
+Expected output:
+
+Result: [10, 20, 30, 40, 50]
+Requirements
+
+✅ List comprehension
+✅ Multiplication
+✅ New list
+
+❌ No normal for loop
+❌ No append()
+"""
+
+print()
+
+numbers = [5, 10, 15, 20, 25]
+
+result = [num * 2 for num in numbers]
+
+print(f"Result: {result}")
+
+"""
+Ouitput:
+Result: [10, 20, 30, 40, 50]
+"""
+
+# =================================
