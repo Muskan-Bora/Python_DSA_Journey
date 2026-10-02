@@ -2937,3 +2937,97 @@ Result: [30, 40]
 """
 
 # =================================================
+
+"""
+🐍 Problem 94 — List Comprehension + Transformation
+
+Start with:
+
+numbers = [5, 10, 15, 20, 25, 30]
+🎯 Task
+
+Create a new list containing only the numbers greater than 15, but store their double value in the new list.
+
+Expected output
+Result: [40, 50, 60]
+Requirements
+
+✅ List comprehension
+✅ for
+✅ if
+✅ >
+✅ Multiplication
+✅ New list
+
+❌ No normal for loop
+❌ No append()
+"""
+
+print()
+
+numbers = [5, 10, 15, 20, 25, 30]
+
+result = [num * 2 for num in numbers if num > 15]
+print(f"Result: {result}")
+
+"""
+Output:
+Result: [40, 50, 60]
+"""
+
+# =======================================
+
+"""
+🐍 Problem 95 — List Comprehension + Strings
+
+Now let's connect List Comprehension with the String concepts you've already learned.
+
+Start with:
+
+names = ["Muskan", "Doraemon", "Python", "Django", "AI", "Developer"]
+🎯 Task
+
+Create a new list containing the names that:
+
+Have more than 5 characters
+Convert each matching name to lowercase
+Expected output
+Result: ['muskan', 'doraemon', 'python', 'developer']
+Requirements
+
+✅ List comprehension
+✅ for
+✅ if
+✅ len()
+✅ > 5
+✅ .lower()
+✅ New list
+
+❌ No normal for loop
+❌ No append()
+❌ Don't modify the original list
+"""
+
+print()
+
+names = ["Muskan", "Doraemon", "Python", "Django", "AI", "Developer"]
+
+result = [name.lower() for name in names if len(name) > 5]
+
+print(f"Result: {result}")
+
+"""
+Output:
+Result: ['muskan', 'doraemon', 'python', 'django', 'developer']
+"""
+
+# ================================
+
+"""
+⭐ Key rule
+
+Length = number of characters
+Last index = length - 1
+"""
+
+# ===============================================
