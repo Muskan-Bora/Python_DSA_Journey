@@ -3122,3 +3122,99 @@ Result: ['Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even']
 """
 
 # ===============================
+
+"""
+🐍 Problem 98 — List Comprehension + Strings + if/else
+
+Start with:
+
+names = ["Muskan", "AI", "Python", "Go", "Developer"]
+🎯 Task
+
+Create a new list where:
+
+If the length of the name is greater than 5, store the name in uppercase
+Otherwise, store the name in lowercase
+Expected output
+Result: ['MUSKAN', 'ai', 'PYTHON', 'go', 'DEVELOPER']
+Requirements
+
+✅ List comprehension
+✅ if/else
+✅ len()
+✅ .upper()
+✅ .lower()
+
+❌ No normal for loop
+❌ No append()
+"""
+
+print()
+
+names = ["Muskan", "AI", "Python", "Go", "Developer"]
+
+result = [name.upper() if len(name) > 5 else name.lower() for name in names]
+print(f"Result: {result}")
+
+"""
+Output:
+Result: ['MUSKAN', 'ai', 'PYTHON', 'go', 'DEVELOPER']
+"""
+
+# ======================================
+
+"""
+🐍 Problem 99 — Practical List Comprehension — Student Results
+
+Start with:
+
+students = ["Muskan", "Aarav", "Riya", "Doraemon", "Sam"]
+marks = [85, 42, 76, 95, 38]
+🎯 Task
+
+Create a new list containing a result message for each student:
+
+If the student's marks are 50 or more, store:
+
+"Name: Pass"
+
+Otherwise, store:
+
+"Name: Fail"
+
+The student's name should remain exactly as it appears in the original students list.
+
+Expected output
+Result: ['Muskan: Pass', 'Aarav: Fail', 'Riya: Pass', 'Doraemon: Pass', 'Sam: Fail']
+Requirements
+
+✅ List comprehension
+✅ if/else
+✅ >=
+✅ for
+✅ f-string
+✅ New list
+
+❌ No normal for loop
+❌ No append()
+❌ No modification of the original lists
+❌ Don't use any new concept
+"""
+
+print()
+
+students = ["Muskan", "Aarav", "Riya", "Doraemon", "Sam"]
+marks = [85, 42, 76, 95, 38]
+
+result = [
+   f"{students[i]}: Pass" if marks[i] >= 50 else f"{students[i]}: Fail"
+   for i in range(len(students))
+]
+print(f"Result: {result}")
+
+"""
+Output:
+Result: ['Muskan: Pass', 'Aarav: Fail', 'Riya: Pass', 'Doraemon: Pass', 'Sam: Fail']
+"""
+
+# =================================
