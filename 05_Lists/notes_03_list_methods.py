@@ -3031,3 +3031,94 @@ Last index = length - 1
 """
 
 # ===============================================
+
+"""
+🐍 Problem 96 — List Comprehension + Strings + Multiple Conditions
+
+Start with:
+
+words = ["Python", "Django", "AI", "Developer", "Code", "Automation", "API"]
+🎯 Task
+
+Create a new list containing the words that:
+
+Have more than 4 characters
+Start with an uppercase letter
+Contain the letter "o"
+
+Before adding each matching word to the new list, convert it to lowercase.
+
+Expected output
+Result: ['python', 'django', 'developer', 'automation']
+Requirements
+
+✅ List comprehension
+✅ for
+✅ if
+✅ len()
+✅ and
+✅ .isupper() on the first character
+✅ "o" in word
+✅ .lower()
+✅ New list
+
+❌ No normal for loop
+❌ No append()
+❌ Don't modify the original list
+"""
+
+print()
+
+words = ["Python", "Django", "AI", "Developer", "Code", "Automation", "API"]
+
+result = [word.lower() for word in words if len(word) > 4 and word[0].isupper() and "o" in word]
+print(f"Result: {result}")
+
+"""
+Output:
+Result: ['python', 'django', 'developer', 'automation']
+"""
+
+# ================================
+
+"""
+🐍 Problem 97 — List Comprehension + if/else
+
+Start with:
+
+numbers = [5, 10, 15, 20, 25, 30]
+🎯 Task
+
+Create a new list using list comprehension where:
+
+If the number is even, store "Even"
+Otherwise, store "Odd"
+Expected output
+Result: ['Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even']
+Requirements
+
+✅ List comprehension
+✅ for
+✅ if
+✅ else
+✅ % operator
+✅ New list
+
+❌ No normal for loop
+❌ No append()
+❌ No regular if/else block outside the comprehension
+"""
+
+print()
+
+numbers = [5, 10, 15, 20, 25, 30]
+
+result = ["Even" if num % 2 == 0 else "Odd" for num in numbers]
+print(f"Result: {result}")
+
+"""
+Output:
+Result: ['Odd', 'Even', 'Odd', 'Even', 'Odd', 'Even']
+"""
+
+# ===============================
