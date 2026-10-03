@@ -817,3 +817,103 @@ Index: 4, Number: 50, Double: 100
 """
 
 # ===================================
+
+"""
+🐍 Problem 104 — enumerate() + start=1
+
+Let's now practice the start parameter that we just learned in the notes.
+
+Given:
+
+tasks = ["Python", "Django", "DSA", "AI", "Automation"]
+🎯 Task
+
+Use enumerate() to print the tasks as a numbered list starting from 1.
+
+Expected output:
+
+1. Python
+2. Django
+3. DSA
+4. AI
+5. Automation
+Requirements
+
+✅ enumerate()
+✅ for loop
+✅ start=1
+✅ f-string
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+"""
+
+print()
+
+tasks = ["Python", "Django", "DSA", "AI", "Automation"]
+
+for index, task in enumerate(tasks, start = 1):
+    print(f"{index}. {task}")
+
+"""
+Output:
+1. Python
+2. Django
+3. DSA
+4. AI
+5. Automation
+"""
+
+# ==================================
+
+"""
+🐍 Problem 105 — Practical enumerate() + Strings
+
+One final practical problem for tonight, combining what you've already learned.
+
+Given:
+
+names = ["Muskan", "AI", "Doraemon", "Python", "Go", "Developer"]
+🎯 Task
+
+Use enumerate() to print only the names whose length is greater than 5, but this time number the matching results starting from 1.
+
+Expected output:
+
+1. Muskan
+3. Doraemon
+4. Python
+6. Developer
+Requirements
+
+✅ enumerate()
+✅ start=1
+✅ for loop
+✅ if
+✅ len()
+✅ >
+✅ f-string
+
+❌ No range()
+❌ No manual indexing
+❌ No list comprehension
+"""
+
+print()
+
+names = ["Muskan", "AI", "Doraemon", "Python", "Go", "Developer"]
+
+for index, name in enumerate(names, start = 1):
+    if len(name) > 5:
+        print(f"{index}. {name}")
+
+"""
+Output:
+1. Muskan
+3. Doraemon
+4. Python
+6. Developer
+"""
+
+# ===============================
