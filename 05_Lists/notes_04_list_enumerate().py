@@ -712,3 +712,108 @@ Index: 4, Number: 40
 """
 
 # ====================================
+
+"""
+🐍 Problem 102 — enumerate() + String
+
+Now let's use the same concept with strings, which you've already learned.
+
+Given:
+
+names = ["Muskan", "AI", "Doraemon", "Python", "Go", "Developer"]
+🎯 Task
+
+Use enumerate() to print only the names whose length is greater than 5, along with their index.
+
+Expected output:
+
+Index: 0, Name: Muskan
+Index: 2, Name: Doraemon
+Index: 3, Name: Python
+Index: 5, Name: Developer
+Requirements
+
+✅ enumerate()
+✅ for loop
+✅ if
+✅ len()
+✅ >
+✅ f-string
+
+❌ No range()
+❌ No manual indexing
+"""
+
+print()
+
+names = ["Muskan", "AI", "Doraemon", "Python", "Go", "Developer"]
+
+for index, name in enumerate(names):
+    if len(name) > 5:
+        print(f"Index: {index}, Name: {name}")
+
+"""
+Output:
+Index: 0, Name: Muskan
+Index: 2, Name: Doraemon
+Index: 3, Name: Python
+Index: 5, Name: Developer
+"""
+
+# ========================================
+
+"""
+🐍 Problem 103 — enumerate() + Transformation
+
+Now one small step further.
+
+Given:
+
+numbers = [10, 20, 30, 40, 50]
+🎯 Task
+
+Use enumerate() to print only the even numbers, along with:
+
+Their index
+Their doubled value
+
+Expected output:
+
+Index: 0, Number: 10, Double: 20
+Index: 1, Number: 20, Double: 40
+Index: 2, Number: 30, Double: 60
+Index: 3, Number: 40, Double: 80
+Index: 4, Number: 50, Double: 100
+Requirements
+
+✅ enumerate()
+✅ for loop
+✅ if
+✅ %
+✅ ==
+✅ multiplication
+✅ f-string
+
+❌ No range()
+❌ No manual indexing
+❌ No list comprehension yet
+"""
+
+print()
+
+numbers = [10, 20, 30, 40, 50]
+
+for index, num in enumerate(numbers):
+    if num % 2 == 0:
+        print(f"Index: {index}, Number: {num}, Double: {num * 2}")
+
+"""
+Output:
+Index: 0, Number: 10, Double: 20
+Index: 1, Number: 20, Double: 40
+Index: 2, Number: 30, Double: 60
+Index: 3, Number: 40, Double: 80
+Index: 4, Number: 50, Double: 100
+"""
+
+# ===================================
