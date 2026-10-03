@@ -622,3 +622,93 @@ for index, name in enumerate(names):
 """
 
 # ---------------------------------------------------
+
+"""
+Problem 100 — Your First enumerate()
+
+Try this without looking for a solution:
+
+names = ["Muskan", "Doraemon", "Python", "Django"]
+🎯 Task
+
+Use enumerate() to print each name along with its index.
+
+Expected output:
+
+Index: 0, Name: Muskan
+Index: 1, Name: Doraemon
+Index: 2, Name: Python
+Index: 3, Name: Django
+Requirements
+
+✅ Use enumerate()
+✅ Use a for loop
+✅ Use an f-string
+❌ Don't use range()
+❌ Don't use len()
+❌ Don't manually access indexes like names[0]
+"""
+
+names = ["Muskan", "Doraemon", "Python", "Django"]
+
+for index, name in enumerate(names):
+    print(f"Index: {index}, Name: {name}")
+
+"""
+Output:
+Index: 0, Name: Muskan
+Index: 1, Name: Doraemon
+Index: 2, Name: Python
+Index: 3, Name: Django
+"""
+
+# ===========================================
+
+"""
+🐍 Next: Problem 101
+
+Now let's increase the difficulty just one small step.
+
+Problem 101 — enumerate() + Condition
+
+Start with:
+
+numbers = [10, 25, 30, 15, 40, 18]
+🎯 Task
+
+Use enumerate() to print only the numbers greater than 20, along with their index.
+
+Expected output:
+
+Index: 1, Number: 25
+Index: 2, Number: 30
+Index: 4, Number: 40
+Requirements
+
+✅ enumerate()
+✅ for loop
+✅ if condition
+✅ >
+✅ f-string
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+"""
+
+print()
+
+numbers = [10, 25, 30, 15, 40, 18]
+
+for index, number in enumerate(numbers):
+    if number > 20:
+        print(f"Index: {index}, Number: {number}")
+
+"""
+Output:
+Index: 1, Number: 25
+Index: 2, Number: 30
+Index: 4, Number: 40
+"""
+
+# ====================================
