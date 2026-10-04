@@ -1,5 +1,3 @@
-# =======================================
-
 """
 
 # 🐍 PYTHON JOURNEY — zip()
@@ -281,5 +279,188 @@ list(zip(names, marks))
 ```
 
 converts those pairs into a list.
+
+============================================================
+9. zip() WITH LIST COMPREHENSION
+================================
+
+zip() can also be used inside a list comprehension.
+
+Example:
+
+```
+names = ["Muskan", "Aarav", "Riya"]
+marks = [85, 42, 76]
+
+result = [
+    f"{name}: Pass" if mark >= 50 else f"{name}: Fail"
+    for name, mark in zip(names, marks)
+]
+
+print(result)
+```
+
+Output:
+
+```
+['Muskan: Pass', 'Aarav: Fail', 'Riya: Pass']
+```
+
+This is a very useful combination:
+
+```
+zip()
+    +
+list comprehension
+```
+
+============================================================
+10. zip() VS enumerate()
+========================
+
+enumerate():
+
+```
+Gives us:
+
+    index + value
+```
+
+Example:
+
+```
+names = ["Muskan", "Aarav"]
+
+for index, name in enumerate(names):
+    print(index, name)
+```
+
+Output:
+
+```
+0 Muskan
+1 Aarav
+```
+
+zip():
+
+```
+Gives us:
+
+    corresponding values from multiple iterables
+```
+
+Example:
+
+```
+names = ["Muskan", "Aarav"]
+marks = [85, 72]
+
+for name, mark in zip(names, marks):
+    print(name, mark)
+```
+
+Output:
+
+```
+Muskan 85
+Aarav 72
+```
+
+Remember:
+
+```
+enumerate() → INDEX + VALUE
+
+zip()       → VALUE + VALUE
+               from different iterables
+```
+
+============================================================
+11. COMMON REAL-WORLD USE
+=========================
+
+Example:
+
+```
+products = ["Laptop", "Mouse", "Keyboard"]
+prices = [50000, 1000, 2000]
+
+for product, price in zip(products, prices):
+    print(f"{product}: ₹{price}")
+```
+
+Output:
+
+```
+Laptop: ₹50000
+Mouse: ₹1000
+Keyboard: ₹2000
+```
+
+This is useful when two lists contain related information.
+
+============================================================
+12. IMPORTANT RULE TO REMEMBER
+==============================
+
+The lists should normally represent corresponding data.
+
+For example:
+
+```
+students = ["Muskan", "Aarav", "Riya"]
+marks = [85, 42, 76]
+```
+
+This makes sense because:
+
+```
+student ↔ mark
+```
+
+But unrelated lists may produce meaningless pairings.
+
+============================================================
+🧠 QUICK SUMMARY
+================
+
+zip() combines corresponding values from multiple
+iterables.
+
+Basic pattern:
+
+```
+for value1, value2 in zip(list1, list2):
+    ...
+```
+
+Three iterables:
+
+```
+for value1, value2, value3 in zip(list1, list2, list3):
+    ...
+```
+
+Different lengths:
+
+```
+zip() stops at the shortest iterable.
+```
+
+Remember:
+
+```
+enumerate() → index + value
+
+zip()       → value + value
+```
+
+Simple memory trick:
+
+```
+enumerate() = "Where is it?"
+
+zip()       = "What belongs together?"
 
 """
