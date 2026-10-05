@@ -464,3 +464,47 @@ enumerate() = "Where is it?"
 zip()       = "What belongs together?"
 
 """
+
+# ====================================
+
+"""
+🐍 Problem 106 — Your First zip()
+
+Given:
+
+names = ["Muskan", "Aarav", "Riya"]
+marks = [85, 42, 76]
+🎯 Task
+
+Use zip() to combine the corresponding student names and marks, and print each pair.
+
+Expected output
+Muskan: 85
+Aarav: 42
+Riya: 76
+Requirements
+
+✅ Use zip()
+✅ Use a for loop
+✅ Use an f-string
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+❌ No list comprehension
+"""
+
+names = ["Muskan", "Aarav", "Riya"]
+marks = [85, 42, 76]
+
+for name, mark in zip(names, marks):
+    print(f"{name}: {mark}")
+
+"""
+Output:
+Muskan: 85
+Aarav: 42
+Riya: 76
+"""
+
+# ===================================
