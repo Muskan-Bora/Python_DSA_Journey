@@ -508,3 +508,42 @@ Riya: 76
 """
 
 # ===================================
+
+"""
+🐍 Problem 107 — zip() with a Condition
+names = ["Muskan", "Aarav", "Riya", "Doraemon"]
+marks = [85, 42, 76, 95]
+
+Task:
+Use zip() to combine the names and marks, and print only the students who scored 50 or more.
+
+Expected output:
+
+Muskan: 85
+Riya: 76
+Doraemon: 95
+Requirements
+
+✅ Use zip()
+✅ Use a for loop
+✅ Use an if condition
+✅ Use an f-string
+"""
+
+print()
+
+names = ["Muskan", "Aarav", "Riya", "Doraemon"]
+marks = [85, 42, 76, 95]
+
+for name, mark in zip(names, marks):
+    if mark >= 50:
+        print(f"{name}: {mark}")
+
+"""
+Output:
+Muskan: 85
+Riya: 76
+Doraemon: 95
+"""
+
+# =============================================
