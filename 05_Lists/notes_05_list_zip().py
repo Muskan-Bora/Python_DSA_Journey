@@ -547,3 +547,47 @@ Doraemon: 95
 """
 
 # =============================================
+
+"""
+🐍 Problem 108 — zip() with Three Lists
+names = ["Muskan", "Aarav", "Riya"]
+marks = [85, 42, 76]
+statuses = ["Pass", "Fail", "Pass"]
+
+Task:
+Use zip() to combine all three lists and print the result in this format:
+
+Muskan: 85 - Pass
+Aarav: 42 - Fail
+Riya: 76 - Pass
+
+Requirements:
+
+✅ Use zip()
+✅ Use a for loop
+✅ Use an f-string
+✅ Combine all three lists
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+❌ No list comprehension
+"""
+
+print()
+
+names = ["Muskan", "Aarav", "Riya"]
+marks = [85, 42, 76]
+statuses = ["Pass", "Fail", "Pass"]
+
+for name, mark, status in zip(names, marks, statuses):
+    print(f"{name}: {mark} - {status}")
+
+"""
+Output:
+Muskan: 85 - Pass
+Aarav: 42 - Fail
+Riya: 76 - Pass
+"""
+
+# ===========================================
