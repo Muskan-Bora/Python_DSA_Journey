@@ -639,3 +639,52 @@ React: Intermediate
 """
 
 # ==============================
+
+"""
+🐍 Problem 110 — zip() + Simple Condition
+
+Given:
+
+employees = ["Muskan", "Aarav", "Riya", "Doraemon"]
+salaries = [25000, 18000, 30000, 22000]
+
+Task:
+
+Use zip() to combine the employee names and salaries.
+
+Print only the employees whose salary is 25000 or more.
+
+Expected output:
+
+Muskan: 25000
+Riya: 30000
+
+Requirements:
+
+✅ Use zip()
+✅ Use a for loop
+✅ Use an if condition
+✅ Use an f-string
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+❌ No list comprehension
+"""
+
+print()
+
+employees = ["Muskan", "Aarav", "Riya", "Doraemon"]
+salaries = [25000, 18000, 30000, 22000]
+
+for employee, salary in zip(employees, salaries):
+    if salary >= 25000:
+        print(f"{employee}: {salary}")
+
+"""
+Output:
+Muskan: 25000
+Riya: 30000
+"""
+
+# ======================================
