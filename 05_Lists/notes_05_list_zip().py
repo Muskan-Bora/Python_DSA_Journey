@@ -688,3 +688,54 @@ Riya: 30000
 """
 
 # ======================================
+
+"""
+🐍 Problem 111 — zip() + Condition
+
+Given:
+
+products = ["Laptop", "Mouse", "Keyboard", "Monitor"]
+prices = [55000, 1200, 2500, 18000]
+
+Task:
+
+Use zip() to combine the product names and prices.
+
+Print only the products whose price is less than 20000.
+
+Expected output:
+
+Mouse: 1200
+Keyboard: 2500
+Monitor: 18000
+
+Requirements:
+
+✅ Use zip()
+✅ Use a for loop
+✅ Use an if condition
+✅ Use an f-string
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+❌ No list comprehension
+"""
+
+print()
+
+products = ["Laptop", "Mouse", "Keyboard", "Monitor"]
+prices = [55000, 1200, 2500, 18000]
+
+for product, price in zip(products, prices):
+    if price < 20000:
+        print(f"{product}: {price}")
+
+"""
+Output:
+Mouse: 1200
+Keyboard: 2500
+Monitor: 18000
+"""
+
+# =========================================
