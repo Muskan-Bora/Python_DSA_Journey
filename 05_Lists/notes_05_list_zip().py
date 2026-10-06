@@ -591,3 +591,51 @@ Riya: 76 - Pass
 """
 
 # ===========================================
+
+"""
+🐍 Problem 109 — zip() Basic Pairing
+
+Given:
+
+languages = ["Python", "Django", "JavaScript", "React"]
+levels = ["Beginner", "Intermediate", "Beginner", "Intermediate"]
+
+Task:
+
+Use zip() to combine the corresponding languages and levels,
+and print each pair in this format:
+
+Python: Beginner
+Django: Intermediate
+JavaScript: Beginner
+React: Intermediate
+
+Requirements:
+
+✅ Use zip()
+✅ Use a for loop
+✅ Use an f-string
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+❌ No list comprehension
+"""
+
+print()
+
+languages = ["Python", "Django", "JavaScript", "React"]
+levels = ["Beginner", "Intermediate", "Beginner", "Intermediate"]
+
+for language, level in zip(languages, levels):
+    print(f"{language}: {level}")
+
+"""
+Output:
+Python: Beginner
+Django: Intermediate
+JavaScript: Beginner
+React: Intermediate
+"""
+
+# ==============================
