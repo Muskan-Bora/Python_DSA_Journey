@@ -739,3 +739,103 @@ Monitor: 18000
 """
 
 # =========================================
+
+"""
+🐍 Problem 112 — zip() + List Comprehension
+
+Given:
+
+names = ["Muskan", "Aarav", "Riya", "Doraemon"]
+marks = [85, 42, 76, 95]
+
+Task:
+
+Use zip() and a list comprehension to create a new list
+containing only the students who scored 50 or more.
+
+Expected output:
+
+["Muskan: Pass", "Riya: Pass", "Doraemon: Pass"]
+
+Requirements:
+
+✅ Use zip()
+✅ Use list comprehension
+✅ Use an if condition
+✅ Use an f-string
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+❌ No normal for-loop with append()
+"""
+
+print()
+
+names = ["Muskan", "Aarav", "Riya", "Doraemon"]
+marks = [85, 42, 76, 95]
+
+result = [
+    f"{name}: Pass"
+    for name, mark in zip(names, marks)
+    if mark >= 50
+]
+                
+print(result)
+
+"""
+Output:
+['Muskan: Pass', 'Riya: Pass', 'Doraemon: Pass']
+"""
+
+# ==========================================
+
+"""
+🐍 Problem 113 — zip() + List Comprehension
+
+Given:
+
+products = ["Laptop", "Mouse", "Keyboard", "Monitor"]
+prices = [55000, 1200, 2500, 18000]
+
+Task:
+
+Use zip() and a list comprehension to create a new list
+containing only the products whose price is less than 20000.
+
+Expected output:
+
+["Mouse: 1200", "Keyboard: 2500", "Monitor: 18000"]
+
+Requirements:
+
+✅ Use zip()
+✅ Use list comprehension
+✅ Use an if condition
+✅ Use an f-string
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+❌ No normal for-loop with append()
+"""
+
+print()
+
+products = ["Laptop", "Mouse", "Keyboard", "Monitor"]
+prices = [55000, 1200, 2500, 18000]
+
+electronic_items = [
+    f"{product}: {price}"
+    for product, price in zip(products, prices)
+    if price < 20000
+]
+
+print(electronic_items)
+
+"""
+Output:
+['Mouse: 1200', 'Keyboard: 2500', 'Monitor: 18000']
+"""
+
+# ===========================================
