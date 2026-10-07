@@ -839,3 +839,108 @@ Output:
 """
 
 # ===========================================
+
+"""
+🐍 Problem 114 — zip() with Different-Length Lists
+
+Given:
+
+names = ["Muskan", "Aarav", "Riya", "Doraemon"]
+marks = [85, 42, 76]
+
+Task:
+
+Use zip() to combine the names and marks,
+and print each pair.
+
+Expected output:
+
+Muskan: 85
+Aarav: 42
+Riya: 76
+
+Requirements:
+
+✅ Use zip()
+✅ Use a for loop
+✅ Use an f-string
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+❌ No list comprehension
+"""
+
+print()
+
+names = ["Muskan", "Aarav", "Riya", "Doraemon"]
+marks = [85, 42, 76]
+
+for name, mark in zip(names, marks):
+    print(f"{name}: {mark}")
+
+"""
+Output:
+Muskan: 85
+Aarav: 42
+Riya: 76
+"""
+
+# ====================================
+
+"""
+🐍 Problem 115 — zip() + 3 Lists + Condition
+
+Given:
+
+names = ["Muskan", "Aarav", "Riya", "Doraemon"]
+marks = [85, 42, 76, 95]
+departments = ["IT", "HR", "IT", "IT"]
+
+Task:
+
+Use zip() to combine all three lists.
+
+Print only the employees who:
+
+1. Scored 50 or more
+2. Belong to the "IT" department
+
+Expected output:
+
+Muskan: 85 - IT
+Riya: 76 - IT
+Doraemon: 95 - IT
+
+Requirements:
+
+✅ Use zip()
+✅ Use a for loop
+✅ Use an if condition
+✅ Use an f-string
+✅ Combine all three lists
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+❌ No list comprehension
+"""
+
+print()
+
+names = ["Muskan", "Aarav", "Riya", "Doraemon"]
+marks = [85, 42, 76, 95]
+departments = ["IT", "HR", "IT", "IT"]
+
+for name, mark, dept in zip(names, marks, departments):
+    if mark >= 50 and dept == "IT":
+        print(f"{name} : {mark} - {dept}")
+
+"""
+Output:
+Muskan : 85 - IT
+Riya : 76 - IT
+Doraemon : 95 - IT
+"""
+
+# =======================================

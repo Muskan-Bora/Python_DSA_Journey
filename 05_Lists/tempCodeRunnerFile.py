@@ -1,1 +1,1 @@
-print(f"Result: {result}")
+for i in name, mark:
