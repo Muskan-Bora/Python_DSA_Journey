@@ -944,3 +944,119 @@ Doraemon : 95 - IT
 """
 
 # =======================================
+
+"""
+🐍 Problem 116 — zip() + List Comprehension + Multiple Conditions
+
+Given:
+
+names = ["Muskan", "Aarav", "Riya", "Doraemon", "Sam"]
+marks = [85, 42, 76, 95, 38]
+
+Task:
+
+Use zip() and a list comprehension to create a new list
+containing the names of students who:
+
+1. Scored 50 or more
+2. Scored less than 90
+
+Expected output:
+
+["Muskan", "Riya"]
+
+Requirements:
+
+✅ Use zip()
+✅ Use list comprehension
+✅ Use an if condition
+✅ Use two conditions with and
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+❌ No normal for-loop
+❌ No append()
+"""
+
+print()
+
+names = ["Muskan", "Aarav", "Riya", "Doraemon", "Sam"]
+marks = [85, 42, 76, 95, 38]
+
+result = [
+    name
+    for name, mark in zip(names, marks)
+    if mark >= 50 and mark < 90
+]
+
+print(result)
+
+"""
+Output:
+['Muskan', 'Riya']
+"""
+
+# ===================================================
+
+"""
+🐍 Problem 117 — zip() + List Comprehension + Transformation
+
+Given:
+
+names = ["Muskan", "Aarav", "Riya", "Doraemon"]
+marks = [85, 42, 76, 95]
+
+Task:
+
+Use zip() and a list comprehension to create a new list.
+
+For students who scored 50 or more:
+    Store "Name: Pass"
+
+For students who scored below 50:
+    Store "Name: Fail"
+
+Expected output:
+
+[
+    "Muskan: Pass",
+    "Aarav: Fail",
+    "Riya: Pass",
+    "Doraemon: Pass"
+]
+
+Requirements:
+
+✅ Use zip()
+✅ Use list comprehension
+✅ Use if/else
+✅ Use an f-string
+
+❌ No range()
+❌ No len()
+❌ No manual indexing
+❌ No normal for-loop
+❌ No append()
+"""
+
+print()
+
+names = ["Muskan", "Aarav", "Riya", "Doraemon"]
+marks = [85, 42, 76, 95]
+
+result = [
+    f"{name}: Pass" 
+    if mark >= 50 
+    else f"{name}: Fail"
+    for name, mark in zip(names, marks)
+]
+
+print(result)
+
+"""
+Output:
+['Muskan: Pass', 'Aarav: Fail', 'Riya: Pass', 'Doraemon: Pass']
+"""
+
+# ==================================
