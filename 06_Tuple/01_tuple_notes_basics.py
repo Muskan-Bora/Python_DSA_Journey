@@ -235,3 +235,51 @@ print(f"Its data type is {type(empty_tuple)}")          # Output: Its data type 
 print(f"Its length is {len(empty_tuple)}")              # Output: Its length is 0
 
 # =========================================
+
+"""
+Problem 3 — Tuple or Integer?
+Important concept
+
+Create two variables:
+
+first_value = (50)
+
+second_value = (50,)
+
+Then print each variable and its data type using type().
+
+Expected output:
+
+50
+<class 'int'>
+(50,)
+<class 'tuple'>
+
+Requirements
+Use both assignments exactly as shown.
+Use print() and type().
+Explain in a comment why their data types differ.
+"""
+
+print()
+
+first_value = (50)
+
+print(first_value)                 # Output: 50
+print(type(first_value))           # Output: <class 'int'>
+
+"""
+Reason: first_value = (50) is an integer because the parentheses only group the expression. They don't create a tuple.
+"""
+
+second_value = (50,)
+
+print(second_value)                 # Output: (50,)
+print(type(second_value))           # Output: <class 'tuple'>
+
+""" 
+Reason:
+second_value = (50,) is a tuple because the comma is what makes it a tuple.
+"""
+
+# ================================================
