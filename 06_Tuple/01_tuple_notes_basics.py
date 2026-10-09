@@ -156,3 +156,82 @@ Tuples can be created without parentheses when commas separate the values, for e
 """
 
 # ===================================================
+
+## Tuple Practice ##
+
+"""
+Problem 1 — Creating Tuples
+Beginner
+
+Task: Create the following three tuples:
+
+numbers containing 10, 20, 30, 40, 50
+
+languages containing "Python", "Django", "React"
+
+student containing "Muskan", 22, 85.5, True
+
+Then print each tuple and its data type using type().
+
+Requirements
+Use parentheses ().
+Use meaningful variable names.
+Use print() and type().
+
+"""
+
+numbers = (10, 20, 30, 40, 50)
+print(f"{numbers}, And the data type is {type(numbers)}")
+
+languages = ("Python", "Django", "React")
+print(f"{languages}, And the data type is {type(languages)}")
+
+student = ("Muskan", 22, 85.5, True)
+print(f"{student}, And the data type is {type(student)}")
+
+"""
+Output:
+(10, 20, 30, 40, 50), And the data type is <class 'tuple'>
+('Python', 'Django', 'React'), And the data type is <class 'tuple'>
+('Muskan', 22, 85.5, True), And the data type is <class 'tuple'>
+"""
+
+# =========================================
+
+"""
+Problem 2 — Empty Tuple
+Beginner
+
+Task: Create an empty tuple named empty_tuple.
+
+Then print:
+
+The tuple itself.
+
+Its data type using type().
+
+Its length using len().
+
+Expected output:
+
+()
+<class 'tuple'>
+0
+
+Requirements
+Use ().
+Use print(), type(), and len().
+Write the code yourself without copying the notes.
+"""
+
+print()
+
+empty_tuple = ()
+
+print(empty_tuple)                                      # Output: ()
+
+print(f"Its data type is {type(empty_tuple)}")          # Output: Its data type is <class 'tuple'>
+
+print(f"Its length is {len(empty_tuple)}")              # Output: Its length is 0
+
+# =========================================
