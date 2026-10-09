@@ -1,0 +1,158 @@
+# ===============================================
+
+"""
+🐍 Python Tuples — Complete Notes
+
+1. What is a Tuple?
+A tuple is a built-in Python data structure used to store multiple items in a single variable.
+
+Tuples are ordered and immutable.
+Ordered means the items have a defined position.
+Immutable means individual elements cannot be reassigned, added, or removed after the tuple is created.
+
+2. Creating Tuples
+
+numbers = (10, 20, 30, 40)
+names = ("Muskan", "Doraemon", "Aarav")
+student = ("Muskan", 22, 85.5, True)
+
+3. Empty Tuple
+
+empty_tuple = ()
+print(empty_tuple)
+print(type(empty_tuple))
+print(len(empty_tuple))
+
+4. Single-Element Tuple
+
+a = (10)       # Integer, not a tuple
+b = (10,)      # Tuple containing one element
+c = 10,        # Also a tuple
+
+A comma is required to create a single-element tuple.
+
+5. Checking the Type
+
+numbers = (10, 20, 30)
+print(type(numbers))  # <class 'tuple'>
+
+6. Tuple Indexing
+
+languages = ("Python", "Django", "JavaScript", "React")
+
+print(languages[0])   # Python
+print(languages[2])   # JavaScript
+print(languages[-1])  # React
+print(languages[-2])  # JavaScript
+
+Positive indexing starts at 0.
+Negative indexing starts at -1 from the end.
+
+7. Tuple Slicing
+
+numbers = (10, 20, 30, 40, 50, 60)
+
+print(numbers[1:4])   # (20, 30, 40)
+print(numbers[:3])    # (10, 20, 30)
+print(numbers[3:])    # (40, 50, 60)
+print(numbers[::2])   # (10, 30, 50)
+print(numbers[::-1])  # (60, 50, 40, 30, 20, 10)
+
+Syntax: tuple_name[start:stop:step]
+The stop index is excluded.
+Slicing returns a new tuple.
+
+8. Membership Operators
+
+languages = ("Python", "Django", "React")
+
+print("Python" in languages)      # True
+print("Java" not in languages)    # True
+
+9. Tuple Length
+
+numbers = (10, 20, 30, 40, 50)
+print(len(numbers))  # 5
+
+len() counts top-level elements.
+A nested list counts as one element.
+
+10. Tuple Traversal
+
+languages = ("Python", "Django", "React")
+
+for language in languages:
+    print(language)
+
+11. Traversal Using Index
+
+for index in range(len(languages)):
+    print(index, languages[index])
+
+12. Traversal Using enumerate()
+
+for index, language in enumerate(languages):
+    print(index, language)
+
+enumerate() provides each element's index and value.
+
+13. Tuple count()
+
+numbers = (10, 20, 10, 30, 10)
+print(numbers.count(10))  # 3
+
+count(value) returns the number of occurrences.
+
+14. Tuple index()
+
+numbers = (10, 20, 30, 20, 40)
+print(numbers.index(20))  # 1
+
+index(value) returns the first matching index.
+If the value is missing, it raises ValueError.
+
+15. Immutability
+
+numbers = (10, 20, 30)
+
+# numbers[0] = 100
+# TypeError: tuples do not support item assignment
+
+Tuples do not support direct element reassignment,
+append(), or remove().
+
+16. Tuple With a Mutable Element
+
+data = (10, [20, 30])
+data[1].append(40)
+print(data)  # (10, [20, 30, 40])
+
+The tuple cannot be reassigned at the element level,
+but a mutable object inside it may still be modified.
+
+17. Common Uses
+
+- Coordinates
+- Fixed configuration values
+- RGB colour values
+- Returning multiple values from functions
+
+18. List vs Tuple
+
+List:
+- Uses square brackets []
+- Mutable
+- Supports append(), insert(), remove(), and other
+  in-place modification methods
+
+Tuple:
+- Usually uses parentheses ()
+- Immutable at the element level
+- Has count() and index() methods
+- Useful for fixed collections of values
+
+Important:
+Tuples can be created without parentheses when commas separate the values, for example: coordinates = 10, 20
+"""
+
+# ===================================================
