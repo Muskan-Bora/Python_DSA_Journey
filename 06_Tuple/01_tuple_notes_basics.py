@@ -283,3 +283,42 @@ second_value = (50,) is a tuple because the comma is what makes it a tuple.
 """
 
 # ================================================
+
+"""
+Problem 4 — Mixed Tuple
+Beginner
+
+Task: Create a tuple named employee containing:
+- Name: "Muskan"
+- Age: 22
+- Salary: 25000
+- Experience: 2.5
+- Currently employed: True
+Then print:
+1. The entire tuple.
+2. Its data type using type().
+3. Its length using len().
+Expected output:
+('Muskan', 22, 25000, 2.5, True)
+<class 'tuple'>
+5
+
+Requirements
+- Use parentheses ().
+- Use print(), type(), and len().
+- Add a comment explaining why the tuple's length is 5.
+"""
+
+print()
+
+employee = ("Muskan", 22, 25000, 2.5, True)
+
+print(employee)                                   # Output: ('Muskan', 22, 25000, 2.5, True)
+
+print(f"Its Data type is {type(employee)}")       # Output: Its Data type is <class 'tuple'>
+
+print(f"Its Length is {len(employee)}")           # Output: Its Length is 5
+
+# Length is 5 because the tuple contains five elements.
+
+# ========================================== 
