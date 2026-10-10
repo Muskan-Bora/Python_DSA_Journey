@@ -322,3 +322,38 @@ print(f"Its Length is {len(employee)}")           # Output: Its Length is 5
 # Length is 5 because the tuple contains five elements.
 
 # ========================================== 
+
+"""
+Problem 5 — Tuple Indexing
+Beginner
+
+Given this tuple:
+languages = ("Python", "Django", "JavaScript", "React", "SQL")
+
+Task: Print the following values using indexing:
+1. The first element.
+2. The third element.
+3. The last element.
+4. The second-last element.
+Expected output:
+Python
+JavaScript
+SQL
+React
+
+Requirements
+- Use positive and negative indexing.
+- Do not use a loop.
+- Do not use slicing.
+"""
+
+print()
+
+languages = ("Python", "Django", "JavaScript", "React", "SQL")
+
+print(languages[0])                # Output: Python
+print(languages[2])                # Output: JavaScript
+print(languages[4])                # Output: SQL
+print(languages[-2])               # Output: React
+
+# ============================================
