@@ -357,3 +357,35 @@ print(languages[4])                # Output: SQL
 print(languages[-2])               # Output: React
 
 # ============================================
+
+"""
+Problem 6 — Access from the End
+Beginner
+
+Given:
+numbers = (10, 20, 30, 40, 50, 60, 70)
+
+Task: Print these elements using negative indexing only:
+1. The last element.
+2. The third-last element.
+3. The fifth-last element.
+Expected output:
+70
+50
+30
+
+Requirements
+- Use negative indexes only.
+- No loops.
+- No slicing.
+"""
+
+print()
+
+numbers = (10, 20, 30, 40, 50, 60, 70)
+
+print(numbers[-1])      # Output: 70
+print(numbers[-3])      # Output: 50
+print(numbers[-5])      # Output: 30
+
+# ======================================
