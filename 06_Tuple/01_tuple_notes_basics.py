@@ -457,3 +457,34 @@ print(numbers[1::2])            # Output: (20, 40, 60, 80)
 print(numbers[::3])            # Output: (10, 40, 70)
 
 # ===================================
+
+"""
+Problem 9 — Reverse Slicing
+Beginner
+
+Given:
+numbers = (10, 20, 30, 40, 50, 60)
+
+Task: Print:
+1. The entire tuple in reverse order.
+2. Every second element in reverse order, starting from the last element.
+Expected output:
+(60, 50, 40, 30, 20, 10)
+(60, 40, 20)
+
+Requirements
+- Use tuple slicing.
+- Use a negative step.
+- Use print().
+- No loops or list comprehensions.
+"""
+
+print()
+
+numbers = (10, 20, 30, 40, 50, 60)
+
+print(numbers[-1::-1])         # Output: (60, 50, 40, 30, 20, 10)
+
+print(numbers[-1::-2])         # Output: (60, 40, 20)
+
+# ==============================
