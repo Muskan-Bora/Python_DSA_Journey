@@ -423,3 +423,37 @@ print(numbers[0:3])    # Output: (10, 20, 30)
 print(numbers[3:])     # Output: (40, 50, 60, 70)
 
 # ==============================================
+
+"""
+Problem 8 — Step Slicing
+Beginner
+
+Given:
+numbers = (10, 20, 30, 40, 50, 60, 70, 80)
+
+Task: Print the following:
+1. Every second element, starting from the first element.
+2. Every second element, starting from the second element.
+3. Every third element, starting from the first element.
+Expected output:
+(10, 30, 50, 70)
+(20, 40, 60, 80)
+(10, 40, 70)
+
+Requirements
+- Use tuple slicing with the step parameter.
+- Use print().
+- No loops or list comprehensions.
+"""
+
+print()
+
+numbers = (10, 20, 30, 40, 50, 60, 70, 80)
+
+print(numbers[::2])            # Output: (10, 30, 50, 70)
+
+print(numbers[1::2])            # Output: (20, 40, 60, 80)
+
+print(numbers[::3])            # Output: (10, 40, 70)
+
+# ===================================
