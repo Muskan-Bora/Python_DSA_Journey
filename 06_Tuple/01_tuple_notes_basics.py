@@ -389,3 +389,37 @@ print(numbers[-3])      # Output: 50
 print(numbers[-5])      # Output: 30
 
 # ======================================
+
+"""
+Problem 7 — Basic Tuple Slicing
+Beginner
+
+Given this tuple:
+numbers = (10, 20, 30, 40, 50, 60, 70)
+
+Task: Print the following slices:
+1. Elements from index 1 to index 4 (excluding index 4).
+2. The first three elements.
+3. All elements from index 3 to the end.
+Expected output:
+(20, 30, 40)
+(10, 20, 30)
+(40, 50, 60, 70)
+
+Requirements
+- Use tuple slicing.
+- Use print().
+- Do not use loops or list comprehensions.
+"""
+
+print()
+
+numbers = (10, 20, 30, 40, 50, 60, 70)
+
+print(numbers[1:4])    # Output: (20, 30, 40)
+
+print(numbers[0:3])    # Output: (10, 20, 30)
+
+print(numbers[3:])     # Output: (40, 50, 60, 70)
+
+# ==============================================
