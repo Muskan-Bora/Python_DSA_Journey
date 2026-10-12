@@ -488,3 +488,94 @@ print(numbers[-1::-1])         # Output: (60, 50, 40, 30, 20, 10)
 print(numbers[-1::-2])         # Output: (60, 40, 20)
 
 # ==============================
+
+"""
+Problem 10: Tuple Membership
+Topic: in and not in
+
+Your turn
+Problem statement
+You are given the following tuple:
+languages = ("Python", "Django", "JavaScript", "React", "SQL")
+
+Write a Python program that:
+1. Checks whether "Python" exists in the tuple.
+2. Checks whether "Java" exists in the tuple.
+3. Checks whether "React" does not exist in the tuple.
+4. Checks whether "C++" does not exist in the tuple.
+Requirements:
+- Use the in and not in operators.
+- Print all four results using clear, descriptive messages.
+- Use f-strings for your output.
+"""
+
+print()
+
+languages = ("Python", "Django", "JavaScript", "React", "SQL")
+
+languages_test_1 = "Python" in languages
+print(f"{languages_test_1}, Python exist in the Tuple")
+
+languages_test_2 = "Java" in languages
+print(f"{languages_test_2}, Java does not exist in the Tuple")
+
+languages_test_3 = "React" not in languages
+print(f"{languages_test_3}, React does not exist in the Tuple")
+
+languages_test_4 = "C++" not in languages
+print(f"{languages_test_4}, C++ does not exist in the Tuple")
+
+"""
+Output:
+True, Python exist in the Tuple
+False, Java does not exist in the Tuple
+False, React does not exist in the Tuple
+True, C++ does not exist in the Tuple
+"""
+
+# ==================================================
+
+"""
+🐍 Problem 11: Tuple Traversal Using a for Loop
+Now let's move forward! This problem will help you practise looping through a tuple.
+Your next challenge
+
+Problem statement
+Given this tuple:
+numbers = (10, 20, 30, 40, 50)
+
+Write a Python program that:
+1. Uses a for loop to traverse the tuple.
+2. Prints each number on a separate line.
+3. Prints the square of each number on a separate line, using a descriptive message.
+Requirements:
+- Use a for loop.
+- Do not use while.
+- Do not use enumerate() yet.
+- You may use a loop variable and an f-string.
+- No need to store the results in another tuple or list.
+"""
+
+print()
+
+numbers = (10, 20, 30, 40, 50)
+
+for number in numbers:
+    print(number)
+    print(f"The square of {number} is {number} x {number} = {number * number}")
+
+"""
+Output:
+10
+The square of 10 is 10 x 10 = 100
+20
+The square of 20 is 20 x 20 = 400
+30
+The square of 30 is 30 x 30 = 900
+40
+The square of 40 is 40 x 40 = 1600
+50
+The square of 50 is 50 x 50 = 2500
+"""
+
+# ======================================
