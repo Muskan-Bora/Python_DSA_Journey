@@ -579,3 +579,76 @@ The square of 50 is 50 x 50 = 2500
 """
 
 # ======================================
+
+"""
+Problem statement 12:
+Given this tuple:
+subjects = ("Python", "Django", "SQL", "React")
+
+Write a Python program that:
+1. Uses a for loop with enumerate().
+2. Prints each subject alongside its index.
+3. Starts indexing from 1 instead of the default 0.
+Requirements
+- Use enumerate().
+- Use a for loop.
+- Use two loop variables: one for the index and one for the subject.
+- Use an f-string to display each result.
+- Do not use while or manually increment a counter.
+"""
+
+print()
+
+subjects = ("Python", "Django", "SQL", "React")
+
+for index, subject in enumerate(subjects, start=1):
+    print(f"{index}. {subject}")
+
+"""
+Output:
+1. Python
+2. Django
+3. SQL
+4. React
+"""
+
+# ===================================
+
+"""
+🐍 Problem 13: Tuple Traversal Using range() and len()
+Now let's practise another approach to tuple traversal, using indexes directly.
+Your next challenge
+
+Problem statement
+Given this tuple:
+fruits = ("Apple", "Banana", "Mango", "Orange", "Grapes")
+
+Write a Python program that:
+1. Uses for, range(), and len() to traverse the tuple.
+2. Prints each fruit alongside its index.
+3. Uses zero-based indexing, starting from 0.
+Requirements
+- Use range(len(fruits)).
+- Access each fruit using its index.
+- Use an f-string for each output line.
+- Do not use enumerate() or while.
+- Don't create another list or tuple.
+"""
+
+print()
+
+fruits = ("Apple", "Banana", "Mango", "Orange", "Grapes")
+
+for i in range(len(fruits)):
+    print(f"{i}. {fruits[i]}")
+
+"""
+Output:
+0. Apple
+1. Banana
+2. Mango
+3. Orange
+4. Grapes
+"""
+
+# ==========================================
