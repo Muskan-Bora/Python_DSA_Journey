@@ -652,3 +652,91 @@ Output:
 """
 
 # ==========================================
+
+"""
+Problem statement: 14
+Given this tuple:
+numbers = (10, 20, 30, 40, 50, 60)
+
+Write a Python program that:
+1. Uses a for loop to traverse the tuple.
+2. Checks whether each number is greater than 30.
+3. Prints only the numbers greater than 30.
+4. Counts how many numbers are greater than 30 and prints the final count.
+Requirements
+- Use a for loop.
+- Use an if statement.
+- Store the count in a variable initialised before the loop.
+- Increase the count when a number satisfies the condition.
+- Do not use while, enumerate(), sum(), or list comprehensions.
+- Use f-strings for the output.
+"""
+
+print()
+
+numbers = (10, 20, 30, 40, 50, 60)
+
+count = 0
+
+for number in numbers:
+    if number > 30:
+        print(number)
+        count += 1
+
+print(f"So, the final count is {count}")
+
+"""
+Output:
+40
+50
+60
+So, the final count is 3
+"""
+
+# ==========================================
+
+"""
+Problem statement: 15
+Given this tuple:
+numbers = (10, 20, 30, 40, 50)
+
+Write a Python program that:
+1. Uses a for loop to traverse the tuple.
+2. Calculates the total of all numbers without using sum().
+3. Counts how many numbers are in the tuple.
+4. Calculates and prints the average.
+Requirements
+- Use a for loop.
+- Initialise total and count before the loop.
+- Update both variables inside the loop.
+- Calculate the average after the loop.
+- Do not use sum(), while, enumerate(), or list comprehensions.
+- Use f-strings for the final output.
+"""
+
+print()
+
+numbers = (10, 20, 30, 40, 50)
+
+total = 0
+count = 0
+
+for number in numbers:
+    count += 1
+    total = total + number
+
+average = total / count
+
+print(f"The count of numbers in tuple is {count}")
+print(f"The total of the tuple is {total}")
+print(f"The average of the tuple is {average}")
+
+
+"""
+Output:
+The count of numbers in tuple is 5
+The total of the tuple is 150
+The average of the tuple is 30.0
+"""
+
+# ============================================
