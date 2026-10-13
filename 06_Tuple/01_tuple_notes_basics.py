@@ -844,3 +844,104 @@ The final count of the odd number is 4
 """
 
 # =============================================
+
+"""
+Problem 18: Count Numbers Greater Than the Average
+
+Problem statement
+Given this tuple:
+numbers = (10, 20, 30, 40, 50, 60)
+
+Write a Python program that:
+1. Calculates the average of all numbers using a for loop (do not use sum()).
+2. Prints the calculated average.
+3. Traverses the tuple again using a for loop.
+4. Prints only the numbers greater than the average.
+5. Counts and prints how many numbers are greater than the average.
+
+Requirements
+- Use for loops and if statements.
+- Initialise the total and count variables before the appropriate loops.
+- Calculate the average before checking which numbers exceed it.
+- Use descriptive output messages and f-strings.
+- Do not use while, enumerate(), sum(), or list comprehensions.
+- Include your expected output in a comment.
+"""
+
+print()
+
+numbers = (10, 20, 30, 40, 50, 60)
+
+total = 0
+count= 0
+average = 0
+
+for number in numbers: 
+    count += 1
+    total = total + number
+
+average = total / count
+print(f"The average of all numbers is {average}")
+
+count_greater_avg = 0
+
+print("The numbers which are greater than the average:")
+
+for num in numbers:
+    if num > average:
+        print(num)
+        count_greater_avg += 1
+
+print(f"The count of the numbers which are greater than average is {count_greater_avg}")
+
+"""
+Output:
+The average of all numbers is 35.0
+The numbers which are greater than the average:
+40
+50
+60
+The count of the numbers which are greater than average is 3
+"""
+
+# =======================================
+
+"""
+Problem 19: Find the Largest Number in a Tuple
+
+Problem statement
+Given this tuple:
+numbers = (25, 12, 48, 7, 63, 31, 54)
+
+Write a Python program that:
+1. Finds the largest number using a for loop.
+2. Prints the largest number with a descriptive message.
+
+Requirements
+- Use a for loop.
+- Do not use max() or sorted().
+- Initialise a variable to hold the largest number before the loop.
+- Compare each number with the current largest value and update it when necessary.
+- Use an if statement.
+- Use an f-string for the final output.
+- Include the expected output in a comment.
+"""
+
+print()
+
+numbers = (25, 12, 48, 7, 63, 31, 54)
+
+largest = numbers[0]
+
+for number in numbers:
+    if number > largest:
+        largest = number
+
+print(f"The largest number is {largest}")
+
+"""
+Output:
+The largest number is 63
+"""
+
+# ============================================
