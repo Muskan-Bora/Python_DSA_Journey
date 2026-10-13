@@ -740,3 +740,107 @@ The average of the tuple is 30.0
 """
 
 # ============================================
+
+"""
+Problem 16: Tuple Traversal with a Condition
+Filter and count even numbers
+Topics: tuples, for, if, modulo operator
+
+Problem statement
+Given this tuple:
+numbers = (12, 7, 18, 25, 30, 9, 42, 15)
+
+Write a Python program that:
+1. Traverses the tuple using a for loop.
+2. Checks whether each number is even.
+3. Prints only the even numbers.
+4. Counts how many even numbers are present.
+5. Prints the final count.
+
+Requirements
+- Use a for loop and an if statement.
+- Use the modulo operator % to check even numbers.
+- Initialise the counter before the loop.
+- Increment the counter only when a number is even.
+- Use f-strings for descriptive output.
+- Do not use while, enumerate(), sum(), or list comprehensions.
+- Include your expected output in a comment.
+"""
+
+print()
+
+numbers = (12, 7, 18, 25, 30, 9, 42, 15)
+
+count = 0
+
+print("The even numbers are: ")
+
+for number in numbers:
+    if number % 2 == 0:
+        print(number)
+        count += 1
+
+print(f"The final count of the even numbers is {count}")
+
+"""
+Output:
+The even numbers are: 
+12
+18
+30
+42
+The final count of the even numbers is 4
+"""
+
+# ===========================================
+
+"""
+Problem 17: Filter and Count Odd Numbers
+
+Problem statement
+Given this tuple:
+numbers = (11, 24, 35, 40, 17, 52, 63, 28)
+
+Write a Python program that:
+1. Traverses the tuple using a for loop.
+2. Checks whether each number is odd.
+3. Prints only the odd numbers.
+4. Counts how many odd numbers are present.
+5. Prints the final count.
+
+Requirements
+- Use a for loop and an if statement.
+- Use % to check whether a number is odd.
+- Initialise the counter before the loop.
+- Increment the counter only when the condition is true.
+- Use descriptive output messages and f-strings.
+- Do not use while, enumerate(), sum(), or list comprehensions.
+- Include the expected output in a comment.
+"""
+
+print()
+
+numbers = (11, 24, 35, 40, 17, 52, 63, 28)
+
+count = 0
+
+print("The odd numbers are:")
+
+for number in numbers:
+    if number % 2:
+        print(number)
+        count += 1
+
+print(f"The final count of the odd number is {count}")
+
+"""
+Output:
+The odd numbers are:
+11
+35
+17
+63
+The final count of the odd number is 4
+"""
+
+# =============================================
