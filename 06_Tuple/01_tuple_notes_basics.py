@@ -945,3 +945,79 @@ The largest number is 63
 """
 
 # ============================================
+
+"""
+Problem 20 — Find the Smallest Number in a Tuple 🌱
+
+numbers = (34, 12, 56, 7, 89, 23, 5, 41)
+
+Write a Python program that:
+1. Finds the smallest number using a for loop.
+2. Prints the smallest number with a descriptive message.
+
+Requirements:
+- Use a for loop.
+- Do not use min() or sorted().
+- Initialise a variable to hold the smallest number before the loop.
+- Compare each number with the current smallest value and update it when necessary.
+- Use an if statement.
+- Use an f-string for the final output.
+- Include the expected output in a comment.
+"""
+
+print()
+
+numbers = (34, 12, 56, 7, 89, 23, 5, 41)
+
+smallest = numbers[0]
+
+for number in numbers:
+    if number < smallest:
+        smallest = number
+
+print(f"The smallest number is {smallest}")
+
+"""
+Output:
+The smallest number is 5
+"""
+
+# =============================================
+
+"""
+Problem 21 — Count Occurrences of an Element in a Tuple 
+Given this tuple:
+numbers = (10, 20, 10, 30, 40, 10, 50, 20, 10)
+
+Write a Python program that:
+1. Counts how many times the number 10 appears in the tuple.
+2. Prints the final count with a descriptive message.
+
+Requirements:
+- Use a for loop.
+- Do not use the tuple's .count() method.
+- Initialise a counter before the loop.
+- Use an if statement to check whether each number equals 10.
+- Increase the counter whenever a match is found.
+- Use an f-string for the final output.
+- Include the expected output in a comment.
+"""
+
+print()
+
+numbers = (10, 20, 10, 30, 40, 10, 50, 20, 10)
+
+count = 0
+
+for number in numbers:
+    if number == 10:
+        count += 1
+
+print(f"The final count of the number 10 is {count}")
+
+"""
+Output:
+The final count of the number 10 is 4
+"""
+
+# =====================================================
