@@ -1102,3 +1102,43 @@ The total number of odd numbers is 5
 """
 
 # ==================================
+
+"""
+Problem 24 — Find the Second Largest Number in a Tuple 🧠
+
+Given this tuple:
+numbers = (25, 12, 48, 7, 63, 31, 54)
+
+Write a Python program that:
+1. Finds the second-largest number in the tuple.
+2. Prints the result using a descriptive f-string.
+Requirements
+- Use a for loop.
+- Do not use sorted() or max().
+- Use if statements to compare and update values.
+- Initialise the variables before the loop.
+- Include the expected output in a comment.
+"""
+
+print()
+
+numbers = (25, 12, 48, 7, 63, 31, 54)
+
+largest = numbers[0]
+second_largest = numbers[0]
+
+for number in numbers:
+    if number > largest:
+        second_largest = largest
+        largest = number
+    elif number > second_largest and number < largest:
+        second_largest = number
+
+print(f"The second largest number in the tuple is {second_largest}")
+
+"""
+Output:
+The second largest number in the tuple is 54
+"""
+
+# =================================
