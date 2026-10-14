@@ -1142,3 +1142,38 @@ The second largest number in the tuple is 54
 """
 
 # =================================
+
+"""
+Problem 25 — Remove Duplicate Values from a Tuple
+Given this tuple:
+numbers = (10, 20, 10, 30, 20, 40, 10, 50)
+
+Write a Python program that creates a new tuple containing only unique values, preserving their original order.
+Expected result: (10, 20, 30, 40, 50)
+Requirements
+1. Use a for loop.
+2. Do not use set() or any other shortcut that removes duplicates automatically.
+3. Use an if statement to check whether a number has already been added.
+4. Preserve the original order.
+5. Print the new tuple using a descriptive message.
+6. Include the expected output in a comment.
+"""
+
+print()
+
+numbers = (10, 20, 10, 30, 20, 40, 10, 50)
+
+unique_numbers = []
+
+for number in numbers:
+    if number not in unique_numbers:
+        unique_numbers.append(number)
+
+print(f"The new Tuple is {tuple(unique_numbers)}")
+
+"""
+Output:
+The new Tuple is (10, 20, 30, 40, 50)
+"""
+
+# ===============================================
