@@ -1021,3 +1021,84 @@ The final count of the number 10 is 4
 """
 
 # =====================================================
+
+"""
+Problem 22 — Find All Positions of an Element in a Tuple
+
+Given this tuple:
+numbers = (10, 20, 10, 30, 40, 10, 50, 20, 10)
+
+Write a Python program that finds and prints every index position where the number 10 appears.
+Requirements
+1. Use a for loop with range() and len().
+2. Do not use the tuple's .index() method.
+3. Use an if statement to check whether the current element equals 10.
+4. Print the index whenever a match is found.
+5. Use an f-string for the output.
+6. Include the expected output in a comment.
+"""
+
+print()
+
+numbers = (10, 20, 10, 30, 40, 10, 50, 20, 10)
+
+print("The index position where the number 10 appears is: ")
+
+for i in range(len(numbers)):
+    if numbers[i] == 10:
+        print(i)
+
+"""
+Output:
+The index position where the number 10 appears is: 
+0
+2
+5
+8
+"""
+
+# ====================================
+
+"""
+Problem 23 — Count Even and Odd Numbers in a Tuple 🔢
+
+Let's build on your for loop and if statement skills.
+Given this tuple:
+numbers = (12, 7, 18, 25, 30, 9, 42, 15, 8, 11)
+
+Write a Python program that:
+1. Counts how many numbers are even.
+2. Counts how many numbers are odd.
+3. Prints both counts using descriptive f-strings.
+Requirements:
+- Use a for loop.
+- Use if-else.
+- Initialise two counters before the loop.
+- Use the modulo operator % to identify even and odd numbers.
+- Do not use count() or any other built-in counting shortcut.
+- Include the expected output in a comment.
+"""
+
+print()
+
+numbers = (12, 7, 18, 25, 30, 9, 42, 15, 8, 11)
+
+count_even = 0
+count_odd = 0
+
+for number in numbers:
+    if number % 2 == 0:
+        count_even += 1
+    else:
+        count_odd += 1
+
+print(f"The total number of even numbers is {count_even}")
+print(f"The total number of odd numbers is {count_odd}")
+
+"""
+Output:
+The total number of even numbers is 5
+The total number of odd numbers is 5
+"""
+
+# ==================================
