@@ -1177,3 +1177,81 @@ The new Tuple is (10, 20, 30, 40, 50)
 """
 
 # ===============================================
+
+"""
+Problem 26 — Find Common Elements Between Two Tuples
+Given these two tuples:
+tuple1 = (10, 20, 30, 40, 50, 60)
+tuple2 = (30, 50, 70, 90, 10, 100)
+
+Write a Python program that finds and prints the elements that appear in both tuples, preserving the order in which they
+appear in tuple1.
+Expected result: (10, 30, 50)
+Requirements
+1. Use a for loop.
+2. Use an if statement to check whether an element from tuple1 exists in tuple2.
+3. Do not use set() or any automatic intersection shortcut.
+4. Store the common elements in a list first.
+5. Convert the resulting list into a tuple.
+6. Print the result using an f-string.
+7. Include the expected output in a comment.
+"""
+
+print()
+
+tuple1 = (10, 20, 30, 40, 50, 60)
+tuple2 = (30, 50, 70, 90, 10, 100)
+
+common_element = []
+
+for number in tuple1:
+    if number in tuple2:
+        common_element.append(number)
+
+print(f"The common elements in both the tuples with its preserving order of tuple1 are {tuple(common_element)}")
+
+"""
+Output:
+The common elements in both the tuples with its preserving order of tuple1 are (10, 30, 50)
+"""
+
+# ========================================
+
+"""
+Problem 27 — Find Elements Present in One Tuple but Not the Other 
+Now let's build on Problem 26.
+Given these tuples:
+tuple1 = (10, 20, 30, 40, 50, 60)
+tuple2 = (30, 50, 70, 90, 10, 100)
+
+Write a Python program that finds the elements that appear in tuple1 but do not appear in tuple2.
+Expected result: (20, 40, 60)
+Requirements
+1. Use a for loop to traverse tuple1.
+2. Use an if statement with the not in operator.
+3. Do not use set() or any automatic difference operation.
+4. Store the matching elements in a list.
+5. Convert the list into a tuple.
+6. Print the result using an f-string.
+7. Include the expected output in a comment.
+"""
+
+tuple1 = (10, 20, 30, 40, 50, 60)
+tuple2 = (30, 50, 70, 90, 10, 100)
+
+print()
+
+uncommon_elements = []
+
+for number in tuple1:
+    if number not in tuple2:
+        uncommon_elements.append(number)
+
+print(f"The elements that appear in tuple1 but do not appear in tuple2 are {tuple(uncommon_elements)}")
+
+"""
+Output:
+The elements that appear in tuple1 but do not appear in tuple2 are (20, 40, 60)
+"""
+
+# =========================================
