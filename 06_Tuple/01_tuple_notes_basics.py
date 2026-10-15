@@ -1336,3 +1336,44 @@ Both tuples are equal: True
 """
 
 # ================================
+
+"""
+Problem 30 — Find the First Repeated Element in a Tuple 
+Let's build on your duplicate-checking skills from Problem 25.
+Given this tuple:
+numbers = (10, 20, 30, 20, 40, 50, 10)
+
+Write a Python program that finds and prints the first element that appears again while traversing the tuple from left to right.
+Expected output:
+The first repeated element is 20
+
+Requirements
+1. Use a for loop.
+2. Do not use set() or automatic duplicate-removal shortcuts.
+3. Use a list to store elements already visited.
+4. Use an if-else statement to check for a repeated element.
+5. Stop the loop when the first repeated element is found.
+6. Print the result using an f-string.
+7. Include the expected output in a comment.
+"""
+
+print()
+
+numbers = (10, 20, 30, 20, 40, 50, 10)
+
+visited = []
+
+for number in numbers:
+    if number in visited:
+        break
+    else:
+        visited.append(number)
+
+print(f"The first repeated element is {number}")
+
+"""
+Output:
+The first repeated element is 20
+"""
+
+# ============================================
