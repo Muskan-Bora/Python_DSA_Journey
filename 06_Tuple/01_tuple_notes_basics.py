@@ -1255,3 +1255,84 @@ The elements that appear in tuple1 but do not appear in tuple2 are (20, 40, 60)
 """
 
 # =========================================
+
+"""
+Problem 28 — Check Whether One Tuple Is a Subset of Another 
+Let's practise membership checks again, but this time we'll check whether every element of one tuple exists in another tuple.
+Given these tuples:
+tuple1 = (10, 20, 30, 40, 50)
+tuple2 = (20, 40)
+
+Write a Python program to determine whether every element in tuple2 is present in tuple1.
+Expected output:
+All elements of tuple2 are present in tuple1: True
+
+Requirements
+1. Use a for loop.
+2. Use an if statement to check membership.
+3. Do not use set() or automatic subset operations.
+4. Initialise a Boolean variable before the loop.
+5. If any element of tuple2 is missing from tuple1, update the Boolean variable to False.
+6. Print the result using an f-string.
+7. Include the expected output in a comment.
+"""
+
+print()
+
+tuple1 = (10, 20, 30, 40, 50)
+tuple2 = (20, 40)
+
+result = True
+
+for number in tuple2:
+    if number not in tuple1:
+        result = False
+
+print(f"All elements of tuple2 are present in tuple1: {result}")
+
+"""
+Output:
+All elements of tuple2 are present in tuple1: True
+"""
+
+# ============================================
+
+"""
+Problem 29 — Check Whether Two Tuples Are Equal 🐍
+Given these tuples:
+tuple1 = (10, 20, 30, 40)
+tuple2 = (10, 20, 30, 40)
+
+Write a Python program to check whether the two tuples contain the same elements in the same order.
+Expected output:
+Both tuples are equal: True
+
+Requirements
+1. Use a for loop.
+2. Do not use tuple1 == tuple2 to perform the whole comparison.
+3. Initialise a Boolean variable before the loop.
+4. Compare corresponding elements at the same index.
+5. If a mismatch is found, update the Boolean variable to False.
+6. Print the result using an f-string.
+7. Include the expected output in a comment.
+"""
+
+print()
+
+tuple1 = (10, 20, 30, 40)
+tuple2 = (10, 20, 30, 40)
+
+result = True
+
+for i in range(len(tuple1)):
+    if tuple1[i] != tuple2[i]:
+        result = False
+
+print(f"Both tuples are equal: {result}")
+
+"""
+Output:
+Both tuples are equal: True
+"""
+
+# ================================
