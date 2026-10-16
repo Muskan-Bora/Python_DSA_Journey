@@ -1435,3 +1435,55 @@ Employee Designation: Full Stack Engineer
 """
 
 # ==========================================
+
+"""
+Problem 32 — Unpacking Values from a Tuple
+
+Problem statement:
+Create a tuple named product containing these values, in order:
+- Product name: "Laptop"
+- Price: 55000
+- Quantity: 2
+- Category: "Electronics"
+Then:
+1. Use tuple unpacking to assign the values to product_name, price, quantity, and category.
+2. Calculate the total cost using price * quantity.
+3. Print all four unpacked values and the total cost using f-strings.
+Expected output
+Product Name: Laptop
+Price: 55000
+Quantity: 2
+Category: Electronics
+Total Cost: 110000
+
+Rules:
+- Use tuple packing without explicitly writing parentheses around the values.
+- Use tuple unpacking, not indexing.
+- Use an expression to calculate the total cost.
+- Do not hardcode the total cost.
+"""
+
+print()
+
+product = "Laptop", 55000, 2, "Electronics"
+
+product_name, price, quantity, category = product
+
+total_cost = price * quantity
+
+print(f"Product Name: {product_name}")
+print(f"Price: {price}")
+print(f"Quantity: {quantity}")
+print(f"Category: {category}")
+print(f"Total Cost: {total_cost}")
+
+"""
+Output:
+Product Name: Laptop
+Price: 55000
+Quantity: 2
+Category: Electronics
+Total Cost: 110000
+"""
+
+# =====================================
