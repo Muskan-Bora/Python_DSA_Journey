@@ -1377,3 +1377,61 @@ The first repeated element is 20
 """
 
 # ============================================
+
+## New concept: Tuple Packing and Unpacking
+
+"""
+Tuple Packing
+- Packing means grouping multiple values into a single tuple.
+- Parentheses are optional when commas separate the values.
+- Example: person = "Asha", 22, "Developer"
+
+Tuple Unpacking
+- Unpacking assigns tuple elements to separate variables.
+- Values are assigned in their original order.
+- Without starred unpacking, the number of variables must match the number of tuple elements.
+- Example: name, age, role = person
+"""
+
+# -----------------
+
+"""
+🧩 Problem 31 — Employee Tuple Packing and Unpacking
+
+Problem statement:
+Write a Python program that performs the following tasks:
+1. Create a tuple named employee using tuple packing, without explicitly writing parentheses around the values.
+2. Store these three values in the tuple, in order:
+   - Name: "Muskan"
+   - Age: 25
+   - Designation: "Full Stack Engineer"
+3. Use tuple unpacking to assign the three tuple elements to separate variables named name, age, and designation.
+4. Print each variable using an f-string.
+Expected output
+Employee Name: Muskan
+Employee Age: 25
+Employee Designation: Full Stack Engineer
+
+Your rules:
+- Use tuple packing without explicit parentheses when creating employee.
+- Use tuple unpacking rather than indexing to retrieve the values.
+- Use f-strings for the output.
+"""
+print()
+
+employee = "Muskan", 25, "Full Stack Engineer"    # Packing
+
+name, age, designation = employee                 # Unpacking
+
+print(f"Employee Name: {name}")
+print(f"Employee Age: {age}")
+print(f"Employee Designation: {designation}")
+
+"""
+Output:
+Employee Name: Muskan
+Employee Age: 25
+Employee Designation: Full Stack Engineer
+"""
+
+# ==========================================
