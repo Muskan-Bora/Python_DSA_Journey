@@ -1487,3 +1487,59 @@ Total Cost: 110000
 """
 
 # =====================================
+
+"""
+Problem 33 — Packing and Unpacking with Multiple Data Types
+
+Problem statement:
+Create a tuple named student containing these values, in order:
+- Name: "Riya"
+- Age: 21
+- Percentage: 87.5
+- Passed: True
+Then:
+1. Use tuple packing without explicitly writing parentheses.
+2. Unpack the tuple into name, age, percentage, and passed.
+3. Print all four values using f-strings.
+4. Print the data type of each unpacked variable using type().
+Expected output
+Student Name: Riya
+Student Age: 21
+Student Percentage: 87.5
+Passed: True
+Type of name: <class 'str'>
+Type of age: <class 'int'>
+Type of percentage: <class 'float'>
+Type of passed: <class 'bool'>
+
+Rules: Use tuple unpacking, don't use indexing, and don't hardcode the data types in the output.
+"""
+
+print()
+
+student = "Riya", 21, 87.5, True
+
+student_name, student_age, student_percentage, passed = student
+
+print(f"Student Name: {student_name}")
+print(f"Student Age: {student_age}")
+print(f"Student Percentage: {student_percentage}")
+print(f"Passed: {passed}")
+print(f"Type of name: {type(student_name)}")
+print(f"Type of age: {type(student_age)}")
+print(f"Type of percentage: {type(student_percentage)}")
+print(f"Type of passed: {type(passed)}")
+
+"""
+Output:
+Student Name: Riya
+Student Age: 21
+Student Percentage: 87.5
+Passed: True
+Type of name: <class 'str'>
+Type of age: <class 'int'>
+Type of percentage: <class 'float'>
+Type of passed: <class 'bool'>
+"""
+
+# ==================================
