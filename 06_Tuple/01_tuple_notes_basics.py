@@ -1616,3 +1616,87 @@ Type of middle_scores: <class 'list'>
 """
 
 # ====================================
+
+"""
+Problem 35 — Starred Unpacking at the Beginning
+Let's practise placing the * at a different position.
+Problem statement:
+Create a tuple named temperatures containing these values, in order:
+28, 30, 27, 32, 29, 31
+Then:
+1. Use starred unpacking to assign all values except the last one to previous_temperatures.
+2. Assign the last value to latest_temperature.
+3. Print both variables using f-strings.
+4. Print the data type of previous_temperatures using type().
+Expected output
+Previous Temperatures: [28, 30, 27, 32, 29]
+Latest Temperature: 31
+Type of previous_temperatures: <class 'list'>
+
+
+Rules:
+- Create the tuple without explicitly writing parentheses around its values.
+- Use starred unpacking, not indexing or slicing.
+- Use f-strings for every printed line.
+- Don't hardcode the output.
+"""
+
+print()
+
+temperatures = 28, 30, 27, 32, 29, 31
+
+*previous_temperatures, latest_temperature = temperatures
+
+print(f"Previous Temperatures: {previous_temperatures}")
+print(f"Latest Temperature: {latest_temperature}")
+print(f"Type of previous_temperatures: {type(previous_temperatures)}")
+
+"""
+Output:
+Previous Temperatures: [28, 30, 27, 32, 29]
+Latest Temperature: 31
+Type of previous_temperatures: <class 'list'>
+"""
+
+# ==================================================
+
+"""
+Problem 36 — Starred Unpacking at the End
+One more practice problem will help reinforce the final position of *.
+Problem statement:
+Create a tuple named daily_sales containing these values, in order:
+1200, 1500, 1350, 1800, 1650, 2000
+Then:
+1. Assign the first value to first_day_sales.
+2. Collect all remaining values into remaining_sales using starred unpacking.
+3. Print both variables using f-strings.
+4. Print the data type of remaining_sales using type().
+Expected output
+First Day Sales: 1200
+Remaining Sales: [1500, 1350, 1800, 1650, 2000]
+Type of remaining_sales: <class 'list'>
+
+Rules:
+- Create the tuple without explicitly writing parentheses around its values.
+- Use starred unpacking, not indexing or slicing.
+- Use f-strings for every printed line.
+- Don't hardcode the output.
+"""
+print()
+
+daily_sales = 1200, 1500, 1350, 1800, 1650, 2000
+
+first_day_sales, *remaining_sales = daily_sales
+
+print(f"First Day Sales: {first_day_sales}")
+print(f"Remaining Sales: {remaining_sales}")
+print(f"Type of remaining_sales: {type(remaining_sales)}")
+
+"""
+Output:
+First Day Sales: 1200
+Remaining Sales: [1500, 1350, 1800, 1650, 2000]
+Type of remaining_sales: <class 'list'>
+"""
+
+# ================================================
