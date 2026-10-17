@@ -1699,4 +1699,151 @@ Remaining Sales: [1500, 1350, 1800, 1650, 2000]
 Type of remaining_sales: <class 'list'>
 """
 
+# Remember: the starred variable receives a list, even when the original collection is a tuple.
+
 # ================================================
+
+# 📘 Swapping Variables Using Tuple Unpacking
+
+"""
+- Swapping means exchanging values between variables.
+- Python supports swapping using tuple packing and unpacking.
+- Syntax: a, b = b, a
+- Python evaluates the right-hand side before assigning the new values to the left-hand variables.
+- This technique works with more than two variables as well, provided the assignment has matching numbers of values and targets.
+Example:
+a, b, c = 10, 20, 30
+
+a, b, c = c, a, b
+
+# a = 30
+# b = 10
+# c = 20
+"""
+
+# ==========================================
+
+"""
+Problem 37 — Swap Two Values
+
+Write a Python program that:
+1. Creates two variables: first_number = 100 and second_number = 250.
+2. Prints both variables before swapping.
+3. Swaps their values using tuple unpacking, without a temporary variable.
+4. Prints both variables after swapping.
+Expected output
+Before swapping:
+First number: 100
+Second number: 250
+
+After swapping:
+First number: 250
+Second number: 100
+
+Rules:
+- Use first_number, second_number = second_number, first_number to swap.
+- Use f-strings for the variable values.
+- Don't hardcode the values in the output.
+"""
+
+print()
+
+first_number = 100
+second_number = 250
+
+print("Before swapping:")
+print(f"First number: {first_number}")
+print(f"Second number: {second_number}")
+
+print()
+
+first_number, second_number = second_number, first_number
+
+print("After swapping:")
+print(f"First number: {first_number}")
+print(f"Second number: {second_number}")
+
+"""
+Output:
+Before swapping:
+First number: 100
+Second number: 250
+
+After swapping:
+First number: 250
+Second number: 100
+"""
+
+"""
+NOTE:
+Python evaluates the right-hand side first, so it captures the original values 250 and 100.
+It then assigns them to the left-hand variables in order.
+"""
+
+# =========================================
+
+"""
+Problem 38 — Swap Three Values
+Let's strengthen the swapping concept with three variables.
+Problem statement:
+Write a Python program that:
+1. Creates three variables:
+   - a = 10
+   - b = 20
+   - c = 30
+2. Prints all three variables before swapping.
+3. Performs this assignment:
+   a, b, c = c, a, b
+4. Prints all three variables after swapping.
+Expected output
+Before swapping:
+a: 10
+b: 20
+c: 30
+
+After swapping:
+a: 30
+b: 10
+c: 20
+
+Rules:
+- Use tuple unpacking to swap the values.
+- Don't use a temporary variable.
+- Use f-strings for the variable values.
+- Don't hardcode the values in your output.
+"""
+
+print()
+
+a = 10
+b = 20
+c = 30
+
+print("Before swapping:")
+print(f"a: {a}")
+print(f"b: {b}")
+print(f"c: {c}")
+
+print()
+
+a, b, c = c, a, b
+
+print("After swapping:")
+print(f"a: {a}")
+print(f"b: {b}")
+print(f"c: {c}")
+
+"""
+Output:
+Before swapping:
+a: 10
+b: 20
+c: 30
+
+After swapping:
+a: 30
+b: 10
+c: 20
+"""
+
+# =========================================
