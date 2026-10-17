@@ -1543,3 +1543,76 @@ Type of passed: <class 'bool'>
 """
 
 # ==================================
+
+# Starred Tuple Unpacking
+
+"""
+- Starred unpacking uses * to collect multiple values into one variable.
+- The starred variable receives a list, not a tuple.
+- It can appear at the beginning, middle, or end of an unpacking assignment.
+- Only one starred target is allowed at the same unpacking level.
+- Regular variables receive individual values; the starred variable collects the remaining values after
+ accounting for those regular variables.
+
+Examples
+first, *remaining = (10, 20, 30, 40)
+# first = 10
+# remaining = [20, 30, 40]
+
+*remaining, last = (10, 20, 30, 40)
+# remaining = [10, 20, 30]
+# last = 40
+
+first, *middle, last = (10, 20, 30, 40, 50)
+# first = 10
+# middle = [20, 30, 40]
+# last = 50
+"""
+
+# ========================================= #
+
+"""
+Problem 34 — Starred Tuple Unpacking
+
+Problem statement:
+Write a Python program that:
+1. Creates a tuple named scores containing these values, in order: 85, 90, 78, 92, 88, 95, 80.
+2. Uses starred unpacking to assign:
+   - The first score to first_score.
+   - All middle scores to middle_scores.
+   - The last score to last_score.
+3. Prints all three variables using f-strings.
+4. Prints the data type of middle_scores using type().
+Expected output
+First Score: 85
+Middle Scores: [90, 78, 92, 88, 95]
+Last Score: 80
+Type of middle_scores: <class 'list'>
+
+Your rules:
+- Create the tuple without explicitly writing parentheses around the values.
+- Use starred unpacking; do not use indexing or slicing to extract the values.
+- Calculate nothing extra and don't hardcode the output.
+- Use f-strings for every printed line.
+"""
+
+print()
+
+scores = 85, 90, 78, 92, 88, 95, 80
+
+first_score, *middle_scores, last_score = scores
+
+print(f"First Score: {first_score}")
+print(f"Middle Scores: {middle_scores}")
+print(f"Last Score: {last_score}")
+print(f"Type of middle_scores: {type(middle_scores)}")
+
+"""
+Output:
+First Score: 85
+Middle Scores: [90, 78, 92, 88, 95]
+Last Score: 80
+Type of middle_scores: <class 'list'>
+"""
+
+# ====================================
