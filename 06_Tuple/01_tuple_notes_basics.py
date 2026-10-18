@@ -1987,3 +1987,69 @@ Type of subject_tuple: <class 'tuple'>
 """
 
 # ========================================
+
+# Nested Tuples
+
+"""
+- A nested tuple contains other tuples as elements.
+- Use one index to access an inner tuple.
+- Use two indices to access a value inside an inner tuple.
+- Nested loops can traverse all values in a nested tuple.
+
+data = (("A", 10), ("B", 20))
+
+# data[0]     -> ("A", 10)
+# data[0][0]  -> "A"
+# data[0][1]  -> 10
+"""
+
+# =================================
+
+"""
+Problem 41 — Accessing Values in a Nested Tuple
+
+Create a nested tuple named students containing:
+- ("Riya", 85)
+- ("Aarav", 92)
+- ("Neha", 78)
+Then:
+1. Print the first student's name.
+2. Print the second student's marks.
+3. Print the third student's name.
+4. Print the first student's complete tuple.
+5. Use f-strings for every printed line.
+Expected output
+First Student Name: Riya
+Second Student Marks: 92
+Third Student Name: Neha
+First Student Record: ('Riya', 85)
+
+Rules:
+- Create the nested tuple directly.
+- Use indexing to access the requested values.
+- Don't hardcode the output.
+- Use f-strings for every printed line.
+"""
+
+print()
+
+students = (
+    ("Riya", 85),
+    ("Aarav", 92),
+    ("Neha", 78)
+)
+
+print(f"First Student Name: {students[0][0]}")
+print(f"Second Student Marks: {students[1][1]}")
+print(f"Third Student Name: {students[2][0]}")
+print(f"First Student Record: {students[0]}")
+
+"""
+Output:
+First Student Name: Riya
+Second Student Marks: 92
+Third Student Name: Neha
+First Student Record: ('Riya', 85)
+"""
+
+# ==============================================
