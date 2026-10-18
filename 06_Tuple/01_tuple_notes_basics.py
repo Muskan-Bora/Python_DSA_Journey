@@ -2053,3 +2053,69 @@ First Student Record: ('Riya', 85)
 """
 
 # ==============================================
+
+# Traversing a Nested Tuple
+
+"""
+A nested loop is a loop inside another loop.
+The outer loop selects each inner collection.
+The inner loop processes the values within that collection.
+"""
+
+# ============================
+
+"""
+Problem 42 — Traversing a Nested Tuple
+
+Create the following nested tuple:
+employees = (    
+    ("Amit", "Sales", 25000),
+    ("Priya", "IT", 35000),    
+    ("Rahul", "HR", 30000)
+)
+
+Using nested for loops, print every value in every employee record, one value per line.
+Requirements:
+- Use nested for loops.
+- Do not access values using manual indexing.
+- Use an f-string for each printed line, with the label Employee Detail:.
+- Do not hardcode the output.
+
+Expected output:
+Employee Detail: Amit
+Employee Detail: Sales
+Employee Detail: 25000
+Employee Detail: Priya
+Employee Detail: IT
+Employee Detail: 35000
+Employee Detail: Rahul
+Employee Detail: HR
+Employee Detail: 30000
+"""
+
+print()
+
+employees = (    
+    ("Amit", "Sales", 25000),
+    ("Priya", "IT", 35000),    
+    ("Rahul", "HR", 30000)
+)
+
+for employee in employees:                
+    for value in employee:                  
+        print(f"Employee Detail: {value}")
+
+"""
+Output:
+Employee Detail: Amit
+Employee Detail: Sales
+Employee Detail: 25000
+Employee Detail: Priya
+Employee Detail: IT
+Employee Detail: 35000
+Employee Detail: Rahul
+Employee Detail: HR
+Employee Detail: 30000
+"""
+
+# =========================================
