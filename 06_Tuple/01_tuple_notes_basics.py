@@ -1935,3 +1935,55 @@ Type of repeated_tasks: <class 'tuple'>
 """
 
 # ========================================
+
+## Converting Other Data Types into Tuples
+
+"""
+The tuple() Function
+- Converts an iterable into a tuple.
+- tuple(list) converts a list into a tuple.
+- tuple(string) creates a tuple of individual characters.
+- tuple(range(...)) converts the generated numbers into a tuple.
+- tuple() creates an empty tuple.
+- The order of elements is preserved.
+"""
+
+# ---------------------------------------- #
+
+"""
+Problem 40 — Convert a List into a Tuple
+Write a Python program that:
+1. Creates a list named subjects containing "Python", "SQL", "DSA", and "Django".
+2. Converts the list into a tuple named subject_tuple using tuple().
+3. Prints the original list.
+4. Prints the new tuple.
+5. Prints the data type of both variables using type().
+Expected output
+Original List: ['Python', 'SQL', 'DSA', 'Django']
+Converted Tuple: ('Python', 'SQL', 'DSA', 'Django')
+Type of subjects: <class 'list'>
+Type of subject_tuple: <class 'tuple'>
+
+Rules: Use tuple() for conversion, don't hardcode the output, and use f-strings for every printed line.
+"""
+
+print()
+
+subjects = ["Python", "SQL", "DSA", "Django"]
+
+subject_tuple = tuple(subjects)
+
+print(f"Original List: {subjects}")
+print(f"Converted Tuple: {subject_tuple}")
+print(f"Type of subjects: {type(subjects)}")
+print(f"Type of subject_tuple: {type(subject_tuple)}")
+
+"""
+Output:
+Original List: ['Python', 'SQL', 'DSA', 'Django']
+Converted Tuple: ('Python', 'SQL', 'DSA', 'Django')
+Type of subjects: <class 'list'>
+Type of subject_tuple: <class 'tuple'>
+"""
+
+# ========================================
