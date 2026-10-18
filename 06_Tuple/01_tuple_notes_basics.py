@@ -1847,3 +1847,91 @@ c: 20
 """
 
 # =========================================
+
+# Tuple Concatenation and Tuple Repetition
+
+"""
+Tuple Concatenation
+- Concatenation joins tuples using +.
+- It creates a new tuple.
+- The original tuples remain unchanged.
+- Element order is preserved.
+- Both operands must be compatible sequence types; for tuple concatenation, use tuples on both sides.
+
+a = (10, 20)
+b = (30, 40)
+result = a + b
+
+# result = (10, 20, 30, 40)
+
+# ---------------------------
+
+Tuple Repetition
+- Repetition uses * with an integer.
+- It repeats the tuple's elements the specified number of times.
+- Multiplying by zero or a negative integer produces an empty tuple.
+- The original tuple remains unchanged.
+
+numbers = (5, 10)
+result = numbers * 3
+
+# result = (5, 10, 5, 10, 5, 10)
+"""
+
+# =======================================
+
+"""
+Problem 39 — Tuple Concatenation and Repetition
+
+Problem statement - Write a Python program that performs these tasks:
+1. Create a tuple named morning_tasks containing
+ "Exercise", "Reading", and "Python Practice", without explicitly writing parentheses around the values.
+2. Create another tuple named evening_tasks containing "Job Search" and "Project Work",
+ also without explicitly writing parentheses around the values.
+3. Concatenate both tuples into a new tuple named daily_tasks.
+4. Repeat daily_tasks twice and store the result in repeated_tasks.
+5. Print all four tuples using f-strings.
+6. Print the data types of daily_tasks and repeated_tasks using type().
+Expected output
+Morning Tasks: ('Exercise', 'Reading', 'Python Practice')
+Evening Tasks: ('Job Search', 'Project Work')
+Daily Tasks: ('Exercise', 'Reading', 'Python Practice', 'Job Search', 'Project Work')
+Repeated Tasks: ('Exercise', 'Reading', 'Python Practice', 'Job Search', 'Project Work', 'Exercise', 'Reading', 'Python Practice', 'Job Search', 'Project Work')
+Type of daily_tasks: <class 'tuple'>
+Type of repeated_tasks: <class 'tuple'>
+
+Rules:
+- Create both original tuples without explicit parentheses.
+- Use + for concatenation and * for repetition.
+- Don't hardcode the output.
+- Use f-strings for every printed line.
+"""
+
+print()
+
+morning_tasks = "Exercise", "Reading", "Python Practice"
+
+evening_tasks = "Job Search", "Project Work"
+
+daily_tasks = morning_tasks + evening_tasks
+
+repeated_tasks = daily_tasks * 2
+
+print(f"Morning Tasks: {morning_tasks}")
+print(f"Evening Tasks: {evening_tasks}")
+print(f"Daily Tasks: {daily_tasks}")
+print(f"Repeated Tasks: {repeated_tasks}")
+print(f"Type of daily_tasks: {type(daily_tasks)}")
+print(f"Type of repeated_tasks: {type(repeated_tasks)}")
+
+"""
+Output:
+Morning Tasks: ('Exercise', 'Reading', 'Python Practice')
+Evening Tasks: ('Job Search', 'Project Work')
+Daily Tasks: ('Exercise', 'Reading', 'Python Practice', 'Job Search', 'Project Work')
+Repeated Tasks: ('Exercise', 'Reading', 'Python Practice', 'Job Search', 'Project Work', 'Exercise', 'Reading', 'Python Practice', 'Job Search', 'Project Work')
+Type of daily_tasks: <class 'tuple'>
+Type of repeated_tasks: <class 'tuple'>
+"""
+
+# ========================================
