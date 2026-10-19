@@ -2316,3 +2316,46 @@ Highest Score: 100
 """
 
 # ==================================
+
+# Edge cases
+
+"""
+Problem 45 — Search for a missing element
+Create this tuple:
+numbers = (10, 20, 30, 40, 50)
+
+Write a program that:
+1. Searches for the number 35.
+2. If 35 exists, print Number Found: 35.
+3. Otherwise, print Number Not Found: 35.
+Requirements
+- Use a for loop.
+- Do not use the in operator for the search.
+- Use a Boolean variable to track whether the number was found.
+- Use an f-string for the output.
+- Do not hardcode the search result.
+"""
+
+print()
+
+numbers = (10, 20, 30, 40, 50)
+
+found = False
+
+# Check the final result after searching:
+
+for number in numbers:
+    if number == 35:
+        found = True     
+    
+if found:
+    print(f"Number Found: 35")
+else:
+    print(f"Number Not Found: 35")
+
+"""
+Output:
+Number Not Found: 35
+"""
+
+# ==============================================
