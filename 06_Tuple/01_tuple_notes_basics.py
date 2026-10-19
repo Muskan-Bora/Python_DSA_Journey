@@ -2359,3 +2359,55 @@ Number Not Found: 35
 """
 
 # ==============================================
+
+"""
+Problem 46 — Find the first repeated element
+
+Find the first duplicate safely
+Create this tuple:
+numbers = (10, 20, 30, 40, 20, 50, 10)
+
+Write a program that:
+1. Finds the first repeated element while traversing the tuple from left to right.
+2. Prints First Repeated Element: 20 when a duplicate is found.
+3. If no duplicate exists, prints No Repeated Element Found.
+Requirements
+- Use a for loop.
+- Do not use set(), .count(), or in to perform the duplicate search.
+- Use a list to track previously visited elements.
+- Use a Boolean variable to track whether a duplicate was found.
+- Use f-strings for the output.
+- Stop searching once the first repeated element is found.
+"""
+
+print()
+
+numbers = (10, 20, 30, 40, 20, 50, 10)
+
+visited = []
+repeated_element = False
+duplicate = None
+
+for number in numbers:
+    for previous_number in visited:
+        if number == previous_number:
+            repeated_element = True
+            duplicate = number
+            break
+
+    if repeated_element:
+        break
+    else:
+        visited.append(number)
+
+if repeated_element:
+    print(f"First Repeated Element: {duplicate}")
+else:
+    print("No Repeated Element Found.")
+
+"""
+Output:
+First Repeated Element: 20
+"""
+
+# ==================================================
