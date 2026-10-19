@@ -2119,3 +2119,200 @@ Employee Detail: 30000
 """
 
 # =========================================
+
+# Mixed tuple revision
+
+"""
+Problem 43
+Analyze a tuple of numbers
+Create the following tuple:
+numbers = (12, 25, 8, 25, 40, 12, 7, 30)
+
+Write a program that does all of the following:
+1. Print the total number of elements in the tuple.
+2. Print the first three elements as a tuple.
+3. Print the tuple in reverse order.
+4. Count how many times 25 appears.
+5. Print all the even numbers, one per line.
+6. Print the number of elements greater than 20.
+Requirements
+- Use the original tuple; don't change it.
+- Use f-strings for all output lines.
+- Don't hardcode calculated answers.
+- For the even numbers, print each number with the label Even Number:.
+"""
+
+print()
+
+numbers = (12, 25, 8, 25, 40, 12, 7, 30)
+
+# 1. Print the total number of elements in the tuple.
+
+print(f"Total Elements: {len(numbers)}")
+
+# Another way without len()
+
+total = 0
+
+for number in numbers:
+    total += 1
+
+print(f"Total Elements: {total}")
+
+# ---------
+
+# 2. Print the first three elements as a tuple.
+
+print(f"First Three Elements: {numbers[0:3]}")
+
+# ---------
+
+# 3. Print the tuple in reverse order.
+
+print(f"Reversed Tuple: {numbers[-1::-1]}")
+
+# ---------
+
+# 4. Count how many times 25 appears.
+
+count = 0
+
+for number in numbers:
+    if number == 25:
+        count += 1
+
+print(f"Occurrences of 25: {count}")
+
+# ------------
+
+# 5. Print all the even numbers, one per line.
+
+for number in numbers:
+    if number % 2 == 0:
+        print(f"Even Number: {number}")
+
+# -----------
+
+# 6. Print the number of elements greater than 20.
+
+greater = 0
+
+for number in numbers:
+    if number > 20:
+        greater += 1
+
+print(f"Elements Greater Than 20: {greater}")
+
+# ---------------
+
+"""
+Final Output of all:
+Total Elements: 8
+Total Elements: 8
+First Three Elements: (12, 25, 8)
+Reversed Tuple: (30, 7, 12, 40, 25, 8, 25, 12)
+Occurrences of 25: 2
+Even Number: 12
+Even Number: 8
+Even Number: 40
+Even Number: 12
+Even Number: 30
+Elements Greater Than 20: 4
+"""
+
+# ========================================
+
+"""
+Problem 44 — Mixed tuple revision
+Analyze and filter a tuple
+Create this tuple:
+scores = (45, 72, 90, 45, 68, 100, 72, 35)
+
+Write a program that:
+1. Prints the number of elements in the tuple.
+2. Prints the last four elements as a tuple.
+3. Counts how many times 72 appears, using a loop rather than .count().
+4. Prints all scores greater than or equal to 70, one per line.
+5. Counts how many scores are below 50.
+6. Prints the highest score without using max() or sorted().
+Requirements
+- Keep the original tuple unchanged.
+- Use f-strings for every output line.
+- Do not hardcode calculated answers.
+- For filtered scores, use the label Qualifying Score:.
+"""
+
+print()
+
+scores = (45, 72, 90, 45, 68, 100, 72, 35)
+
+# 1. Prints the number of elements in the tuple.
+
+print(f"Total Scores: {len(scores)}")
+
+# -----------
+
+# 2. Prints the last four elements as a tuple.
+
+print(f"Last Four Scores: {scores[-4:]}")
+
+# -----------
+
+# 3. Counts how many times 72 appears, using a loop rather than .count().
+
+count = 0
+
+for score in scores:
+    if score == 72:
+        count += 1
+
+print(f"Occurrences of 72: {count}")
+
+# -------------
+
+# 4. Prints all scores greater than or equal to 70, one per line.
+
+for score in scores:
+    if score >= 70:
+        print(f"Qualifying Score: {score}")
+
+# ----------------
+
+# 5. Counts how many scores are below 50.
+
+count = 0
+
+for score in scores:
+    if score < 50:
+        count += 1
+
+print(f"Scores Below 50: {count}")
+
+# --------------------
+
+# 6. Prints the highest score without using max() or sorted().
+
+highest = scores[0]
+
+for score in scores:
+    if score > highest:
+        highest = score
+
+print(f"Highest Score: {highest}")
+
+# --------------
+
+"""
+Final Output of all:
+Total Scores: 8
+Last Four Scores: (68, 100, 72, 35)
+Occurrences of 72: 2
+Qualifying Score: 72
+Qualifying Score: 90
+Qualifying Score: 100
+Qualifying Score: 72
+Scores Below 50: 3
+Highest Score: 100
+"""
+
+# ==================================
