@@ -2558,3 +2558,100 @@ Target Not Found
 """
 
 # ===========================================
+
+"""
+Problem 50: Tuple Analysis
+
+Given this tuple:
+numbers = (12, 7, 25, 12, 40, 7, 30, 12)
+
+Write a program that:
+1. Prints the total number of elements.
+2. Prints the first four elements using slicing.
+3. Prints the tuple in reverse order.
+4. Counts how many times 12 occurs using a loop (don't use .count()).
+5. Prints all elements greater than 20.
+6. Finds the first repeated element using a visited list and nested loops, without using in or .count().
+7. Uses f-strings for all output statements.
+Expected results to verify your code:
+- Total elements: 8
+- First four: (12, 7, 25, 12)
+- Reversed tuple: (12, 30, 7, 40, 12, 25, 7, 12)
+- Occurrences of 12: 3
+- Elements greater than 20: 25, 40, 30
+- First repeated element: 12
+"""
+
+print()
+
+numbers = (12, 7, 25, 12, 40, 7, 30, 12)
+
+# 1. Prints the total number of elements.
+
+print(f"Total elements: {len(numbers)}")
+
+# 2. Prints the first four elements using slicing.
+
+print(f"First four: {numbers[0:4]}")
+
+# 3. Prints the tuple in reverse order.
+
+print(f"Reversed tuple: {numbers[-1::-1]}")
+
+# 4. Counts how many times 12 occurs using a loop (don't use .count()).
+
+count = 0
+target = 12
+
+for number in numbers:
+    if number == target:
+        count += 1
+
+print(f"Occurrences of 12: {count}")
+
+# 5. Prints all elements greater than 20.
+
+elements = []
+
+for number in numbers:
+    if number > 20:
+        elements.append(number)
+
+print(f"Elements greater than 20: {elements}")
+
+# 6. Finds the first repeated element using a visited list and nested loops, without using in or .count().
+
+visited = []
+repeated_element = False
+duplicate = None
+
+for number in numbers:
+    for previous_number in visited:
+        if number == previous_number:
+            repeated_element = True
+            duplicate = number
+            break
+
+    if repeated_element:
+        break
+    else:
+        visited.append(number)
+
+if repeated_element:
+    print(f"First Repeated Element: {duplicate}")
+else:
+    print(f"No Repeated Element Found.")
+
+# --------------------------
+
+"""
+Output for all:
+Total elements: 8
+First four: (12, 7, 25, 12)
+Reversed tuple: (12, 30, 7, 40, 12, 25, 7, 12)
+Occurrences of 12: 3
+Elements greater than 20: [25, 40, 30]
+First Repeated Element: 12
+"""
+
+# ====================================================
