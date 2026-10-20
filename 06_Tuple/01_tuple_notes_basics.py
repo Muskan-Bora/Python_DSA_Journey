@@ -2515,3 +2515,46 @@ Total Occurrences: 3
 """
 
 # =======================================
+
+"""
+Problem 49: Search and Count
+Problem statement
+Given the tuple below, search for the target 35.
+numbers = (10, 20, 30, 40, 50)
+target = 35
+
+Requirements:
+1. Use for with range() and indexing.
+2. Use a Boolean variable to track whether the target was found.
+3. Count the target's occurrences using a counter.
+4. If found, print its index and total occurrences.
+5. If not found, print Target Not Found.
+6. Use f-strings for all output statements.
+7. Do not use in or .count().
+"""
+
+print()
+
+numbers = (10, 20, 30, 40, 50)
+
+target = 35
+count = 0
+found = False
+
+for i in range(len(numbers)):
+    if numbers[i] == target:
+        found = True
+        print(f"Target Found At Index: {i}")
+        count += 1
+    
+if not found:
+    print(f"Target Not Found")
+else:
+    print(f"Total Occurrences: {count}")
+
+"""
+Output:
+Target Not Found
+"""
+
+# ===========================================
