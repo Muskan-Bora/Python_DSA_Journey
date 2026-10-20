@@ -2461,3 +2461,57 @@ No Repeated Element Found.
 """
 
 # ===============================================
+
+"""
+Problem 48 — Search for a number that may not exist
+Find all occurrences of a target
+Create this tuple:
+numbers = (10, 25, 30, 25, 40, 50, 25)
+
+Write a program that searches for the target number 25 and:
+1. Prints every index where 25 appears.
+2. Counts how many times 25 appears.
+3. If the target does not appear, prints Target Not Found.
+4. If the target appears, prints Total Occurrences: count.
+Requirements
+- Use a for loop with range() and indexing.
+- Do not use in or .count().
+- Use a Boolean variable to track whether the target was found.
+- Use a counter for the total occurrences.
+- Use f-strings for all output lines.
+- Do not hardcode the indices or count.
+
+Expected output
+Target Found At Index: 1
+Target Found At Index: 3
+Target Found At Index: 6
+Total Occurrences: 3
+"""
+
+print()
+
+numbers = (10, 25, 30, 25, 40, 50, 25)
+
+count = 0
+found = False
+
+for i in range(len(numbers)):
+    if numbers[i] == 25:
+        found = True
+        print(f"Target Found At Index: {i}")
+        count += 1
+    
+if not found:
+    print(f"Target Not Found")
+else:
+    print(f"Total Occurrences: {count}")
+
+"""
+Output:
+Target Found At Index: 1
+Target Found At Index: 3
+Target Found At Index: 6
+Total Occurrences: 3
+"""
+
+# =======================================
