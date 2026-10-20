@@ -2411,3 +2411,53 @@ First Repeated Element: 20
 """
 
 # ==================================================
+
+"""
+Problem 47 — Find a duplicate when none exists
+Your task
+Create this tuple:
+numbers = (10, 20, 30, 40, 50)
+
+Write a program that:
+1. Searches for the first repeated element.
+2. Prints First Repeated Element: value if a duplicate exists.
+3. Prints No Repeated Element Found if there are no duplicates.
+Requirements
+- Use a for loop and a list to track previously visited elements.
+- Use a Boolean variable to track whether a duplicate was found.
+- Do not use set(), .count(), or in for the duplicate search.
+- Use break when a duplicate is found.
+- Use an f-string when printing the duplicate value.
+- Do not hardcode the result.
+"""
+
+print()
+
+numbers = (10, 20, 30, 40, 50)
+
+visited = []
+repeated_element = False
+duplicate = None
+
+for number in numbers:
+    for previous_number in visited:
+        if number == previous_number:
+            repeated_element = True
+            duplicate = number
+            break
+    if repeated_element:
+        break
+    else:
+        visited.append(number)
+
+if repeated_element:
+    print(f"First Repeated Element: {duplicate}")
+else:
+    print("No Repeated Element Found.")
+
+"""
+Output:
+No Repeated Element Found.
+"""
+
+# ===============================================
