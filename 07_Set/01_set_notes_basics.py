@@ -195,3 +195,59 @@ Updated Set after adding apple again: {'mango', 'apple', 'banana', 'orange'}
 """
 
 # ============================================
+
+"""
+IMP NOTES:
+
+remove() deletes the specified element.
+If the element doesn't exist, remove() raises a KeyError.
+
+discard() deletes the element if it exists.
+If the element doesn't exist, discard() does nothing and doesn't raise an error.
+"""
+
+# ----------------------------
+
+"""
+Problem 3 — Remove elements from a set
+Problem statement
+Start with this set:
+numbers = {10, 20, 30, 40, 50}
+
+Write a program that:
+1. Prints the original set.
+2. Removes 30 using remove().
+3. Prints the updated set.
+4. Removes 40 using discard().
+5. Prints the set again.
+6. Tries to discard 100, which doesn't exist in the set.
+7. Prints the final set.
+8. Uses f-strings for every output statement.
+"""
+
+print()
+
+numbers = {10, 20, 30, 40, 50}
+
+print(f"The Original Set: {numbers}")
+# Output: The Original Set: {50, 20, 40, 10, 30}
+
+numbers.remove(30)
+
+print(f"The updated set after removing 30: {numbers}")
+# Output: The updated set after removing 30: {50, 20, 40, 10}
+
+numbers.discard(40)
+
+print(f"The updated set after discard 40: {numbers}")
+# Output: The updated set after discard 40: {50, 20, 10}
+
+numbers.discard(100)
+
+print(f"The updated set after discard 100: {numbers}")
+# Output: The updated set after discard 100: {50, 20, 10}
+
+print(f"The Final Set: {numbers}")
+# Output: The Final Set: {50, 20, 10}
+
+# ===================================
