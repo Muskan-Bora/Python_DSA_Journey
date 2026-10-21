@@ -153,3 +153,45 @@ The set contains {40, 10, 50, 20, 30}, and the number of unique elements is 5.
 """
 
 # ======================================
+
+"""
+Problem 2 — Create a set and add elements
+
+Start with this set:
+fruits = {"apple", "banana", "mango"}
+
+Write a program that:
+1. Prints the original set.
+2. Adds "orange" using the add() method.
+3. Prints the updated set.
+4. Tries to add "apple" again.
+5. Prints the set once more.
+6. Uses f-strings for every output statement.
+Expected behaviour:
+- Initially, there are three unique fruits.
+- After adding "orange", there are four.
+- Adding "apple" again does not create a duplicate.
+"""
+
+print()
+
+fruits = {"apple", "banana", "mango"}
+
+print(f"Original Set: {fruits}")
+
+fruits.add("orange")
+
+print(f"Updated Set after adding orange: {fruits}")
+
+fruits.add("apple")
+
+print(f"Updated Set after adding apple again: {fruits}")
+
+"""
+Output:
+Original Set: {'mango', 'apple', 'banana'}
+Updated Set after adding orange: {'mango', 'apple', 'banana', 'orange'}
+Updated Set after adding apple again: {'mango', 'apple', 'banana', 'orange'}
+"""
+
+# ============================================
