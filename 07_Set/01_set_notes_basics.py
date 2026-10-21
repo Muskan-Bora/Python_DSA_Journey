@@ -128,3 +128,28 @@ Python Sets — Quick Revision
 
 # ----------------------
 
+"""
+Problem 1 — Create and analyse a set
+
+Given the following values:
+numbers = [10, 20, 10, 30, 20, 40, 30, 50]
+
+Write a Python program that:
+1. Converts the list into a set.
+2. Prints the resulting set.
+3. Prints the number of unique elements using len().
+4. Uses an f-string for each output statement.
+Expected result: The set contains 10, 20, 30, 40, 50, and the number of unique elements is 5. The displayed order of the set may vary.
+"""
+
+numbers = [10, 20, 10, 30, 20, 40, 30, 50]
+
+result = set(numbers)
+print(f"The set contains {result}, and the number of unique elements is {len(result)}.")
+
+"""
+Output:
+The set contains {40, 10, 50, 20, 30}, and the number of unique elements is 5.
+"""
+
+# ======================================
