@@ -448,3 +448,135 @@ Count of common elements: 3
 """
 
 # ==========================================
+
+# Python Sets: Union
+
+"""
+Quick revision notes
+1. Union combines all unique elements from two or more sets.
+2. Use set_a.union(set_b) to calculate the union.
+3. The | operator is a shortcut for union.
+4. Duplicate elements appear only once.
+5. Union returns a new set and doesn't modify the original sets.
+6. Use len() to count the unique elements in the resulting set.
+
+Operation	                        Syntax	                    Purpose
+Union	                            set_a.union(set_b)	        Combines unique elements
+Union shortcut	                    set_a \| set_b	            Same result
+Count unique combined elements	    len(set_a.union(set_b))	    Counts the result
+"""
+
+# ==========================
+
+"""
+Problem 8 — Combine two sets
+
+Given these two sets:
+set_a = {10, 20, 30, 40}
+set_b = {30, 40, 50, 60}
+
+Write a program that:
+1. Prints both original sets.
+2. Combines them using .union().
+3. Prints the resulting set.
+4. Prints the number of unique elements using len().
+5. Uses f-strings for every output statement.
+
+Expected result: The union contains {10, 20, 30, 40, 50, 60}.
+Expected count: 6
+"""
+
+print()
+
+set_a = {10, 20, 30, 40}
+set_b = {30, 40, 50, 60}
+
+print(f"Original set of set_a: {set_a}")
+print(f"Original set of set_b: {set_b}")
+
+combined = set_a.union(set_b)
+print(f"The union contains: {combined}")
+
+print(f"The count of number of unique elements: {len(combined)}")
+
+"""
+Output of all:
+Original set of set_a: {40, 10, 20, 30}
+Original set of set_b: {40, 50, 60, 30}
+The union contains: {40, 10, 50, 20, 60, 30}
+The count of number of unique elements: 6
+"""
+
+# ==============================================
+
+"""
+Quick revision
+- Intersection (.intersection()): finds common elements.
+- Union (.union()): combines all unique elements.
+"""
+
+# =========================
+
+# Python Sets: Difference
+
+"""
+
+1. Difference finds elements present in the first set but absent from the second.
+2. Use set_a.difference(set_b).
+3. The - operator is a shortcut: set_a - set_b.
+4. Difference is directional; reversing the sets may change the result.
+5. It returns a new set and doesn't modify the original sets.
+
+Operation	                Meaning
+A.difference(B)	            Elements in A but not B
+A - B	                    Same as A.difference(B)
+B - A	                    Elements in B but not A
+
+"""
+
+# ======================================
+
+"""
+Problem 9 — Find elements in one set only
+Given these sets:
+set_a = {10, 20, 30, 40, 50}
+set_b = {30, 40, 50, 60, 70}
+
+Write a program that:
+1. Prints both original sets.
+2. Finds elements in set_a but not in set_b using .difference().
+3. Prints the result.
+4. Finds elements in set_b but not in set_a.
+5. Prints that result.
+6. Uses f-strings for every output statement.
+
+Expected results:
+- set_a - set_b → {10, 20}
+- set_b - set_a → {60, 70}
+"""
+
+print()
+
+set_a = {10, 20, 30, 40, 50}
+set_b = {30, 40, 50, 60, 70}
+
+print(f"Original set of set_a: {set_a}")
+print(f"Original set of set_b: {set_b}")
+
+result = set_a.difference(set_b)
+
+print(f"set_a - set_b → {result}")
+
+results = set_b - set_a
+
+print(f"set_b - set_a → {results}")
+
+"""
+Output of all:
+Original set of set_a: {50, 20, 40, 10, 30}
+Original set of set_b: {50, 70, 40, 60, 30}
+set_a - set_b → {10, 20}
+set_b - set_a → {60, 70}
+"""
+
+# =======================================
