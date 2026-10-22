@@ -580,3 +580,132 @@ set_b - set_a → {60, 70}
 """
 
 # =======================================
+
+"""
+Problem 10 — Intersection (Practice 2)
+Focus: finding common elements using .intersection()
+
+Given these sets:
+set_a = {5, 10, 15, 20, 25, 30}
+set_b = {15, 20, 25, 35, 40, 45}
+
+Write a program that:
+1. Prints both original sets.
+2. Finds the common elements using .intersection().
+3. Prints the common elements.
+4. Prints the total number of common elements using len().
+5. Uses f-strings for every output statement.
+Expected results:
+- Common elements → {15, 20, 25}
+- Total common elements → 3
+"""
+
+print()
+
+set_a = {5, 10, 15, 20, 25, 30}
+set_b = {15, 20, 25, 35, 40, 45}
+
+print(f"Original set of set_a: {set_a}")
+print(f"Original set of set_b: {set_b}")
+
+common_elements = set_a.intersection(set_b)
+
+print(f"Common elements → {common_elements}")
+print(f"Total common elements → {len(common_elements)}")
+
+"""
+Output:
+Original set of set_a: {20, 5, 25, 10, 30, 15}
+Original set of set_b: {35, 20, 40, 25, 45, 15}
+Common elements → {25, 20, 15}
+Total common elements → 3
+"""
+
+# ========================================
+
+"""
+Problem 11 — Union (Practice 2)
+
+Given these sets:
+set_a = {10, 20, 30, 40, 50}
+set_b = {40, 50, 60, 70, 80}
+
+Write a program that:
+1. Prints both original sets.
+2. Combines all unique elements using .union().
+3. Prints the combined set.
+4. Prints the total number of unique elements using len().
+5. Uses f-strings for every output statement.
+Expected results:
+- Union: {10, 20, 30, 40, 50, 60, 70, 80}
+- Total unique elements: 8
+"""
+
+print()
+
+set_a = {10, 20, 30, 40, 50}
+set_b = {40, 50, 60, 70, 80}
+
+print(f"Original set of set_a: {set_a}")
+print(f"Original set of set_b: {set_b}")
+
+combined = set_a.union(set_b)
+
+print(f"Union: {combined}")
+print(f"Total unique elements: {len(combined)}")
+
+"""
+Output of all:
+Original set of set_a: {50, 20, 40, 10, 30}
+Original set of set_b: {80, 50, 70, 40, 60}
+Union: {70, 40, 10, 80, 50, 20, 60, 30}
+Total unique elements: 8
+"""
+
+# ===========================================
+
+"""
+Problem 12 — Difference (Practice 2)
+
+Given these sets:
+set_a = {10, 20, 30, 40, 50, 60}
+set_b = {20, 40, 60, 70, 80}
+
+Write a program that:
+1. Prints both original sets.
+2. Finds elements present in set_a but absent from set_b, using .difference().
+3. Prints that result.
+4. Finds elements present in set_b but absent from set_a, using .difference() as well.
+5. Prints that result.
+6. Prints the number of elements in each difference result using len().
+7. Uses f-strings for every output statement.
+Expected results:
+- set_a.difference(set_b) → {10, 30, 50}; count: 3
+- set_b.difference(set_a) → {70, 80}; count: 2
+"""
+
+print()
+
+set_a = {10, 20, 30, 40, 50, 60}
+set_b = {20, 40, 60, 70, 80}
+
+print(f"Original set of set_a: {set_a}")
+print(f"Original set of set_b: {set_b}")
+
+result = set_a.difference(set_b)
+
+print(f"set_a.difference(set_b) → {result}; count: {len(result)}")
+
+results = set_b - set_a
+
+print(f"set_b.difference(set_a) → {results}; count: {len(results)}")
+
+"""
+Output of all:
+Original set of set_a: {50, 20, 40, 10, 60, 30}
+Original set of set_b: {80, 20, 70, 40, 60}
+set_a.difference(set_b) → {50, 10, 30}; count: 3
+set_b.difference(set_a) → {80, 70}; count: 2
+"""
+
+# ==================================================
