@@ -330,3 +330,121 @@ Total unique numbers: 6
 """
 
 # ==================================
+
+"""
+Problem 6 — Add and remove set elements
+Problem statement
+Start with this set:
+numbers = {10, 20, 30, 40}
+
+Write a program that:
+1. Adds 50 to the set.
+2. Removes 20 using remove().
+3. Discards 100 using discard().
+4. Prints the set after each operation using f-strings.
+5. Prints the final number of elements using len().
+Expected final result: {10, 30, 40, 50} — the order may vary.
+
+Expected final count: 4
+"""
+
+print()
+
+numbers = {10, 20, 30, 40}
+
+numbers.add(50)
+print(f"Added 50: {numbers}")
+
+numbers.remove(20)
+print(f"Removed 20: {numbers}")
+
+numbers.discard(100)
+print(f"Discarded 100: {numbers}")
+
+final_result = numbers
+print(f"final result: {final_result}")
+print(f"final count: {len(final_result)}")
+
+"""
+Output of all:
+Added 50: {40, 10, 50, 20, 30}
+Removed 20: {40, 10, 50, 30}
+Discarded 100: {40, 10, 50, 30}
+final result: {40, 10, 50, 30}
+final count: 4
+"""
+
+# =========================================
+
+# Python Sets — Intersection (Common Elements)
+
+"""
+1. Intersection finds elements common to both sets.
+2. Use set1.intersection(set2) to create a new set containing common elements.
+3. The & operator is a shortcut for intersection.
+4. If there are no common elements, Python returns set().
+5. Intersection does not modify the original sets.
+6. Use len() to count how many common elements exist.
+
+Quick Revision Table
+# Operation	                # Syntax	                    # Result
+Intersection	            set1.intersection(set2)	        Common elements
+Intersection (shortcut)	    set1 & set2	                    Common elements
+Count common elements	    len(set1.intersection(set2))	Number of common elements
+
+Remember this example
+set_a = {5, 10, 15, 20}
+set_b = {15, 20, 25, 30}
+
+common = set_a.intersection(set_b)
+
+print(common)
+
+
+Output:
+{15, 20}
+"""
+
+# ===================================
+
+"""
+Problem 7
+Given these two sets:
+set_a = {5, 10, 15, 20, 25}
+set_b = {15, 20, 25, 30, 35}
+
+Write a program that:
+1. Prints both original sets.
+2. Finds their common elements using .intersection().
+3. Prints the common elements.
+4. Prints the number of common elements using len().
+5. Uses f-strings for every output statement.
+
+Expected common elements: {15, 20, 25}
+Expected count: 3
+"""
+
+print()
+
+set_a = {5, 10, 15, 20, 25}
+set_b = {15, 20, 25, 30, 35}
+
+print(f"Original Set of set_a: {set_a}")
+
+print(f"Original Set of set_b: {set_b}")
+
+common_elements = set_a.intersection(set_b)
+
+print(f"common elements: {common_elements}")
+
+print(f"Count of common elements: {len(common_elements)}")
+
+"""
+Output of all:
+Original Set of set_a: {20, 5, 25, 10, 15}
+Original Set of set_b: {35, 20, 25, 30, 15}
+common elements: {25, 20, 15}
+Count of common elements: 3
+"""
+
+# ==========================================
