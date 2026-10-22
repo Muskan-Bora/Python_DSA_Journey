@@ -251,3 +251,82 @@ print(f"The Final Set: {numbers}")
 # Output: The Final Set: {50, 20, 10}
 
 # ===================================
+
+"""
+Python provides the in operator to check whether a value exists in a set. It returns a Boolean value: True or False
+"""
+
+"""
+Your Problem 4 — Check element membership
+
+Given the following set:
+fruits = {"apple", "banana", "mango", "orange"}
+
+Write a Python program that:
+1. Checks whether "banana" exists in the set.
+2. Checks whether "grapes" exists in the set.
+3. Stores each result in a Boolean variable.
+4. Prints both results using f-strings.
+5. Uses the in operator for membership checking.
+Expected output:
+Is banana present? True
+Is grapes present? False
+"""
+
+print()
+
+fruits = {"apple", "banana", "mango", "orange"}
+
+found = "banana" in fruits
+print(f"Is banana present? {found}")
+
+found = "grapes" in fruits
+print(f"Is grapes present? {found}")
+
+"""
+Output:
+Is banana present? True
+Is grapes present? False
+"""
+
+# =============================================
+
+"""
+Problem 5 — Find the number of unique elements
+Problem statement
+Given the following list:
+numbers = [10, 20, 10, 30, 40, 20, 50, 30, 60]
+
+Write a Python program that:
+1. Converts the list into a set.
+2. Prints the set of unique numbers.
+3. Uses a for loop to print each unique number individually.
+4. Counts how many unique numbers exist using a counter and a loop — do not use len() for the count.
+5. Prints the total number of unique numbers using an f-string.
+Expected result:
+- Unique numbers: 10, 20, 30, 40, 50, 60
+- Total unique numbers: 6
+"""
+
+print()
+
+numbers = [10, 20, 10, 30, 40, 20, 50, 30, 60]
+
+unique_numbers = set(numbers)
+
+print(f"Unique numbers: {unique_numbers}")
+
+count = 0
+
+for unique_number in unique_numbers:
+    count += 1
+
+print(f"Total unique numbers: {count}")
+
+"""
+Output:
+Unique numbers: {40, 10, 50, 20, 60, 30}
+Total unique numbers: 6
+"""
+
+# ==================================
