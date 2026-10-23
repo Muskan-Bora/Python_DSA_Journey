@@ -820,3 +820,68 @@ Original set of set_b: {35, 20, 40, 45, 15}
 """
 
 # =========================================
+
+# Subset and Superset
+
+"""
+
+1. A subset contains only elements found in another set.
+2. Use set_a.issubset(set_b) to check whether A is a subset of B.
+3. A superset contains all elements of another set, possibly with additional elements.
+4. Use set_a.issuperset(set_b) to check whether A is a superset of B.
+5. Both methods return a Boolean value: True or False.
+6. A set is also considered a subset and superset of itself.
+
+Method	                Meaning
+A.issubset(B)	        Every element of A is in B
+A.issuperset(B)	        Every element of B is in A
+
+"""
+
+# =======================================
+
+"""
+Problem 15 — 
+Given these sets:
+set_a = {10, 20, 30}
+set_b = {10, 20, 30, 40, 50}
+set_c = {10, 20, 60}
+
+Write a program that:
+1. Prints all three original sets.
+2. Checks whether set_a is a subset of set_b.
+3. Checks whether set_b is a superset of set_a.
+4. Checks whether set_c is a subset of set_b.
+5. Prints every result using f-strings.
+
+Expected results:
+- set_a.issubset(set_b) → True
+- set_b.issuperset(set_a) → True
+- set_c.issubset(set_b) → False
+"""
+
+print()
+
+set_a = {10, 20, 30}
+set_b = {10, 20, 30, 40, 50}
+set_c = {10, 20, 60}
+
+print(f"Original set of set_a: {set_a}")
+print(f"Original set of set_b: {set_b}")
+print(f"Original set of set_c: {set_c}")
+
+print(f"set_a.issubset(set_b) → {set_a.issubset(set_b)}")
+print(f"set_b.issuperset(set_a) → {set_b.issuperset(set_a)}")
+print(f"set_c.issubset(set_b) → {set_c.issubset(set_b)}")
+
+"""
+Output of all:
+Original set of set_a: {10, 20, 30}
+Original set of set_b: {50, 20, 40, 10, 30}
+Original set of set_c: {10, 20, 60}
+set_a.issubset(set_b) → True
+set_b.issuperset(set_a) → True
+set_c.issubset(set_b) → False
+"""
+
+# =========================================
