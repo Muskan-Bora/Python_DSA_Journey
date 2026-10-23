@@ -885,3 +885,54 @@ set_c.issubset(set_b) → False
 """
 
 # =========================================
+
+"""
+Problem 16 — Subset and Superset (Practice 2)
+
+Given these sets:
+set_a = {5, 10}
+set_b = {5, 10, 15, 20}
+set_c = {5, 10, 15, 20}
+
+Write a program that:
+1. Prints all three original sets.
+2. Checks whether set_a is a subset of set_b.
+3. Checks whether set_b is a subset of set_c.
+4. Checks whether set_c is a superset of set_a.
+5. Checks whether set_a is a superset of set_c.
+6. Prints every result using f-strings.
+
+Expected results:
+- set_a.issubset(set_b) → True
+- set_b.issubset(set_c) → True
+- set_c.issuperset(set_a) → True
+- set_a.issuperset(set_c) → False
+"""
+
+print()
+
+set_a = {5, 10}
+set_b = {5, 10, 15, 20}
+set_c = {5, 10, 15, 20}
+
+print(f"Original set of set_a: {set_a}")
+print(f"Original set of set_b: {set_b}")
+print(f"Original set of set_c: {set_c}")
+
+print(f"set_a.issubset(set_b) → {set_a.issubset(set_b)}")
+print(f"set_b.issubset(set_c) → {set_b.issubset(set_c)}")
+print(f"set_c.issuperset(set_a) → {set_c.issuperset(set_a)}")
+print(f"set_a.issuperset(set_c) → {set_a.issuperset(set_c)}")
+
+"""
+Output of all:
+Original set of set_a: {10, 5}
+Original set of set_b: {10, 20, 5, 15}
+Original set of set_c: {10, 20, 5, 15}
+set_a.issubset(set_b) → True
+set_b.issubset(set_c) → True
+set_c.issuperset(set_a) → True
+set_a.issuperset(set_c) → False
+"""
+
+# ================================
