@@ -709,3 +709,66 @@ set_b.difference(set_a) → {80, 70}; count: 2
 """
 
 # ==================================================
+
+# Symmetric Difference
+
+"""
+
+1. Symmetric difference returns elements present in either set but not in both.
+2. Use set_a.symmetric_difference(set_b).
+3. The ^ operator is a shortcut: set_a ^ set_b.
+4. Common elements are excluded from the result.
+5. It returns a new set and leaves the original sets unchanged.
+6. If both sets contain exactly the same elements, the result is an empty set: set().
+
+Quick comparison
+Operation	                    What it returns
+Intersection A & B	            Common elements
+Union A \| B	                All unique elements from both sets
+Difference A - B	            Elements in A but not B
+Symmetric difference A ^ B	    Elements in either set, excluding common elements
+
+"""
+
+# ------------------
+
+"""
+Problem 13 
+
+Given these sets:
+set_a = {10, 20, 30, 40, 50}
+set_b = {30, 40, 50, 60, 70}
+
+Write a program that:
+1. Prints both original sets.
+2. Finds the symmetric difference using .symmetric_difference().
+3. Prints the result using an f-string.
+4. Prints the total number of elements in the result using len() and an f-string.
+Expected results:
+- Symmetric difference: {10, 20, 60, 70}
+- Total elements: 4
+"""
+
+print()
+
+set_a = {10, 20, 30, 40, 50}
+set_b = {30, 40, 50, 60, 70}
+
+print(f"Original set of set_a: {set_a}")
+print(f"Original set of set_b: {set_b}")
+
+result = set_a.symmetric_difference(set_b)
+
+print(f"Symmetric difference: {result}")
+
+print(f"Total elements: {len(result)}")
+
+"""
+Output of all:
+Original set of set_a: {50, 20, 40, 10, 30}
+Original set of set_b: {50, 70, 40, 60, 30}
+Symmetric difference: {20, 70, 10, 60}
+Total elements: 4
+"""
+
+# ==================================================
