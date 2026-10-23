@@ -772,3 +772,51 @@ Total elements: 4
 """
 
 # ==================================================
+
+"""
+Problem 14 — Symmetric Difference (Practice 2)
+
+Given these sets:
+set_a = {5, 10, 15, 20, 25, 30}
+set_b = {15, 20, 35, 40, 45}
+
+Write a program that:
+1. Prints both original sets.
+2. Finds the symmetric difference using the ^ operator this time.
+3. Prints the result using an f-string.
+4. Prints the total number of elements using len() and an f-string.
+5. Prints the original sets again to confirm they haven't changed.
+Expected results:
+- Symmetric difference: {5, 10, 25, 30, 35, 40, 45}
+- Total elements: 7
+- Original sets remain unchanged.
+"""
+
+print()
+
+set_a = {5, 10, 15, 20, 25, 30}
+set_b = {15, 20, 35, 40, 45}
+
+print(f"Original set of set_a: {set_a}")
+print(f"Original set of set_b: {set_b}")
+
+results = set_a ^ set_b
+
+print(f"Symmetric difference: {results}")
+
+print(f"Total elements: {len(results)}")
+
+print(f"Original set of set_a: {set_a}")
+print(f"Original set of set_b: {set_b}")
+
+"""
+Output of all:
+Original set of set_a: {20, 5, 25, 10, 30, 15}
+Original set of set_b: {35, 20, 40, 45, 15}
+Symmetric difference: {5, 10, 25, 30, 35, 40, 45}
+Total elements: 7
+Original set of set_a: {20, 5, 25, 10, 30, 15}
+Original set of set_b: {35, 20, 40, 45, 15}
+"""
+
+# =========================================
