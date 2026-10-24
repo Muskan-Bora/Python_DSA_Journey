@@ -1198,3 +1198,53 @@ Total unique elements: 7
 """
 
 # ====================================
+
+"""
+Problem 20 — Practise update() with a tuple
+
+Given:
+fruits = {"apple", "banana", "mango"}
+new_fruits = ("mango", "orange", "grapes", "apple")
+
+Write a program that:
+1. Prints the original fruits set.
+2. Prints the new_fruits tuple.
+3. Uses update() to add the tuple's elements to the set.
+4. Prints the updated set.
+5. Prints the total number of unique fruits using len().
+6. Prints the original tuple again to confirm it remains unchanged.
+7. Uses f-strings for every output statement.
+
+Expected results:
+- Updated set contains: apple, banana, mango, orange, grapes
+- Total unique fruits: 5
+- Original tuple remains unchanged.
+"""
+
+print()
+
+fruits = {"apple", "banana", "mango"}
+new_fruits = ("mango", "orange", "grapes", "apple")
+
+print(f"Original fruits: {fruits}")
+print(f"Original new_fruits: {new_fruits}")
+
+fruits.update(new_fruits)
+print(f"Updated set contains: {fruits}")
+
+print(f"Total unique fruits: {len(fruits)}")
+
+print(f"Original fruits: {fruits}")
+print(f"Original new_fruits: {new_fruits}")
+
+"""
+Output of all:
+Original fruits: {'mango', 'banana', 'apple'}
+Original new_fruits: ('mango', 'orange', 'grapes', 'apple')
+Updated set contains: {'banana', 'apple', 'mango', 'orange', 'grapes'}
+Total unique fruits: 5
+Original fruits: {'banana', 'apple', 'mango', 'orange', 'grapes'}
+Original new_fruits: ('mango', 'orange', 'grapes', 'apple')
+"""
+
+# =======================================
