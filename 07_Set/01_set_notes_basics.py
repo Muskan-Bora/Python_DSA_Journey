@@ -936,3 +936,151 @@ set_a.issuperset(set_c) → False
 """
 
 # ================================
+
+# Disjoint Sets
+
+"""
+
+What are disjoint sets?
+Two sets are called disjoint when they have no common elements.
+In simple words, if two sets don't share even a single element, they are disjoint.
+
+Examples
+Example 1 — Disjoint sets
+set_a = {10, 20, 30}
+set_b = {40, 50, 60}
+print(set_a.isdisjoint(set_b))
+
+Output: True
+
+There are no common elements.
+
+Example 2 — Not disjoint
+set_a = {10, 20, 30}
+set_b = {30, 40, 50}
+print(set_a.isdisjoint(set_b))
+
+Output: False
+
+Both sets contain the element 30.
+
+Example 3 — Empty set
+set_a = {10, 20, 30}
+set_b = set()
+print(set_a.isdisjoint(set_b))
+
+Output: True
+
+An empty set has no elements, so it cannot share any with another set.
+
+Points to Remember:
+1. Two sets are disjoint if they have no common elements.
+2. Use set_a.isdisjoint(set_b) to check whether two sets are disjoint.
+3. The method returns a Boolean value: True or False.
+4. True means there are no common elements.
+5. False means at least one common element exists.
+6. An empty set is disjoint from every set, including another empty set.
+7. The method checks the sets without modifying them.
+
+"""
+# -----------------------------------
+"""
+Problem 17 
+Given these sets:
+set_a = {10, 20, 30, 40}
+set_b = {50, 60, 70, 80}
+set_c = {30, 40, 90, 100}
+
+Write a program that:
+1. Prints all three original sets.
+2. Checks whether set_a and set_b are disjoint.
+3. Checks whether set_a and set_c are disjoint.
+4. Checks whether set_b and set_c are disjoint.
+5. Prints every result using f-strings.
+Expected results:
+Check	Expected result
+set_a.isdisjoint(set_b)	True
+set_a.isdisjoint(set_c)	False
+set_b.isdisjoint(set_c)	True
+"""
+
+print()
+
+set_a = {10, 20, 30, 40}
+set_b = {50, 60, 70, 80}
+set_c = {30, 40, 90, 100}
+
+print(f"Original set of set_a: {set_a}")
+print(f"Original set of set_b: {set_b}")
+print(f"Original set of set_c: {set_c}")
+
+print(f"set_a.isdisjoint(set_b): {set_a.isdisjoint(set_b)}")
+print(f"set_a.isdisjoint(set_c): {set_a.isdisjoint(set_c)}")
+print(f"set_b.isdisjoint(set_c): {set_b.isdisjoint(set_c)}")
+
+"""
+Output of all:
+Original set of set_a: {40, 10, 20, 30}
+Original set of set_b: {80, 50, 60, 70}
+Original set of set_c: {40, 90, 100, 30}
+set_a.isdisjoint(set_b): True
+set_a.isdisjoint(set_c): False
+set_b.isdisjoint(set_c): True
+"""
+
+# ========================================
+
+"""
+Problem 18 — Disjoint Sets (Practice 2)
+
+Given these sets:
+set_a = {5, 10, 15, 20}
+set_b = {25, 30, 35, 40}
+set_c = {15, 20, 25, 30}
+set_d = set()
+
+Write a program that:
+1. Prints all four original sets.
+2. Checks whether set_a and set_b are disjoint.
+3. Checks whether set_a and set_c are disjoint.
+4. Checks whether set_b and set_c are disjoint.
+5. Checks whether set_a and set_d are disjoint.
+6. Prints every result using f-strings.
+Expected results:
+Check	Result
+set_a.isdisjoint(set_b)	True
+set_a.isdisjoint(set_c)	False
+set_b.isdisjoint(set_c)	False
+set_a.isdisjoint(set_d)	True
+"""
+
+print()
+
+set_a = {5, 10, 15, 20}
+set_b = {25, 30, 35, 40}
+set_c = {15, 20, 25, 30}
+set_d = set()
+
+print(f"Original set of set_a: {set_a}")
+print(f"Original set of set_b: {set_b}")
+print(f"Original set of set_c: {set_c}")
+print(f"Original set of set_d: {set_d}")
+
+print(f"set_a.isdisjoint(set_b): {set_a.isdisjoint(set_b)}")
+print(f"set_a.isdisjoint(set_c): {set_a.isdisjoint(set_c)}")
+print(f"set_b.isdisjoint(set_c): {set_b.isdisjoint(set_c)}")
+print(f"set_a.isdisjoint(set_d): {set_a.isdisjoint(set_d)}")
+
+"""
+Output of all:
+Original set of set_a: {10, 20, 5, 15}
+Original set of set_b: {40, 25, 35, 30}
+Original set of set_c: {25, 20, 30, 15}
+Original set of set_d: set()
+set_a.isdisjoint(set_b): True
+set_a.isdisjoint(set_c): False
+set_b.isdisjoint(set_c): False
+set_a.isdisjoint(set_d): True
+"""
+
+# =============================================
