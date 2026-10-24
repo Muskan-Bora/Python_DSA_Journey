@@ -1084,3 +1084,117 @@ set_a.isdisjoint(set_d): True
 """
 
 # =============================================
+
+# Modifying Sets with update()
+
+"""
+What does update() do?
+The update() method adds multiple elements to an existing set from another iterable, such as a list, tuple, or another set.
+
+Remember:
+- It modifies the original set.
+- Duplicate elements are automatically ignored.
+- It can accept multiple iterables.
+- It returns None, not the updated set.
+
+Examples
+Example 1 — Update with another set
+
+set_a = {10, 20, 30}
+set_b = {30, 40, 50}
+
+set_a.update(set_b)
+print(set_a)
+
+Output: {10, 20, 30, 40, 50}
+
+The duplicate 30 is included only once.
+
+# ----------
+
+Example 2 — Update with a list
+
+numbers = {1, 2, 3}
+new_numbers = [3, 4, 5, 6]
+
+numbers.update(new_numbers)
+print(numbers)
+
+Output: {1, 2, 3, 4, 5, 6}
+
+The set accepts elements from the list and ignores the repeated 3.
+
+# -------------
+
+Example 3 — Update with multiple iterables
+
+numbers = {1, 2}
+numbers.update([3, 4], (4, 5))
+print(numbers)
+
+Output: {1, 2, 3, 4, 5}
+
+Both the list and tuple contribute elements to the set.
+"""
+
+"""
+1. update() adds elements from one or more iterables to an existing set.
+2. Syntax: set_a.update(iterable).
+3. It can accept sets, lists, tuples, and other iterables.
+4. Duplicate elements are automatically ignored.
+5. It modifies the original set instead of creating a new set.
+6. It can accept multiple iterables: set_a.update(list_a, tuple_a).
+7. update() returns None, so don't assign its return value expecting the updated set.
+
+add() vs update()
+
+Method	    Purpose	                        Example
+add()	    Add one element	                numbers.add(10)
+update()	Add elements from an iterable	numbers.update([10, 20])
+
+"""
+
+# ====================
+
+"""
+Problem 19 — 
+Focus: using update() with a list and handling duplicates.
+
+Given:
+numbers = {10, 20, 30, 40}
+new_numbers = [30, 40, 50, 60, 70]
+
+Write a program that:
+1. Prints the original numbers set.
+2. Prints the new_numbers list.
+3. Uses update() to add the list's elements to the set.
+4. Prints the updated set.
+5. Prints the total number of unique elements using len().
+6. Uses f-strings for every output statement.
+Expected results:
+- Updated set: {10, 20, 30, 40, 50, 60, 70}
+- Total unique elements: 7
+"""
+
+print()
+
+numbers = {10, 20, 30, 40}
+new_numbers = [30, 40, 50, 60, 70]
+
+print(f"Original numbers: {numbers}")
+print(f"Original new_numbers: {new_numbers}")
+
+numbers.update(new_numbers)
+
+print(f"Updated set: {numbers}")
+print(f"Total unique elements: {len(numbers)}")
+
+"""
+Output of all:
+Original numbers: {40, 10, 20, 30}
+Original new_numbers: [30, 40, 50, 60, 70]
+Updated set: {70, 40, 10, 50, 20, 60, 30}
+Total unique elements: 7
+"""
+
+# ====================================
