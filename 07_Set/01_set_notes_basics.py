@@ -1248,3 +1248,50 @@ Original new_fruits: ('mango', 'orange', 'grapes', 'apple')
 """
 
 # =======================================
+
+"""
+Problem 21 — Set Operations Revision
+
+Given:
+set_a = {10, 20, 30, 40, 50}
+set_b = {30, 40, 50, 60, 70}
+
+Write a program that:
+1. Prints both original sets.
+2. Finds the common elements in both sets.
+3. Finds all unique elements from both sets combined.
+4. Finds elements present in set_a but not in set_b.
+5. Counts the number of common elements.
+6. Uses f-strings for every output statement.
+
+Expected results (set display order may vary):
+- Common elements: {30, 40, 50}
+- Combined unique elements: {10, 20, 30, 40, 50, 60, 70}
+- Elements in set_a but not set_b: {10, 20}
+- Number of common elements: 3
+"""
+
+print()
+
+set_a = {10, 20, 30, 40, 50}
+set_b = {30, 40, 50, 60, 70}
+
+print(f"Original set_a: {set_a}")
+print(f"Original set_b: {set_b}")
+
+print(f"Common elements: {set_a.intersection(set_b)}")
+print(f"Combined unique elements: {set_a.union(set_b)}")
+print(f"Elements in set_a but not set_b: {set_a.difference(set_b)}")
+print(f"Number of common elements: {len(set_a.intersection(set_b))}")
+
+"""
+Output of all:
+Original set_a: {50, 20, 40, 10, 30}
+Original set_b: {50, 70, 40, 60, 30}
+Common elements: {40, 50, 30}
+Combined unique elements: {70, 40, 10, 50, 20, 60, 30}
+Elements in set_a but not set_b: {10, 20}
+Number of common elements: 3
+"""
+
+# ======================================
