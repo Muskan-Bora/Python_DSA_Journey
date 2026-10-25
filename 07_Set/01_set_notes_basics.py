@@ -1295,3 +1295,54 @@ Number of common elements: 3
 """
 
 # ======================================
+
+"""
+Problem 22 — Set Relationships Revision
+
+Given:
+set_a = {10, 20}
+set_b = {10, 20, 30, 40}
+set_c = {50, 60}
+
+Write a program that:
+1. Prints all three original sets.
+2. Checks whether set_a is a subset of set_b.
+3. Checks whether set_b is a superset of set_a.
+4. Checks whether set_a and set_c are disjoint.
+5. Checks whether set_b is a subset of set_a.
+6. Uses f-strings for every output statement.
+
+Expected results:
+- set_a is a subset of set_b: True
+- set_b is a superset of set_a: True
+- set_a and set_c are disjoint: True
+- set_b is a subset of set_a: False
+"""
+
+print()
+
+set_a = {10, 20}
+set_b = {10, 20, 30, 40}
+set_c = {50, 60}
+
+print(f"Original set_a: {set_a}")
+print(f"Original set_b: {set_b}")
+print(f"Original set_c: {set_c}")
+
+print(f"set_a is a subset of set_b: {set_a.issubset(set_b)}")
+print(f"set_b is a superset of set_a: {set_b.issuperset(set_a)}")
+print(f"set_a and set_c are disjoint: {set_a.isdisjoint(set_c)}")
+print(f"set_b is a subset of set_a: {set_b.issubset(set_a)}")
+
+"""
+Output of all:
+Original set_a: {10, 20}
+Original set_b: {40, 10, 20, 30}
+Original set_c: {50, 60}
+set_a is a subset of set_b: True
+set_b is a superset of set_a: True
+set_a and set_c are disjoint: True
+set_b is a subset of set_a: False
+"""
+
+# ===========================================
