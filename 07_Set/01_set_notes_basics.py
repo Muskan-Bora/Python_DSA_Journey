@@ -1396,3 +1396,111 @@ Total unique elements across all three sets: 8
 """
 
 # ===============================================
+
+# Assignment vs. Copying
+
+# Assignement example:
+
+"""
+
+set_a = {10, 20, 30}
+set_b = set_a
+
+set_b.add(40)
+
+print(f"Set A: {set_a}")
+print(f"Set B: {set_b}")
+
+Output:
+Set A: {10, 20, 30, 40}
+Set B: {10, 20, 30, 40}
+
+Why did set_a change when we added 40 through set_b? Because both variables refer to the same set object.
+set_a and set_b
+
+Two variable names
+
+One set object
+{10, 20, 30, 40}
+
+Changing the set through either variable affects the same object.
+
+# ==================
+
+2. How do we create a genuinely separate set?
+Use the copy() method.
+
+set_a = {10, 20, 30}
+
+set_b = set_a.copy()
+set_b.add(40)
+
+print(f"Set A: {set_a}")print(f"Set B: {set_b}")
+
+Output:
+Set A: {10, 20, 30}
+Set B: {10, 20, 30, 40}
+
+Now set_b is a separate set, so adding an element to it doesn't change set_a.
+
+"""
+
+# Imp Notes:
+
+"""
+- set_b = set_a → Both variables refer to the same set.
+- set_b = set_a.copy() → Creates a separate, shallow copy of the set.
+- Changing the membership of one copied set doesn't change the membership of the other.
+- copy() does not modify the original set.
+
+Important: copy() is a shallow copy. If a set contains mutable objects indirectly through its elements,
+their shared references may matter. In ordinary sets of numbers or strings, the distinction above is straightforward.
+"""
+
+# ==============================
+
+"""
+Problem 24 — Assignment vs. Copying Sets
+
+Given:
+set_a = {10, 20, 30}
+
+Write a program that:
+1. Prints set_a.
+2. Assigns set_a to set_b and adds 40 to set_b.
+3. Prints both sets.
+4. Creates set_c using set_a.copy().
+5. Adds 50 to set_c.
+6. Prints set_a and set_c.
+7. Uses f-strings for every output statement.
+"""
+
+print()
+
+set_a = {10, 20, 30}
+
+print(f"Original set_a: {set_a}")                     # {10, 20, 30}
+
+set_b = set_a                                         # Assigning set
+
+set_b.add(40)
+
+print(f"After updating set_b, set_a: {set_a}")                        # {40, 10, 20, 30}
+print(f"After updating set_b, set_b: {set_b}")                       # {40, 10, 20, 30}
+
+set_c = set_a.copy()                # copy set 
+set_c.add(50)
+
+print(f"After updating set_c, set_a: {set_a}")                       # {40, 10, 20, 30}
+print(f"After updating set_c, set_c: {set_c}")                      # {40, 10, 50, 20, 30}
+
+"""
+Out of all:
+Original set_a: {10, 20, 30}
+After updating set_b, set_a: {40, 10, 20, 30}
+After updating set_b, set_b: {40, 10, 20, 30}
+After updating set_c, set_a: {40, 10, 20, 30}
+After updating set_c, set_c: {40, 10, 50, 20, 30}
+"""
+
+# =========================================
