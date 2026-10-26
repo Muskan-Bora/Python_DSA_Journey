@@ -1346,3 +1346,53 @@ set_b is a subset of set_a: False
 """
 
 # ===========================================
+
+"""
+Problem 23 — Mixed Set Operations Revision
+
+Given:
+set_a = {5, 10, 15, 20, 25}
+set_b = {15, 20, 25, 30, 35}
+set_c = {10, 30, 40}
+
+Write a program that:
+1. Prints all three original sets.
+2. Finds the common elements between set_a and set_b.
+3. Finds the elements present in set_a but not in set_c.
+4. Finds the elements that are in either set_b or set_c,
+   but not in both.
+5. Checks whether set_a and set_c are disjoint.
+6. Prints the total number of unique elements in the union
+   of all three sets.
+7. Uses f-strings for every output statement.
+"""
+
+print()
+
+set_a = {5, 10, 15, 20, 25}
+set_b = {15, 20, 25, 30, 35}
+set_c = {10, 30, 40}
+
+print(f"Original set_a: {set_a}")
+print(f"Original set_b: {set_b}")
+print(f"Original set_c: {set_c}")
+
+print(f"Common elements of set_a and set_b: {set_a.intersection(set_b)}")
+print(f"set_a but not set_c: {set_a.difference(set_c)}")
+print(f"Symmetric difference of set_b and set_c: {set_b ^ set_c}")
+print(f"Are set_a and set_c disjoint? {set_a.isdisjoint(set_c)}")
+print(f"Total unique elements across all three sets: {len(set_a.union(set_b).union(set_c))}")
+
+"""
+Output of all:
+Original set_a: {20, 5, 25, 10, 15}
+Original set_b: {35, 20, 25, 30, 15}
+Original set_c: {40, 10, 30}
+Common elements of set_a and set_b: {25, 20, 15}
+set_a but not set_c: {25, 20, 5, 15}
+Symmetric difference of set_b and set_c: {35, 40, 10, 15, 20, 25}
+Are set_a and set_c disjoint? False
+Total unique elements across all three sets: 8
+"""
+
+# ===============================================
