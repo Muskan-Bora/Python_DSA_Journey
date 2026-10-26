@@ -1504,3 +1504,60 @@ After updating set_c, set_c: {40, 10, 50, 20, 30}
 """
 
 # =========================================
+
+"""
+Problem 25 — Copying and Modifying Sets
+
+Given:
+numbers = {5, 10, 15, 20}
+
+Write a program that:
+1. Prints the original numbers set.
+2. Assigns numbers to another variable called alias_numbers.
+3. Adds 25 to alias_numbers.
+4. Prints both numbers and alias_numbers.
+5. Creates an independent copy called copied_numbers.
+6. Adds 30 to copied_numbers.
+7. Removes 5 from copied_numbers.
+8. Prints numbers and copied_numbers.
+9. Prints the length of both sets.
+10. Uses f-strings for every output statement.
+"""
+
+print()
+
+numbers = {5, 10, 15, 20}
+
+print(f"Original numbers set: {numbers}")
+
+alias_numbers = numbers
+
+alias_numbers.add(25)
+
+print(f"After updating alias_numbers, numbers: {numbers}")
+print(f"After updating alias_numbers, alias_numbers: {alias_numbers}")
+
+copied_numbers = numbers.copy()
+
+copied_numbers.add(30)
+
+copied_numbers.remove(5)
+
+print(f"After updating copied_numbers, numbers: {numbers}")
+print(f"After updating copied_numbers, copied_numbers: {copied_numbers}")
+
+print(f"The length of numbers: {len(numbers)}")
+print(f"The length of copied_numbers: {len(copied_numbers)}")
+
+"""
+Output of all:
+Original numbers set: {10, 20, 5, 15}
+After updating alias_numbers, numbers: {5, 10, 15, 20, 25}
+After updating alias_numbers, alias_numbers: {5, 10, 15, 20, 25}
+After updating copied_numbers, numbers: {5, 10, 15, 20, 25}
+After updating copied_numbers, copied_numbers: {20, 25, 10, 30, 15}
+The length of numbers: 5
+The length of copied_numbers: 5
+"""
+
+# =================================================
