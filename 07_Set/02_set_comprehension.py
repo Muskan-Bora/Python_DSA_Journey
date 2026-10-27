@@ -104,3 +104,69 @@ The total number of elements: 10
 """
 
 # ========================================
+
+"""
+Problem 27 — Even Numbers using Set Comprehension
+
+Write a program that:
+1. Creates a set of even numbers from 1 to 20
+   using a set comprehension.
+2. Prints the resulting set.
+3. Prints the total number of elements using len().
+4. Uses f-strings for every output statement.
+"""
+
+print()
+
+even_numbers = {number for number in range(1, 21)
+                if number % 2 == 0}
+
+print(f"A set of even numbers: {even_numbers}")
+print(f"The total number of elements: {len(even_numbers)}")
+
+"""
+Output:
+A set of even numbers: {2, 4, 6, 8, 10, 12, 14, 16, 18, 20}
+The total number of elements: 10
+"""
+
+# =========================================
+
+"""
+Problem 28 — Odd Numbers using Set Comprehension
+
+Write a program that:
+1. Creates a set of odd numbers from 1 to 25
+   using a set comprehension.
+2. Prints the resulting set.
+3. Prints the total number of elements using len().
+4. Uses f-strings for every output statement.
+"""
+
+print()
+
+odd_numbers = {number for number in range(1, 26)
+                if number % 2 != 0}
+
+print(f"A set of odd numbers from 1 to 25: {odd_numbers}")
+print(f"The total number of elements: {len(odd_numbers)}")
+
+"""
+Output:
+A set of odd numbers from 1 to 25: {1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25}
+The total number of elements: 13
+"""
+
+# ======================================
+
+"""
+One important thing to remember:
+{expression for item in iterable if condition}
+
+Think of it in three steps:
+1. Iterable: Where do the values come from?
+2. Condition: Which values should be kept?
+3. Expression: What value should be added to the set?
+"""
+
+# =====================================
