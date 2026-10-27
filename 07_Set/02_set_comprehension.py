@@ -233,3 +233,77 @@ The total number of unique elements: 6
 """
 
 # ===============================================
+
+"""
+Problem 31 — Filter Words by Length using Set Comprehension
+
+Given the following list:
+fruits = ["apple", "kiwi", "banana", "fig",
+          "orange", "pear", "grape", "kiwi"]
+
+Write a program that:
+1. Creates a set containing only words with more than 4 characters using a set comprehension.
+2. Prints the original list.
+3. Prints the resulting set.
+4. Prints the total number of elements using len().
+5. Uses f-strings for every output statement.
+"""
+
+print()
+
+fruits = ["apple", "kiwi", "banana", "fig", "orange", "pear", "grape", "kiwi"]
+
+words = {fruit for fruit in fruits
+         if len(fruit) > 4}
+
+print(f"Fruits containing more than 4 characters: {words}")
+
+print(f"The original List: {fruits}")
+
+print(f"The total number of elements: {len(words)}")
+
+"""
+Output:
+Fruits containing more than 4 characters: {'grape', 'orange', 'banana', 'apple'}
+The original List: ['apple', 'kiwi', 'banana', 'fig', 'orange', 'pear', 'grape', 'kiwi']
+The total number of elements: 4
+"""
+
+# ====================================
+
+"""
+Problem 32 — Convert Strings to Uppercase using Set Comprehension
+
+Given the following list:
+fruits = ["apple", "banana", "mango", "apple",
+          "orange", "grape", "banana"]
+
+Write a program that:
+1. Creates a set containing the uppercase versions
+   of all fruits using a set comprehension.
+2. Prints the original list.
+3. Prints the resulting set.
+4. Prints the total number of elements using len().
+5. Uses f-strings for every output statement.
+"""
+
+print()
+
+fruits = ["apple", "banana", "mango", "apple", "orange", "grape", "banana"]
+
+uppercase_version = {fruit.upper() for fruit in fruits}
+
+print(f"Fruits containing the uppercase version: {uppercase_version}")
+
+print(f"Original fruits: {fruits}")
+
+print(f"The total number of elements: {len(uppercase_version)}")
+
+"""
+Output:
+Fruits containing the uppercase version: {'GRAPE', 'APPLE', 'BANANA', 'ORANGE', 'MANGO'}
+Original fruits: ['apple', 'banana', 'mango', 'apple', 'orange', 'grape', 'banana']
+The total number of elements: 5
+"""
+
+# ==================================
