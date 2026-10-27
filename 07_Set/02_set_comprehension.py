@@ -170,3 +170,66 @@ Think of it in three steps:
 """
 
 # =====================================
+
+"""
+Problem 29 — Squares of Even Numbers using Set Comprehension
+
+Write a program that:
+1. Creates a set containing the squares of even
+   numbers from 1 to 20 using a set comprehension.
+2. Prints the resulting set.
+3. Prints the total number of elements using len().
+4. Uses f-strings for every output statement.
+"""
+
+print()
+
+squares_even_numbers = {number ** 2 for number in range(1, 21)
+                        if number % 2 == 0}
+
+print(f"Squares of even numbers from 1 to 20: {squares_even_numbers}")
+print(f"The total number of elements: {len(squares_even_numbers)}")
+
+"""
+Output:
+Squares of even numbers from 1 to 20: {64, 256, 100, 4, 36, 196, 324, 16, 144, 400}
+The total number of elements: 10
+"""
+
+# =====================================
+
+"""
+Problem 30 — Extract Unique Values using Set Comprehension
+
+Given the following list:
+numbers = [10, 20, 10, 30, 40, 20, 50, 30, 60, 10]
+
+Write a program that:
+1. Creates a set of unique numbers from the list
+   using a set comprehension.
+2. Prints the original list.
+3. Prints the resulting set of unique numbers.
+4. Prints the total number of unique elements using len().
+5. Uses f-strings for every output statement.
+"""
+
+print()
+
+numbers = [10, 20, 10, 30, 40, 20, 50, 30, 60, 10]
+
+unique_numbers = {number for number in numbers}
+
+print(f"Original List of numbers: {numbers}")
+
+print(f"The set of unique numbers: {unique_numbers}")
+
+print(f"The total number of unique elements: {len(unique_numbers)}")
+
+"""
+Output:
+Original List of numbers: [10, 20, 10, 30, 40, 20, 50, 30, 60, 10]
+The set of unique numbers: {40, 10, 50, 20, 60, 30}
+The total number of unique elements: 6
+"""
+
+# ===============================================
