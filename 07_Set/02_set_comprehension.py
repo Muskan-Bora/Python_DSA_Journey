@@ -77,6 +77,19 @@ Python Set Comprehensions — Notes
 9. A set comprehension creates a new set; it does not modify the source iterable.
 """
 
+# Imp Notes:
+
+"""
+What you should remember:
+
+* Pattern *	                              * Example *
+Basic set comprehension	                  {x for x in numbers}
+Filtering	                              {x for x in numbers if x % 2 == 0}
+Transformation	                           {x.upper() for x in words}
+Transformation + filtering	               {x ** 2 for x in numbers if x % 2 == 0}
+Automatic uniqueness	                     Duplicate results are stored only once
+"""
+
 # ===========================================
 
 """
@@ -307,3 +320,117 @@ The total number of elements: 5
 """
 
 # ==================================
+
+"""
+Problem 33 — Mixed Set Comprehension Challenge
+
+Given the following list:
+numbers = [2, 5, 2, 7, 8, 5, 10, 11, 8, 12, 15, 10]
+
+Write a program that:
+1. Creates a set using a set comprehension.
+2. Includes only even numbers from the list.
+3. Squares each selected number.
+4. Automatically removes duplicate results.
+5. Prints the original list.
+6. Prints the resulting set.
+7. Prints the total number of elements using len().
+8. Uses f-strings for every output statement.
+"""
+
+print()
+
+numbers = [2, 5, 2, 7, 8, 5, 10, 11, 8, 12, 15, 10]
+
+num = {number ** 2 for number in numbers
+      if number % 2 == 0}
+
+print(f"The original list: {numbers}")
+
+print(f"The resulting set: {num}")
+
+print(f"The total number of elements: {len(num)}")
+
+"""
+Final Output:
+The original list: [2, 5, 2, 7, 8, 5, 10, 11, 8, 12, 15, 10]
+The resulting set: {64, 100, 4, 144}
+The total number of elements: 4
+"""
+
+# ======================================
+
+"""
+Problem: 34 Write a Set Comprehension
+
+Task: Given the following list, write a program that creates a set containing the cubes of only the odd numbers.
+numbers = [1, 2, 3, 3, 4, 5, 6, 7, 7, 8]
+
+Requirements:
+1. Use a set comprehension.
+2. Include only odd numbers.
+3. Cube each selected number using ** 3.
+4. Print the resulting set.
+5. Print the number of unique elements using len().
+6. Use f-strings for every output statement.
+Use your usual coding format and send me your code with the expected output.
+"""
+
+print()
+
+numbers = [1, 2, 3, 3, 4, 5, 6, 7, 7, 8]
+
+cube_odd_number = {number ** 3 for number in numbers
+                  if number % 2 != 0}
+            
+print(f"The resulting set: {cube_odd_number}")
+print(f"The number of unique elements: {len(cube_odd_number)}")
+
+"""
+Output:
+The resulting set: {1, 27, 125, 343}
+The number of unique elements: 4
+"""
+
+# ====================================================
+
+"""
+Set Comprehension Understanding Check
+Let's review what you've demonstrated today.
+Filtering
+
+You correctly used conditions such as number > 3, odd/even checks, and string-length checks.
+
+
+Transformation
+
+You independently used multiplication, squaring, cubing, and uppercase conversion.
+
+
+Uniqueness
+
+You understand that duplicate results are stored only once in a set.
+
+
+Output prediction
+
+You correctly predicted results and counts without running the code.
+
+
+
+Your key syntax
+{expression for item in iterable if condition}
+
+
+
+Remember these three parts:
+- Expression: What value should be added?
+- Item and iterable: Which values are being processed?
+- Condition: Which values should be kept? This part is optional.
+For example:
+squares = {n ** 2 for n in numbers if n % 2 == 0}
+
+
+
+This filters even numbers and squares them.
+"""
