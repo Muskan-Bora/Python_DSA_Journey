@@ -1561,3 +1561,81 @@ The length of copied_numbers: 5
 """
 
 # =================================================
+
+# Problem : 26 to 34 - Set Comprehension:
+
+# ================================================
+
+# Remaining set methods and special cases
+
+# In-place set operations - intersection_update()
+
+"""
+intersection_update()
+We already know that intersection() finds the common elements between sets and returns a new set.
+
+But intersection_update() behaves differently:
+ it modifies the original set, keeping only the elements that are common to both sets.
+
+Example:
+
+set_a = {10, 20, 30, 40}
+set_b = {30, 40, 50, 60}
+
+set_a.intersection_update(set_b)
+
+print(set_a)
+
+Output:
+{30, 40}
+
+Notice that set_a itself has changed. The values 10 and 20 were removed because they weren't present in set_b.
+The original set_b remains unchanged.
+
+Remember the difference
+Method	                                    What happens?
+set_a.intersection(set_b)	                Returns a new set; set_a stays unchanged.
+set_a.intersection_update(set_b)	        Modifies set_a directly.
+
+The same general distinction applies to other in-place operations, such as difference_update() and symmetric_difference_update().
+"""
+
+# ==============================
+
+"""
+Problem 35 — Intersection Update
+
+Given the following sets:
+set_a = {10, 20, 30, 40, 50}
+set_b = {30, 40, 50, 60, 70}
+
+Write a program that:
+1. Prints both original sets.
+2. Uses intersection_update() on set_a with set_b.
+3. Prints the modified set_a.
+4. Prints set_b to show that it remains unchanged.
+5. Uses f-strings for every output statement.
+"""
+
+print()
+
+set_a = {10, 20, 30, 40, 50}
+set_b = {30, 40, 50, 60, 70}
+
+print(f"Original set_a: {set_a}")
+print(f"Original set_b: {set_b}")
+
+set_a.intersection_update(set_b)
+
+print(f"The modified set_a: {set_a}")
+print(f"{set_b} - set_b remains unchanged")
+
+"""
+Output of all:
+Original set_a: {50, 20, 40, 10, 30}
+Original set_b: {50, 70, 40, 60, 30}
+The modified set_a: {40, 50, 30}
+{50, 70, 40, 60, 30} - set_b remains unchanged
+"""
+
+# ======================================
