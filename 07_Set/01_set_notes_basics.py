@@ -1639,3 +1639,42 @@ The modified set_a: {40, 50, 30}
 """
 
 # ======================================
+
+"""
+Problem 36 — Difference Update
+
+Given the following sets:
+set_a = {10, 20, 30, 40, 50}
+set_b = {30, 40, 50, 60, 70}
+
+Write a program that:
+1. Prints both original sets.
+2. Uses difference_update() on set_a with set_b.
+3. Prints the modified set_a.
+4. Prints set_b to show that it remains unchanged.
+5. Uses f-strings for every output statement.
+"""
+
+print()
+
+set_a = {10, 20, 30, 40, 50}
+set_b = {30, 40, 50, 60, 70}
+
+print(f"Original set_a: {set_a}")
+print(f"Original set_b: {set_b}")
+
+set_a.difference_update(set_b)
+
+print(f"The modified set_a: {set_a}")
+
+print(f"set_b remains unchanged - {set_b}")
+
+"""
+Output:
+Original set_a: {50, 20, 40, 10, 30}
+Original set_b: {50, 70, 40, 60, 30}
+The modified set_a: {20, 10}
+set_b remains unchanged - {50, 70, 40, 60, 30}
+"""
+
+# ======================================
