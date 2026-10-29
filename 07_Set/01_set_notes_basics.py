@@ -1678,3 +1678,138 @@ set_b remains unchanged - {50, 70, 40, 60, 30}
 """
 
 # ======================================
+
+# symmetric_difference_update()
+
+"""
+- symmetric_difference() returns a new set containing elements that exist in either set, but not in both.
+- symmetric_difference_update() performs the same operation but modifies the original set.
+In simple words, it keeps the elements that are unique to either set and removes the elements common to both.
+
+Example 1 - Understand the result
+
+set_a = {10, 20, 30, 40}
+set_b = {30, 40, 50, 60}
+
+set_a.symmetric_difference_update(set_b)
+
+print(set_a)
+print(set_b)
+
+Final result
+- set_a becomes {10, 20, 50, 60}
+- set_b remains {30, 40, 50, 60}
+
+Notice that only set_a changes. The second set is used for comparison but remains unchanged.
+
+# --------------------
+
+Example 2 — Compare the two methods
+
+set_a = {1, 2, 3, 4}
+set_b = {3, 4, 5, 6}
+
+result = set_a.symmetric_difference(set_b)
+
+print(f"Original set_a: {set_a}")
+print(f"New result: {result}")
+
+Original set_a: {1, 2, 3, 4}
+New result: {1, 2, 5, 6}
+
+set_a.symmetric_difference_update(set_b)
+
+Here, set_a itself becomes {1, 2, 5, 6}. There is no need to assign the method's return value to a variable;
+the update method modifies the set in place and returns None.
+
+# ---------------------
+
+Important notes 📝
+Remember these four points:
+1. Common elements are removed from the resulting set.
+2. Unique elements from both sets are kept.
+3. symmetric_difference_update() modifies the set before the dot, not the argument set.
+4. Set display order is not guaranteed, so don't worry if your output order differs.
+"""
+
+# ===========================================
+
+"""
+Problem 37 🐍
+Now it's your turn! Write the code yourself, just as you've been doing in our previous exercises.
+
+Problem statement:
+
+Given the two sets below:
+set_a = {10, 20, 30, 40, 50}
+set_b = {40, 50, 60, 70, 80}
+
+Write a Python program that:
+1. Prints both original sets.
+2. Applies symmetric_difference_update() to set_a using set_b.
+3. Prints the modified set_a.
+4. Prints set_b to demonstrate that it remains unchanged.
+"""
+
+print()
+
+set_a = {10, 20, 30, 40, 50}
+set_b = {40, 50, 60, 70, 80}
+
+print(f"Original set_a: {set_a}")
+print(f"Original set_b: {set_b}")
+
+set_a.symmetric_difference_update(set_b)
+
+print(f"The modified set_a: {set_a}")
+print(f"The set_b remains unchanged: {set_b}")
+
+"""
+Output:
+Original set_a: {50, 20, 40, 10, 30}
+Original set_b: {80, 50, 70, 40, 60}
+The modified set_a: {80, 20, 70, 10, 60, 30}
+The set_b remains unchanged: {80, 50, 70, 40, 60}
+"""
+
+# =========================================
+
+"""
+Problem 38
+
+Given the following sets:
+set_a = {5, 10, 15, 20, 25, 30}
+set_b = {15, 20, 30, 35, 40}
+
+Write a Python program that:
+1. Prints both original sets.
+2. Applies symmetric_difference_update() to set_a using set_b.
+3. Prints the modified set_a.
+4. Prints set_b to confirm it remains unchanged.
+5. Prints the length of the modified set_a using len().
+"""
+
+print()
+
+set_a = {5, 10, 15, 20, 25, 30}
+set_b = {15, 20, 30, 35, 40}
+
+print(f"Original set_a: {set_a}")
+print(f"Original set_b: {set_b}")
+
+set_a.symmetric_difference_update(set_b)
+
+print(f"The modified set_a: {set_a}")
+print(f"The set_b remains unchanged: {set_b}")
+print(f"The length of the modified set_a: {len(set_a)}")
+
+"""
+Output:
+Original set_a: {20, 5, 25, 10, 30, 15}
+Original set_b: {35, 20, 40, 30, 15}
+The modified set_a: {35, 5, 40, 25, 10}
+The set_b remains unchanged: {35, 20, 40, 30, 15}
+The length of the modified set_a: 5
+"""
+
+# ================================================
