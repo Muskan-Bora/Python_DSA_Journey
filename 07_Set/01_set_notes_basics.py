@@ -2029,3 +2029,134 @@ The number of remaining fruits: 3
 """
 
 # ==========================================
+
+# clear() in Python Sets
+
+"""
+1. What is clear()?
+The clear() method removes all elements from an existing set, leaving it empty.
+Syntax
+set_name.clear()
+
+Remember: clear() modifies the original set. It does not delete the variable itself.
+
+2. Example 1 — Clear a set
+numbers = {10, 20, 30, 40, 50}
+print(f"Original set: {numbers}")
+numbers.clear()
+print(f"After clear(): {numbers}")
+print(f"Number of elements: {len(numbers)}")
+
+Output:
+Original set: {50, 20, 40, 10, 30}
+After clear(): set()
+Number of elements: 0
+
+The set becomes set(), and its length becomes 0.
+
+# --------------------
+
+3. Example 2 — The variable still exists
+fruits = {"apple", "banana", "mango"}
+fruits.clear()
+print(f"Fruits after clearing: {fruits}")
+fruits.add("orange")
+print(f"Fruits after adding an element: {fruits}")
+
+Output:
+Fruits after clearing: set()
+Fruits after adding an element: {'orange'}
+
+Even after clearing the set, we can use the same variable again and add new elements to it.
+
+# -------------------------
+
+4. Example 3 — clear() versus assigning an empty set
+These two approaches both leave numbers empty, but they behave differently when another variable refers to the same set.
+numbers = {1, 2, 3}
+alias = numbersnumbers.clear()
+print(f"numbers: {numbers}")
+print(f"alias: {alias}")
+
+Output:
+numbers: set()
+alias: set()
+
+Why? Both variables refer to the same set object, and clear() modifies that shared object.
+
+Compare this with:
+numbers = {1, 2, 3}
+alias = numbers
+numbers = set()
+print(f"numbers: {numbers}")
+print(f"alias: {alias}")
+
+Output:
+numbers: set()
+alias: {1, 2, 3}
+
+Here, numbers = set() reassigns numbers to a new empty set. The original set still exists through alias.
+
+# ----------------------------
+
+5. Important notes 📝
+Method or operation	                            Effect
+numbers.clear()	                                Removes all elements from the existing set
+numbers = set()	                                Assigns a new empty set to numbers
+len(numbers) after clearing                 	Returns 0
+numbers.clear() return value	                None
+
+Also, clear() does not take an element argument. It empties the whole set, unlike remove(), discard(), and pop().
+"""
+
+# ==============================================
+
+"""
+Problem 41
+
+Given the following set:
+numbers = {10, 20, 30, 40, 50, 60}
+
+Write a Python program that:
+1. Prints the original set.
+2. Prints its original length using len().
+3. Uses clear() to remove all elements.
+4. Prints the modified set.
+5. Prints the length of the modified set.
+6. Adds 100 to the same set using add().
+7. Prints the set again to demonstrate that it can be reused.
+Follow your usual format:
+- Blank print() at the beginning.
+- Clear f-string output messages.
+- An output comment showing a valid possible result.
+- A separator at the end.
+"""
+
+print()
+
+numbers = {10, 20, 30, 40, 50, 60}
+
+print(f"The original set of numbers: {numbers}")
+
+print(f"The length of the original set of numbers: {len(numbers)}")
+
+numbers.clear()
+
+print(f"The modified set of numbers: {numbers}")
+
+print(f"The length of the modified set of numbers: {len(numbers)}")
+
+numbers.add(100)
+
+print(f"The set of numbers can be resued: {numbers}")
+
+"""
+Final Output:
+The original set of numbers: {50, 20, 40, 10, 60, 30}
+The length of the original set of numbers: 6
+The modified set of numbers: set()
+The length of the modified set of numbers: 0
+The set of numbers can be resued: {100}
+"""
+
+# ============================================
