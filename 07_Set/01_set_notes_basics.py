@@ -1798,6 +1798,17 @@ print(f"Original set_a: {set_a}")
 print(f"Original set_b: {set_b}")
 
 set_a.symmetric_difference_update(set_b)
+# In this the element which is the commom elements will get removed from both and the remaining elements of both will come in set_a
+
+"""
+In set_a = {5, 10, 15, 20, 25, 30}  - This are original elements of set_a
+In set_b = {35, 20, 40, 30, 15} - This are the original elements of set_b
+
+so now in this both commom elements are - 20, 30 and 15 so that will get remove from set_a and remaining elements of set_a
+as well as the remaining elements of set_b will come 
+
+so the final result will be set_a = {5, 10, 25, 35, 40} 
+"""
 
 print(f"The modified set_a: {set_a}")
 print(f"The set_b remains unchanged: {set_b}")
@@ -1813,3 +1824,208 @@ The length of the modified set_a: 5
 """
 
 # ================================================
+
+print()
+
+set_a = {5, 10, 15, 20, 25, 30}
+set_b = {15, 20, 30, 35, 40}
+
+print(f"Original set_a: {set_a}")
+print(f"Original set_b: {set_b}")
+
+set_a.difference_update(set_b)
+# In this it removes that elements from set_a which is there is set_b and the remaining element will be come in final output.
+
+"""
+In set_a = {5, 10, 15, 20, 25, 30}  - This are original elements of set_a
+In set_b = {35, 20, 40, 30, 15} - This are the original elements of set_b
+
+so now in this both commom elements are - 20, 30 and 15 so that will get remove from set_a and remaining
+elements will come as final output: set_a = {5, 10, 25}
+"""
+
+print(f"The modified set_a: {set_a}")     
+print(f"The set_b remains unchanged: {set_b}")
+print(f"The length of the modified set_a: {len(set_a)}")
+
+"""
+Output:
+Original set_a: {20, 5, 25, 10, 30, 15}
+Original set_b: {35, 20, 40, 30, 15}
+The modified set_a: {5, 25, 10}    
+The set_b remains unchanged: {35, 20, 40, 30, 15}
+The length of the modified set_a: 3
+"""
+
+# =======================================================
+
+# Python Set - pop()
+
+"""
+What is pop()?
+The pop() method removes an arbitrary element from a set and returns the removed element.
+
+Syntax:
+set_name.pop()
+
+There are two important actions here:
+1. An element is removed from the original set.
+2. The removed element is returned, so you can store it in a variable or print it.
+Unlike lists, sets are unordered. Therefore, pop() does not guarantee which element it will remove.
+
+Example 1 — Remove and return an element
+numbers = {10, 20, 30, 40, 50}
+
+removed_element = numbers.pop()
+print(f"Removed element: {removed_element}")
+print(f"Remaining set: {numbers}")
+
+One possible output is:
+Removed element: 40
+Remaining set: {10, 20, 30, 50}
+
+Your output may show a different removed element. That's completely fine!
+
+Notice that the removed element is stored in removed_element.
+The remaining set contains every original element except the one removed.
+
+# ----------------------- #
+
+3. Example 2 — Print the returned element directly
+
+fruits = {"apple", "banana", "mango"}
+print(f"Removed fruit: {fruits.pop()}")
+print(f"Remaining fruits: {fruits}")
+
+Possible output:
+Removed fruit: banana
+Remaining fruits: {'apple', 'mango'}
+
+Again, banana is just an example.
+Python does not promise that it will remove that particular fruit.
+
+# ----------------------- #
+
+4. Example 3 — What happens with an empty set?
+numbers = set()numbers.pop()
+
+This raises a KeyError because there is no element to remove.
+
+If you need to handle this situation safely, check whether the set is non-empty before calling pop():
+numbers = set() if numbers: print(f"Removed element: {numbers.pop()}") else: print("The set is empty.")
+
+Output:
+The set is empty. 
+
+# ----------------------- #
+
+5. Important notes 📝
+Method	                        What it does
+add()	                        Adds one element
+remove(x)	                    Removes a specified element; raises KeyError if absent
+discard(x)	                    Removes a specified element if present
+pop()	                        Removes and returns an arbitrary element
+clear()	                        Removes all elements
+
+Remember these rules:
+- pop() modifies the original set.
+- It returns the removed element.
+- It takes no element argument: numbers.pop() is correct, while numbers.pop(10) is invalid.
+- Calling it on an empty set raises KeyError.
+- Don't rely on a particular removal order.
+"""
+
+# ==============================================
+
+"""
+Problem 39:
+
+Given the following set:
+numbers = {10, 20, 30, 40, 50, 60}
+
+Write a Python program that:
+1. Prints the original set.
+2. Uses pop() to remove one element and stores the returned element in a variable called removed_element.
+3. Prints the removed element.
+4. Prints the remaining set.
+5. Prints the length of the remaining set using len().
+Follow your usual format:
+- Blank print() at the beginning.
+- Clear f-string output messages.
+- An output comment showing a valid possible result.
+- A separator at the end.
+"""
+
+print()
+
+numbers = {10, 20, 30, 40, 50, 60}
+
+print(f"The original set of numbers: {numbers}")
+
+removed_element = numbers.pop()
+
+print(f"The removed element: {removed_element}")
+
+print(f"The remaining set: {numbers}")  # Here the removed the element will not come 
+
+print(f"The length of the remaining set: {len(numbers)}")
+
+"""
+Final Output:
+The original set of numbers: {50, 20, 40, 10, 60, 30}
+The removed element: 50
+The remaining set: {20, 40, 10, 60, 30}
+The length of the remaining set: 5
+"""
+
+# ==============================================
+
+"""
+Problem 40:
+
+Given the following set:
+fruits = {"apple", "banana", "mango", "orange", "grapes"}
+
+Write a Python program that:
+1. Prints the original set.
+2. Uses pop() to remove one element and stores it in a variable named removed_fruit.
+3. Prints the removed fruit.
+4. Uses pop() a second time and stores the returned element in a variable named second_removed_fruit.
+5. Prints the second removed fruit.
+6. Prints the final remaining set.
+7. Prints the number of remaining fruits using len().
+Follow your usual format:
+- Blank print() at the beginning.
+- Clear f-string output messages.
+- An output comment showing a valid possible result.
+- A separator at the end.
+"""
+
+print()
+
+fruits = {"apple", "banana", "mango", "orange", "grapes"}
+
+print(f"The original set of fruits: {fruits}")
+
+removed_fruit = fruits.pop()
+
+print(f"The removed fruit: {removed_fruit}")
+
+second_removed_fruit = fruits.pop()
+
+print(f"The second removed fruit: {second_removed_fruit}")
+
+print(f"The final remaining set of fruits: {fruits}")
+
+print(f"The number of remaining fruits: {len(fruits)}")
+
+"""
+Final Output:
+The original set of fruits: {'mango', 'orange', 'apple', 'grapes', 'banana'}
+The removed fruit: mango
+The second removed fruit: orange
+The final remaining set of fruits: {'apple', 'grapes', 'banana'}
+The number of remaining fruits: 3
+"""
+
+# ==========================================
