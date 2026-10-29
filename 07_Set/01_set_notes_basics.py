@@ -2160,3 +2160,60 @@ The set of numbers can be resued: {100}
 """
 
 # ============================================
+
+"""
+Problem 42
+
+Given the following code setup:
+fruits = {"apple", "banana", "mango", "orange"}
+alias = fruits
+
+Write a Python program that:
+1. Prints the original fruits set.
+2. Prints the original alias set.
+3. Uses fruits.clear() to empty the set.
+4. Prints fruits after clearing.
+5. Prints alias after clearing.
+6. Adds "grapes" to alias using add().
+7. Prints both fruits and alias again.
+8. Prints the length of both sets.
+"""
+
+print()
+
+fruits = {"apple", "banana", "mango", "orange"}
+alias = fruits
+
+print(f"The original set of fruits: {fruits}")
+
+print(f"The original set of alias: {alias}")
+
+fruits.clear()
+
+print(f"fruits after clearing: {fruits}")
+
+print(f"alias after clearing: {alias}")
+
+alias.add("grapes")
+
+print(f"After add element in alias, fruits: {fruits}")
+
+print(f"After add element in alias, alias: {alias}")
+
+print(f"The length of fruits: {len(fruits)}")
+
+print(f"The length of alias: {len(alias)}")
+
+"""
+Final Output:
+The original set of fruits: {'apple', 'banana', 'mango', 'orange'}
+The original set of alias: {'apple', 'banana', 'mango', 'orange'}
+fruits after clearing: set()
+alias after clearing: set()
+After add element in alias, fruits: {'grapes'}
+After add element in alias, alias: {'grapes'}
+The length of fruits: 1
+The length of alias: 1
+"""
+
+# ===============================================
