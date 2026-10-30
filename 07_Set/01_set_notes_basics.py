@@ -2217,3 +2217,245 @@ The length of alias: 1
 """
 
 # ===============================================
+
+# frozenset: Creation and Properties
+
+"""
+1. What is a frozenset?
+A frozenset is an immutable version of a Python set.
+
+You already know that a normal set is mutable, which means we can add or remove elements after creating it.
+
+But a frozenset cannot be modified after creation.
+
+In simple words:
+- set → Mutable (can be changed).
+- frozenset → Immutable (cannot be changed).
+
+2. How to create a frozenset
+
+The syntax is:
+frozenset(iterable)
+
+We can create a frozenset using a list, tuple, string, or another iterable.
+
+# ------------------------------
+
+Example 1 — Create a frozenset from a list
+
+numbers = [10, 20, 30, 40, 50]
+frozen_numbers = frozenset(numbers)
+print(f"Original list: {numbers}")
+print(f"Frozenset: {frozen_numbers}")
+print(f"Type: {type(frozen_numbers)}")
+
+Possible output:
+Original list: [10, 20, 30, 40, 50]
+Frozenset: frozenset({40, 10, 50, 20, 30})
+Type: <class 'frozenset'>
+
+# Notice that the result is a frozenset, not a regular set.
+
+# ------------------------------
+
+Example 2 — Create a frozenset from a tuple
+
+fruits = ("apple", "banana", "mango", "apple")
+frozen_fruits = frozenset(fruits)
+print(f"Original tuple: {fruits}")
+print(f"Frozenset: {frozen_fruits}")
+print(f"Length: {len(frozen_fruits)}")
+
+Possible output:
+Original tuple: ('apple', 'banana', 'mango', 'apple')
+Frozenset: frozenset({'apple', 'banana', 'mango'})
+Length: 3
+
+# Notice something important: the duplicate "apple" is automatically removed.
+
+# Just like normal sets, frozensets contain unique elements.
+
+# ---------------------------------------
+
+Example 3 — Create an empty frozenset
+
+empty_frozen_set = frozenset()
+print(f"Empty frozenset: {empty_frozen_set}")
+print(f"Type: {type(empty_frozen_set)}")
+
+Output:
+Empty frozenset: frozenset()
+Type: <class 'frozenset'>
+
+Remember:
+empty_set = set()
+empty_frozen_set = frozenset()
+
+# These create two different types of empty collections.
+
+# ---------------------------------------
+
+3. Why is frozenset immutable?
+
+Let's compare a regular set and a frozenset.
+
+Example 4 — Regular set versus frozenset
+
+numbers = {10, 20, 30}
+numbers.add(40)
+print(f"Modified set: {numbers}")
+
+This works because a regular set is mutable.
+
+But:
+frozen_numbers = frozenset({10, 20, 30})
+frozen_numbers.add(40)
+
+This raises:
+AttributeError: 'frozenset' object has no attribute 'add'
+
+Why?
+
+Because a frozenset does not support methods that modify its contents.
+
+Similarly, you cannot use:
+- add()
+- update()
+- remove()
+- discard()
+- pop()
+- clear()
+These methods are unavailable for frozensets.
+
+# -----------------------------------------
+
+# Important properties of frozenset 📝
+
+1. Immutable: Cannot add, remove, or modify elements after creation.
+2. Unique: Duplicate elements are automatically removed.
+3. Unordered: Elements do not have a guaranteed display order.
+4. Iterable: You can loop through a frozenset.
+5. Hashable: A frozenset can be used as a dictionary key or as an element inside another set, provided its elements are hashable.
+6. Supports set operations: Union, intersection, difference, and symmetric difference are supported.
+
+# One important detail: frozenset elements must be hashable, just like regular set elements.
+For example, a list cannot be an element of a frozenset.
+
+# -------------------------------------
+
+## Set versus Frozenset
+
+#Feature	        #set	            #frozenset
+Mutable	            Yes	                No
+Immutable	        No	                Yes
+Duplicate elements	Not allowed	        Not allowed
+Unordered	        Yes	                Yes
+add()	            Yes	                No
+remove()	        Yes	                No
+clear()	            Yes	                No
+Set operations	    Yes	                Yes
+Hashable	        No	                Yes, if elements are hashable
+
+"""
+
+# ==========================================
+
+"""
+Problem 43
+
+Given the following list:
+numbers = [10, 20, 30, 20, 40, 50, 30, 60]
+
+Write a Python program that:
+1. Prints the original list.
+2. Creates a frozenset from the list and stores it in frozen_numbers.
+3. Prints the frozenset.
+4. Prints its type using type().
+5. Prints its length using len().
+6. Prints the original list again to demonstrate that it remains unchanged.
+Follow your usual format:
+- Blank print() at the beginning.
+- Clear f-string output messages.
+- Output comment showing a valid possible result.
+- Separator at the end.
+"""
+
+print()
+
+numbers = [10, 20, 30, 20, 40, 50, 30, 60]
+
+print(f"The original list of numbers: {numbers}")
+
+frozen_numbers = frozenset(numbers)
+
+print(f"The frozenset: {frozen_numbers}")
+
+print(f"The data type of frozen_numbers: {type(frozen_numbers)}")
+
+print(f"The length of frozen_numbers: {len(frozen_numbers)}")
+
+print(f"The original list of numbers remains unchanged: {numbers}")
+
+"""
+Final Output:
+The original list of numbers: [10, 20, 30, 20, 40, 50, 30, 60]
+The frozenset: frozenset({40, 10, 50, 20, 60, 30})
+The data type of frozen_numbers: <class 'frozenset'>
+The length of frozen_numbers: 6
+The original list of numbers remains unchanged: [10, 20, 30, 20, 40, 50, 30, 60]
+"""
+
+# ============================================
+
+"""
+Problem 44
+
+Given the following tuple:
+fruits = ("apple", "banana", "mango", "apple", "orange", "banana")
+
+Write a Python program that:
+1. Prints the original tuple.
+2. Creates a frozenset from the tuple and stores it in frozen_fruits.
+3. Prints the frozenset.
+4. Prints its length using len().
+5. Iterates through the frozenset using a for loop and prints each fruit.
+6. Demonstrates that the original tuple remains unchanged.
+Follow your usual format:
+- Blank print() at the beginning.
+- Clear f-string output messages.
+- Output comment showing a valid possible result.
+- Separator at the end.
+"""
+
+print()
+
+fruits = ("apple", "banana", "mango", "apple", "orange", "banana")
+
+print(f"The original tuple of fruits: {fruits}")
+
+frozen_fruits = frozenset(fruits)
+
+print(f"The frozenset: {frozen_fruits}")
+
+print(f"The length of frozen_fruits: {len(frozen_fruits)}")
+
+print(f"The frozen_fruits:")
+for frozen_fruit in frozen_fruits:
+    print(frozen_fruit)
+
+print(f"The original tuple of fruits remains unchanged: {fruits}")
+
+"""
+Final Output:
+The original tuple of fruits: ('apple', 'banana', 'mango', 'apple', 'orange', 'banana')
+The frozenset: frozenset({'apple', 'orange', 'banana', 'mango'})
+The length of frozen_fruits: 4
+The frozen_fruits:
+apple
+orange
+banana
+mango
+The original tuple of fruits remains unchanged: ('apple', 'banana', 'mango', 'apple', 'orange', 'banana')
+"""
+
+# ========================================================
