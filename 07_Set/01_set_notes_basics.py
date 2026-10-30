@@ -2459,3 +2459,220 @@ The original tuple of fruits remains unchanged: ('apple', 'banana', 'mango', 'ap
 """
 
 # ========================================================
+
+# Operations involving frozensets
+
+"""
+Although frozensets are immutable, they still support set operations!
+
+1. Union — .union() or |
+Combines all unique elements from both frozensets.
+frozen_a = frozenset({10, 20, 30, 40})
+frozen_b = frozenset({30, 40, 50, 60})
+result = frozen_a.union(frozen_b)
+print(result)
+
+Possible output:
+frozenset({10, 20, 30, 40, 50, 60})
+
+# -----------------------------
+
+2. Intersection — .intersection() or &
+Returns only the elements common to both frozensets.
+
+result = frozen_a.intersection(frozen_b)
+
+Possible output:
+frozenset({30, 40})
+
+# -------------------------------
+
+3. Difference — .difference() or -
+Returns elements present in the first frozenset but not in the second.
+result = frozen_a.difference(frozen_b)
+
+Possible output:
+frozenset({10, 20})
+
+Remember: difference is directional. Reversing the operands can produce a different result.
+
+# -------------------------------
+
+4. Symmetric difference — .symmetric_difference() or ^
+
+Returns elements that are in either frozenset, but not in both.
+
+result = frozen_a.symmetric_difference(frozen_b)
+
+Possible output:
+frozenset({10, 20, 50, 60})
+
+# ---------------------------------
+
+5. What makes frozenset different?
+
+Operation	                            Supported?
+union()	                                Yes
+intersection()	                        Yes
+difference()	                        Yes
+symmetric_difference()	                Yes
+issubset() / issuperset()	            Yes
+isdisjoint()	                        Yes
+add() / update()	                    No
+remove() / discard()	                No
+pop() / clear()	                        No
+intersection_update()	                No
+difference_update()	                    No
+symmetric_difference_update()	        No
+
+Key point: These operations create a result; they do not modify the original frozensets.
+With two frozenset operands, the results are also frozensets.
+
+"""
+
+# ===========================================
+
+"""
+Problem 45 — Frozenset mathematical operations
+Create two frozensets:
+frozen_a = frozenset({10, 20, 30, 40, 50})
+frozen_b = frozenset({30, 40, 50, 60, 70})
+
+Write a program that:
+1. Prints both original frozensets.
+2. Performs union using .union().
+3. Performs intersection using &.
+4. Performs difference using .difference().
+5. Performs symmetric difference using ^.
+6. Prints all four results.
+7. Prints the type of each result using type().
+Follow your usual format:
+- Blank print() at the beginning.
+- Clear f-string messages.
+- Output comment showing a valid possible result.
+- Separator at the end.
+"""
+
+print()
+
+frozen_a = frozenset({10, 20, 30, 40, 50})
+frozen_b = frozenset({30, 40, 50, 60, 70})
+
+print(f"The original frozen set of frozen_a: {frozen_a}")
+print(f"The original frozen set of frozen_b: {frozen_b}")
+
+print()
+
+result_union = frozen_a.union(frozen_b)
+
+result_intersection = frozen_a & frozen_b
+
+result_difference = frozen_a.difference(frozen_b)
+
+result_symmetric_difference = frozen_a ^ frozen_b
+
+print(f"Result of union: {result_union}")
+print(f"Result of intersection: {result_intersection}")
+print(f"Result of difference: {result_difference}")
+print(f"Result of symmetric difference: {result_symmetric_difference}")
+
+print()
+print(f"The data type of each result:")
+print(f"Result of union: {type(result_union)}")
+print(f"Result of intersection: {type(result_intersection)}")
+print(f"Result of difference: {type(result_difference)}")
+print(f"Result of symmetric difference: {type(result_symmetric_difference)}")
+
+"""
+Final Output:
+The original frozen set of frozen_a: frozenset({50, 20, 40, 10, 30})
+The original frozen set of frozen_b: frozenset({50, 70, 40, 60, 30})
+
+Result of union: frozenset({70, 40, 10, 50, 20, 60, 30})
+Result of intersection: frozenset({40, 50, 30})
+Result of difference: frozenset({10, 20})
+Result of symmetric difference: frozenset({20, 70, 10, 60})
+
+The data type of each result:
+Result of union: <class 'frozenset'>
+Result of intersection: <class 'frozenset'>)
+Result of difference: <class 'frozenset'>
+Result of symmetric difference: <class 'frozenset'>
+"""
+
+# ==========================================
+
+"""
+Problem 46 — Frozenset relationships and immutability
+
+Given:
+frozen_a = frozenset({10, 20, 30})
+frozen_b = frozenset({10, 20, 30, 40, 50})
+frozen_c = frozenset({60, 70})
+
+Write a program that:
+1. Prints all three original frozensets.
+2. Checks whether frozen_a is a subset of frozen_b.
+3. Checks whether frozen_b is a superset of frozen_a.
+4. Checks whether frozen_a and frozen_c are disjoint.
+5. Creates a new frozenset using the union of frozen_a and frozen_c.
+6. Prints the new result and its type.
+7. Prints all three original frozensets again to demonstrate that they remain unchanged.
+Follow your usual format:
+- Blank print() at the beginning.
+- Clear f-string messages.
+- Output comment showing a valid possible result.
+- Separator at the end.
+"""
+
+print()
+
+frozen_a = frozenset({10, 20, 30})
+frozen_b = frozenset({10, 20, 30, 40, 50})
+frozen_c = frozenset({60, 70})
+
+print(f"The original frozen set of frozen_a: {frozen_a}")
+print(f"The original frozen set of frozen_b: {frozen_b}")
+print(f"The original frozen set of frozen_c: {frozen_c}")
+
+print()
+
+print(f"frozen_a is a subset of frozen_b: {frozen_a.issubset(frozen_b)}")
+print(f"frozen_b is a superset of frozen_a: {frozen_b.issuperset(frozen_a)}")
+print(f"frozen_a and frozen_c are disjoint: {frozen_a.isdisjoint(frozen_c)}")
+
+print()
+
+result_union = frozen_a.union(frozen_c)
+
+print(f"The union of frozen_a and frozen_c: {result_union}")
+
+print(f"The type of result of union: {type(result_union)}")
+
+print()
+
+print(f"The original frozensets remain unchanged:")
+print(f"The original frozen set of frozen_a: {frozen_a}")
+print(f"The original frozen set of frozen_b: {frozen_b}")
+print(f"The original frozen set of frozen_c: {frozen_c}")
+
+"""
+Final Output:
+The original frozen set of frozen_a: frozenset({10, 20, 30})
+The original frozen set of frozen_b: frozenset({50, 20, 40, 10, 30})
+The original frozen set of frozen_c: frozenset({60, 70})
+
+frozen_a is a subset of frozen_b: True
+frozen_b is a superset of frozen_a: True
+frozen_a and frozen_c are disjoint: True
+
+The union of frozen_a and frozen_c: frozenset({20, 70, 10, 60, 30})
+The type of result of union: <class 'frozenset'>
+
+The original frozensets remain unchanged:
+The original frozen set of frozen_a: frozenset({10, 20, 30})
+The original frozen set of frozen_b: frozenset({50, 20, 40, 10, 30})
+The original frozen set of frozen_c: frozenset({60, 70})
+"""
+
+# ==========================================
